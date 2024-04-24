@@ -1,0 +1,11 @@
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.deps.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.GeneratedMSBuildEditorConfig.editorconfig
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.AssemblyInfoInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.AssemblyInfo.cs
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.csproj.CoreCompileInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\refint\App.Infra.Data.Repos.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\ref\App.Infra.Data.Repos.Ef.dll

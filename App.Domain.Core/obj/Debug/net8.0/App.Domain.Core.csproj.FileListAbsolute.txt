@@ -1,0 +1,11 @@
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\bin\Debug\net8.0\App.Domain.Core.deps.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\bin\Debug\net8.0\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\bin\Debug\net8.0\App.Domain.Core.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.AssemblyInfoInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.AssemblyInfo.cs
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.csproj.CoreCompileInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\refint\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\ref\App.Domain.Core.dll

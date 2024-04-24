@@ -10,17 +10,14 @@
     <Folder Include="Admin\AppServices\" />
     <Folder Include="Admin\Data\" />
     <Folder Include="Admin\DTOs\" />
-    <Folder Include="Admin\Entities\" />
     <Folder Include="Admin\Services\" />
     <Folder Include="Customer\AppServices\" />
     <Folder Include="Customer\Data\" />
     <Folder Include="Customer\DTOs\" />
-    <Folder Include="Customer\Entities\" />
     <Folder Include="Customer\Services\" />
     <Folder Include="Expert\AppServices\" />
     <Folder Include="Expert\Data\" />
     <Folder Include="Expert\DTOs\" />
-    <Folder Include="Expert\Entities\" />
     <Folder Include="Expert\Services\" />
   </ItemGroup>
 
