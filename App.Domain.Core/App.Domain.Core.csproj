@@ -10,6 +10,7 @@
     <Folder Include="Admin\AppServices\" />
     <Folder Include="Admin\Data\" />
     <Folder Include="Admin\DTOs\" />
+    <Folder Include="Admin\Enums\" />
     <Folder Include="Admin\Services\" />
     <Folder Include="Customer\AppServices\" />
     <Folder Include="Customer\Data\" />

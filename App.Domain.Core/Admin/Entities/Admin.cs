@@ -12,7 +12,12 @@ namespace App.Domain.Core.Admin.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
         public string PhoneNumber { get; set; }
         public string ProfileImage { get; set; }
+        public List<Comment> Comments { get; set; }
+        public List<Expert.Entities.Expert> Experts { get; set; }
+        public List<Customer.Entities.Customer> Customers { get; set; }
     }
 }

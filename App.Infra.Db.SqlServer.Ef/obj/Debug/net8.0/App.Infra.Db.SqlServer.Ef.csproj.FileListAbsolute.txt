@@ -1,0 +1,17 @@
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Infra.Db.SqlServer.Ef.deps.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Infra.Db.SqlServer.Ef.runtimeconfig.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Infra.Db.SqlServer.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Infra.Db.SqlServer.Ef.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\bin\Debug\net8.0\App.Domain.Core.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.csproj.AssemblyReference.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.GeneratedMSBuildEditorConfig.editorconfig
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.AssemblyInfoInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.AssemblyInfo.cs
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.csproj.CoreCompileInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infr.3B53F1B8.Up2Date
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\refint\App.Infra.Db.SqlServer.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.genruntimeconfig.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\ref\App.Infra.Db.SqlServer.Ef.dll

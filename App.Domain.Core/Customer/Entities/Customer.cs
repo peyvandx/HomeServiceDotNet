@@ -1,4 +1,6 @@
 ﻿
+using App.Domain.Core.Admin.Entities;
+
 namespace App.Domain.Core.Customer.Entities
 {
     public class Customer
@@ -7,8 +9,17 @@ namespace App.Domain.Core.Customer.Entities
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
+        public string Password { get; set; }
+        public string ConfirmPassword { get; set; }
         public string PhoneNumber { get; set; }
         public string ProfileImage { get; set; }
-        public bool IsConfirmed { get; set; }
+        public bool IsDeleted { get; set; } = false;
+        public bool IsConfirmed { get; set; } = false;
+        public int AdminId { get; set; }
+        public Admin.Entities.Admin Admin { get; set; }
+        public List<SubmittedComment> SubmittedComments { get; set; }
+        public List<ReceivedComment> ReceivedComments { get; set; }
+        public List<Address> Addresses { get; set; }
+        public List<ServiceRequest> ServiceRequests { get; set; }
     }
 }
