@@ -15,6 +15,7 @@ namespace App.Domain.Core.Customer.Entities
         public bool IsDeleted { get; set; } = false;
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
+        public int ExpertId { get; set; }
         public Expert.Entities.Expert Expert { get; set; }
         public int CityId { get; set; }
         public City City { get; set; }

@@ -12,7 +12,6 @@ namespace App.Domain.Core.Customer.Entities
         public string Name { get; set; }
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
-        //public int CityId { get; set; }
         public List<City> Cities { get; set; }
     }
 }
