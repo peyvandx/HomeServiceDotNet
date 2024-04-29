@@ -14,13 +14,12 @@ namespace App.Domain.Core.Expert.Entities
         public string Title { get; set; }
         public string Image { get; set; }
         public string Description { get; set; }
+        public DateTime CreatedAt { get; set; }
         public WorkExperience WorkExperience { get; set; }
-        public bool IsDeleted { get; set; }
-        public int ExpertId { get; set; }
-        public Expert Expert { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public int CategoryId { get; set; }
         public Category Category { get; set; }
-        //public int DonedServiceRequests { get; set; }
-        public List<ServiceRequest> DonedServiceRequests { get; set; }
+        public List<Expert> Experts { get; set; }
+        public List<ServiceRequest> ServiceRequests { get; set; }
     }
 }

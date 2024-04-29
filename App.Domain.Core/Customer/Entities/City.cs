@@ -10,8 +10,10 @@ namespace App.Domain.Core.Customer.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
-        public bool IsDeleted { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public int ProvinceId { get; set; }
         public Province Province { get; set; }
+        public List<Address> Addresses { get; set; }
     }
 }

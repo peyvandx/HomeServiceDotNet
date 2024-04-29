@@ -13,9 +13,10 @@ namespace App.Domain.Core.Customer.Entities
         public int Id { get; set; }
         public string CustomerDescription { get; set; }
         public Status Status { get; set; }
-        public int Price { get; set; } //ghimate pardakht shode
-        public bool IsDone { get; set; }
-        public bool IsDeleted { get; set; }
+        public double Price { get; set; } //ghimate pardakht shode
+        public bool IsDone { get; set; } = false;
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
         public int ExpertId { get; set; }

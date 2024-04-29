@@ -1,4 +1,5 @@
 ﻿using App.Domain.Core.Admin.Entities;
+using App.Domain.Core.Expert.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -26,18 +27,18 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property (a => a.LastName)
                 .HasMaxLength(50)
                 .IsRequired();
-            builder
-                .Property(a => a.Email)
-                .HasMaxLength(100)
-                .IsRequired();
-            builder
-                .Property(a => a.Password)
-                .HasMaxLength(100)
-                .IsRequired();
-            builder
-                .Property(a => a.ConfirmPassword)
-                .HasMaxLength(100)
-                .IsRequired();
+            //builder
+            //    .Property(a => a.Email)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
+            //builder
+            //    .Property(a => a.Password)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
+            //builder
+            //    .Property(a => a.ConfirmPassword)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
             builder
                 .Property(a => a.ProfileImage)
                 .HasMaxLength(4000);
@@ -45,10 +46,15 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(a => a.PhoneNumber)
                 .HasMaxLength(11)
                 .IsRequired();
+            builder
+                .Property(a => a.SignUpDate)
+                .IsRequired();
 
             builder
                 .HasMany(a => a.Comments)
-                .WithOne(c => c.Admin);
+                .WithOne(c => c.Admin)
+                .HasForeignKey(c => c.AdminId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }

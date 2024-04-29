@@ -3,80 +3,120 @@
   "WorkspaceRootPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\admin\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\admin\\entities\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\adminentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\adminentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\admin\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\admin\\entities\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\customerentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\customerentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\expert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\expert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\adminentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\adminentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\expertentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\expertentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\customerentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\customerentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\receivedcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\receivedcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\submittedcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\submittedcomment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\commententityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\commententityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\dbcontext\\homeservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\dbcontext\\homeservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\cityentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\cityentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\proposalentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\proposalentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\provinceentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\provinceentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\serviceentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\serviceentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\skill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\enums\\workexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\enums\\workexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\proposal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\servicerequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\province.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\enums\\status.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\entities\\address.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\servicerequestentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\servicerequestentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\categoryentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\categoryentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\addressentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\addressentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\entities\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\entityconfigs\\skillentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\entityconfigs\\skillentityconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\enums\\workexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\enums\\workexperience.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,162 +126,175 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AdminEntityConfig.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
-              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
-              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAADwvzIAAAAnAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T17:40:46.281Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CustomerEntityConfig.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
-              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
-              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAgwEIAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T17:28:35.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Customer.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Customer.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Customer.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Customer.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAA5wAwAAAAzAAAA",
+              "Title": "ExpertEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ExpertEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ExpertEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ExpertEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ExpertEntityConfig.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAgwEMAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T12:59:59.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Address.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Address.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Address.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Address.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Address.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAuwBEAAAA6AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T13:29:12.17Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Admin.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Admin\\Entities\\Admin.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Admin.cs",
-              "RelativeToolTip": "App.Domain.Core\\Admin\\Entities\\Admin.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAA5wBQAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T13:23:42.394Z",
+              "WhenOpened": "2024-04-28T18:22:56.246Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "AdminEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AdminEntityConfig.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAqwDYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:23:53.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Expert.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Expert.cs",
               "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Expert.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Expert.cs",
               "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Expert.cs",
-              "ViewState": "AQIAAAUAAAAAAAAAAAA6wAwAAAAzAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAgwBYAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T13:12:44.905Z",
+              "WhenOpened": "2024-04-28T18:17:36.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Customer.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Customer.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Customer.cs",
+              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Customer.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:16:00.725Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Comment.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Comment.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Comment.cs",
+              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Comment.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA6wBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:13:36.233Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Comment.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Comment.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Admin\\Entities\\Comment.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Comment.cs",
-              "RelativeToolTip": "App.Domain.Core\\Admin\\Entities\\Comment.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Title": "Admin.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Admin.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Admin\\Entities\\Admin.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Admin\\Entities\\Admin.cs",
+              "RelativeToolTip": "App.Domain.Core\\Admin\\Entities\\Admin.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAqwBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T08:14:30.91Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ReceivedComment.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ReceivedComment.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\ReceivedComment.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ReceivedComment.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\ReceivedComment.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T07:42:20.102Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SubmittedComment.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\SubmittedComment.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\SubmittedComment.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\SubmittedComment.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\SubmittedComment.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAqwA4AAAArAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T19:19:53.776Z",
+              "WhenOpened": "2024-04-28T18:15:28.078Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ServiceRequest.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAqwA4AAAAqAAAA",
+              "Title": "CustomerEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CustomerEntityConfig.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAADwAAAAzAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T06:13:02.656Z",
+              "WhenOpened": "2024-04-28T18:22:01.707Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CommentEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CommentEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CommentEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CommentEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CommentEntityConfig.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAADwvykAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T05:09:29.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HomeServiceDbContext.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAA0wCEAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:04:04.11Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CityEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CityEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CityEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CityEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CityEntityConfig.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAADwvyYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T05:31:14.783Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "Proposal.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Proposal.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Proposal.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Proposal.cs",
-              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Proposal.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAQwBkAAAAAAAAA",
+              "Title": "ProvinceEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProvinceEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProvinceEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProvinceEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProvinceEntityConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T19:25:04.248Z",
+              "WhenOpened": "2024-04-27T05:33:41.977Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Service.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Service.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Service.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Service.cs",
-              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Service.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Title": "ServiceEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceEntityConfig.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAUwC8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T18:11:52.391Z",
+              "WhenOpened": "2024-04-28T18:31:57.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProposalEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProposalEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProposalEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProposalEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ProposalEntityConfig.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCMAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:55:47.862Z",
               "EditorCaption": ""
             },
             {
@@ -252,61 +305,48 @@
               "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Skill.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Skill.cs",
               "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Skill.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAAAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA8AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T19:18:00.91Z",
+              "WhenOpened": "2024-04-28T18:20:26.044Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "WorkExperience.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
-              "RelativeToolTip": "App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Title": "Service.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Service.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Service.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Service.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Service.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAA1wBIAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T17:09:46.824Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "HomeServiceDbContext.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
-              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
-              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAcwCUAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-25T15:07:11.429Z",
+              "WhenOpened": "2024-04-28T18:19:59.395Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 15,
-              "Title": "Category.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Category.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Category.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Category.cs",
-              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Category.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAzAAAA",
+              "Title": "Proposal.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Proposal.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Proposal.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Proposal.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Proposal.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABEAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T18:44:52.016Z",
+              "WhenOpened": "2024-04-28T18:19:32.999Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 16,
-              "Title": "City.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\City.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\City.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\City.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\City.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABEAAAAAAAAA",
+              "Title": "ServiceRequest.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
+              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\ServiceRequest.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA0wBAAAAAxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T18:09:37.661Z",
+              "WhenOpened": "2024-04-27T04:58:37.64Z",
               "EditorCaption": ""
             },
             {
@@ -317,23 +357,145 @@
               "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Province.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Province.cs",
               "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Province.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABEAAAAAAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-24T18:10:29.732Z",
+              "WhenOpened": "2024-04-27T05:00:32.068Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 18,
-              "Title": "Status.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Enums\\Status.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Enums\\Status.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Enums\\Status.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\Enums\\Status.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAVAAAA",
+              "Title": "City.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\City.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\City.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\City.cs",
+              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\City.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA0AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-26T16:55:49.675Z",
+              "WhenOpened": "2024-04-27T04:58:25.121Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Address.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Address.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Entities\\Address.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Entities\\Address.cs",
+              "RelativeToolTip": "App.Domain.Core\\Customer\\Entities\\Address.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwBEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T04:59:39.944Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ServiceRequestEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceRequestEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceRequestEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceRequestEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\ServiceRequestEntityConfig.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAAADEAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:01:32.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "CategoryEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CategoryEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CategoryEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CategoryEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\CategoryEntityConfig.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAAACIAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:51:59.058Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddressEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AddressEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AddressEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AddressEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\AddressEntityConfig.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAqwCgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-27T05:06:08.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Category.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Entities\\Category.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Entities\\Category.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Entities\\Category.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA8AAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:18:38.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "SkillEntityConfig.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\SkillEntityConfig.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\SkillEntityConfig.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\EntityConfigs\\SkillEntityConfig.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\EntityConfigs\\SkillEntityConfig.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAqwCgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:02:59.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20240428193023_init.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428193023_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:30:23.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "20240428192921_init.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428192921_init.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:29:21.402Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20240428191634_init.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs",
+              "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs",
+              "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\Migrations\\20240428191634_init.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T19:16:35.002Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "WorkExperience.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Enums\\WorkExperience.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-28T18:31:32.497Z"
             }
           ]
         }

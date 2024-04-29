@@ -26,18 +26,18 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(c => c.LastName)
                 .HasMaxLength(50)
                 .IsRequired();
-            builder
-                .Property(c => c.Email)
-                .HasMaxLength(100)
-                .IsRequired();
-            builder
-                .Property(c => c.Password)
-                .HasMaxLength(100)
-                .IsRequired();
-            builder
-                .Property(c => c.ConfirmPassword)
-                .HasMaxLength(100)
-                .IsRequired();
+            //builder
+            //    .Property(c => c.Email)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
+            //builder
+            //    .Property(c => c.Password)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
+            //builder
+            //    .Property(c => c.ConfirmPassword)
+            //    .HasMaxLength(100)
+            //    .IsRequired();
             builder
                 .Property(c => c.PhoneNumber)
                 .HasMaxLength(11)
@@ -45,22 +45,35 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             builder
                 .Property(c => c.ProfileImage)
                 .HasMaxLength(4000);
+            builder
+                .Property(c => c.SignUpDate)
+                .IsRequired();
+            builder
+                .Property(c => c.IsDeleted)
+                .IsRequired();
+            builder
+                .Property(c => c.IsConfirmed)
+                .IsRequired();
 
             builder
                 .HasOne(c => c.Admin)
-                .WithMany(a => a.Customers);
+                .WithMany(a => a.Customers)
+                .OnDelete(DeleteBehavior.Restrict);
             builder
-                .HasMany(c => c.SubmittedComments)
-                .WithOne(sc => sc.Customer);
-            builder
-                .HasMany(c => c.ReceivedComments)
-                .WithOne(rc => rc.Customer);
+                .HasMany(c => c.Comments)
+                .WithOne(c => c.Customer)
+                .HasForeignKey(c => c.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasMany(c => c.Addresses)
-                .WithOne(a => a.Customer);
+                .WithOne(a => a.Customer)
+                .HasForeignKey(a => a.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasMany(c => c.ServiceRequests)
-                .WithOne(sr => sr.Customer);
+                .WithOne(sr => sr.Customer)
+                .HasForeignKey(sr => sr.CustomerId)
+                .OnDelete(DeleteBehavior.Restrict);
         }
     }
 }
