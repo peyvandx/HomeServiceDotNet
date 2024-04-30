@@ -35,6 +35,9 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("bit");
+
                     b.Property<string>("LastName")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -72,7 +75,10 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int?>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("ExpertId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsDeleted")
@@ -122,6 +128,256 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasIndex("ProvinceId");
 
                     b.ToTable("Cities");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7297),
+                            IsDeleted = false,
+                            Name = "آذربایجان شرقی",
+                            ProvinceId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7311),
+                            IsDeleted = false,
+                            Name = "آذربایجان غربی",
+                            ProvinceId = 2
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7314),
+                            IsDeleted = false,
+                            Name = "اردبیل",
+                            ProvinceId = 3
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7316),
+                            IsDeleted = false,
+                            Name = "اصفهان",
+                            ProvinceId = 4
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7318),
+                            IsDeleted = false,
+                            Name = "البرز",
+                            ProvinceId = 5
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7320),
+                            IsDeleted = false,
+                            Name = "ایلام",
+                            ProvinceId = 6
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7322),
+                            IsDeleted = false,
+                            Name = "بوشهر",
+                            ProvinceId = 7
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7324),
+                            IsDeleted = false,
+                            Name = "تهران",
+                            ProvinceId = 8
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7326),
+                            IsDeleted = false,
+                            Name = "چهارمحال و بختیاری",
+                            ProvinceId = 9
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7327),
+                            IsDeleted = false,
+                            Name = "خراسان جنوبی",
+                            ProvinceId = 10
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7329),
+                            IsDeleted = false,
+                            Name = "خراسان رضوی",
+                            ProvinceId = 11
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7331),
+                            IsDeleted = false,
+                            Name = "خراسان شمالی",
+                            ProvinceId = 12
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7333),
+                            IsDeleted = false,
+                            Name = "خوزستان",
+                            ProvinceId = 13
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7335),
+                            IsDeleted = false,
+                            Name = "زنجان",
+                            ProvinceId = 14
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7387),
+                            IsDeleted = false,
+                            Name = "سمنان",
+                            ProvinceId = 15
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7390),
+                            IsDeleted = false,
+                            Name = "سیستان و بلوچستان",
+                            ProvinceId = 16
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7392),
+                            IsDeleted = false,
+                            Name = "فارس",
+                            ProvinceId = 17
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7394),
+                            IsDeleted = false,
+                            Name = "قزوین",
+                            ProvinceId = 18
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7396),
+                            IsDeleted = false,
+                            Name = "قم",
+                            ProvinceId = 19
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7398),
+                            IsDeleted = false,
+                            Name = "کردستان",
+                            ProvinceId = 20
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7400),
+                            IsDeleted = false,
+                            Name = "کرمان",
+                            ProvinceId = 21
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7401),
+                            IsDeleted = false,
+                            Name = "کرمانشاه",
+                            ProvinceId = 22
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7403),
+                            IsDeleted = false,
+                            Name = "کهگیلویه و بویراحمد",
+                            ProvinceId = 23
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7405),
+                            IsDeleted = false,
+                            Name = "گلستان",
+                            ProvinceId = 24
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7408),
+                            IsDeleted = false,
+                            Name = "گیلان",
+                            ProvinceId = 25
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7410),
+                            IsDeleted = false,
+                            Name = "لرستان",
+                            ProvinceId = 26
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7411),
+                            IsDeleted = false,
+                            Name = "مازندران",
+                            ProvinceId = 27
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7413),
+                            IsDeleted = false,
+                            Name = "مرکزی",
+                            ProvinceId = 28
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7415),
+                            IsDeleted = false,
+                            Name = "هرمزگان",
+                            ProvinceId = 29
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7417),
+                            IsDeleted = false,
+                            Name = "همدان",
+                            ProvinceId = 30
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7419),
+                            IsDeleted = false,
+                            Name = "یزد",
+                            ProvinceId = 31
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Comment", b =>
@@ -138,7 +394,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("CustomerId")
+                    b.Property<int?>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -146,7 +402,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
-                    b.Property<int>("ExpertId")
+                    b.Property<int?>("ExpertId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsConfirmed")
@@ -202,7 +458,6 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("ProfileImage")
-                        .IsRequired()
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
@@ -238,6 +493,225 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Provinces");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7976),
+                            IsDeleted = false,
+                            Name = "آذربایجان شرقی"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7988),
+                            IsDeleted = false,
+                            Name = "آذربایجان غربی"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7990),
+                            IsDeleted = false,
+                            Name = "اردبیل"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7992),
+                            IsDeleted = false,
+                            Name = "اصفهان"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7994),
+                            IsDeleted = false,
+                            Name = "البرز"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7996),
+                            IsDeleted = false,
+                            Name = "ایلام"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7997),
+                            IsDeleted = false,
+                            Name = "بوشهر"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7999),
+                            IsDeleted = false,
+                            Name = "تهران"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8001),
+                            IsDeleted = false,
+                            Name = "چهارمحال و بختیاری"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8003),
+                            IsDeleted = false,
+                            Name = "خراسان جنوبی"
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8005),
+                            IsDeleted = false,
+                            Name = "خراسان رضوی"
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8007),
+                            IsDeleted = false,
+                            Name = "خراسان شمالی"
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8009),
+                            IsDeleted = false,
+                            Name = "خوزستان"
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8010),
+                            IsDeleted = false,
+                            Name = "زنجان"
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8012),
+                            IsDeleted = false,
+                            Name = "سمنان"
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8014),
+                            IsDeleted = false,
+                            Name = "سیستان و بلوچستان"
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8016),
+                            IsDeleted = false,
+                            Name = "فارس"
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8018),
+                            IsDeleted = false,
+                            Name = "قزوین"
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8020),
+                            IsDeleted = false,
+                            Name = "قم"
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8022),
+                            IsDeleted = false,
+                            Name = "کردستان"
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8024),
+                            IsDeleted = false,
+                            Name = "کرمان"
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8025),
+                            IsDeleted = false,
+                            Name = "کرمانشاه"
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8027),
+                            IsDeleted = false,
+                            Name = "کهگیلویه و بویراحمد"
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8029),
+                            IsDeleted = false,
+                            Name = "گلستان"
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8031),
+                            IsDeleted = false,
+                            Name = "گیلان"
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8033),
+                            IsDeleted = false,
+                            Name = "لرستان"
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8035),
+                            IsDeleted = false,
+                            Name = "مازندران"
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8037),
+                            IsDeleted = false,
+                            Name = "مرکزی"
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8106),
+                            IsDeleted = false,
+                            Name = "هرمزگان"
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8109),
+                            IsDeleted = false,
+                            Name = "همدان"
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8111),
+                            IsDeleted = false,
+                            Name = "یزد"
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.ServiceRequest", b =>
@@ -320,6 +794,71 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8543),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "دکوراسیون ساختمان"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8584),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تاسیسات ساختمان"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8587),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "وسایل نقلیه"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8589),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اسباب کشی و باربری"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8591),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لوازم خانگی"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8594),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "خدمات اداری"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8596),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "دیجیتال و نرم افزار"
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Expert.Entities.Expert", b =>
@@ -458,6 +997,19 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasIndex("CategoryId");
 
                     b.ToTable("Services");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(434),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کاشی و سرامیک",
+                            WorkExperience = 0
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Expert.Entities.Skill", b =>
@@ -523,8 +1075,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasOne("App.Domain.Core.Customer.Entities.Customer", "Customer")
                         .WithMany("Addresses")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("City");
 
@@ -553,14 +1104,12 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasOne("App.Domain.Core.Customer.Entities.Customer", "Customer")
                         .WithMany("Comments")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("App.Domain.Core.Expert.Entities.Expert", "Expert")
                         .WithMany("Comments")
                         .HasForeignKey("ExpertId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Admin");
 
@@ -693,8 +1242,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Address", b =>
                 {
-                    b.Navigation("Expert")
-                        .IsRequired();
+                    b.Navigation("Expert");
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.City", b =>

@@ -33,6 +33,17 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             builder
                 .Property(c => c.IsDeleted)
                 .IsRequired();
+
+
+            builder.HasData(
+                new Category { Id = 1, Title = "دکوراسیون ساختمان", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 2, Title = "تاسیسات ساختمان", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 3, Title = "وسایل نقلیه", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 4, Title = "اسباب کشی و باربری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 5, Title = "لوازم خانگی", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 6, Title = "خدمات اداری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 7, Title = "دیجیتال و نرم افزار", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " }
+                );
         }
     }
 }

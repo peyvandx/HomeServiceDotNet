@@ -45,6 +45,11 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .WithMany(c => c.Services)
                 .HasForeignKey(s => s.CategoryId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+
+            builder.HasData(
+                new Service { Id = 1, Title = "کاشی و سرامیک", CategoryId = 1, Image = "", Description = "", CreatedAt = DateTime.Now, IsDeleted = false }
+                );
         }
     }
 }

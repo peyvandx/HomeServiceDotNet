@@ -15,7 +15,7 @@ namespace App.Domain.Core.Expert.Entities
         public string Image { get; set; }
         public string Description { get; set; }
         public DateTime CreatedAt { get; set; }
-        public WorkExperience WorkExperience { get; set; }
+        public WorkExperience WorkExperience { get; set; }// will be delete
         public bool IsDeleted { get; set; } = false;
         public int CategoryId { get; set; }
         public Category Category { get; set; }
