@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
+using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Customer.Services;
 using System;
 using System.Collections.Generic;
@@ -18,184 +19,184 @@ namespace App.Domain.AppServices.Customer
             _customerService = customerService;
         }
 
-        public void CreateAddress(AddressDto addressDto)
+        public Address CreateAddress(AddressDto addressDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateAddress(addressDto);
         }
 
-        public void CreateCity(CityDto cityDto)
+        public City CreateCity(CityDto cityDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateCity(cityDto);
         }
 
-        public void CreateComment(CommentDto commentDto)
+        public Comment CreateComment(CommentDto commentDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateComment(commentDto);
         }
 
-        public void CreateCustomer(CustomerDto customerDto)
+        public Core.Customer.Entities.Customer CreateCustomer(CustomerDto customerDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateCustomer(customerDto);
         }
 
-        public void CreateProvince(ProvinceDto provinceDto)
+        public Province CreateProvince(ProvinceDto provinceDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateProvince(provinceDto);
         }
 
-        public void CreateServiceRequest(ServiceRequestDto serviceRequestDto)
+        public ServiceRequest CreateServiceRequest(ServiceRequestDto serviceRequestDto)
         {
-            throw new NotImplementedException();
+            return _customerService.CreateServiceRequest(serviceRequestDto);
         }
 
-        public void GetAddressById(int addressId)
+        public Address GetAddressById(int addressId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetAddressById(addressId);
         }
 
-        public void GetAddresses()
+        public List<Address> GetAddresses()
         {
-            throw new NotImplementedException();
+            return _customerService.GetAddresses();
         }
 
-        public void GetCities()
+        public List<City> GetCities()
         {
-            throw new NotImplementedException();
+            return _customerService.GetCities();
         }
 
-        public void GetCityById(int cityId)
+        public City GetCityById(int cityId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetCityById(cityId);
         }
 
-        public void GetCommentById(int commentId)
+        public Comment GetCommentById(int commentId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetCommentById(commentId);
         }
 
-        public void GetComments()
+        public List<Comment> GetComments()
         {
-            throw new NotImplementedException();
+            return _customerService.GetComments();
         }
 
-        public void GetCustomerById(int customerId)
+        public Core.Customer.Entities.Customer GetCustomerById(int customerId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetCustomerById(customerId);
         }
 
-        public void GetCustomers()
+        public List<Core.Customer.Entities.Customer> GetCustomers()
         {
-            throw new NotImplementedException();
+            return _customerService.GetCustomers();
         }
 
-        public void GetProvinceById(int provinceId)
+        public Province GetProvinceById(int provinceId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetProvinceById(provinceId);
         }
 
-        public void GetProvinces()
+        public List<Province> GetProvinces()
         {
-            throw new NotImplementedException();
+            return _customerService.GetProvinces();
         }
 
-        public void GetServiceRequestById(int serviceId)
+        public ServiceRequest GetServiceRequestById(int serviceRequestId)
         {
-            throw new NotImplementedException();
+            return _customerService.GetServiceRequestById(serviceRequestId);
         }
 
-        public void GetServiceRequests()
+        public List<ServiceRequest> GetServiceRequests()
         {
-            throw new NotImplementedException();
+            return _customerService.GetServiceRequests();
         }
 
-        public void HardDeleteAddress(int addressId)
+        public Address HardDeleteAddress(int addressId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteAddress(addressId);
         }
 
-        public void HardDeleteCity(int cityId)
+        public City HardDeleteCity(int cityId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteCity(cityId);
         }
 
-        public void HardDeleteComment(int commentId)
+        public Comment HardDeleteComment(int commentId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteComment(commentId);
         }
 
-        public void HardDeleteCustomer(int customerId)
+        public Core.Customer.Entities.Customer HardDeleteCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteCustomer(customerId);
         }
 
-        public void HardDeleteProvince(int provinceId)
+        public Province HardDeleteProvince(int provinceId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteProvince(provinceId);
         }
 
-        public void HardDeleteServiceRequest(int serviceId)
+        public ServiceRequest HardDeleteServiceRequest(int serviceRequestId)
         {
-            throw new NotImplementedException();
+            return _customerService.HardDeleteServiceRequest(serviceRequestId);
         }
 
-        public void SoftDeleteAddress(int addressId)
+        public Address SoftDeleteAddress(int addressId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteAddress(addressId);
         }
 
-        public void SoftDeleteCity(int cityId)
+        public City SoftDeleteCity(int cityId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteCity(cityId);
         }
 
-        public void SoftDeleteComment(int commentId)
+        public Comment SoftDeleteComment(int commentId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteComment(commentId);
         }
 
-        public void SoftDeleteCustomer(int customerId)
+        public Core.Customer.Entities.Customer SoftDeleteCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteCustomer(customerId);
         }
 
-        public void SoftDeleteProvince(int provinceId)
+        public Province SoftDeleteProvince(int provinceId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteProvince(provinceId);
         }
 
-        public void SoftDeleteServiceRequest(int serviceId)
+        public ServiceRequest SoftDeleteServiceRequest(int serviceId)
         {
-            throw new NotImplementedException();
+            return _customerService.SoftDeleteServiceRequest(serviceId);
         }
 
-        public void UpdateAddress(AddressDto addressDto)
+        public Address UpdateAddress(AddressDto addressDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateAddress(addressDto);
         }
 
-        public void UpdateCity(CityDto cityDto)
+        public City UpdateCity(CityDto cityDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateCity(cityDto);
         }
 
-        public void UpdateComment(CommentDto commentDto)
+        public Comment UpdateComment(CommentDto commentDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateComment(commentDto);
         }
 
-        public void UpdateCustomer(CustomerDto customerDto)
+        public Core.Customer.Entities.Customer UpdateCustomer(CustomerDto customerDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateCustomer(customerDto);
         }
 
-        public void UpdateProvince(ProvinceDto provinceDto)
+        public Province UpdateProvince(ProvinceDto provinceDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateProvince(provinceDto);
         }
 
-        public void UpdateServiceRequest(ServiceRequestDto serviceRequestDto)
+        public ServiceRequest UpdateServiceRequest(ServiceRequestDto serviceRequestDto)
         {
-            throw new NotImplementedException();
+            return _customerService.UpdateServiceRequest(serviceRequestDto);
         }
     }
 }

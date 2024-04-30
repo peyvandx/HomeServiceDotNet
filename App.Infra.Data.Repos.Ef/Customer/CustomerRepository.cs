@@ -1,8 +1,11 @@
-﻿using App.Domain.Core.Customer.Data;
+﻿using App.Domain.Core.Admin.Entities;
+using App.Domain.Core.Customer.Data;
 using App.Domain.Core.Customer.DTOs;
+using App.Domain.Core.Customer.Entities;
 using App.Infra.Db.SqlServer.Ef.DbContext;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,184 +20,409 @@ namespace App.Infra.Data.Repos.Ef.Customer
         {
             _homeServiceDbContext = homeServiceDbContext;
         }
-        public void CreateAddress(AddressDto addressDto)
+
+        public Address CreateAddress(Address submittedAddress)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Addresses.Add(submittedAddress);
+            _homeServiceDbContext.SaveChanges();
+            return submittedAddress;
         }
 
-        public void CreateCity(CityDto cityDto)
+        public City CreateCity(City submittedCity)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Cities.Add(submittedCity);
+            _homeServiceDbContext.SaveChanges();
+            return submittedCity;
         }
 
-        public void CreateComment(CommentDto commentDto)
+        public Comment CreateComment(Comment submittedComment)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Comments.Add(submittedComment);
+            _homeServiceDbContext.SaveChanges();
+            return submittedComment;
         }
 
-        public void CreateCustomer(CustomerDto customerDto)
+        public Domain.Core.Customer.Entities.Customer CreateCustomer(Domain.Core.Customer.Entities.Customer signingUpCustomer)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Customers.Add(signingUpCustomer);
+            _homeServiceDbContext.SaveChanges();
+            return signingUpCustomer;
         }
 
-        public void CreateProvince(ProvinceDto provinceDto)
+        public Province CreateProvince(Province submittedProvince)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Provinces.Add(submittedProvince);
+            _homeServiceDbContext.SaveChanges();
+            return submittedProvince;
         }
 
-        public void CreateServiceRequest(ServiceRequestDto serviceRequestDto)
+        public ServiceRequest CreateServiceRequest(ServiceRequest submittedServiceRequest)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.ServiceRequests.Add(submittedServiceRequest);
+            _homeServiceDbContext.SaveChanges();
+            return submittedServiceRequest;
         }
 
-        public void GetAddressById(int addressId)
+        public Address GetAddressById(int addressId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Addresses.FirstOrDefault(a => a.Id == addressId);
         }
 
-        public void GetAddresses()
+        public List<Address> GetAddresses()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Addresses.ToList();
         }
 
-        public void GetCities()
+        public List<City> GetCities()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Cities.ToList();
         }
 
-        public void GetCityById(int cityId)
+        public City GetCityById(int cityId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Cities.FirstOrDefault(c => c.Id == cityId);
         }
 
-        public void GetCommentById(int commentId)
+        public Comment GetCommentById(int commentId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Comments.FirstOrDefault(c => c.Id == commentId);
         }
 
-        public void GetComments()
+        public List<Comment> GetComments()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Comments.ToList();
         }
 
-        public void GetCustomerById(int customerId)
+        public Domain.Core.Customer.Entities.Customer GetCustomerById(int customerId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Customers.FirstOrDefault(c => c.Id == customerId);
         }
 
-        public void GetCustomers()
+        public List<Domain.Core.Customer.Entities.Customer> GetCustomers()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Customers.ToList();
         }
 
-        public void GetProvinceById(int provinceId)
+        public Province GetProvinceById(int provinceId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Provinces.FirstOrDefault(p => p.Id == provinceId);
         }
 
-        public void GetProvinces()
+        public List<Province> GetProvinces()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Provinces.ToList();
         }
 
-        public void GetServiceRequestById(int serviceId)
+        public ServiceRequest GetServiceRequestById(int serviceRequestId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.ServiceRequests.FirstOrDefault(sr => sr.Id == serviceRequestId);
         }
 
-        public void GetServiceRequests()
+        public List<ServiceRequest> GetServiceRequests()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.ServiceRequests.ToList();
         }
 
-        public void HardDeleteAddress(int addressId)
+        public Address HardDeleteAddress(int addressId)
         {
-            throw new NotImplementedException();
+            var deletedAddress = GetAddressById(addressId);
+            if (deletedAddress != null)
+            {
+                deletedAddress.IsDeleted = true;
+                _homeServiceDbContext.Addresses.Remove(deletedAddress);
+                _homeServiceDbContext.SaveChanges();
+                return deletedAddress;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteCity(int cityId)
+        public City HardDeleteCity(int cityId)
         {
-            throw new NotImplementedException();
+            var deletedCity = GetCityById(cityId);
+            if (deletedCity != null)
+            {
+                deletedCity.IsDeleted = true;
+                _homeServiceDbContext.Cities.Remove(deletedCity);
+                _homeServiceDbContext.SaveChanges();
+                return deletedCity;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteComment(int commentId)
+        public Comment HardDeleteComment(int commentId)
         {
-            throw new NotImplementedException();
+            var deletedComment = GetCommentById(commentId);
+            if (deletedComment != null)
+            {
+                deletedComment.IsDeleted = true;
+                _homeServiceDbContext.Comments.Remove(deletedComment);
+                _homeServiceDbContext.SaveChanges();
+                return deletedComment;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteCustomer(int customerId)
+        public Domain.Core.Customer.Entities.Customer HardDeleteCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            var deletedCustomer = GetCustomerById(customerId);
+            if (deletedCustomer != null)
+            {
+                deletedCustomer.IsDeleted = true;
+                _homeServiceDbContext.Customers.Remove(deletedCustomer);
+                _homeServiceDbContext.SaveChanges();
+                return deletedCustomer;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteProvince(int provinceId)
+        public Province HardDeleteProvince(int provinceId)
         {
-            throw new NotImplementedException();
+            var deletedProvince = GetProvinceById(provinceId);
+            if (deletedProvince != null)
+            {
+                deletedProvince.IsDeleted = true;
+                _homeServiceDbContext.Provinces.Remove(deletedProvince);
+                _homeServiceDbContext.SaveChanges();
+                return deletedProvince;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteServiceRequest(int serviceId)
+        public ServiceRequest HardDeleteServiceRequest(int serviceRequestId)
         {
-            throw new NotImplementedException();
+            var deletedServiceRequest = GetServiceRequestById(serviceRequestId);
+            if (deletedServiceRequest != null)
+            {
+                deletedServiceRequest.IsDeleted = true;
+                _homeServiceDbContext.ServiceRequests.Remove(deletedServiceRequest);
+                _homeServiceDbContext.SaveChanges();
+                return deletedServiceRequest;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteAddress(int addressId)
+        public Address SoftDeleteAddress(int addressId)
         {
-            throw new NotImplementedException();
+            var deletedAddress = GetAddressById(addressId);
+            if (deletedAddress != null)
+            {
+                deletedAddress.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedAddress;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteCity(int cityId)
+        public City SoftDeleteCity(int cityId)
         {
-            throw new NotImplementedException();
+            var deletedCity = GetCityById(cityId);
+            if (deletedCity != null)
+            {
+                deletedCity.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedCity;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteComment(int commentId)
+        public Comment SoftDeleteComment(int commentId)
         {
-            throw new NotImplementedException();
+            var deletedComment = GetCommentById(commentId);
+            if (deletedComment != null)
+            {
+                deletedComment.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedComment;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteCustomer(int customerId)
+        public Domain.Core.Customer.Entities.Customer SoftDeleteCustomer(int customerId)
         {
-            throw new NotImplementedException();
+            var deletedCustomer = GetCustomerById(customerId);
+            if (deletedCustomer != null)
+            {
+                deletedCustomer.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedCustomer;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteProvince(int provinceId)
+        public Province SoftDeleteProvince(int provinceId)
         {
-            throw new NotImplementedException();
+            var deletedProvince = GetProvinceById(provinceId);
+            if (deletedProvince != null)
+            {
+                deletedProvince.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedProvince;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteServiceRequest(int serviceId)
+        public ServiceRequest SoftDeleteServiceRequest(int serviceRequestId)
         {
-            throw new NotImplementedException();
+            var deletedServiceRequest = GetServiceRequestById(serviceRequestId);
+            if (deletedServiceRequest != null)
+            {
+                deletedServiceRequest.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedServiceRequest;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateAddress(AddressDto addressDto)
+        public Address UpdateAddress(Address updatedAddress)
         {
-            throw new NotImplementedException();
+            var updatingAddress = GetAddressById(updatedAddress.Id);
+            if (updatingAddress != null)
+            {
+                updatingAddress.Street = updatedAddress.Street;
+                updatingAddress.PostalCode = updatedAddress.PostalCode;
+                updatingAddress.CityId = updatedAddress.CityId;
+                _homeServiceDbContext.SaveChanges();
+                return updatingAddress;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateCity(CityDto cityDto)
+        public City UpdateCity(City updatedCity)
         {
-            throw new NotImplementedException();
+            var updatingCity = GetCityById(updatedCity.Id);
+            if(updatingCity != null)
+            {
+                updatingCity.Name = updatedCity.Name;
+                updatingCity.ProvinceId = updatedCity.ProvinceId;
+                _homeServiceDbContext.SaveChanges();
+                return updatingCity;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateComment(CommentDto commentDto)
+        public Comment UpdateComment(Comment updatedComment)
         {
-            throw new NotImplementedException();
+            var updatingComment = GetCommentById(updatedComment.Id);
+            if (updatingComment != null)
+            {
+                updatingComment.Description = updatedComment.Description;
+                updatingComment.Rate = updatedComment.Rate;
+                _homeServiceDbContext.SaveChanges();
+                return updatingComment;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateCustomer(CustomerDto customerDto)
+        public Domain.Core.Customer.Entities.Customer UpdateCustomer(Domain.Core.Customer.Entities.Customer updatedCustomer)
         {
-            throw new NotImplementedException();
+            var updatingCustomer = GetCustomerById(updatedCustomer.Id);
+            if (updatingCustomer != null)
+            {
+                updatingCustomer.FirstName = updatedCustomer.FirstName;
+                updatingCustomer.LastName = updatingCustomer.LastName;
+                updatingCustomer.PhoneNumber = updatedCustomer.PhoneNumber;
+                updatingCustomer.ProfileImage = updatedCustomer.ProfileImage;
+                _homeServiceDbContext.SaveChanges();
+                return updatingCustomer;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateProvince(ProvinceDto provinceDto)
+        public Province UpdateProvince(Province updatedProvince)
         {
-            throw new NotImplementedException();
+            var updatingProvince = GetProvinceById(updatedProvince.Id);
+            if (updatingProvince != null)
+            {
+                updatingProvince.Name = updatedProvince.Name;
+                _homeServiceDbContext.SaveChanges();
+                return updatingProvince;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateServiceRequest(ServiceRequestDto serviceRequestDto)
+        public ServiceRequest UpdateServiceRequest(ServiceRequest updatedServiceRequest)
         {
-            throw new NotImplementedException();
+            var updatingServiceRequest = GetServiceRequestById(updatedServiceRequest.Id);
+            if (updatingServiceRequest != null)
+            {
+                updatingServiceRequest.CustomerDescription = updatedServiceRequest.CustomerDescription;
+                updatingServiceRequest.Price = updatedServiceRequest.Price;
+                _homeServiceDbContext.SaveChanges();
+                return updatingServiceRequest;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
     }
 }

@@ -12,7 +12,7 @@ namespace App.Domain.Core.Customer.Entities
         //public string Password { get; set; }
         //public string ConfirmPassword { get; set; }
         public string PhoneNumber { get; set; }
-        public string ProfileImage { get; set; }
+        public string? ProfileImage { get; set; }
         public bool IsDeleted { get; set; } = false;
         public bool IsConfirmed { get; set; } = false;
         public DateTime SignUpDate { get; set; }

@@ -9,11 +9,11 @@ namespace App.Domain.Core.Admin.Data
 {
     public interface IAdminRepository
     {
-        public void CreateAdmin(AdminDto adminDto);
-        public void GetAdminById(int adminId);
-        public void GetAdmins();
-        public void UpdateAdmin(AdminDto adminDto);
-        public void SoftDeleteAdmin(int adminId);
-        public void HardDeleteAdmin(int adminId);
+        public Admin.Entities.Admin CreateAdmin(Admin.Entities.Admin signingUpAdmin);
+        public Admin.Entities.Admin GetAdminById(int adminId);
+        public List<Admin.Entities.Admin> GetAdmins();
+        public Admin.Entities.Admin UpdateAdmin(Admin.Entities.Admin updatingAdmin);
+        public Admin.Entities.Admin SoftDeleteAdmin(int adminId);
+        public Admin.Entities.Admin HardDeleteAdmin(int adminId);
     }
 }

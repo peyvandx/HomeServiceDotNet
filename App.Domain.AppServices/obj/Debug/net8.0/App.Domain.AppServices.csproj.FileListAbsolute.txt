@@ -9,3 +9,7 @@ E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\A
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\refint\App.Domain.AppServices.dll
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\App.Domain.AppServices.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\ref\App.Domain.AppServices.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\bin\Debug\net8.0\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\bin\Debug\net8.0\App.Domain.Core.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\App.Domain.AppServices.csproj.AssemblyReference.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.AppServices\obj\Debug\net8.0\App.Doma.0BF5E7BD.Up2Date

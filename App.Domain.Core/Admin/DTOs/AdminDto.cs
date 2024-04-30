@@ -14,7 +14,7 @@ namespace App.Domain.Core.Admin.DTOs
         //public string Email { get; set; }
         //public string Password { get; set; }
         //public string ConfirmPassword { get; set; }
-        public DateTime SignUpDate { get; set; }
+        //public DateTime SignUpDate { get; set; }
         public string PhoneNumber { get; set; }
         public string ProfileImage { get; set; }
     }

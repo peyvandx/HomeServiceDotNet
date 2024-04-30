@@ -17,34 +17,43 @@ namespace App.Domain.Services.Admin
         {
             _adminRepository = adminRepository;
         }
-        public void CreateAdmin(AdminDto adminDto)
+        public Core.Admin.Entities.Admin CreateAdmin(Core.Admin.DTOs.AdminDto adminDto)
         {
-            throw new NotImplementedException();
+            var signingUpAdmin = new Core.Admin.Entities.Admin();
+            signingUpAdmin.FirstName = adminDto.FirstName;
+            signingUpAdmin.LastName = adminDto.LastName;
+            signingUpAdmin.PhoneNumber = adminDto.PhoneNumber;
+            signingUpAdmin.SignUpDate = DateTime.Now;
+            return _adminRepository.CreateAdmin(signingUpAdmin);
         }
 
-        public void GetAdminById(int adminId)
+        public Core.Admin.Entities.Admin GetAdminById(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminRepository.GetAdminById(adminId);
         }
 
-        public void GetAdmins()
+        public List<Core.Admin.Entities.Admin> GetAdmins()
         {
-            throw new NotImplementedException();
+            return _adminRepository.GetAdmins();
         }
 
-        public void HardDeleteAdmin(int adminId)
+        public Core.Admin.Entities.Admin HardDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminRepository.HardDeleteAdmin(adminId);
         }
 
-        public void SoftDeleteAdmin(int adminId)
+        public Core.Admin.Entities.Admin SoftDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminRepository.SoftDeleteAdmin(adminId);
         }
 
-        public void UpdateAdmin(AdminDto adminDto)
+        public Core.Admin.Entities.Admin UpdateAdmin(Core.Admin.DTOs.AdminDto adminDto)
         {
-            throw new NotImplementedException();
+            var updatingAdmin = new Core.Admin.Entities.Admin();
+            updatingAdmin.FirstName = adminDto.FirstName;
+            updatingAdmin.LastName = adminDto.LastName;
+            updatingAdmin.PhoneNumber = adminDto.PhoneNumber;
+            return _adminRepository.UpdateAdmin(updatingAdmin);
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Admin.Data;
 using App.Domain.Core.Admin.DTOs;
 using App.Infra.Db.SqlServer.Ef.DbContext;
+using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,34 +18,71 @@ namespace App.Infra.Data.Repos.Ef.Admin
         {
             _homeServiceDbContext = homeServiceDbContext;
         }
-        public void CreateAdmin(AdminDto adminDto)
+        public Domain.Core.Admin.Entities.Admin CreateAdmin(Domain.Core.Admin.Entities.Admin signingUpAdmin)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Admins.Add(signingUpAdmin);
+            _homeServiceDbContext.SaveChanges();
+            return signingUpAdmin;
         }
 
-        public void GetAdminById(int adminId)
+        public Domain.Core.Admin.Entities.Admin GetAdminById(int adminId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Admins.FirstOrDefault(a => a.Id == adminId);
         }
 
-        public void GetAdmins()
+        public List<Domain.Core.Admin.Entities.Admin> GetAdmins()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Admins.ToList();
         }
 
-        public void HardDeleteAdmin(int adminId)
+        public Domain.Core.Admin.Entities.Admin HardDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            var deletedAdmin = GetAdminById(adminId);
+            if (deletedAdmin != null)
+            {
+                deletedAdmin.IsDeleted = true;
+                _homeServiceDbContext.Admins.Remove(deletedAdmin);
+                _homeServiceDbContext.SaveChanges();
+                return deletedAdmin;
+            }else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteAdmin(int adminId)
+        public Domain.Core.Admin.Entities.Admin SoftDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            var deletedAdmin = GetAdminById(adminId);
+            if (deletedAdmin != null)
+            {
+                deletedAdmin.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedAdmin;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateAdmin(AdminDto adminDto)
+        public Domain.Core.Admin.Entities.Admin UpdateAdmin(Domain.Core.Admin.Entities.Admin updatedAdmin)
         {
-            throw new NotImplementedException();
+            var updatingAdmin = GetAdminById(updatedAdmin.Id);
+            if (updatingAdmin != null)
+            {
+                updatingAdmin.FirstName = updatedAdmin.FirstName;
+                updatingAdmin.LastName = updatedAdmin.LastName;
+                updatingAdmin.PhoneNumber = updatedAdmin.PhoneNumber;
+                _homeServiceDbContext.SaveChanges();
+                return updatingAdmin;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
     }
 }

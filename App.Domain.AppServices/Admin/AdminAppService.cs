@@ -17,34 +17,34 @@ namespace App.Domain.AppServices.Admin
         {
             _adminService = adminService;
         }
-        public void CreateAdmin(AdminDto adminDto)
+        public Core.Admin.Entities.Admin CreateAdmin(Core.Admin.DTOs.AdminDto adminDto)
         {
-            throw new NotImplementedException();
+            return _adminService.CreateAdmin(adminDto);
         }
 
-        public void GetAdminById(int adminId)
+        public Core.Admin.Entities.Admin GetAdminById(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminService.GetAdminById(adminId);
         }
 
-        public void GetAdmins()
+        public List<Core.Admin.Entities.Admin> GetAdmins()
         {
-            throw new NotImplementedException();
+            return _adminService.GetAdmins();
         }
 
-        public void HardDeleteAdmin(int adminId)
+        public Core.Admin.Entities.Admin HardDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminService.HardDeleteAdmin(adminId);
         }
 
-        public void SoftDeleteAdmin(int adminId)
+        public Core.Admin.Entities.Admin SoftDeleteAdmin(int adminId)
         {
-            throw new NotImplementedException();
+            return _adminService.HardDeleteAdmin(adminId);
         }
 
-        public void UpdateAdmin(AdminDto adminDto)
+        public Core.Admin.Entities.Admin UpdateAdmin(Core.Admin.DTOs.AdminDto adminDto)
         {
-            throw new NotImplementedException();
+            return _adminService.UpdateAdmin(adminDto);
         }
     }
 }
