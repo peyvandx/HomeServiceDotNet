@@ -3,28 +3,44 @@
   "WorkspaceRootPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F397AF71-4663-4F34-AF05-5D4617D5BF7E}|App.Domain.AppServices\\App.Domain.AppServices.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.appservices\\customer\\customerappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F397AF71-4663-4F34-AF05-5D4617D5BF7E}|App.Domain.AppServices\\App.Domain.AppServices.csproj|solutionrelative:app.domain.appservices\\customer\\customerappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F397AF71-4663-4F34-AF05-5D4617D5BF7E}|App.Domain.AppServices\\App.Domain.AppServices.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.appservices\\expert\\expertappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F397AF71-4663-4F34-AF05-5D4617D5BF7E}|App.Domain.AppServices\\App.Domain.AppServices.csproj|solutionrelative:app.domain.appservices\\expert\\expertappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.services\\expert\\expertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|solutionrelative:app.domain.services\\expert\\expertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.data.repos.ef\\expert\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|solutionrelative:app.infra.data.repos.ef\\expert\\expertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.services\\customer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|solutionrelative:app.domain.services\\customer\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.data.repos.ef\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|solutionrelative:app.infra.data.repos.ef\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.data.repos.ef\\customer\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|solutionrelative:app.infra.data.repos.ef\\customer\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\data\\iexpertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\data\\iexpertrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\data\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\data\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\dtos\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\customer\\dtos\\servicerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\services\\iexpertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\services\\iexpertservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.data.repos.ef\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|solutionrelative:app.infra.data.repos.ef\\admin\\adminrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\expert\\appservices\\iexpertappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|solutionrelative:app.domain.core\\expert\\appservices\\iexpertappservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BCCBEB0D-23D3-4412-897D-BC36C5577659}|App.Domain.Core\\App.Domain.Core.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.core\\customer\\services\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,111 +58,156 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ServiceRequestDto.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\DTOs\\ServiceRequestDto.cs",
-              "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\DTOs\\ServiceRequestDto.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\DTOs\\ServiceRequestDto.cs",
-              "RelativeToolTip": "App.Domain.Core\\Customer\\DTOs\\ServiceRequestDto.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "ExpertRepository.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Expert\\ExpertRepository.cs",
+              "RelativeDocumentMoniker": "App.Infra.Data.Repos.Ef\\Expert\\ExpertRepository.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Expert\\ExpertRepository.cs",
+              "RelativeToolTip": "App.Infra.Data.Repos.Ef\\Expert\\ExpertRepository.cs",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAYwG0BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T10:39:29.018Z",
+              "WhenOpened": "2024-04-30T11:05:39.066Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "ExpertService.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Expert\\ExpertService.cs",
+              "RelativeDocumentMoniker": "App.Domain.Services\\Expert\\ExpertService.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Expert\\ExpertService.cs",
+              "RelativeToolTip": "App.Domain.Services\\Expert\\ExpertService.cs",
+              "ViewState": "AQIAANIAAAAAAAAAAAAYwOEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:05:20.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ExpertAppService.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\Expert\\ExpertAppService.cs",
+              "RelativeDocumentMoniker": "App.Domain.AppServices\\Expert\\ExpertAppService.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\Expert\\ExpertAppService.cs",
+              "RelativeToolTip": "App.Domain.AppServices\\Expert\\ExpertAppService.cs",
+              "ViewState": "AQIAAJ8AAAAAAAAAAAAswKwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T11:04:52.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IExpertRepository.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Data\\IExpertRepository.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Data\\IExpertRepository.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Data\\IExpertRepository.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Data\\IExpertRepository.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAqwCQAAABhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T10:58:27.454Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IExpertService.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Services\\IExpertService.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\Services\\IExpertService.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\Services\\IExpertService.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\Services\\IExpertService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T10:58:10.773Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IExpertAppService.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\AppServices\\IExpertAppService.cs",
+              "RelativeDocumentMoniker": "App.Domain.Core\\Expert\\AppServices\\IExpertAppService.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Expert\\AppServices\\IExpertAppService.cs",
+              "RelativeToolTip": "App.Domain.Core\\Expert\\AppServices\\IExpertAppService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-30T10:52:55.831Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "AdminRepository.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Admin\\AdminRepository.cs",
               "RelativeDocumentMoniker": "App.Infra.Data.Repos.Ef\\Admin\\AdminRepository.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Admin\\AdminRepository.cs",
               "RelativeToolTip": "App.Infra.Data.Repos.Ef\\Admin\\AdminRepository.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAmwFQAAAANAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAcwEgAAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T09:14:06.723Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "CustomerRepository.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Customer\\CustomerRepository.cs",
               "RelativeDocumentMoniker": "App.Infra.Data.Repos.Ef\\Customer\\CustomerRepository.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Customer\\CustomerRepository.cs",
               "RelativeToolTip": "App.Infra.Data.Repos.Ef\\Customer\\CustomerRepository.cs",
-              "ViewState": "AQIAAIABAAAAAAAAAAAswKgBAAANAAAA",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAAwE8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:42:21.906Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T07:42:21.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "CustomerService.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Customer\\CustomerService.cs",
               "RelativeDocumentMoniker": "App.Domain.Services\\Customer\\CustomerService.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Customer\\CustomerService.cs",
               "RelativeToolTip": "App.Domain.Services\\Customer\\CustomerService.cs",
-              "ViewState": "AQIAAPAAAAAAAAAAAAAIwAABAABTAAAA",
+              "ViewState": "AQIAAN8AAAAAAAAAAAAowAABAABTAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-30T07:32:20.351Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CustomerAppService.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\Customer\\CustomerAppService.cs",
-              "RelativeDocumentMoniker": "App.Domain.AppServices\\Customer\\CustomerAppService.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\Customer\\CustomerAppService.cs",
-              "RelativeToolTip": "App.Domain.AppServices\\Customer\\CustomerAppService.cs",
-              "ViewState": "AQIAALwAAAAAAAAAAAAiwMoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:32:15.617Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "ICustomerRepository.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Data\\ICustomerRepository.cs",
               "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Data\\ICustomerRepository.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Data\\ICustomerRepository.cs",
               "RelativeToolTip": "App.Domain.Core\\Customer\\Data\\ICustomerRepository.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAADwvzIAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwA0AAABlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:10:22.253Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T07:10:22.253Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "ICustomerService.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Services\\ICustomerService.cs",
               "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\Services\\ICustomerService.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\Services\\ICustomerService.cs",
               "RelativeToolTip": "App.Domain.Core\\Customer\\Services\\ICustomerService.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAC4AAAA/AAAA",
+              "ViewState": "AQIAACQAAAAAAAAAAAAzwC4AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:10:17.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T07:10:17.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "ICustomerAppService.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\AppServices\\ICustomerAppService.cs",
               "RelativeDocumentMoniker": "App.Domain.Core\\Customer\\AppServices\\ICustomerAppService.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\Customer\\AppServices\\ICustomerAppService.cs",
               "RelativeToolTip": "App.Domain.Core\\Customer\\AppServices\\ICustomerAppService.cs",
-              "ViewState": "AQIAAAIAAAAAAAAAAAAqwAYAAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-30T07:09:42.4Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-30T07:09:42.4Z"
             }
           ]
         }

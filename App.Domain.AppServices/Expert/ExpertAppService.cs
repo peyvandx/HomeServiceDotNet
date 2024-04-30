@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
 using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
@@ -17,154 +18,155 @@ namespace App.Domain.AppServices.Expert
         {
             _expertService = expertService;
         }
-        public void CreateCategory(CategoryDto categoryDto)
+
+        public Category CreateCategory(CategoryDto categoryDto)
         {
-            throw new NotImplementedException();
+            return _expertService.CreateCategory(categoryDto);
         }
 
-        public void CreateExpert(ExpertDto expertDto)
+        public Core.Expert.Entities.Expert CreateExpert(ExpertDto expertDto)
         {
-            throw new NotImplementedException();
+            return _expertService.CreateExpert(expertDto);
         }
 
-        public void CreateProposal(ProposalDto proposalDto)
+        public Proposal CreateProposal(ProposalDto proposalDto)
         {
-            throw new NotImplementedException();
+            return _expertService.CreateProposal(proposalDto);
         }
 
-        public void CreateService(ServiceDto serviceDto)
+        public Service CreateService(ServiceDto serviceDto)
         {
-            throw new NotImplementedException();
+            return _expertService.CreateService(serviceDto);
         }
 
-        public void CreateSkill(SkillDto skillDto)
+        public Skill CreateSkill(SkillDto skillDto)
         {
-            throw new NotImplementedException();
+            return _expertService.CreateSkill(skillDto);
         }
 
-        public void GetCategories()
+        public List<Category> GetCategories()
         {
-            throw new NotImplementedException();
+            return _expertService.GetCategories();
         }
 
-        public void GetCategoryById(int categoryId)
+        public Category GetCategoryById(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertService.GetCategoryById(categoryId);
         }
 
-        public void GetExpertById(int expertId)
+        public Core.Expert.Entities.Expert GetExpertById(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertService.GetExpertById(expertId);
         }
 
-        public void GetExperts()
+        public List<Core.Expert.Entities.Expert> GetExperts()
         {
-            throw new NotImplementedException();
+            return _expertService.GetExperts();
         }
 
-        public void GetProposalById(int proposalId)
+        public Proposal GetProposalById(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertService.GetProposalById(proposalId);
         }
 
-        public void GetProposals()
+        public List<Proposal> GetProposals()
         {
-            throw new NotImplementedException();
+            return _expertService.GetProposals();
         }
 
-        public void GetServiceById(int serviceId)
+        public Service GetServiceById(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertService.GetServiceById(serviceId);
         }
 
-        public void GetServices()
+        public List<Service> GetServices()
         {
-            throw new NotImplementedException();
+            return _expertService.GetServices();
         }
 
-        public void GetSkillById(int skillId)
+        public Skill GetSkillById(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertService.GetSkillById(skillId);
         }
 
-        public void GetSkills()
+        public List<Skill> GetSkills()
         {
-            throw new NotImplementedException();
+            return _expertService.GetSkills();
         }
 
-        public void HardDeleteCategory(int categoryId)
+        public Category HardDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertService.HardDeleteCategory(categoryId);
         }
 
-        public void HardDeleteExpert(int expertId)
+        public Core.Expert.Entities.Expert HardDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertService.HardDeleteExpert(expertId);
         }
 
-        public void HardDeleteProposal(int proposalId)
+        public Proposal HardDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertService.HardDeleteProposal(proposalId);
         }
 
-        public void HardDeleteService(int serviceId)
+        public Service HardDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertService.HardDeleteService(serviceId);
         }
 
-        public void HardDeleteSkill(int skillId)
+        public Skill HardDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertService.HardDeleteSkill(skillId);
         }
 
-        public void SoftDeleteCategory(int categoryId)
+        public Category SoftDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertService.SoftDeleteCategory(categoryId);
         }
 
-        public void SoftDeleteExpert(int expertId)
+        public Core.Expert.Entities.Expert SoftDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertService.SoftDeleteExpert(expertId);
         }
 
-        public void SoftDeleteProposal(int proposalId)
+        public Proposal SoftDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertService.SoftDeleteProposal(proposalId);
         }
 
-        public void SoftDeleteService(int serviceId)
+        public Service SoftDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertService.SoftDeleteService(serviceId);
         }
 
-        public void SoftDeleteSkill(int skillId)
+        public Skill SoftDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertService.SoftDeleteSkill(skillId);
         }
 
-        public void UpdateCategory(CategoryDto categoryDto)
+        public Category UpdateCategory(CategoryDto categoryDto)
         {
-            throw new NotImplementedException();
+            return _expertService.UpdateCategory(categoryDto);
         }
 
-        public void UpdateExpert(ExpertDto expertDto)
+        public Core.Expert.Entities.Expert UpdateExpert(ExpertDto expertDto)
         {
-            throw new NotImplementedException();
+            return _expertService.UpdateExpert(expertDto);
         }
 
-        public void UpdateProposal(ProposalDto proposalDto)
+        public Proposal UpdateProposal(ProposalDto proposalDto)
         {
-            throw new NotImplementedException();
+            return _expertService.UpdateProposal(proposalDto);
         }
 
-        public void UpdateService(ServiceDto serviceDto)
+        public Service UpdateService(ServiceDto serviceDto)
         {
-            throw new NotImplementedException();
+            return _expertService.UpdateService(serviceDto);
         }
 
-        public void UpdateSkill(SkillDto skillDto)
+        public Skill UpdateSkill(SkillDto skillDto)
         {
-            throw new NotImplementedException();
+            return _expertService.UpdateSkill(skillDto);
         }
     }
 }

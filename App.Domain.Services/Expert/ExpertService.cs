@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.Expert.Data;
 using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
 using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
@@ -17,154 +18,208 @@ namespace App.Domain.Services.Expert
         {
             _expertRepository = expertRepository;
         }
-        public void CreateCategory(CategoryDto categoryDto)
+
+        public Category CreateCategory(CategoryDto categoryDto)
         {
-            throw new NotImplementedException();
+            var creatingCategory = new Category();
+            creatingCategory.CreatedAt = DateTime.Now;
+            creatingCategory.Title = categoryDto.Title;
+            creatingCategory.Description = categoryDto.Description;
+            creatingCategory.Image = categoryDto.Image;
+            return _expertRepository.CreateCategory(creatingCategory);
         }
 
-        public void CreateExpert(ExpertDto expertDto)
+        public Core.Expert.Entities.Expert CreateExpert(ExpertDto expertDto)
         {
-            throw new NotImplementedException();
+            var creatingExpert = new Core.Expert.Entities.Expert();
+            creatingExpert.SignUpDate = DateTime.Now;
+            creatingExpert.FirstName = expertDto.FirstName;
+            creatingExpert.LastName = expertDto.LastName;
+            creatingExpert.PhoneNumber = expertDto.PhoneNumber;
+            creatingExpert.ProfileImage = expertDto.ProfileImage;
+            creatingExpert.Age = expertDto.Age;
+            return _expertRepository.CreateExpert(creatingExpert);
         }
 
-        public void CreateProposal(ProposalDto proposalDto)
+        public Proposal CreateProposal(ProposalDto proposalDto)
         {
-            throw new NotImplementedException();
+            var creatingProposal = new Proposal();
+            creatingProposal.CreatedAt = DateTime.Now;
+            creatingProposal.ExpertDescription = proposalDto.ExpertDescription;
+            creatingProposal.SuggestedPrice = proposalDto.SuggestedPrice;
+            creatingProposal.ExpertId = proposalDto.ExpertId;
+            creatingProposal.ServiceRequestId = proposalDto.ServiceRequestId;
+            return _expertRepository.CreateProposal(creatingProposal);
         }
 
-        public void CreateService(ServiceDto serviceDto)
+        public Service CreateService(ServiceDto serviceDto)
         {
-            throw new NotImplementedException();
+            var creatingSevice = new Service();
+            creatingSevice.CreatedAt = DateTime.Now;
+            creatingSevice.Title = serviceDto.Title;
+            creatingSevice.Description = serviceDto.Description;
+            creatingSevice.Image = serviceDto.Image;
+            creatingSevice.WorkExperience = serviceDto.WorkExperience;
+            creatingSevice.CategoryId = serviceDto.CategoryId;
+            return _expertRepository.CreateService(creatingSevice);
         }
 
-        public void CreateSkill(SkillDto skillDto)
+        public Skill CreateSkill(SkillDto skillDto)
         {
-            throw new NotImplementedException();
+            var creatingSkill = new Skill();
+            creatingSkill.CreatedAt = DateTime.Now;
+            creatingSkill.Title = skillDto.Title;
+            creatingSkill.Description = skillDto.Description;
+            creatingSkill.SelfRate = skillDto.SelfRate;
+            creatingSkill.ExpertId = skillDto.ExpertId;
+            return _expertRepository.CreateSkill(creatingSkill);
         }
 
-        public void GetCategories()
+        public List<Category> GetCategories()
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetCategories();
         }
 
-        public void GetCategoryById(int categoryId)
+        public Category GetCategoryById(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetCategoryById(categoryId);
         }
 
-        public void GetExpertById(int expertId)
+        public Core.Expert.Entities.Expert GetExpertById(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetExpertById(expertId);
         }
 
-        public void GetExperts()
+        public List<Core.Expert.Entities.Expert> GetExperts()
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetExperts();
         }
 
-        public void GetProposalById(int proposalId)
+        public Proposal GetProposalById(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetProposalById(proposalId);
         }
 
-        public void GetProposals()
+        public List<Proposal> GetProposals()
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetProposals();
         }
 
-        public void GetServiceById(int serviceId)
+        public Service GetServiceById(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetServiceById(serviceId);
         }
 
-        public void GetServices()
+        public List<Service> GetServices()
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetServices();
         }
 
-        public void GetSkillById(int skillId)
+        public Skill GetSkillById(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetSkillById(skillId);
         }
 
-        public void GetSkills()
+        public List<Skill> GetSkills()
         {
-            throw new NotImplementedException();
+            return _expertRepository.GetSkills();
         }
 
-        public void HardDeleteCategory(int categoryId)
+        public Category HardDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.HardDeleteCategory(categoryId);
         }
 
-        public void HardDeleteExpert(int expertId)
+        public Core.Expert.Entities.Expert HardDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.HardDeleteExpert(expertId);
         }
 
-        public void HardDeleteProposal(int proposalId)
+        public Proposal HardDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.HardDeleteProposal(proposalId);
         }
 
-        public void HardDeleteService(int serviceId)
+        public Service HardDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.HardDeleteService(serviceId);
         }
 
-        public void HardDeleteSkill(int skillId)
+        public Skill HardDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.HardDeleteSkill(skillId);
         }
 
-        public void SoftDeleteCategory(int categoryId)
+        public Category SoftDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.SoftDeleteCategory(categoryId);
         }
 
-        public void SoftDeleteExpert(int expertId)
+        public Core.Expert.Entities.Expert SoftDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.SoftDeleteExpert(expertId);
         }
 
-        public void SoftDeleteProposal(int proposalId)
+        public Proposal SoftDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.SoftDeleteProposal(proposalId);
         }
 
-        public void SoftDeleteService(int serviceId)
+        public Service SoftDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.SoftDeleteService(serviceId);
         }
 
-        public void SoftDeleteSkill(int skillId)
+        public Skill SoftDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            return _expertRepository.SoftDeleteSkill(skillId);
         }
 
-        public void UpdateCategory(CategoryDto categoryDto)
+        public Category UpdateCategory(CategoryDto categoryDto)
         {
-            throw new NotImplementedException();
+            var updatedCategory = new Category();
+            updatedCategory.Title = categoryDto.Title;
+            updatedCategory.Description = categoryDto.Description;
+            updatedCategory.Image = categoryDto.Image;
+            return _expertRepository.UpdateCategory(updatedCategory);
         }
 
-        public void UpdateExpert(ExpertDto expertDto)
+        public Core.Expert.Entities.Expert UpdateExpert(ExpertDto expertDto)
         {
-            throw new NotImplementedException();
+            var updatedExpert = new Core.Expert.Entities.Expert();
+            updatedExpert.FirstName = expertDto.FirstName;
+            updatedExpert.LastName = expertDto.LastName;
+            updatedExpert.PhoneNumber = expertDto.PhoneNumber;
+            updatedExpert.ProfileImage = expertDto.ProfileImage;
+            updatedExpert.Age = expertDto.Age;
+            return _expertRepository.UpdateExpert(updatedExpert);
         }
 
-        public void UpdateProposal(ProposalDto proposalDto)
+        public Proposal UpdateProposal(ProposalDto proposalDto)
         {
-            throw new NotImplementedException();
+            var updatedProposal = new Proposal();
+            updatedProposal.ExpertDescription = proposalDto.ExpertDescription;
+            updatedProposal.SuggestedPrice = proposalDto.SuggestedPrice;
+            return _expertRepository.UpdateProposal(updatedProposal);
         }
 
-        public void UpdateService(ServiceDto serviceDto)
+        public Service UpdateService(ServiceDto serviceDto)
         {
-            throw new NotImplementedException();
+            var updatedService = new Service();
+            updatedService.Title = serviceDto.Title;
+            updatedService.Description = serviceDto.Description;
+            updatedService.Image = serviceDto.Image;
+            updatedService.WorkExperience = serviceDto.WorkExperience;
+            return _expertRepository.UpdateService(updatedService);
         }
 
-        public void UpdateSkill(SkillDto skillDto)
+        public Skill UpdateSkill(SkillDto skillDto)
         {
-            throw new NotImplementedException();
+            var updatedSkill = new Skill();
+            updatedSkill.Title = skillDto.Title;
+            updatedSkill.Description = skillDto.Description;
+            updatedSkill.SelfRate = skillDto.SelfRate;
+            return _expertRepository.UpdateSkill(updatedSkill);
         }
     }
 }

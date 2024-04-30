@@ -1,5 +1,7 @@
-﻿using App.Domain.Core.Expert.Data;
+﻿using App.Domain.Core.Admin.Entities;
+using App.Domain.Core.Expert.Data;
 using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
 using App.Infra.Db.SqlServer.Ef.DbContext;
 using System;
 using System.Collections.Generic;
@@ -17,154 +19,347 @@ namespace App.Infra.Data.Repos.Ef.Expert
         {
             _homeServiceDbContext = homeServiceDbContext;
         }
-        public void CreateCategory(CategoryDto categoryDto)
+
+        public Category CreateCategory(Category createdCategory)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Categories.Add(createdCategory);
+            _homeServiceDbContext.SaveChanges();
+            return createdCategory;
         }
 
-        public void CreateExpert(ExpertDto expertDto)
+        public Domain.Core.Expert.Entities.Expert CreateExpert(Domain.Core.Expert.Entities.Expert signingUpExpert)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Experts.Add(signingUpExpert);
+            _homeServiceDbContext.SaveChanges();
+            return signingUpExpert;
         }
 
-        public void CreateProposal(ProposalDto proposalDto)
+        public Proposal CreateProposal(Proposal submittedProposal)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Proposals.Add(submittedProposal);
+            _homeServiceDbContext.SaveChanges();
+            return submittedProposal;
         }
 
-        public void CreateService(ServiceDto serviceDto)
+        public Service CreateService(Service createdService)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Services.Add(createdService);
+            _homeServiceDbContext.SaveChanges();
+            return createdService;
         }
 
-        public void CreateSkill(SkillDto skillDto)
+        public Skill CreateSkill(Skill submittedSkill)
         {
-            throw new NotImplementedException();
+            _homeServiceDbContext.Skills.Add(submittedSkill);
+            _homeServiceDbContext.SaveChanges();
+            return submittedSkill;
         }
 
-        public void GetCategories()
+        public List<Category> GetCategories()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Categories.ToList();
         }
 
-        public void GetCategoryById(int categoryId)
+        public Category GetCategoryById(int categoryId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Categories.FirstOrDefault(c => c.Id == categoryId);
         }
 
-        public void GetExpertById(int expertId)
+        public Domain.Core.Expert.Entities.Expert GetExpertById(int expertId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Experts.FirstOrDefault(e => e.Id == expertId);
         }
 
-        public void GetExperts()
+        public List<Domain.Core.Expert.Entities.Expert> GetExperts()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Experts.ToList();
         }
 
-        public void GetProposalById(int proposalId)
+        public Proposal GetProposalById(int proposalId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Proposals.FirstOrDefault(p => p.Id == proposalId);
         }
 
-        public void GetProposals()
+        public List<Proposal> GetProposals()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Proposals.ToList();
         }
 
-        public void GetServiceById(int serviceId)
+        public Service GetServiceById(int serviceId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Services.FirstOrDefault(s => s.Id == serviceId);
         }
 
-        public void GetServices()
+        public List<Service> GetServices()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Services.ToList();
         }
 
-        public void GetSkillById(int skillId)
+        public Skill GetSkillById(int skillId)
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Skills.FirstOrDefault(s => s.Id == skillId);
         }
 
-        public void GetSkills()
+        public List<Skill> GetSkills()
         {
-            throw new NotImplementedException();
+            return _homeServiceDbContext.Skills.ToList();
         }
 
-        public void HardDeleteCategory(int categoryId)
+        public Category HardDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            var deletedCategory = GetCategoryById(categoryId);
+            if (deletedCategory != null)
+            {
+                deletedCategory.IsDeleted = true;
+                _homeServiceDbContext.Categories.Remove(deletedCategory);
+                _homeServiceDbContext.SaveChanges();
+                return deletedCategory;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteExpert(int expertId)
+        public Domain.Core.Expert.Entities.Expert HardDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            var deletedExpert = GetExpertById(expertId);
+            if (deletedExpert != null)
+            {
+                deletedExpert.IsDeleted = true;
+                _homeServiceDbContext.Experts.Remove(deletedExpert);
+                _homeServiceDbContext.SaveChanges();
+                return deletedExpert;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteProposal(int proposalId)
+        public Proposal HardDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            var deletedProposal = GetProposalById(proposalId);
+            if (deletedProposal != null)
+            {
+                deletedProposal.IsDeleted = true;
+                _homeServiceDbContext.Proposals.Remove(deletedProposal);
+                _homeServiceDbContext.SaveChanges();
+                return deletedProposal;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteService(int serviceId)
+        public Service HardDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            var deletedService = GetServiceById(serviceId);
+            if (deletedService != null)
+            {
+                deletedService.IsDeleted = true;
+                _homeServiceDbContext.Services.Remove(deletedService);
+                _homeServiceDbContext.SaveChanges();
+                return deletedService;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void HardDeleteSkill(int skillId)
+        public Skill HardDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            var deletedSkill = GetSkillById(skillId);
+            if (deletedSkill != null)
+            {
+                deletedSkill.IsDeleted = true;
+                _homeServiceDbContext.Skills.Remove(deletedSkill);
+                _homeServiceDbContext.SaveChanges();
+                return deletedSkill;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteCategory(int categoryId)
+        public Category SoftDeleteCategory(int categoryId)
         {
-            throw new NotImplementedException();
+            var deletedCategory = GetCategoryById(categoryId);
+            if (deletedCategory != null)
+            {
+                deletedCategory.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedCategory;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteExpert(int expertId)
+        public Domain.Core.Expert.Entities.Expert SoftDeleteExpert(int expertId)
         {
-            throw new NotImplementedException();
+            var deletedExpert = GetExpertById(expertId);
+            if (deletedExpert != null)
+            {
+                deletedExpert.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedExpert;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteProposal(int proposalId)
+        public Proposal SoftDeleteProposal(int proposalId)
         {
-            throw new NotImplementedException();
+            var deletedProposal = GetProposalById(proposalId);
+            if (deletedProposal != null)
+            {
+                deletedProposal.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedProposal;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteService(int serviceId)
+        public Service SoftDeleteService(int serviceId)
         {
-            throw new NotImplementedException();
+            var deletedService = GetServiceById(serviceId);
+            if (deletedService != null)
+            {
+                deletedService.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedService;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void SoftDeleteSkill(int skillId)
+        public Skill SoftDeleteSkill(int skillId)
         {
-            throw new NotImplementedException();
+            var deletedSkill = GetSkillById(skillId);
+            if (deletedSkill != null)
+            {
+                deletedSkill.IsDeleted = true;
+                _homeServiceDbContext.SaveChanges();
+                return deletedSkill;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateCategory(CategoryDto categoryDto)
+        public Category UpdateCategory(Category updatedCategory)
         {
-            throw new NotImplementedException();
+            var updatingCategory = GetCategoryById(updatedCategory.Id);
+            if (updatingCategory != null)
+            {
+                updatingCategory.Title = updatedCategory.Title;
+                updatingCategory.Description = updatedCategory.Description;
+                updatingCategory.Image = updatedCategory.Image;
+                _homeServiceDbContext.SaveChanges();
+                return updatingCategory;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateExpert(ExpertDto expertDto)
+        public Domain.Core.Expert.Entities.Expert UpdateExpert(Domain.Core.Expert.Entities.Expert updatedExpert)
         {
-            throw new NotImplementedException();
+            var updatingExpert = GetExpertById(updatedExpert.Id);
+            if (updatingExpert != null)
+            {
+                updatingExpert.FirstName = updatedExpert.FirstName;
+                updatingExpert.LastName = updatedExpert.LastName;
+                updatingExpert.PhoneNumber = updatedExpert.PhoneNumber;
+                updatingExpert.ProfileImage = updatedExpert.ProfileImage;
+                updatingExpert.Age = updatedExpert.Age;
+                _homeServiceDbContext.SaveChanges();
+                return updatingExpert;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateProposal(ProposalDto proposalDto)
+        public Proposal UpdateProposal(Proposal updatedProposal)
         {
-            throw new NotImplementedException();
+            var updatingProposal = GetProposalById(updatedProposal.Id);
+            if (updatingProposal != null)
+            {
+                updatingProposal.ExpertDescription = updatedProposal.ExpertDescription;
+                updatingProposal.SuggestedPrice = updatedProposal.SuggestedPrice;
+                _homeServiceDbContext.SaveChanges();
+                return updatingProposal;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateService(ServiceDto serviceDto)
+        public Service UpdateService(Service updatedService)
         {
-            throw new NotImplementedException();
+            var updatingService = GetServiceById(updatedService.Id);
+            if (updatingService != null)
+            {
+                updatingService.Title = updatedService.Title;
+                updatingService.Description = updatedService.Description;
+                updatingService.Image = updatedService.Image;
+                updatingService.WorkExperience = updatedService.WorkExperience;
+                _homeServiceDbContext.SaveChanges();
+                return updatingService;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
 
-        public void UpdateSkill(SkillDto skillDto)
+        public Skill UpdateSkill(Skill updatedSkill)
         {
-            throw new NotImplementedException();
+            var updatingSkill = GetSkillById(updatedSkill.Id);
+            if (updatingSkill != null)
+            {
+                updatingSkill.Title = updatedSkill.Title;
+                updatingSkill.Description = updatedSkill.Description;
+                updatingSkill.SelfRate = updatedSkill.SelfRate;
+                _homeServiceDbContext.SaveChanges();
+                return updatingSkill;
+            }
+            else
+            {
+                //throw an exception - will be implement!
+                throw new InvalidOperationException();
+            }
         }
     }
 }

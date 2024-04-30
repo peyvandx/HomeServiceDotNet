@@ -13,6 +13,7 @@ namespace App.Domain.Core.Expert.DTOs
         public string Description { get; set; }
         public int SelfRate { get; set; }
         public DateTime CreatedAt { get; set; }
-        public bool IsDeleted { get; set; } = false;
+        //public bool IsDeleted { get; set; } = false;
+        public int ExpertId { get; set; }
     }
 }

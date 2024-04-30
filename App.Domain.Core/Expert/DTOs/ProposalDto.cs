@@ -12,7 +12,9 @@ namespace App.Domain.Core.Expert.DTOs
         public string ExpertDescription { get; set; }
         public double SuggestedPrice { get; set; }
         public DateTime CreatedAt { get; set; }
-        public bool IsAccepted { get; set; } = false;
-        public bool IsDeleted { get; set; } = false;
+        //public bool IsAccepted { get; set; } = false;
+        //public bool IsDeleted { get; set; } = false;
+        public int ExpertId { get; set; }
+        public int ServiceRequestId { get; set; }
     }
 }
