@@ -15,9 +15,9 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
         {
             builder
                 .HasKey(s => s.Id);
-            builder
-                .Property(s => s.Id)
-                .IsRequired();
+            //builder
+            //    .Property(s => s.Id)
+            //    .IsRequired();
             builder
                 .Property(s => s.Title)
                 .HasMaxLength(50)

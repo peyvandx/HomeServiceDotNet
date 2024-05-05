@@ -15,3 +15,4 @@ E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\bin\Debug\net8.0\
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\bin\Debug\net8.0\App.Infra.Db.SqlServer.Ef.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.csproj.AssemblyReference.cache
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infr.B170AF2F.Up2Date
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Ef\obj\Debug\net8.0\App.Infra.Data.Repos.Ef.sourcelink.json

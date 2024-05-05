@@ -15,3 +15,4 @@ E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.genruntimeconfig.cache
 E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\ref\App.Infra.Db.SqlServer.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Db.SqlServer.Ef\obj\Debug\net8.0\App.Infra.Db.SqlServer.Ef.sourcelink.json

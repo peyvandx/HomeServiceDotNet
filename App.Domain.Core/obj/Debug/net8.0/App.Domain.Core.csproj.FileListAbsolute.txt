@@ -9,3 +9,4 @@ E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Doma
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\refint\App.Domain.Core.dll
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\ref\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Core\obj\Debug\net8.0\App.Domain.Core.sourcelink.json

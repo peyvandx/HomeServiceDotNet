@@ -21,7 +21,6 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfiguration(new AdminEntityConfig());
             modelBuilder.ApplyConfiguration(new  ExpertEntityConfig());
             modelBuilder.ApplyConfiguration(new CustomerEntityConfig());
@@ -34,6 +33,7 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
             modelBuilder.ApplyConfiguration(new SkillEntityConfig());
             modelBuilder.ApplyConfiguration(new CityEntityConfig());
             modelBuilder.ApplyConfiguration(new ProvinceEntityConfig());
+            base.OnModelCreating(modelBuilder);
         }
 
         public DbSet<Admin> Admins { get; set; }

@@ -13,3 +13,4 @@ E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Services\bin\Debug\net8.0\App.
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Services\bin\Debug\net8.0\App.Domain.Core.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Services\obj\Debug\net8.0\App.Domain.Services.csproj.AssemblyReference.cache
 E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Services\obj\Debug\net8.0\App.Doma.EF676C44.Up2Date
+E:\Maktab - 104 - CSharp\Final-Project\App.Domain.Services\obj\Debug\net8.0\App.Domain.Services.sourcelink.json
