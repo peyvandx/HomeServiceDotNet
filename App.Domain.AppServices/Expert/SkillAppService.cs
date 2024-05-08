@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +12,35 @@ namespace App.Domain.AppServices.Expert
 {
     public class SkillAppService : ISkillAppService
     {
-        public Task<Skill> CreateSkill(SkillDto skillDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly ISkillService _skillService;
+        #endregion
 
-        public Task<Skill> GetSkillById(int skillId, CancellationToken cancellationToken)
+        #region Ctors
+        public SkillAppService(ISkillService skillService)
         {
-            throw new NotImplementedException();
+            _skillService = skillService;
         }
+        #endregion
 
-        public Task<List<Skill>> GetSkills(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Skill> CreateSkill(SkillDto skillDto, CancellationToken cancellationToken)
+            => await _skillService.CreateSkill(skillDto, cancellationToken);
 
-        public Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Skill> GetSkillById(int skillId, CancellationToken cancellationToken)
+            => await _skillService.GetSkillById(skillId, cancellationToken);
 
-        public Task<Skill> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Skill>> GetSkills(CancellationToken cancellationToken)
+            => await _skillService.GetSkills(cancellationToken);
 
-        public Task<Skill> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
+            => await _skillService.HardDeleteSkill(skillId, cancellationToken);
+
+        public async Task<Skill> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
+            => await _skillService.SoftDeleteSkill(skillId, cancellationToken);
+
+        public async Task<Skill> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
+            => await _skillService.UpdateSkill(skillDto, cancellationToken);
+        #endregion
     }
 }

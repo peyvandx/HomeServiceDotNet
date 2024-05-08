@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
+using App.Domain.Core.Customer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +12,35 @@ namespace App.Domain.AppServices.Customer
 {
     public class ServiceRequestAppService : IServiceRequestAppService
     {
-        public Task<ServiceRequest> CreateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly IServiceRequestService _serviceRequestService;
+        #endregion
 
-        public Task<ServiceRequest> GetServiceRequestById(int serviceId, CancellationToken cancellationToken)
+        #region Ctors
+        public ServiceRequestAppService(IServiceRequestService serviceRequestService)
         {
-            throw new NotImplementedException();
+            _serviceRequestService = serviceRequestService;
         }
+        #endregion
 
-        public Task<List<ServiceRequest>> GetServiceRequests(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<ServiceRequest> CreateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
+            => await _serviceRequestService.CreateServiceRequest(serviceRequestDto, cancellationToken);
 
-        public Task<ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<ServiceRequest> GetServiceRequestById(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRequestService.GetServiceRequestById(serviceId, cancellationToken);
 
-        public Task<ServiceRequest> SoftDeleteServiceRequest(int serviceId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<ServiceRequest>> GetServiceRequests(CancellationToken cancellationToken)
+            => await _serviceRequestService.GetServiceRequests(cancellationToken);
 
-        public Task<ServiceRequest> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRequestService.HardDeleteServiceRequest(serviceId, cancellationToken);
+
+        public async Task<ServiceRequest> SoftDeleteServiceRequest(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRequestService.SoftDeleteServiceRequest(serviceId, cancellationToken);
+
+        public async Task<ServiceRequest> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
+            => await _serviceRequestService.UpdateServiceRequest(serviceRequestDto, cancellationToken);
+        #endregion
     }
 }

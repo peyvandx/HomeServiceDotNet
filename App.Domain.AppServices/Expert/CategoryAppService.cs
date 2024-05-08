@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +12,36 @@ namespace App.Domain.AppServices.Expert
 {
     public class CategoryAppService : ICategoryAppService
     {
-        public Task<Category> CreateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly ICategoryService _categoryService;
+        #endregion
 
-        public Task<List<Category>> GetCategories(CancellationToken cancellationToken)
+        #region Ctors
+        public CategoryAppService(ICategoryService categoryService)
         {
-            throw new NotImplementedException();
+            _categoryService = categoryService;
         }
+        #endregion
 
-        public Task<Category> GetCategoryById(int categoryId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Category> CreateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
+            => await _categoryService.CreateCategory(categoryDto, cancellationToken);
 
-        public Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Category>> GetCategories(CancellationToken cancellationToken)
+            => await _categoryService.GetCategories(cancellationToken);
 
-        public Task<Category> SoftDeleteCategory(int categoryId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Category> GetCategoryById(int categoryId, CancellationToken cancellationToken)
+            => await _categoryService.GetCategoryById(categoryId, cancellationToken);
 
-        public Task<Category> UpdateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
+            => await _categoryService.HardDeleteCategory(categoryId, cancellationToken);
+
+        public async Task<Category> SoftDeleteCategory(int categoryId, CancellationToken cancellationToken)
+            => await _categoryService.SoftDeleteCategory(categoryId, cancellationToken);
+
+        public async Task<Category> UpdateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
+            => await _categoryService.UpdateCategory(categoryDto, cancellationToken);
+
+        #endregion
     }
 }

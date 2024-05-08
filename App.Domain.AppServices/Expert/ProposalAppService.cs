@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +12,35 @@ namespace App.Domain.AppServices.Expert
 {
     public class ProposalAppService : IProposalAppService
     {
-        public Task<Proposal> CreateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly IProposalService _proposalService;
+        #endregion
 
-        public Task<Proposal> GetProposalById(int proposalId, CancellationToken cancellationToken)
+        #region Ctors
+        public ProposalAppService(IProposalService proposalService)
         {
-            throw new NotImplementedException();
+            _proposalService = proposalService;
         }
+        #endregion
 
-        public Task<List<Proposal>> GetProposals(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Proposal> CreateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
+            => await _proposalService.CreateProposal(proposalDto, cancellationToken);
 
-        public Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Proposal> GetProposalById(int proposalId, CancellationToken cancellationToken)
+            => await _proposalService.GetProposalById(proposalId, cancellationToken);
 
-        public Task<Proposal> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Proposal>> GetProposals(CancellationToken cancellationToken)
+            => await _proposalService.GetProposals(cancellationToken);
 
-        public Task<Proposal> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
+            => await _proposalService.HardDeleteProposal(proposalId, cancellationToken);
+
+        public async Task<Proposal> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
+            => await _proposalService.SoftDeleteProposal(proposalId, cancellationToken);
+
+        public async Task<Proposal> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
+            => await _proposalService.UpdateProposal(proposalDto, cancellationToken);
+        #endregion
     }
 }

@@ -12,41 +12,36 @@ namespace App.Domain.AppServices.Expert
 {
     public class ExpertAppService : IExpertAppService
     {
+        #region Fields
         private readonly IExpertService _expertService;
+        #endregion
 
+        #region Ctors
         public ExpertAppService(IExpertService expertService)
         {
             _expertService = expertService;
         }
+        #endregion
 
-        public Task<Core.Expert.Entities.Expert> CreateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Core.Expert.Entities.Expert> CreateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
+            => await _expertService.CreateExpert(expertDto, cancellationToken);
 
-        public Task<Core.Expert.Entities.Expert> GetExpertById(int expertId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Core.Expert.Entities.Expert> GetExpertById(int expertId, CancellationToken cancellationToken)
+            => await _expertService.GetExpertById(expertId, cancellationToken);
 
-        public Task<List<Core.Expert.Entities.Expert>> GetExperts(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Core.Expert.Entities.Expert>> GetExperts(CancellationToken cancellationToken)
+            => await _expertService.GetExperts(cancellationToken);
 
-        public Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
+            => await _expertService.HardDeleteExpert(expertId, cancellationToken);
 
-        public Task<Core.Expert.Entities.Expert> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Core.Expert.Entities.Expert> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
+            => await _expertService.SoftDeleteExpert(expertId, cancellationToken);
 
-        public Task<Core.Expert.Entities.Expert> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Core.Expert.Entities.Expert> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
+            => await _expertService.UpdateExpert(expertDto, cancellationToken);
+
+        #endregion
     }
 }

@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,34 +12,35 @@ namespace App.Domain.AppServices.Expert
 {
     public class ServiceAppService : IServiceAppService
     {
-        public Task<Service> CreateService(ServiceDto serviceDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly IServiceService _serviceService;
+        #endregion
 
-        public Task<Service> GetServiceById(int serviceId, CancellationToken cancellationToken)
+        #region Ctors
+        public ServiceAppService(IServiceService serviceService)
         {
-            throw new NotImplementedException();
+            _serviceService = serviceService;
         }
+        #endregion
 
-        public Task<List<Service>> GetServices(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Service> CreateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+            => await _serviceService.CreateService(serviceDto, cancellationToken);
 
-        public Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Service> GetServiceById(int serviceId, CancellationToken cancellationToken)
+            => await _serviceService.GetServiceById(serviceId, cancellationToken);
 
-        public Task<Service> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Service>> GetServices(CancellationToken cancellationToken)
+            => await _serviceService.GetServices(cancellationToken);
 
-        public Task<Service> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceService.HardDeleteService(serviceId, cancellationToken);
+
+        public async Task<Service> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceService.SoftDeleteService(serviceId, cancellationToken);
+
+        public async Task<Service> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+            => await _serviceService.UpdateService(serviceDto, cancellationToken);
+        #endregion
     }
 }

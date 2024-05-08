@@ -1,6 +1,7 @@
 ﻿using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
+using App.Domain.Core.Customer.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,35 +12,35 @@ namespace App.Domain.AppServices.Customer
 {
     public class AddressAppService : IAddressAppService
     {
-        public AddressAppService() { }
-        public Task<Address> CreateAddress(AddressDto addressDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Fields
+        private readonly IAddressService _addressService;
+        #endregion
 
-        public Task<Address> GetAddressById(int addressId, CancellationToken cancellationToken)
+        #region Ctors
+        public AddressAppService(IAddressService addressService)
         {
-            throw new NotImplementedException();
+            _addressService = addressService;
         }
+        #endregion
 
-        public Task<List<Address>> GetAddresses(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        #region Implementations
+        public async Task<Address> CreateAddress(AddressDto addressDto, CancellationToken cancellationToken)
+            => await _addressService.CreateAddress(addressDto, cancellationToken);
 
-        public Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Address> GetAddressById(int addressId, CancellationToken cancellationToken)
+            => await _addressService.GetAddressById(addressId, cancellationToken);
 
-        public Task<Address> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<List<Address>> GetAddresses(CancellationToken cancellationToken)
+            => await _addressService.GetAddresses(cancellationToken);
 
-        public Task<Address> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
+            => await _addressService.HardDeleteAddress(addressId, cancellationToken);
+
+        public async Task<Address> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
+            => await _addressService.SoftDeleteAddress(addressId, cancellationToken);
+
+        public async Task<Address> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
+            => await _addressService.UpdateAddress(addressDto, cancellationToken);
+        #endregion
     }
 }
