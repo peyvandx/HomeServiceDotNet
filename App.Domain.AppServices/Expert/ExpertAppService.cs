@@ -19,154 +19,34 @@ namespace App.Domain.AppServices.Expert
             _expertService = expertService;
         }
 
-        public Category CreateCategory(CategoryDto categoryDto)
+        public Task<Core.Expert.Entities.Expert> CreateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
         {
-            return _expertService.CreateCategory(categoryDto);
+            throw new NotImplementedException();
         }
 
-        public Core.Expert.Entities.Expert CreateExpert(ExpertDto expertDto)
+        public Task<Core.Expert.Entities.Expert> GetExpertById(int expertId, CancellationToken cancellationToken)
         {
-            return _expertService.CreateExpert(expertDto);
+            throw new NotImplementedException();
         }
 
-        public Proposal CreateProposal(ProposalDto proposalDto)
+        public Task<List<Core.Expert.Entities.Expert>> GetExperts(CancellationToken cancellationToken)
         {
-            return _expertService.CreateProposal(proposalDto);
+            throw new NotImplementedException();
         }
 
-        public Service CreateService(ServiceDto serviceDto)
+        public Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
         {
-            return _expertService.CreateService(serviceDto);
+            throw new NotImplementedException();
         }
 
-        public Skill CreateSkill(SkillDto skillDto)
+        public Task<Core.Expert.Entities.Expert> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
         {
-            return _expertService.CreateSkill(skillDto);
+            throw new NotImplementedException();
         }
 
-        public List<Category> GetCategories()
+        public Task<Core.Expert.Entities.Expert> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
         {
-            return _expertService.GetCategories();
-        }
-
-        public Category GetCategoryById(int categoryId)
-        {
-            return _expertService.GetCategoryById(categoryId);
-        }
-
-        public Core.Expert.Entities.Expert GetExpertById(int expertId)
-        {
-            return _expertService.GetExpertById(expertId);
-        }
-
-        public List<Core.Expert.Entities.Expert> GetExperts()
-        {
-            return _expertService.GetExperts();
-        }
-
-        public Proposal GetProposalById(int proposalId)
-        {
-            return _expertService.GetProposalById(proposalId);
-        }
-
-        public List<Proposal> GetProposals()
-        {
-            return _expertService.GetProposals();
-        }
-
-        public Service GetServiceById(int serviceId)
-        {
-            return _expertService.GetServiceById(serviceId);
-        }
-
-        public List<Service> GetServices()
-        {
-            return _expertService.GetServices();
-        }
-
-        public Skill GetSkillById(int skillId)
-        {
-            return _expertService.GetSkillById(skillId);
-        }
-
-        public List<Skill> GetSkills()
-        {
-            return _expertService.GetSkills();
-        }
-
-        public Category HardDeleteCategory(int categoryId)
-        {
-            return _expertService.HardDeleteCategory(categoryId);
-        }
-
-        public Core.Expert.Entities.Expert HardDeleteExpert(int expertId)
-        {
-            return _expertService.HardDeleteExpert(expertId);
-        }
-
-        public Proposal HardDeleteProposal(int proposalId)
-        {
-            return _expertService.HardDeleteProposal(proposalId);
-        }
-
-        public Service HardDeleteService(int serviceId)
-        {
-            return _expertService.HardDeleteService(serviceId);
-        }
-
-        public Skill HardDeleteSkill(int skillId)
-        {
-            return _expertService.HardDeleteSkill(skillId);
-        }
-
-        public Category SoftDeleteCategory(int categoryId)
-        {
-            return _expertService.SoftDeleteCategory(categoryId);
-        }
-
-        public Core.Expert.Entities.Expert SoftDeleteExpert(int expertId)
-        {
-            return _expertService.SoftDeleteExpert(expertId);
-        }
-
-        public Proposal SoftDeleteProposal(int proposalId)
-        {
-            return _expertService.SoftDeleteProposal(proposalId);
-        }
-
-        public Service SoftDeleteService(int serviceId)
-        {
-            return _expertService.SoftDeleteService(serviceId);
-        }
-
-        public Skill SoftDeleteSkill(int skillId)
-        {
-            return _expertService.SoftDeleteSkill(skillId);
-        }
-
-        public Category UpdateCategory(CategoryDto categoryDto)
-        {
-            return _expertService.UpdateCategory(categoryDto);
-        }
-
-        public Core.Expert.Entities.Expert UpdateExpert(ExpertDto expertDto)
-        {
-            return _expertService.UpdateExpert(expertDto);
-        }
-
-        public Proposal UpdateProposal(ProposalDto proposalDto)
-        {
-            return _expertService.UpdateProposal(proposalDto);
-        }
-
-        public Service UpdateService(ServiceDto serviceDto)
-        {
-            return _expertService.UpdateService(serviceDto);
-        }
-
-        public Skill UpdateSkill(SkillDto skillDto)
-        {
-            return _expertService.UpdateSkill(skillDto);
+            throw new NotImplementedException();
         }
     }
 }

@@ -1,0 +1,63 @@
+﻿using App.Domain.Core.Expert.Data;
+using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace App.Domain.Services.Expert
+{
+    public class ServiceService : IServiceService
+    {
+        #region Fields
+        private readonly IServiceRepository _serviceRepository;
+        #endregion
+
+        #region Ctors
+        public ServiceService(IServiceRepository serviceRepository)
+        {
+            _serviceRepository = serviceRepository;
+        }
+        #endregion
+
+        #region Implementations
+        public async Task<Service> CreateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+        {
+            var creatingSevice = new Service();
+            creatingSevice.CreatedAt = DateTime.Now;
+            creatingSevice.Title = serviceDto.Title;
+            creatingSevice.Description = serviceDto.Description;
+            creatingSevice.Image = serviceDto.Image;
+            creatingSevice.WorkExperience = serviceDto.WorkExperience;
+            creatingSevice.CategoryId = serviceDto.CategoryId;
+            return await _serviceRepository.CreateService(creatingSevice, cancellationToken);
+        }
+
+        public async Task<Service> GetServiceById(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRepository.GetServiceById(serviceId, cancellationToken);
+
+        public async Task<List<Service>> GetServices(CancellationToken cancellationToken)
+            => await _serviceRepository.GetServices(cancellationToken);
+
+        public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRepository.HardDeleteService(serviceId, cancellationToken);
+
+        public async Task<Service> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRepository.SoftDeleteService(serviceId, cancellationToken);
+
+        public async Task<Service> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+        {
+            var updatedService = new Service();
+            updatedService.Title = serviceDto.Title;
+            updatedService.Description = serviceDto.Description;
+            updatedService.Image = serviceDto.Image;
+            updatedService.WorkExperience = serviceDto.WorkExperience;
+            return await _serviceRepository.UpdateService(updatedService, cancellationToken);
+        }
+
+        #endregion
+    }
+}

@@ -9,11 +9,11 @@ namespace App.Domain.Core.Admin.Services
 {
     public interface IAdminService
     {
-        public Admin.Entities.Admin CreateAdmin(DTOs.AdminDto adminDto);
-        public Admin.Entities.Admin GetAdminById(int adminId);
-        public List<Admin.Entities.Admin> GetAdmins();
-        public Admin.Entities.Admin UpdateAdmin(DTOs.AdminDto adminDto);
-        public Admin.Entities.Admin SoftDeleteAdmin(int adminId);
-        public Admin.Entities.Admin HardDeleteAdmin(int adminId);
+        public Task<Admin.Entities.Admin> CreateAdmin(DTOs.AdminDto adminDto, CancellationToken cancellationToken);
+        public Task<Admin.Entities.Admin> GetAdminById(int adminId, CancellationToken cancellationToken);
+        public Task<List<Admin.Entities.Admin>> GetAdmins(CancellationToken cancellationToken);
+        public Task<Admin.Entities.Admin> UpdateAdmin(DTOs.AdminDto adminDto, CancellationToken cancellationToken);
+        public Task<Admin.Entities.Admin> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken);
+        public Task<Admin.Entities.Admin> HardDeleteAdmin(int adminId, CancellationToken cancellationToken);
     }
 }

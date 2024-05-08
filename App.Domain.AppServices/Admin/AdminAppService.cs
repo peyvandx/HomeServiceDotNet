@@ -5,46 +5,42 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace App.Domain.AppServices.Admin
 {
     public class AdminAppService : IAdminAppService
     {
+        #region Fields
         private readonly IAdminService _adminService;
+        #endregion
 
+        #region Ctors
         public AdminAppService(IAdminService adminService)
         {
             _adminService = adminService;
         }
-        public Core.Admin.Entities.Admin CreateAdmin(Core.Admin.DTOs.AdminDto adminDto)
-        {
-            return _adminService.CreateAdmin(adminDto);
-        }
+        #endregion
 
-        public Core.Admin.Entities.Admin GetAdminById(int adminId)
-        {
-            return _adminService.GetAdminById(adminId);
-        }
+        #region Implementations
+        public async Task<Core.Admin.Entities.Admin> CreateAdmin(Core.Admin.DTOs.AdminDto adminDto, CancellationToken cancellationToken) 
+            => await _adminService.CreateAdmin(adminDto, cancellationToken);
 
-        public List<Core.Admin.Entities.Admin> GetAdmins()
-        {
-            return _adminService.GetAdmins();
-        }
+        public async Task<Core.Admin.Entities.Admin> GetAdminById(int adminId, CancellationToken cancellationToken) 
+            => await _adminService.GetAdminById(adminId, cancellationToken);
 
-        public Core.Admin.Entities.Admin HardDeleteAdmin(int adminId)
-        {
-            return _adminService.HardDeleteAdmin(adminId);
-        }
+        public async Task<List<Core.Admin.Entities.Admin>> GetAdmins(CancellationToken cancellationToken) 
+            => await _adminService.GetAdmins(cancellationToken);
 
-        public Core.Admin.Entities.Admin SoftDeleteAdmin(int adminId)
-        {
-            return _adminService.HardDeleteAdmin(adminId);
-        }
+        public async Task<Core.Admin.Entities.Admin> HardDeleteAdmin(int adminId, CancellationToken cancellationToken) 
+            => await _adminService.HardDeleteAdmin(adminId, cancellationToken);
 
-        public Core.Admin.Entities.Admin UpdateAdmin(Core.Admin.DTOs.AdminDto adminDto)
-        {
-            return _adminService.UpdateAdmin(adminDto);
-        }
+        public async Task<Core.Admin.Entities.Admin> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken) 
+            => await _adminService.HardDeleteAdmin(adminId, cancellationToken);
+
+        public async Task<Core.Admin.Entities.Admin> UpdateAdmin(Core.Admin.DTOs.AdminDto adminDto, CancellationToken cancellationToken) 
+            => await _adminService.UpdateAdmin(adminDto, cancellationToken);
+        #endregion
     }
 }
