@@ -13,7 +13,7 @@ namespace App.Domain.Core.Admin.AppServices
         public Task<AdminProfileDto> GetAdminById(int adminId, CancellationToken cancellationToken);
         public Task<List<AdminProfileDto>> GetAdmins(CancellationToken cancellationToken);
         public Task<Admin.DTOs.AdminDto> UpdateAdmin(AdminDto adminDto, CancellationToken cancellationToken);
-        public Task<Domain.Core.Admin.DTOs.AdminSoftDeleteDto> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken);
+        public Task<Domain.Core.Admin.DTOs.ProposalSoftDeleteDto> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken);
         //public Task<Admin.Entities.Admin> HardDeleteAdmin(int adminId, CancellationToken cancellationToken);
     }
 }
