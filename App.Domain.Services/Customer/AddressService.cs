@@ -36,19 +36,19 @@ namespace App.Domain.Services.Customer
             return await _addressRepository.CreateAddress(creatingAddress, cancellationToken);
         }
 
-        public async Task<Address> GetAddressById(int addressId, CancellationToken cancellationToken)
+        public async Task<AddressDto> GetAddressById(int addressId, CancellationToken cancellationToken)
             => await _addressRepository.GetAddressById(addressId, cancellationToken);
 
-        public async Task<List<Address>> GetAddresses(CancellationToken cancellationToken)
+        public async Task<List<AddressDto>> GetAddresses(CancellationToken cancellationToken)
             => await _addressRepository.GetAddresses(cancellationToken);
 
-        public async Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
-            => await _addressRepository.HardDeleteAddress(addressId, cancellationToken);
+        //public async Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
+        //    => await _addressRepository.HardDeleteAddress(addressId, cancellationToken);
 
-        public async Task<Address> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
+        public async Task<AddressSoftDeleteDto> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
             => await _addressRepository.SoftDeleteAddress(addressId, cancellationToken);
 
-        public async Task<Address> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
+        public async Task<AddressDto> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
         {
             var updatedAddress = new Address();
             updatedAddress.CreatedAt = DateTime.Now;

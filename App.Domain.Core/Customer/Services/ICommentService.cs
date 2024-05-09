@@ -10,10 +10,10 @@ namespace App.Domain.Core.Customer.Services
     public interface ICommentService
     {
         public Task<Customer.Entities.Comment> CreateComment(CommentDto commentDto, CancellationToken cancellationToken);
-        public Task<Customer.Entities.Comment> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken);
-        public Task<Customer.Entities.Comment> SoftDeleteComment(int commentId, CancellationToken cancellationToken);
-        public Task<Customer.Entities.Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken);
-        public Task<Customer.Entities.Comment> GetCommentById(int commentId, CancellationToken cancellationToken);
-        public Task<List<Customer.Entities.Comment>> GetComments(CancellationToken cancellationToken);
+        public Task<CommentDto> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken);
+        public Task<CommentSoftDeleteDto> SoftDeleteComment(int commentId, CancellationToken cancellationToken);
+        //public Task<Customer.Entities.Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken);
+        public Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken);
+        public Task<List<CommentDto>> GetComments(CancellationToken cancellationToken);
     }
 }

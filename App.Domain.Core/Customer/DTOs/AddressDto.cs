@@ -11,10 +11,15 @@ namespace App.Domain.Core.Customer.DTOs
         public int Id { get; set; }
         public string Street { get; set; }
         public int PostalCode { get; set; }
-        //public DateTime CreatedAt { get; set; }
-        //public bool IsDeleted { get; set; } = false;
+        public DateTime CreatedAt { get; set; }
+        public bool IsDeleted { get; set; } = false;
         public int CityId { get; set; }
-        public int? CustomerId { get; set; }
-        public int? ExpertId { get; set; }
+        public string CityName { get; set; }
+        public int CustomerId { get; set; }
+        public string? CustomerFirstName { get; set; }
+        public string? CustomerLastName { get; set; }
+        public int ExpertId { get; set; }
+        public string? ExpertFirstName { get; set; }
+        public string? ExpertLastName { get; set; }
     }
 }

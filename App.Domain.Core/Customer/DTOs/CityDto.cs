@@ -13,5 +13,6 @@ namespace App.Domain.Core.Customer.DTOs
         //public DateTime CreatedAt { get; set; }
         //public bool IsDeleted { get; set; } = false;
         public int ProvinceId { get; set; }
+        public string ProvinceName { get; set; }
     }
 }

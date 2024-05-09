@@ -15,7 +15,10 @@ namespace App.Domain.Core.Customer.DTOs
         //public bool IsDeleted { get; set; } = false;
         public int Rate { get; set; }
         public int CustomerId { get; set; }
+        public string CustomerName { get; set; }
         public int ExpertId { get; set; }
+        public string ExpertName { get; set; }
         public int AdminId { get; set; }
+        public string AdminName { get; set; }
     }
 }

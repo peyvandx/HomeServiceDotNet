@@ -1,9 +1,15 @@
-﻿using App.Domain.Core.Customer.Data;
+﻿using App.Domain.Core.Admin.DTOs;
+using App.Domain.Core.Admin.Entities;
+using App.Domain.Core.Customer.Data;
+using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
 using App.Infra.Db.SqlServer.Ef.DbContext;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
+using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,12 +20,18 @@ namespace App.Infra.Data.Repos.Ef.Customer
     {
         #region Fields
         private readonly HomeServiceDbContext _homeServiceDbContext;
+        private readonly IMemoryCache _memoryCache;
+        private readonly ILogger<CommentRepository> _logger;
         #endregion
 
         #region Ctors
-        public CommentRepository(HomeServiceDbContext homeServiceDbContext)
+        public CommentRepository(HomeServiceDbContext homeServiceDbContext,
+            IMemoryCache memoryCache,
+            ILogger<CommentRepository> logger)
         {
             _homeServiceDbContext = homeServiceDbContext;
+            _memoryCache = memoryCache;
+            _logger = logger;
         }
         #endregion
 
@@ -28,29 +40,96 @@ namespace App.Infra.Data.Repos.Ef.Customer
         {
             await _homeServiceDbContext.Comments.AddAsync(submittedComment, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+            _logger.LogInformation("Comment has been successfully added to the database.");
             return submittedComment;
         }
 
-        public async Task<Comment> GetCommentById(int commentId, CancellationToken cancellationToken)
+        public async Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken)
         {
-            var comment = await _homeServiceDbContext.Comments.FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
-            if (comment != null)
+            var comment = _memoryCache.Get<CommentDto>("commentDto");
+            if (comment is null)
             {
-                return comment;
+                comment = await _homeServiceDbContext.Comments
+                .Select(c => new CommentDto
+                {
+                    Id = c.Id,
+                    Description = c.Description,
+                    Rate = c.Rate,
+                    CustomerId = c.CustomerId,
+                    CustomerName = c.Customer.FirstName + " " + c.Customer.LastName,
+                    ExpertId = c.ExpertId,
+                    ExpertName = c.Expert.FirstName + " " + c.Expert.LastName,
+                    AdminId = c.AdminId,
+                    AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
+                }).FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
+
+                if (comment != null)
+                {
+                    _memoryCache.Set("commentDto", comment, new MemoryCacheEntryOptions()
+                    {
+                        SlidingExpiration = TimeSpan.FromSeconds(120)
+                    });
+                    _logger.LogInformation("commentDto returned from database, and cached in memory successfully.");
+                    return comment;
+                }
+                else
+                {
+                    _logger.LogError("We expected the commentDto to return from the database, but it returned null.");
+                    throw new Exception("Something wents wrong!, please try again.");
+                }
             }
-            else
-            {
-                //throw an exception - will be implement!
-                throw new InvalidOperationException();
-            }
+            _logger.LogInformation("commentDto returned from InMemoryCache.");
+            return comment;
         }
 
-        public async Task<List<Comment>> GetComments(CancellationToken cancellationToken) => await _homeServiceDbContext.Comments.ToListAsync(cancellationToken);
+        public async Task<List<CommentDto>> GetComments(CancellationToken cancellationToken)
+        {
+            var comments = _memoryCache.Get<List<CommentDto>>("commentDtos");
+
+            if (comments is null)
+            {
+                comments = await _homeServiceDbContext.Comments
+                 .Select(c => new CommentDto
+                 {
+                     Id = c.Id,
+                     Description = c.Description,
+                     Rate = c.Rate,
+                     CustomerId = c.CustomerId,
+                     CustomerName = c.Customer.FirstName + " " + c.Customer.LastName,
+                     ExpertId = c.ExpertId,
+                     ExpertName = c.Expert.FirstName + " " + c.Expert.LastName,
+                     AdminId = c.AdminId,
+                     AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
+                 }).ToListAsync(cancellationToken);
+
+                if (comments is null)
+                {
+                    _logger.LogError("We expected the AdminProfileDtos to return from the database, but it returned null.");
+                    throw new Exception("Something wents wrong!, please try again.");
+                }
+                else
+                {
+                    _memoryCache.Set("commentDtos", comments, new MemoryCacheEntryOptions()
+                    {
+                        SlidingExpiration = TimeSpan.FromSeconds(120)
+                    });
+                    _logger.LogInformation("commentDtos returned from database, and cached in memory successfully.");
+                    return comments;
+                }
+            }
+            _logger.LogInformation("commentDtos returned from InMemoryCache.");
+            return comments;
+        }
+
+        //public async Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
         //{
-        //    var comments = _homeServiceDbContext.Comments.ToList();
-        //    if (comments != null)
+        //    var deletedComment = await GetComment(commentId, cancellationToken);
+        //    if (deletedComment != null)
         //    {
-        //        return comments;
+        //        deletedComment.IsDeleted = true;
+        //        _homeServiceDbContext.Comments.Remove(deletedComment);
+        //        await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+        //        return deletedComment;
         //    }
         //    else
         //    {
@@ -59,42 +138,17 @@ namespace App.Infra.Data.Repos.Ef.Customer
         //    }
         //}
 
-        public async Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
+        public async Task<CommentSoftDeleteDto> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
         {
-            var deletedComment = await GetComment(commentId, cancellationToken);
-            if (deletedComment != null)
-            {
-                deletedComment.IsDeleted = true;
-                _homeServiceDbContext.Comments.Remove(deletedComment);
-                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-                return deletedComment;
-            }
-            else
-            {
-                //throw an exception - will be implement!
-                throw new InvalidOperationException();
-            }
+            var deletedComment = await GetCommentSoftDeleteDto(commentId, cancellationToken);
+            deletedComment.IsDeleted = true;
+            await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+            return deletedComment;
         }
 
-        public async Task<Comment> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
+        public async Task<CommentDto> UpdateComment(Comment updatedComment, CancellationToken cancellationToken)
         {
-            var deletedComment = await GetComment(commentId, cancellationToken);
-            if (deletedComment != null)
-            {
-                deletedComment.IsDeleted = true;
-                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-                return deletedComment;
-            }
-            else
-            {
-                //throw an exception - will be implement!
-                throw new InvalidOperationException();
-            }
-        }
-
-        public async Task<Comment> UpdateComment(Comment updatedComment, CancellationToken cancellationToken)
-        {
-            var updatingComment = await GetComment(updatedComment.Id, cancellationToken);
+            var updatingComment = await GetCommentDto(updatedComment.Id, cancellationToken);
             if (updatingComment != null)
             {
                 updatingComment.Description = updatedComment.Description;
@@ -111,17 +165,61 @@ namespace App.Infra.Data.Repos.Ef.Customer
         #endregion
 
         #region PrivateMethods
-        private async Task<Domain.Core.Customer.Entities.Comment> GetComment(int commentId, CancellationToken cancellationToken)
+        private async Task<CommentDto> GetCommentDto(int commentId, CancellationToken cancellationToken)
         {
-            var comment = await _homeServiceDbContext.Comments
-                .FirstOrDefaultAsync(a => a.Id == commentId, cancellationToken);
-
-            if (comment != null)
+            var comment = _memoryCache.Get<CommentDto>("commentDto");
+            if (comment is null)
             {
-                return comment;
-            }
+                comment = await _homeServiceDbContext.Comments
+                .Select(c => new CommentDto()
+                {
+                    Description = c.Description,
+                    Rate = c.Rate
+                }).FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
 
-            throw new Exception($"comment with id {commentId} not found");
+                if (comment != null)
+                {
+                    _memoryCache.Set("commentDto", comment, new MemoryCacheEntryOptions()
+                    {
+                        SlidingExpiration = TimeSpan.FromSeconds(120)
+                    });
+                    _logger.LogInformation("commentDto has been returned form database and cached in memory successfully.");
+                    return comment;
+                }
+                _logger.LogError($"comment with id {commentId} not found in GetCommentDto method.");
+                throw new Exception($"comment with id {commentId} not found.");
+            }
+            _logger.LogInformation("commentDto returned from InMemeoryCache in GetCommentDto method.");
+            return comment;
+        }
+
+        private async Task<CommentSoftDeleteDto> GetCommentSoftDeleteDto(int commentId, CancellationToken cancellationToken)
+        {
+            var comment = _memoryCache.Get<CommentSoftDeleteDto>("commentSoftDeleteDto");
+            if (comment is null)
+            {
+                comment = await _homeServiceDbContext.Comments
+                .Select(a => new CommentSoftDeleteDto()
+                {
+                    Id = a.Id,
+                    IsDeleted = a.IsDeleted
+                }).FirstOrDefaultAsync(a => a.Id == commentId, cancellationToken);
+
+                if (comment != null)
+                {
+                    _memoryCache.Set("commentSoftDeleteDto", comment, new MemoryCacheEntryOptions()
+                    {
+                        SlidingExpiration = TimeSpan.FromSeconds(120)
+                    });
+                    _logger.LogInformation("commentSoftDeleteDto has been returned form database and cached in memory successfully.");
+                    return comment;
+                }
+                _logger.LogError($"comment with id {commentId} not found in GetCommentSoftDeleteDto method.");
+                throw new Exception($"comment with id {commentId} not found.");
+            }
+            _logger.LogInformation("commentSoftDeleteDto returned from InMemeoryCache in GetCommentSoftDeleteDto method.");
+            return comment;
+
         }
         #endregion
     }

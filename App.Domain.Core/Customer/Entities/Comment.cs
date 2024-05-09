@@ -15,10 +15,10 @@ namespace App.Domain.Core.Customer.Entities
         public bool IsConfirmed { get; set; } = false;
         public bool IsDeleted { get; set; } = false;
         public int Rate { get; set; }
-        public int? CustomerId { get; set; }
-        public Customer? Customer { get; set; }
-        public int? ExpertId { get; set; }
-        public Expert.Entities.Expert? Expert { get; set; }
+        public int CustomerId { get; set; }
+        public Customer Customer { get; set; }
+        public int ExpertId { get; set; }
+        public Expert.Entities.Expert Expert { get; set; }
         public int AdminId { get; set; }
         public Admin.Entities.Admin Admin { get; set; }
     }

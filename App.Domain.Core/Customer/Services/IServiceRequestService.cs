@@ -10,10 +10,10 @@ namespace App.Domain.Core.Customer.Services
     public interface IServiceRequestService
     {
         public Task<Customer.Entities.ServiceRequest> CreateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken);
-        public Task<Customer.Entities.ServiceRequest> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken);
-        public Task<Customer.Entities.ServiceRequest> SoftDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
-        public Task<Customer.Entities.ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
-        public Task<Customer.Entities.ServiceRequest> GetServiceRequestById(int serviceId, CancellationToken cancellationToken);
-        public Task<List<Customer.Entities.ServiceRequest>> GetServiceRequests(CancellationToken cancellationToken);
+        public Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken);
+        public Task<ServiceRequestSoftDeleteDto> SoftDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
+        //public Task<Customer.Entities.ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
+        public Task<ServiceRequestDto> GetServiceRequestById(int serviceId, CancellationToken cancellationToken);
+        public Task<List<ServiceRequestDto>> GetServiceRequests(CancellationToken cancellationToken);
     }
 }
