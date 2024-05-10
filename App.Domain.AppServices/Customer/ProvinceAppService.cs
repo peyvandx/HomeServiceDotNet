@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Customer
         public Task<Province> CreateProvince(ProvinceDto provinceDto, CancellationToken cancellationToken)
             => _provinceService.CreateProvince(provinceDto, cancellationToken);
 
-        public Task<Province> GetProvinceById(int provinceId, CancellationToken cancellationToken)
+        public Task<ProvinceDto> GetProvinceById(int provinceId, CancellationToken cancellationToken)
             => _provinceService.GetProvinceById(provinceId, cancellationToken);
 
-        public Task<List<Province>> GetProvinces(CancellationToken cancellationToken)
+        public Task<List<ProvinceDto>> GetProvinces(CancellationToken cancellationToken)
             => _provinceService.GetProvinces(cancellationToken);
 
-        public Task<Province> HardDeleteProvince(int provinceId, CancellationToken cancellationToken)
-            => _provinceService.HardDeleteProvince(provinceId, cancellationToken);
+        //public Task<Province> HardDeleteProvince(int provinceId, CancellationToken cancellationToken)
+        //    => _provinceService.HardDeleteProvince(provinceId, cancellationToken);
 
-        public Task<Province> SoftDeleteProvince(int provinceId, CancellationToken cancellationToken)
+        public Task<ProvinceSoftDeleteDto> SoftDeleteProvince(int provinceId, CancellationToken cancellationToken)
             => _provinceService.SoftDeleteProvince(provinceId, cancellationToken);
 
-        public Task<Province> UpdateProvince(ProvinceDto provinceDto, CancellationToken cancellationToken)
+        public Task<ProvinceDto> UpdateProvince(ProvinceDto provinceDto, CancellationToken cancellationToken)
             => _provinceService.UpdateProvince(provinceDto, cancellationToken);
         #endregion
     }

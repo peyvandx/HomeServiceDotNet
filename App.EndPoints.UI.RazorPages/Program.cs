@@ -1,5 +1,9 @@
+using App.Domain.Core.Admin.Entities.Configs;
+using App.Infra.Db.SqlServer.Ef.DbContext;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,15 +11,28 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorPages();
 builder.Services.AddMemoryCache();
 
+
+var configuration = new ConfigurationBuilder()
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+var siteSettings = configuration.GetSection(nameof(SiteSettings)).Get<SiteSettings>();
+
+builder.Services.AddSingleton(siteSettings);
+
 builder.Host.ConfigureLogging(loggingBuilder =>
 {
-    loggingBuilder.ClearProviders();
+loggingBuilder.ClearProviders();
 
 }).UseSerilog((context, config) =>
+//builder.Logging.ClearProviders().UseSerilog((context, config) =>
 {
     config.WriteTo.Console();
-    config.WriteTo.Seq("http://localhost:5341", LogEventLevel.Information, apiKey: "3a44v8xZJGV0v9RE6X4Q");
+    config.WriteTo.Seq(siteSettings.LogConfiguration.SeqAddress, LogEventLevel.Information, apiKey: siteSettings.LogConfiguration.SeqApiKey);
 });
+
+builder.Services.AddDbContext<HomeServiceDbContext>(options
+    => options.UseSqlServer(siteSettings.SqlConfiguration.ConnectionsString));
 
 var app = builder.Build();
 

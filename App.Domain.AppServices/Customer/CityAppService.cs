@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Customer
         public Task<City> CreateCity(CityDto cityDto, CancellationToken cancellationToken)
             => _cityService.CreateCity(cityDto, cancellationToken);
 
-        public Task<List<City>> GetCities(CancellationToken cancellationToken)
+        public Task<List<CityDto>> GetCities(CancellationToken cancellationToken)
             => _cityService.GetCities(cancellationToken);
 
-        public Task<City> GetCityById(int cityId, CancellationToken cancellationToken)
+        public Task<CityDto> GetCityById(int cityId, CancellationToken cancellationToken)
             => _cityService.GetCityById(cityId, cancellationToken);
 
-        public Task<City> HardDeleteCity(int cityId, CancellationToken cancellationToken)
-            => _cityService.HardDeleteCity(cityId, cancellationToken);
+        //public Task<City> HardDeleteCity(int cityId, CancellationToken cancellationToken)
+        //    => _cityService.HardDeleteCity(cityId, cancellationToken);
 
-        public Task<City> SoftDeleteCity(int cityId, CancellationToken cancellationToken)
+        public Task<CitySoftDeleteDto> SoftDeleteCity(int cityId, CancellationToken cancellationToken)
             => _cityService.SoftDeleteCity(cityId, cancellationToken);
 
-        public Task<City> UpdateCity(CityDto cityDto, CancellationToken cancellationToken)
+        public Task<CityDto> UpdateCity(CityDto cityDto, CancellationToken cancellationToken)
             => _cityService.UpdateCity(cityDto, cancellationToken);
         #endregion
     }

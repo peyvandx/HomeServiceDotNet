@@ -36,19 +36,19 @@ namespace App.Domain.Services.Expert
         }
 
 
-        public async Task<Skill> GetSkillById(int skillId, CancellationToken cancellationToken)
+        public async Task<SkillDto> GetSkillById(int skillId, CancellationToken cancellationToken)
             => await _skillRepository.GetSkillById(skillId, cancellationToken);
 
-        public async Task<List<Skill>> GetSkills(CancellationToken cancellationToken)
+        public async Task<List<SkillDto>> GetSkills(CancellationToken cancellationToken)
             => await _skillRepository.GetSkills(cancellationToken);
 
-        public async Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
-            => await _skillRepository.HardDeleteSkill(skillId, cancellationToken);
+        //public async Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
+        //    => await _skillRepository.HardDeleteSkill(skillId, cancellationToken);
 
-        public async Task<Skill> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
+        public async Task<SkillSoftDeleteDto> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
             => await _skillRepository.SoftDeleteSkill(skillId, cancellationToken);
 
-        public async Task<Skill> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
+        public async Task<SkillDto> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
         {
             var updatedSkill = new Skill();
             updatedSkill.Title = skillDto.Title;

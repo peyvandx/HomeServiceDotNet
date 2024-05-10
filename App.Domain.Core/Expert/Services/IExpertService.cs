@@ -10,10 +10,10 @@ namespace App.Domain.Core.Expert.Services
     public interface IExpertService
     {
         public Task<Expert.Entities.Expert> CreateExpert(ExpertDto expertDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Expert> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Expert> SoftDeleteExpert(int expertId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Expert> GetExpertById(int expertId, CancellationToken cancellationToken);
-        public Task<List<Expert.Entities.Expert>> GetExperts(CancellationToken cancellationToken);
+        public Task<ExpertDto> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken);
+        public Task<ExpertSoftDeleteDto> SoftDeleteExpert(int expertId, CancellationToken cancellationToken);
+        //public Task<Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken);
+        public Task<ExpertDto> GetExpertById(int expertId, CancellationToken cancellationToken);
+        public Task<List<ExpertDto>> GetExperts(CancellationToken cancellationToken);
     }
 }

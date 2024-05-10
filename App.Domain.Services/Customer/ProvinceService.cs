@@ -33,23 +33,23 @@ namespace App.Domain.Services.Customer
         }
 
 
-        public async Task<List<Province>> GetProvinces(CancellationToken cancellationToken)
+        public async Task<List<ProvinceDto>> GetProvinces(CancellationToken cancellationToken)
             => await _provinceRepository.GetProvinces(cancellationToken);
 
 
-        public async Task<Province> GetProvinceById(int provinceId, CancellationToken cancellationToken)
+        public async Task<ProvinceDto> GetProvinceById(int provinceId, CancellationToken cancellationToken)
             => await _provinceRepository.GetProvinceById(provinceId, cancellationToken);
 
 
-        public async Task<Province> HardDeleteProvince(int provinceId, CancellationToken cancellationToken)
-            => await _provinceRepository.HardDeleteProvince(provinceId, cancellationToken);
+        //public async Task<Province> HardDeleteProvince(int provinceId, CancellationToken cancellationToken)
+        //    => await _provinceRepository.HardDeleteProvince(provinceId, cancellationToken);
 
 
-        public async Task<Province> SoftDeleteProvince(int provinceId, CancellationToken cancellationToken)
+        public async Task<ProvinceSoftDeleteDto> SoftDeleteProvince(int provinceId, CancellationToken cancellationToken)
             => await _provinceRepository.SoftDeleteProvince(provinceId, cancellationToken);
 
 
-        public async Task<Province> UpdateProvince(ProvinceDto provinceDto, CancellationToken cancellationToken)
+        public async Task<ProvinceDto> UpdateProvince(ProvinceDto provinceDto, CancellationToken cancellationToken)
         {
             var updatedProvince = new Province();
             updatedProvince.Name = provinceDto.Name;

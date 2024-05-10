@@ -38,19 +38,19 @@ namespace App.Domain.Services.Customer
             return await _serviceRequestRepository.CreateServiceRequest(creatingServiceRequest, cancellationToken);
         }
 
-        public async Task<ServiceRequest> GetServiceRequestById(int serviceRequestId, CancellationToken cancellationToken)
+        public async Task<ServiceRequestDto> GetServiceRequestById(int serviceRequestId, CancellationToken cancellationToken)
             => await _serviceRequestRepository.GetServiceRequestById(serviceRequestId, cancellationToken);
 
-        public async Task<List<ServiceRequest>> GetServiceRequests(CancellationToken cancellationToken)
+        public async Task<List<ServiceRequestDto>> GetServiceRequests(CancellationToken cancellationToken)
             => await _serviceRequestRepository.GetServiceRequests(cancellationToken);
 
-        public async Task<ServiceRequest> HardDeleteServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
-            => await _serviceRequestRepository.HardDeleteServiceRequest(serviceRequestId, cancellationToken);
+        //public async Task<ServiceRequest> HardDeleteServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
+        //    => await _serviceRequestRepository.HardDeleteServiceRequest(serviceRequestId, cancellationToken);
 
-        public async Task<ServiceRequest> SoftDeleteServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
+        public async Task<ServiceRequestSoftDeleteDto> SoftDeleteServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
             => await _serviceRequestRepository.SoftDeleteServiceRequest(serviceRequestId, cancellationToken);
 
-        public async Task<ServiceRequest> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
+        public async Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
         {
             var updatedServiceRequest = new ServiceRequest();
             updatedServiceRequest.CustomerDescription = serviceRequestDto.CustomerDescription;

@@ -42,7 +42,7 @@ namespace App.Domain.Services.Admin
         //public async Task<Core.Admin.Entities.Admin> HardDeleteAdmin(int adminId, CancellationToken cancellationToken)
             //=> await _adminRepository.HardDeleteAdmin(adminId, cancellationToken);
 
-        public async Task<Domain.Core.Admin.DTOs.ProposalSoftDeleteDto> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Admin.DTOs.AdminSoftDeleteDto> SoftDeleteAdmin(int adminId, CancellationToken cancellationToken)
             => await _adminRepository.SoftDeleteAdmin(adminId, cancellationToken);
 
         public async Task<Core.Admin.DTOs.AdminDto> UpdateAdmin(Core.Admin.DTOs.AdminDto adminDto, CancellationToken cancellationToken)

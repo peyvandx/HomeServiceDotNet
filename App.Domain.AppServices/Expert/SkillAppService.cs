@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Expert
         public async Task<Skill> CreateSkill(SkillDto skillDto, CancellationToken cancellationToken)
             => await _skillService.CreateSkill(skillDto, cancellationToken);
 
-        public async Task<Skill> GetSkillById(int skillId, CancellationToken cancellationToken)
+        public async Task<SkillDto> GetSkillById(int skillId, CancellationToken cancellationToken)
             => await _skillService.GetSkillById(skillId, cancellationToken);
 
-        public async Task<List<Skill>> GetSkills(CancellationToken cancellationToken)
+        public async Task<List<SkillDto>> GetSkills(CancellationToken cancellationToken)
             => await _skillService.GetSkills(cancellationToken);
 
-        public async Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
-            => await _skillService.HardDeleteSkill(skillId, cancellationToken);
+        //public async Task<Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken)
+        //    => await _skillService.HardDeleteSkill(skillId, cancellationToken);
 
-        public async Task<Skill> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
+        public async Task<SkillSoftDeleteDto> SoftDeleteSkill(int skillId, CancellationToken cancellationToken)
             => await _skillService.SoftDeleteSkill(skillId, cancellationToken);
 
-        public async Task<Skill> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
+        public async Task<SkillDto> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken)
             => await _skillService.UpdateSkill(skillDto, cancellationToken);
         #endregion
     }

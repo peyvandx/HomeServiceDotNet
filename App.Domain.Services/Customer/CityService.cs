@@ -34,23 +34,23 @@ namespace App.Domain.Services.Customer
         }
 
 
-        public async Task<City> GetCityById(int cityId, CancellationToken cancellationToken)
+        public async Task<CityDto> GetCityById(int cityId, CancellationToken cancellationToken)
             => await _cityRepository.GetCityById(cityId, cancellationToken);
 
 
-        public async Task<List<City>> GetCities(CancellationToken cancellationToken)
+        public async Task<List<CityDto>> GetCities(CancellationToken cancellationToken)
             => await _cityRepository.GetCities(cancellationToken);
 
 
-        public async Task<City> HardDeleteCity(int cityId, CancellationToken cancellationToken)
-            => await _cityRepository.HardDeleteCity(cityId, cancellationToken);
+        //public async Task<City> HardDeleteCity(int cityId, CancellationToken cancellationToken)
+        //    => await _cityRepository.HardDeleteCity(cityId, cancellationToken);
 
 
-        public async Task<City> SoftDeleteCity(int cityId, CancellationToken cancellationToken)
+        public async Task<CitySoftDeleteDto> SoftDeleteCity(int cityId, CancellationToken cancellationToken)
             => await _cityRepository.SoftDeleteCity(cityId, cancellationToken);
 
 
-        public async Task<City> UpdateCity(CityDto cityDto, CancellationToken cancellationToken)
+        public async Task<CityDto> UpdateCity(CityDto cityDto, CancellationToken cancellationToken)
         {
             var updatedCity = new City();
             updatedCity.Name = cityDto.Name;

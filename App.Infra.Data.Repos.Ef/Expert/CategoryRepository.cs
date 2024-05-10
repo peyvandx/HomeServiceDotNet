@@ -37,7 +37,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
         #endregion
 
         #region Implementations
-        public async Task<CategoryDto> CreateCategory(Category createdCategory, CancellationToken cancellationToken)
+        public async Task<Category> CreateCategory(Category createdCategory, CancellationToken cancellationToken)
         {
             await _homeServiceDbContext.Categories.AddAsync(createdCategory, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);

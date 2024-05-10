@@ -10,10 +10,10 @@ namespace App.Domain.Core.Expert.AppServices
     public interface ISkillAppService
     {
         public Task<Expert.Entities.Skill> CreateSkill(SkillDto skillDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Skill> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Skill> SoftDeleteSkill(int skillId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Skill> GetSkillById(int skillId, CancellationToken cancellationToken);
-        public Task<List<Expert.Entities.Skill>> GetSkills(CancellationToken cancellationToken);
+        public Task<SkillDto> UpdateSkill(SkillDto skillDto, CancellationToken cancellationToken);
+        public Task<SkillSoftDeleteDto> SoftDeleteSkill(int skillId, CancellationToken cancellationToken);
+        //public Task<Expert.Entities.Skill> HardDeleteSkill(int skillId, CancellationToken cancellationToken);
+        public Task<SkillDto> GetSkillById(int skillId, CancellationToken cancellationToken);
+        public Task<List<SkillDto>> GetSkills(CancellationToken cancellationToken);
     }
 }

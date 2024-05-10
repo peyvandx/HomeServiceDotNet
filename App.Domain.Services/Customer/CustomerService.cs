@@ -37,19 +37,19 @@ namespace App.Domain.Services.Customer
             return await _customerRepository.CreateCustomer(signingUpCustomer, cancellationToken);
         }
 
-        public async Task<Core.Customer.Entities.Customer> GetCustomerById(int customerId, CancellationToken cancellationToken)
+        public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
             => await _customerRepository.GetCustomerById(customerId, cancellationToken);
 
-        public async Task<List<Core.Customer.Entities.Customer>> GetCustomers(CancellationToken cancellationToken)
+        public async Task<List<CustomerDto>> GetCustomers(CancellationToken cancellationToken)
             => await _customerRepository.GetCustomers(cancellationToken);
 
-        public async Task<Core.Customer.Entities.Customer> HardDeleteCustomer(int customerId, CancellationToken cancellationToken)
-            => await _customerRepository.HardDeleteCustomer(customerId, cancellationToken);
-
-        public async Task<Core.Customer.Entities.Customer> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
+        //public async Task<CommentDto> HardDeleteCustomer(int customerId, CancellationToken cancellationToken)
+        //    => await _customerRepository.HardDeleteCustomer(customerId, cancellationToken);
+                          
+        public async Task<CustomerSoftDeleteDto> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
             => await _customerRepository.SoftDeleteCustomer(customerId, cancellationToken);
-
-        public async Task<Core.Customer.Entities.Customer> UpdateCustomer(CustomerDto customerDto, CancellationToken cancellationToken)
+                          
+        public async Task<CustomerDto> UpdateCustomer(CustomerDto customerDto, CancellationToken cancellationToken)
         {
             var updatedCustomer = new Core.Customer.Entities.Customer();
             updatedCustomer.FirstName = customerDto.FirstName;

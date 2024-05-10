@@ -34,19 +34,19 @@ namespace App.Domain.Services.Expert
             return await _categoryRepository.CreateCategory(creatingCategory, cancellationToken);
         }
 
-        public async Task<List<Category>> GetCategories(CancellationToken cancellationToken)
+        public async Task<List<CategoryDto>> GetCategories(CancellationToken cancellationToken)
             => await _categoryRepository.GetCategories(cancellationToken);
 
-        public async Task<Category> GetCategoryById(int categoryId, CancellationToken cancellationToken)
+        public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
             => await _categoryRepository.GetCategoryById(categoryId, cancellationToken);
 
-        public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
-            => await _categoryRepository.HardDeleteCategory(categoryId, cancellationToken);
+        //public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
+        //    => await _categoryRepository.HardDeleteCategory(categoryId, cancellationToken);
 
-        public async Task<Category> SoftDeleteCategory(int categoryId, CancellationToken cancellationToken)
+        public async Task<CategorySoftDeleteDto> SoftDeleteCategory(int categoryId, CancellationToken cancellationToken)
             => await _categoryRepository.SoftDeleteCategory(categoryId, cancellationToken);
 
-        public async Task<Category> UpdateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
+        public async Task<CategoryDto> UpdateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
         {
             var updatedCategory = new Category();
             updatedCategory.Title = categoryDto.Title;

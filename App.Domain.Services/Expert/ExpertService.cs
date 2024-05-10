@@ -36,19 +36,19 @@ namespace App.Domain.Services.Expert
             return await _expertRepository.CreateExpert(creatingExpert, cancellationToken);
         }
 
-        public async Task<Core.Expert.Entities.Expert> GetExpertById(int expertId, CancellationToken cancellationToken)
+        public async Task<ExpertDto> GetExpertById(int expertId, CancellationToken cancellationToken)
             => await _expertRepository.GetExpertById(expertId, cancellationToken);
 
-        public async Task<List<Core.Expert.Entities.Expert>> GetExperts(CancellationToken cancellationToken)
+        public async Task<List<ExpertDto>> GetExperts(CancellationToken cancellationToken)
             => await _expertRepository.GetExperts(cancellationToken);
 
-        public async Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
-            => await _expertRepository.HardDeleteExpert(expertId, cancellationToken);
+        //public async Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
+        //    => await _expertRepository.HardDeleteExpert(expertId, cancellationToken);
 
-        public async Task<Core.Expert.Entities.Expert> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
+        public async Task<ExpertSoftDeleteDto> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
             => await _expertRepository.SoftDeleteExpert(expertId, cancellationToken);
 
-        public async Task<Core.Expert.Entities.Expert> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
+        public async Task<ExpertDto> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
         {
             var updatedExpert = new Core.Expert.Entities.Expert();
             updatedExpert.FirstName = expertDto.FirstName;

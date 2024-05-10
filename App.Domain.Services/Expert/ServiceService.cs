@@ -36,19 +36,19 @@ namespace App.Domain.Services.Expert
             return await _serviceRepository.CreateService(creatingSevice, cancellationToken);
         }
 
-        public async Task<Service> GetServiceById(int serviceId, CancellationToken cancellationToken)
+        public async Task<ServiceDto> GetServiceById(int serviceId, CancellationToken cancellationToken)
             => await _serviceRepository.GetServiceById(serviceId, cancellationToken);
 
-        public async Task<List<Service>> GetServices(CancellationToken cancellationToken)
+        public async Task<List<ServiceDto>> GetServices(CancellationToken cancellationToken)
             => await _serviceRepository.GetServices(cancellationToken);
 
-        public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-            => await _serviceRepository.HardDeleteService(serviceId, cancellationToken);
+        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+        //    => await _serviceRepository.HardDeleteService(serviceId, cancellationToken);
 
-        public async Task<Service> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
             => await _serviceRepository.SoftDeleteService(serviceId, cancellationToken);
 
-        public async Task<Service> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+        public async Task<ServiceDto> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
         {
             var updatedService = new Service();
             updatedService.Title = serviceDto.Title;

@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Expert
         public async Task<Service> CreateService(ServiceDto serviceDto, CancellationToken cancellationToken)
             => await _serviceService.CreateService(serviceDto, cancellationToken);
 
-        public async Task<Service> GetServiceById(int serviceId, CancellationToken cancellationToken)
+        public async Task<ServiceDto> GetServiceById(int serviceId, CancellationToken cancellationToken)
             => await _serviceService.GetServiceById(serviceId, cancellationToken);
 
-        public async Task<List<Service>> GetServices(CancellationToken cancellationToken)
+        public async Task<List<ServiceDto>> GetServices(CancellationToken cancellationToken)
             => await _serviceService.GetServices(cancellationToken);
 
-        public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-            => await _serviceService.HardDeleteService(serviceId, cancellationToken);
+        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+        //    => await _serviceService.HardDeleteService(serviceId, cancellationToken);
 
-        public async Task<Service> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
             => await _serviceService.SoftDeleteService(serviceId, cancellationToken);
 
-        public async Task<Service> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
+        public async Task<ServiceDto> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
             => await _serviceService.UpdateService(serviceDto, cancellationToken);
         #endregion
     }

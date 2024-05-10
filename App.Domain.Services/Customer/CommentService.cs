@@ -36,19 +36,19 @@ namespace App.Domain.Services.Customer
             return await _commentRepository.CreateComment(submittedComment, cancellationToken);
         }
 
-        public async Task<Comment> GetCommentById(int commentId, CancellationToken cancellationToken)
+        public async Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken)
             => await _commentRepository.GetCommentById(commentId, cancellationToken);
 
-        public async Task<List<Comment>> GetComments(CancellationToken cancellationToken)
+        public async Task<List<CommentDto>> GetComments(CancellationToken cancellationToken)
             => await _commentRepository.GetComments(cancellationToken);
 
-        public async Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
-            => await _commentRepository.HardDeleteComment(commentId, cancellationToken);
+        //public async Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
+        //    => await _commentRepository.HardDeleteComment(commentId, cancellationToken);
 
-        public async Task<Comment> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
+        public async Task<CommentSoftDeleteDto> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
             => await _commentRepository.SoftDeleteComment(commentId, cancellationToken);
 
-        public async Task<Comment> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken)
+        public async Task<CommentDto> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken)
         {
             var updatedComment = new Comment();
             updatedComment.Description = commentDto.Description;

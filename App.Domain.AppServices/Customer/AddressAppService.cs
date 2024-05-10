@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Customer
         public async Task<Address> CreateAddress(AddressDto addressDto, CancellationToken cancellationToken)
             => await _addressService.CreateAddress(addressDto, cancellationToken);
 
-        public async Task<Address> GetAddressById(int addressId, CancellationToken cancellationToken)
+        public async Task<AddressDto> GetAddressById(int addressId, CancellationToken cancellationToken)
             => await _addressService.GetAddressById(addressId, cancellationToken);
 
-        public async Task<List<Address>> GetAddresses(CancellationToken cancellationToken)
+        public async Task<List<AddressDto>> GetAddresses(CancellationToken cancellationToken)
             => await _addressService.GetAddresses(cancellationToken);
 
-        public async Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
-            => await _addressService.HardDeleteAddress(addressId, cancellationToken);
+        //public async Task<Address> HardDeleteAddress(int addressId, CancellationToken cancellationToken)
+        //    => await _addressService.HardDeleteAddress(addressId, cancellationToken);
 
-        public async Task<Address> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
+        public async Task<AddressSoftDeleteDto> SoftDeleteAddress(int addressId, CancellationToken cancellationToken)
             => await _addressService.SoftDeleteAddress(addressId, cancellationToken);
 
-        public async Task<Address> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
+        public async Task<AddressDto> UpdateAddress(AddressDto addressDto, CancellationToken cancellationToken)
             => await _addressService.UpdateAddress(addressDto, cancellationToken);
         #endregion
     }

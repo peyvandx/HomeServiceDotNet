@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Expert
         public async Task<Proposal> CreateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
             => await _proposalService.CreateProposal(proposalDto, cancellationToken);
 
-        public async Task<Proposal> GetProposalById(int proposalId, CancellationToken cancellationToken)
+        public async Task<ProposalDto> GetProposalById(int proposalId, CancellationToken cancellationToken)
             => await _proposalService.GetProposalById(proposalId, cancellationToken);
 
-        public async Task<List<Proposal>> GetProposals(CancellationToken cancellationToken)
+        public async Task<List<ProposalDto>> GetProposals(CancellationToken cancellationToken)
             => await _proposalService.GetProposals(cancellationToken);
 
-        public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
-            => await _proposalService.HardDeleteProposal(proposalId, cancellationToken);
+        //public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
+        //    => await _proposalService.HardDeleteProposal(proposalId, cancellationToken);
 
-        public async Task<Proposal> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
+        public async Task<ProposalSoftDeleteDto> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
             => await _proposalService.SoftDeleteProposal(proposalId, cancellationToken);
 
-        public async Task<Proposal> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
+        public async Task<ProposalDto> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
             => await _proposalService.UpdateProposal(proposalDto, cancellationToken);
         #endregion
     }

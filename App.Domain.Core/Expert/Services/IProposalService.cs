@@ -10,10 +10,10 @@ namespace App.Domain.Core.Expert.Services
     public interface IProposalService
     {
         public Task<Expert.Entities.Proposal> CreateProposal(ProposalDto proposalDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Proposal> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Proposal> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken);
-        public Task<Expert.Entities.Proposal> GetProposalById(int proposalId, CancellationToken cancellationToken);
-        public Task<List<Expert.Entities.Proposal>> GetProposals(CancellationToken cancellationToken);
+        public Task<ProposalDto> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken);
+        public Task<ProposalSoftDeleteDto> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken);
+        //public Task<Expert.Entities.Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken);
+        public Task<ProposalDto> GetProposalById(int proposalId, CancellationToken cancellationToken);
+        public Task<List<ProposalDto>> GetProposals(CancellationToken cancellationToken);
     }
 }

@@ -27,19 +27,19 @@ namespace App.Domain.AppServices.Customer
         public async Task<Comment> CreateComment(CommentDto commentDto, CancellationToken cancellationToken)
             => await _commentService.CreateComment(commentDto, cancellationToken);
 
-        public Task<Comment> GetCommentById(int commentId, CancellationToken cancellationToken)
+        public Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken)
             => _commentService.GetCommentById(commentId, cancellationToken);
 
-        public Task<List<Comment>> GetComments(CancellationToken cancellationToken)
+        public Task<List<CommentDto>> GetComments(CancellationToken cancellationToken)
             => _commentService.GetComments(cancellationToken);
 
-        public Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
-            => _commentService.HardDeleteComment(commentId, cancellationToken);
+        //public Task<Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken)
+        //    => _commentService.HardDeleteComment(commentId, cancellationToken);
 
-        public Task<Comment> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
+        public Task<CommentSoftDeleteDto> SoftDeleteComment(int commentId, CancellationToken cancellationToken)
             => _commentService.SoftDeleteComment(commentId, cancellationToken);
 
-        public Task<Comment> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken)
+        public Task<CommentDto> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken)
             => _commentService.UpdateComment(commentDto, cancellationToken);
         #endregion
     }

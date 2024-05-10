@@ -36,21 +36,21 @@ namespace App.Domain.Services.Expert
         }
 
 
-        public async Task<Proposal> GetProposalById(int proposalId, CancellationToken cancellationToken)
+        public async Task<ProposalDto> GetProposalById(int proposalId, CancellationToken cancellationToken)
             => await _proposalRepository.GetProposalById(proposalId, cancellationToken);
 
-        public async Task<List<Proposal>> GetProposals(CancellationToken cancellationToken)
+        public async Task<List<ProposalDto>> GetProposals(CancellationToken cancellationToken)
             => await _proposalRepository.GetProposals(cancellationToken);
 
-        public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
-            => await _proposalRepository.HardDeleteProposal(proposalId, cancellationToken);
+        //public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
+        //    => await _proposalRepository.HardDeleteProposal(proposalId, cancellationToken);
 
 
-        public async Task<Proposal> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
+        public async Task<ProposalSoftDeleteDto> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken)
             => await _proposalRepository.SoftDeleteProposal(proposalId, cancellationToken);
 
 
-        public async Task<Proposal> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
+        public async Task<ProposalDto> UpdateProposal(ProposalDto proposalDto, CancellationToken cancellationToken)
         {
             var updatedProposal = new Proposal();
             updatedProposal.ExpertDescription = proposalDto.ExpertDescription;
