@@ -150,3 +150,9 @@ E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\Serilog.Sinks.File.dll
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\Serilog.Sinks.PeriodicBatching.dll
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\Serilog.Sinks.Seq.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.AppServices.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.Services.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.AppServices.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.Services.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.pdb

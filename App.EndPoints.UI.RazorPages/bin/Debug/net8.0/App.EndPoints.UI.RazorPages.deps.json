@@ -11,7 +11,10 @@
           "App.Infra.Db.SqlServer.Ef": "1.0.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.4",
           "Serilog.AspNetCore": "8.0.1",
-          "Serilog.Sinks.Seq": "7.0.1"
+          "Serilog.Sinks.Seq": "7.0.1",
+          "App.Domain.AppServices": "1.0.0.0",
+          "App.Domain.Services": "1.0.0.0",
+          "App.Infra.Data.Repos.Ef": "1.0.0.0"
         },
         "runtime": {
           "App.EndPoints.UI.RazorPages.dll": {}
@@ -1025,6 +1028,30 @@
         "runtime": {
           "App.Infra.Db.SqlServer.Ef.dll": {}
         }
+      },
+      "App.Domain.AppServices/1.0.0.0": {
+        "runtime": {
+          "App.Domain.AppServices.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "App.Domain.Services/1.0.0.0": {
+        "runtime": {
+          "App.Domain.Services.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "App.Infra.Data.Repos.Ef/1.0.0.0": {
+        "runtime": {
+          "App.Infra.Data.Repos.Ef.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -1671,6 +1698,21 @@
     },
     "App.Infra.Db.SqlServer.Ef/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.Domain.AppServices/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.Domain.Services/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "App.Infra.Data.Repos.Ef/1.0.0.0": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }
