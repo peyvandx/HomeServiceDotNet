@@ -156,3 +156,4 @@ E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.AppServices.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Domain.Services.pdb
 E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\bin\Debug\net8.0\App.Infra.Data.Repos.Ef.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages\obj\Debug\net8.0\scopedcss\Areas\Admin\Pages\Shared\_AdminLayout.cshtml.rz.scp.css

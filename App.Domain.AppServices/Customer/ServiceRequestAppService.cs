@@ -21,6 +21,7 @@ namespace App.Domain.AppServices.Customer
         {
             _serviceRequestService = serviceRequestService;
         }
+
         #endregion
 
         #region Implementations
@@ -41,6 +42,9 @@ namespace App.Domain.AppServices.Customer
 
         public async Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
             => await _serviceRequestService.UpdateServiceRequest(serviceRequestDto, cancellationToken);
+
+        public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
+            => await _serviceRequestService.ChangeServiceRequestStatus(newStatus, cancellationToken);
         #endregion
     }
 }

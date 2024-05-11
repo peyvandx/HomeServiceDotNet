@@ -35,6 +35,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             _memoryCache = memoryCache;
             _logger = logger;
         }
+
         #endregion
 
         #region Implementations
@@ -159,6 +160,21 @@ namespace App.Infra.Data.Repos.Ef.Customer
             updatingServiceRequest.Price = updatedServiceRequest.Price;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             return updatingServiceRequest;
+        }
+
+        public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
+        {
+            var serviceRequest = await GetServiceRequestDto(newStatus.ServiceRequestId, cancellationToken);
+            serviceRequest.Status = newStatus.NewStatus;
+            try
+            {
+                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                return newStatus;
+            }
+            catch (Exception ex)
+            {
+                throw ex.InnerException;
+            }
         }
         #endregion
 

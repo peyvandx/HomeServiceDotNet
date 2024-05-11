@@ -1,5 +1,6 @@
 ﻿using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
+using App.Domain.Core.Customer.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,5 +17,6 @@ namespace App.Domain.Core.Customer.Data
         //public Task<Customer.Entities.ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
         public Task<ServiceRequestDto> GetServiceRequestById(int serviceId, CancellationToken cancellationToken);
         public Task<List<ServiceRequestDto>> GetServiceRequests(CancellationToken cancellationToken);
+        public Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken);
     }
 }

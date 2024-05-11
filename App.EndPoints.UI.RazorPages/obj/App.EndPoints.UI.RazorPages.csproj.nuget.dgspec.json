@@ -4,6 +4,74 @@
     "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj": {}
   },
   "projects": {
+    "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\App.Domain.AppServices.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\App.Domain.AppServices.csproj",
+        "projectName": "App.Domain.AppServices",
+        "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\App.Domain.AppServices.csproj",
+        "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
+        "outputPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -68,6 +136,74 @@
         }
       }
     },
+    "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\App.Domain.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\App.Domain.Services.csproj",
+        "projectName": "App.Domain.Services",
+        "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\App.Domain.Services.csproj",
+        "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
+        "outputPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -96,6 +232,15 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\App.Domain.AppServices.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.AppServices\\App.Domain.AppServices.csproj"
+              },
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\App.Domain.Services.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\App.Domain.Services.csproj"
+              },
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj"
+              },
               "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj": {
                 "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj"
               }
@@ -147,6 +292,77 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj",
+        "projectName": "App.Infra.Data.Repos.Ef",
+        "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj",
+        "packagesPath": "C:\\Users\\Reza\\.nuget\\packages\\",
+        "outputPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Reza\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Core\\App.Domain.Core.csproj"
+              },
+              "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj": {
+                "projectPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

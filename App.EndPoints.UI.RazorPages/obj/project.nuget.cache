@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6o2/83a9CHGUl7iYStG7u/3vDHRughxZzWO07RfFEd0iFWD9U232FcZhTPllZfNkNIZfKvV2bVxMcw419yXZCA==",
+  "dgSpecHash": "Y12u3ozI92GeMBBJ6w93+69aZtXA2Oqy8fJ0dzZ5azqbeOj6Rl81ASO0of3ZNpmKyod2qkWtKx+N9rdZkUA1Jw==",
   "success": true,
   "projectFilePath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj",
   "expectedPackageFiles": [
@@ -95,5 +95,12 @@
     "C:\\Users\\Reza\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1900",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Error occurred while getting package vulnerability data: The download of 'https://api.nuget.org/v3-vulnerabilities/2024.05.09.01.15.07/vulnerability.base.json' timed out because no data was received for 60000ms."
+    }
+  ]
 }

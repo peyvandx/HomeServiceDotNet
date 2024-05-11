@@ -22,6 +22,7 @@ namespace App.Domain.Services.Customer
         {
             _serviceRequestRepository = serviceRequestRepository;
         }
+
         #endregion
 
         #region Implementations
@@ -57,6 +58,9 @@ namespace App.Domain.Services.Customer
             updatedServiceRequest.Price = serviceRequestDto.Price;
             return await _serviceRequestRepository.UpdateServiceRequest(updatedServiceRequest, cancellationToken);
         }
+
+        public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
+            => await _serviceRequestRepository.ChangeServiceRequestStatus(newStatus, cancellationToken);
 
         #endregion
     }

@@ -3,6 +3,7 @@ using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Expert.Entities;
 using App.Infra.Db.SqlServer.Ef.EntityConfigs;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Options;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,10 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
 {
     public class HomeServiceDbContext : Microsoft.EntityFrameworkCore.DbContext
     {
+        public HomeServiceDbContext(DbContextOptions<HomeServiceDbContext> options) : base(options)
+        {
+            
+        }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             base.OnConfiguring(optionsBuilder);
