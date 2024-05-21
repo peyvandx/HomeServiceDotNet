@@ -30,7 +30,6 @@ namespace App.Domain.Services.Expert
             creatingExpert.SignUpDate = DateTime.Now;
             creatingExpert.FirstName = expertDto.FirstName;
             creatingExpert.LastName = expertDto.LastName;
-            creatingExpert.PhoneNumber = expertDto.PhoneNumber;
             creatingExpert.ProfileImage = expertDto.ProfileImage;
             creatingExpert.Age = expertDto.Age;
             return await _expertRepository.CreateExpert(creatingExpert, cancellationToken);
@@ -53,7 +52,6 @@ namespace App.Domain.Services.Expert
             var updatedExpert = new Core.Expert.Entities.Expert();
             updatedExpert.FirstName = expertDto.FirstName;
             updatedExpert.LastName = expertDto.LastName;
-            updatedExpert.PhoneNumber = expertDto.PhoneNumber;
             updatedExpert.ProfileImage = expertDto.ProfileImage;
             updatedExpert.Age = expertDto.Age;
             return await _expertRepository.UpdateExpert(updatedExpert, cancellationToken);

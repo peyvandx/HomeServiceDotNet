@@ -31,9 +31,8 @@ namespace App.Domain.Services.Customer
             signingUpCustomer.SignUpDate = DateTime.Now;
             signingUpCustomer.FirstName = customerDto.FirstName;
             signingUpCustomer.LastName = customerDto.LastName;
-            signingUpCustomer.PhoneNumber = customerDto.PhoneNumber;
             signingUpCustomer.ProfileImage = customerDto.ProfileImage;
-            signingUpCustomer.AdminId = customerDto.AdminId; //will fix later
+            //signingUpCustomer.AdminId = customerDto.AdminId; //will fix later
             return await _customerRepository.CreateCustomer(signingUpCustomer, cancellationToken);
         }
 
@@ -54,7 +53,6 @@ namespace App.Domain.Services.Customer
             var updatedCustomer = new Core.Customer.Entities.Customer();
             updatedCustomer.FirstName = customerDto.FirstName;
             updatedCustomer.LastName = customerDto.LastName;
-            updatedCustomer.PhoneNumber = customerDto.PhoneNumber;
             updatedCustomer.ProfileImage = customerDto.ProfileImage;
             return await _customerRepository.UpdateCustomer(updatedCustomer, cancellationToken);
         }

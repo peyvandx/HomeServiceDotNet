@@ -56,6 +56,8 @@ namespace App.Domain.Services.Customer
             return await _commentRepository.UpdateComment(updatedComment, cancellationToken);
         }
 
+        public async Task<CommentDto> ConfirmComment(int commentId, CancellationToken cancellationToken)
+            => await _commentRepository.ConfirmComment(commentId, cancellationToken);
         #endregion
     }
 }

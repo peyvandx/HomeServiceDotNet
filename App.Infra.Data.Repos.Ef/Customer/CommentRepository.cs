@@ -100,6 +100,8 @@ namespace App.Infra.Data.Repos.Ef.Customer
                      ExpertName = c.Expert.FirstName + " " + c.Expert.LastName,
                      AdminId = c.AdminId,
                      AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
+                     IsConfirmed = c.IsConfirmed,
+                     IsDeleted  = c.IsDeleted,
                  }).ToListAsync(cancellationToken);
 
                 if (comments is null)
@@ -143,7 +145,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var deletedComment = await GetCommentSoftDeleteDto(commentId, cancellationToken);
             deletedComment.IsDeleted = true;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return deletedComment;
+
+            _memoryCache.Remove("commentDtos");
+
+            var CommentSoftDeleteDto = new CommentSoftDeleteDto();
+            CommentSoftDeleteDto.IsDeleted = deletedComment.IsDeleted;
+            return CommentSoftDeleteDto;
         }
 
         public async Task<CommentDto> UpdateComment(Comment updatedComment, CancellationToken cancellationToken)
@@ -154,7 +161,11 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 updatingComment.Description = updatedComment.Description;
                 updatingComment.Rate = updatedComment.Rate;
                 await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-                return updatingComment;
+
+                var updatingCommentDto = new CommentDto();
+                updatingCommentDto.Description = updatingComment.Description;
+                updatingCommentDto.Rate = updatedComment.Rate;
+                return updatingCommentDto;
             }
             else
             {
@@ -162,24 +173,36 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 throw new InvalidOperationException();
             }
         }
+
+        public async Task<CommentDto> ConfirmComment(int  commentId, CancellationToken cancellationToken)
+        {
+            var confirmingComment = await GetCommentDto(commentId, cancellationToken);
+            confirmingComment.IsConfirmed = true;
+            await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+
+            _memoryCache.Remove("commentDtos");
+
+            var confirmedComment = new CommentDto();
+            confirmedComment.Description = confirmingComment.Description;
+            confirmedComment.IsConfirmed = confirmingComment.IsConfirmed;
+            confirmedComment.IsDeleted = confirmingComment.IsDeleted;
+            confirmedComment.Rate = confirmingComment.Rate;
+            return confirmedComment;
+        }
         #endregion
 
         #region PrivateMethods
-        private async Task<CommentDto> GetCommentDto(int commentId, CancellationToken cancellationToken)
+        private async Task<Comment> GetCommentDto(int commentId, CancellationToken cancellationToken)
         {
-            var comment = _memoryCache.Get<CommentDto>("commentDto");
+            var comment = _memoryCache.Get<Comment>("comment");
             if (comment is null)
             {
                 comment = await _homeServiceDbContext.Comments
-                .Select(c => new CommentDto()
-                {
-                    Description = c.Description,
-                    Rate = c.Rate
-                }).FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
+                .FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
 
                 if (comment != null)
                 {
-                    _memoryCache.Set("commentDto", comment, new MemoryCacheEntryOptions()
+                    _memoryCache.Set("comment", comment, new MemoryCacheEntryOptions()
                     {
                         SlidingExpiration = TimeSpan.FromSeconds(120)
                     });
@@ -193,25 +216,21 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return comment;
         }
 
-        private async Task<CommentSoftDeleteDto> GetCommentSoftDeleteDto(int commentId, CancellationToken cancellationToken)
+        private async Task<Comment> GetCommentSoftDeleteDto(int commentId, CancellationToken cancellationToken)
         {
-            var comment = _memoryCache.Get<CommentSoftDeleteDto>("commentSoftDeleteDto");
+            var comment = _memoryCache.Get<Comment>("commentSoftDelete");
             if (comment is null)
             {
                 comment = await _homeServiceDbContext.Comments
-                .Select(a => new CommentSoftDeleteDto()
-                {
-                    Id = a.Id,
-                    IsDeleted = a.IsDeleted
-                }).FirstOrDefaultAsync(a => a.Id == commentId, cancellationToken);
+                .FirstOrDefaultAsync(a => a.Id == commentId, cancellationToken);
 
                 if (comment != null)
                 {
-                    _memoryCache.Set("commentSoftDeleteDto", comment, new MemoryCacheEntryOptions()
+                    _memoryCache.Set("commentSoftDelete", comment, new MemoryCacheEntryOptions()
                     {
                         SlidingExpiration = TimeSpan.FromSeconds(120)
                     });
-                    _logger.LogInformation("commentSoftDeleteDto has been returned form database and cached in memory successfully.");
+                    _logger.LogInformation("commentSoftDelete has been returned form database and cached in memory successfully.");
                     return comment;
                 }
                 _logger.LogError($"comment with id {commentId} not found in GetCommentSoftDeleteDto method.");

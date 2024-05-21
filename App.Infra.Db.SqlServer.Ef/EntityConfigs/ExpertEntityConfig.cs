@@ -27,22 +27,6 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(e => e.LastName)
                 .HasMaxLength(50)
                 .IsRequired();
-            //builder
-            //    .Property(e => e.Email)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            //builder
-            //    .Property(e => e.Password)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            //builder
-            //    .Property(e => e.ConfirmPassword)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            builder
-                .Property(e => e.PhoneNumber)
-                .HasMaxLength(11)
-                .IsRequired();
             builder
                 .Property(e => e.Age)
                 .IsRequired();
@@ -55,15 +39,15 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             builder
                 .Property(e => e.IsDeleted)
                 .IsRequired();
-            builder
-                .Property(e => e.IsConfirmed)
-                .IsRequired();
+            //builder
+            //    .Property(e => e.IsConfirmed)
+            //    .IsRequired();
 
-            builder
-                .HasOne(e => e.Admin)
-                .WithMany(a => a.Experts)
-                .HasForeignKey(e => e.AdminId)
-                .OnDelete(DeleteBehavior.Restrict);
+            //builder
+            //    .HasOne(e => e.Admin)
+            //    .WithMany(a => a.Experts)
+            //    .HasForeignKey(e => e.AdminId)
+            //    .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasOne(e => e.Address)
                 .WithOne(a => a.Expert)

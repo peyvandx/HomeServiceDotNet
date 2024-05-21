@@ -41,6 +41,9 @@ namespace App.Infra.Data.Repos.Ef.Expert
         {
             await _homeServiceDbContext.Categories.AddAsync(createdCategory, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+
+            _memoryCache.Remove("categoryDtos");
+
             _logger.LogInformation("Category has been successfully added to the database.");
             return createdCategory;
         }
@@ -57,6 +60,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Id = a.Id,
                     Title = a.Title,
                     Description = a.Description,
+                    IsDeleted = a.IsDeleted,
                 }).ToListAsync(cancellationToken);
 
                 if (categories is null)
@@ -92,34 +96,36 @@ namespace App.Infra.Data.Repos.Ef.Expert
 
         public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
         {
-            var category = _memoryCache.Get<CategoryDto>("categoryDto");
-            if (category is null)
-            {
-                category = await _homeServiceDbContext.Categories
+            //var category = _memoryCache.Get<CategoryDto>("categoryDto");
+            //if (category is null)
+            //{
+                var category = await _homeServiceDbContext.Categories
                 .Select(a => new Domain.Core.Expert.DTOs.CategoryDto
                 {
                     Id = a.Id,
                     Title = a.Title,
                     Description = a.Description,
+                    IsDeleted = a.IsDeleted
                 }).FirstOrDefaultAsync(a => a.Id == categoryId, cancellationToken);
 
                 if (category != null)
                 {
-                    _memoryCache.Set("categoryDto", category, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("categoryDto returned from database, and cached in memory successfully.");
-                    return category;
+                //_memoryCache.Set("categoryDto", category, new MemoryCacheEntryOptions()
+                //{
+                //    SlidingExpiration = TimeSpan.FromSeconds(120)
+                //});
+                //_logger.LogInformation("categoryDto returned from database, and cached in memory successfully.");
+                _logger.LogInformation("categoryDto returned from database.");
+                return category;
                 }
                 else
                 {
                     _logger.LogError("We expected the categoryDto to return from the database, but it returned null.");
                     throw new Exception("Something wents wrong!, please try again.");
                 }
-            }
-            _logger.LogInformation("categoryDto returned from InMemoryCache.");
-            return category;
+            //}
+            //_logger.LogInformation("categoryDto returned from InMemoryCache.");
+            //return category;
         }
 
         //public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
@@ -144,33 +150,43 @@ namespace App.Infra.Data.Repos.Ef.Expert
             var deletedCategory = await GetCategorySoftDeleteDto(categoryId, cancellationToken);
             deletedCategory.IsDeleted = true;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return deletedCategory;
+
+            _memoryCache.Remove("categoryDtos");
+
+            var deletedCategoryDto = new CategorySoftDeleteDto();
+            deletedCategoryDto.Id = deletedCategory.Id;
+            deletedCategoryDto.IsDeleted = deletedCategory.IsDeleted;
+
+            return deletedCategoryDto;
         }
 
         public async Task<CategoryDto> UpdateCategory(Category updatedCategory, CancellationToken cancellationToken)
         {
             var updatingCategory = await GetCategoryDto(updatedCategory.Id, cancellationToken);
+            
             updatingCategory.Title = updatedCategory.Title;
             updatingCategory.Description = updatedCategory.Description;
             updatingCategory.Image = updatedCategory.Image;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return updatingCategory;
+
+            var updatingCategoryDto = new CategoryDto();
+            updatingCategoryDto.Title = updatingCategory.Title;
+            updatingCategoryDto.Description = updatingCategory.Description;
+            updatingCategoryDto.Image = updatingCategory.Image;
+            _memoryCache.Remove("categoryDtos");
+
+            return updatingCategoryDto;
         }
         #endregion
 
         #region PrivateMethods
-        private async Task<CategoryDto> GetCategoryDto(int categoryId, CancellationToken cancellationToken)
+        private async Task<Category> GetCategoryDto(int categoryId, CancellationToken cancellationToken)
         {
-            var category = _memoryCache.Get<CategoryDto>("categoryDto");
+            var category = _memoryCache.Get<Category>("categoryDto");
             if (category is null)
             {
                 category = await _homeServiceDbContext.Categories
-                .Select(a => new CategoryDto()
-                {
-                    Id = a.Id,
-                    Title = a.Title,
-                    Description = a.Description,
-                }).FirstOrDefaultAsync(a => a.Id == categoryId, cancellationToken);
+                    .FirstOrDefaultAsync(c => c.Id == categoryId, cancellationToken);
 
                 if (category != null)
                 {
@@ -188,31 +204,27 @@ namespace App.Infra.Data.Repos.Ef.Expert
             return category;
         }
 
-        private async Task<CategorySoftDeleteDto> GetCategorySoftDeleteDto(int categoryId, CancellationToken cancellationToken)
+        private async Task<Category> GetCategorySoftDeleteDto(int categoryId, CancellationToken cancellationToken)
         {
-            var category = _memoryCache.Get<CategorySoftDeleteDto>("categorySoftDeleteDto");
+            var category = _memoryCache.Get<Category>("categorySoftDelete");
             if (category is null)
             {
                 category = await _homeServiceDbContext.Categories
-                .Select(a => new CategorySoftDeleteDto()
-                {
-                    Id = a.Id,
-                    IsDeleted = a.IsDeleted
-                }).FirstOrDefaultAsync(a => a.Id == categoryId, cancellationToken);
+                .FirstOrDefaultAsync(a => a.Id == categoryId, cancellationToken);
 
                 if (category != null)
                 {
-                    _memoryCache.Set("categorySoftDeleteDto", category, new MemoryCacheEntryOptions()
+                    _memoryCache.Set("categorySoftDelete", category, new MemoryCacheEntryOptions()
                     {
                         SlidingExpiration = TimeSpan.FromSeconds(120)
                     });
-                    _logger.LogInformation("categorySoftDeleteDto has been returned form database and cached in memory successfully.");
+                    _logger.LogInformation("categorySoftDelete has been returned form database and cached in memory successfully.");
                     return category;
                 }
-                _logger.LogError($"category with id {categoryId} not found in GetCategorySoftDeleteDto method.");
+                _logger.LogError($"category with id {categoryId} not found in GetCategorySoftDelete method.");
                 throw new Exception($"category with id {categoryId} not found.");
             }
-            _logger.LogInformation("categorySoftDeleteDto returned from InMemeoryCache in GetCategorySoftDeleteDto method.");
+            _logger.LogInformation("categorySoftDelete returned from InMemeoryCache in GetCategorySoftDelete method.");
             return category;
 
         }

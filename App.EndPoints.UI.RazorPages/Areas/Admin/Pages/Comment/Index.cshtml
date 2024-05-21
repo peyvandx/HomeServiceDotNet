@@ -1,0 +1,63 @@
+﻿@page
+@model App.EndPoints.UI.RazorPages.Areas.Admin.Pages.Comment.IndexModel
+@{
+    Layout = "Shared/_AdminLayout";
+}
+
+<div class="table-responsive text-nowrap">
+    <table class="table card-table">
+        <thead>
+            <tr>
+                <th>ردیف</th>
+                <th>امتیاز</th>
+                <th>متن</th>
+                <th>وضعیت</th>
+                <th>عمل‌ها</th>
+            </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+            @foreach (var comment in @Model.Comments)
+            {
+                <tr>
+                    <td><strong>@comment.Id</strong></td>
+                    <td>@comment.Rate</td>
+                    <td>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-offset="0,8" data-bs-placement="top" data-bs-custom-class="tooltip-secondary" data-bs-original-title="@comment.Description">
+                            مشاهده متن کامنت
+                        </button>
+                    </td>
+                    <td>
+                        @if (comment.IsDeleted == false)
+                        {
+                            <span class="badge bg-label-primary me-1">فعال</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-label-danger me-1">غیرفعال</span>
+                        }
+
+                        @if (comment.IsConfirmed == true)
+                        {
+                            <span class="badge bg-label-primary me-1">تایید‌شده</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-label-warning me-1">درانتظار‌تایید</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu" style="">
+                                <a asp-route-commentId="@comment.Id" asp-page-handler="Active" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>تایید</a>
+                                <a asp-route-commentId="@comment.Id" asp-page-handler="Delete" class="dropdown-item"> <i class="bx bx-trash me-1"></i>حذف</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

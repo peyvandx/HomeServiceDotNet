@@ -2,6 +2,8 @@
 using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Expert.Entities;
 using App.Infra.Db.SqlServer.Ef.EntityConfigs;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using System;
@@ -10,9 +12,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Microsoft.EntityFrameworkCore.DbContext
+
 namespace App.Infra.Db.SqlServer.Ef.DbContext
 {
-    public class HomeServiceDbContext : Microsoft.EntityFrameworkCore.DbContext
+    public class HomeServiceDbContext : IdentityDbContext<ApplicationUser, IdentityRole<int>, int>
     {
         public HomeServiceDbContext(DbContextOptions<HomeServiceDbContext> options) : base(options)
         {
@@ -37,6 +41,9 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
             modelBuilder.ApplyConfiguration(new SkillEntityConfig());
             modelBuilder.ApplyConfiguration(new CityEntityConfig());
             modelBuilder.ApplyConfiguration(new ProvinceEntityConfig());
+
+            UserConfigurations.SeedUsers(modelBuilder);
+
             base.OnModelCreating(modelBuilder);
         }
 

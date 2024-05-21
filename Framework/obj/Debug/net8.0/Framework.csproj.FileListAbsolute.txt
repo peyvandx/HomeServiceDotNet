@@ -1,0 +1,13 @@
+E:\Maktab - 104 - CSharp\Final-Project\Framework\bin\Debug\net8.0\Framework.deps.json
+E:\Maktab - 104 - CSharp\Final-Project\Framework\bin\Debug\net8.0\Framework.dll
+E:\Maktab - 104 - CSharp\Final-Project\Framework\bin\Debug\net8.0\Framework.pdb
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.GeneratedMSBuildEditorConfig.editorconfig
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.AssemblyInfoInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.AssemblyInfo.cs
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.csproj.CoreCompileInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.sourcelink.json
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.dll
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\refint\Framework.dll
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.pdb
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\ref\Framework.dll
+E:\Maktab - 104 - CSharp\Final-Project\Framework\obj\Debug\net8.0\Framework.csproj.AssemblyReference.cache

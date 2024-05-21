@@ -21,8 +21,7 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .IsRequired();
             builder
                 .Property(c => c.Image)
-                .HasMaxLength(4000)
-                .IsRequired();
+                .HasMaxLength(4000);
             builder
                 .Property(c => c.Description)
                 .HasMaxLength(4000)
@@ -42,7 +41,9 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 new Category { Id = 4, Title = "اسباب کشی و باربری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
                 new Category { Id = 5, Title = "لوازم خانگی", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
                 new Category { Id = 6, Title = "خدمات اداری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 7, Title = "دیجیتال و نرم افزار", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " }
+                new Category { Id = 7, Title = "دیجیتال و نرم افزار", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 8, Title = "نظافت و بهداشت", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 9, Title = "پزشکی و سلامت", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " }
                 );
         }
     }

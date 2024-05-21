@@ -15,7 +15,7 @@ namespace App.Domain.Core.Customer.DTOs
         public double Price { get; set; } //ghimate pardakht shode
         public bool IsDone { get; set; } = false;
         //public DateTime CreatedAt { get; set; }
-        //public bool IsDeleted { get; set; } = false;
+        public bool IsDeleted { get; set; } = false;
         public int CustomerId { get; set; }
         public int ExpertId { get; set; }
         public int ServiceId { get; set; }

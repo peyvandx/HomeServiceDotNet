@@ -155,7 +155,6 @@ namespace App.Infra.Data.Repos.Ef.Expert
             var updatingExpert = await GetExpertDto(updatedExpert.Id, cancellationToken);
             updatingExpert.FirstName = updatedExpert.FirstName;
             updatingExpert.LastName = updatedExpert.LastName;
-            updatingExpert.PhoneNumber = updatedExpert.PhoneNumber;
             updatingExpert.ProfileImage = updatedExpert.ProfileImage;
             updatingExpert.Age = updatedExpert.Age;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
@@ -175,7 +174,6 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Id = a.Id,
                     FirstName = a.FirstName,
                     LastName = a.LastName,
-                    PhoneNumber = a.PhoneNumber,
                     ProfileImage = a.ProfileImage,
                 }).FirstOrDefaultAsync(a => a.Id == expertId, cancellationToken);
 

@@ -27,6 +27,9 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property (a => a.LastName)
                 .HasMaxLength(50)
                 .IsRequired();
+            builder
+                .Property(a => a.ProfileImage)
+                .HasMaxLength(4000);
             //builder
             //    .Property(a => a.Email)
             //    .HasMaxLength(100)
@@ -39,22 +42,29 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             //    .Property(a => a.ConfirmPassword)
             //    .HasMaxLength(100)
             //    .IsRequired();
+            //builder
+            //    .Property(a => a.PhoneNumber)
+            //    .HasMaxLength(11)
+            //    .IsRequired();
             builder
-                .Property(a => a.ProfileImage)
-                .HasMaxLength(4000);
-            builder
-                .Property(a => a.PhoneNumber)
-                .HasMaxLength(11)
-                .IsRequired();
-            builder
-                .Property(a => a.SignUpDate)
-                .IsRequired();
+                .Property(a => a.SignUpDate);
 
             builder
                 .HasMany(a => a.Comments)
                 .WithOne(c => c.Admin)
                 .HasForeignKey(c => c.AdminId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasData(new List<Admin>
+            {
+                new Admin()
+                {
+                    Id = 1,
+                    FirstName = "ادمین",
+                    LastName = "ادمینیان پور",
+                    ProfileImage = "/UserAssets/img/admin/1.jpg",
+				}
+            });
         }
     }
 }

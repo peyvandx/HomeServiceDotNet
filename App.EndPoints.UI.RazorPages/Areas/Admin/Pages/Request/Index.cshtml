@@ -1,0 +1,97 @@
+﻿@page
+@using Framework
+@using App.Domain.Core.Customer.Enums
+@model App.EndPoints.UI.RazorPages.Areas.Admin.Pages.ServiceRequest.IndexModel
+@{
+    Layout = "Shared/_AdminLayout";
+}
+
+<div class="table-responsive text-nowrap">
+    <table class="table card-table">
+        <thead>
+            <tr>
+                <th>ردیف</th>
+                <th>وضعیت‌فعلی‌درخواست</th>
+                <th>تغییر‌وضعیت‌درخواست</th>
+                <th>توضیحات</th>
+                <th>وضعیت‌کلی</th>
+                <th>عمل‌ها</th>
+            </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+            @foreach (var serviceRequest in @Model.ServiceRequests)
+            {
+                <tr>
+                    <td><strong>@serviceRequest.Id</strong></td>
+                    <td><span class="badge bg-label-primary me-1">@serviceRequest.Status.GetEnumDisplayName()</span></td>
+                    <td>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="">
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                                    تغییر‌وضعیت‌به
+                                </button>
+
+                                <!-- Modal -->
+                                <form method="post">
+                                    <input asp-for="@Model.ServiceRequestChangeStatus.ServiceRequestId" type="hidden" value="@serviceRequest.Id" />
+                                    <div class="modal fade" id="modalCenter" tabindex="-1" style="display: none;" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title secondary-font" id="modalCenterTitle">تغییر وضعیت درخواست</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <label asp-for="@Model.ServiceRequestChangeStatus.NewStatus" class="form-label">وضعیت جدید درخواست</label>
+                                                    <select asp-for="@Model.ServiceRequestChangeStatus.NewStatus" class="select2 form-select" data-allow-clear="true">
+                                                        @foreach (Status status in Enum.GetValues(typeof(Status)))
+                                                        {
+                                                            <option value="@status" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>@status.GetEnumDisplayName()</option>
+                                                        }
+                                                    </select>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-label-secondary" data-bs-dismiss="modal">
+                                                        بستن
+                                                    </button>
+                                                    <button type="submit" class="btn btn-outline-primary">ذخیره تغییرات</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-offset="0,8" data-bs-placement="top" data-bs-custom-class="tooltip-secondary" data-bs-original-title="@serviceRequest.CustomerDescription">
+                            مشاهده متن درخواست
+                        </button>
+                    </td>
+                    <td>
+                        @if (serviceRequest.IsDeleted == false)
+                        {
+                            <span class="badge bg-label-primary me-1">فعال</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-label-danger me-1">غیرفعال</span>
+                        }
+
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu" style="">
+                                <a asp-page-handler="Delete" asp-route-id="@serviceRequest.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i>حذف</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

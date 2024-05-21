@@ -20,45 +20,26 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .IsRequired();
             builder
                 .Property(c => c.FirstName)
-                .HasMaxLength(50)
-                .IsRequired();
+                .HasMaxLength(50);
             builder
                 .Property(c => c.LastName)
-                .HasMaxLength(50)
-                .IsRequired();
-            //builder
-            //    .Property(c => c.Email)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            //builder
-            //    .Property(c => c.Password)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            //builder
-            //    .Property(c => c.ConfirmPassword)
-            //    .HasMaxLength(100)
-            //    .IsRequired();
-            builder
-                .Property(c => c.PhoneNumber)
-                .HasMaxLength(11)
-                .IsRequired();
+                .HasMaxLength(50);
             builder
                 .Property(c => c.ProfileImage)
                 .HasMaxLength(4000);
             builder
-                .Property(c => c.SignUpDate)
-                .IsRequired();
+                .Property(c => c.SignUpDate);
             builder
                 .Property(c => c.IsDeleted)
                 .IsRequired();
-            builder
-                .Property(c => c.IsConfirmed)
-                .IsRequired();
+            //builder
+            //    .Property(c => c.IsConfirmed)
+            //    .IsRequired();
 
-            builder
-                .HasOne(c => c.Admin)
-                .WithMany(a => a.Customers)
-                .OnDelete(DeleteBehavior.Restrict);
+            //builder
+            //    .HasOne(c => c.Admin)
+            //    .WithMany(a => a.Customers)
+            //    .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasMany(c => c.Comments)
                 .WithOne(c => c.Customer)
@@ -74,6 +55,33 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .WithOne(sr => sr.Customer)
                 .HasForeignKey(sr => sr.CustomerId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder.HasData(new List<Customer>
+            {
+                new Customer ()
+                {
+                    Id = 2,
+                    FirstName = "علی",
+                    LastName = "محمدی",
+                    ProfileImage = "/UserAssets/img/customer/1.jpg",
+                },
+
+				new Customer ()
+				{
+					Id = 3,
+					FirstName = "سحر",
+					LastName = "رمضانی",
+					ProfileImage = "/UserAssets/img/customer/2.jpg",
+				},
+
+				new Customer ()
+				{
+					Id = 4,
+					FirstName = "مریم",
+					LastName = "اکبری",
+					ProfileImage = "/UserAssets/img/customer/3.jpg",
+				}
+			});
         }
     }
 }

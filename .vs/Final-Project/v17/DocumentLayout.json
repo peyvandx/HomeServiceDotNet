@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\shared\\_adminlayout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.db.sqlserver.ef\\dbcontext\\homeservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FBB58DDD-378B-4B8B-965A-8353DF67CCCF}|App.Infra.Db.SqlServer.Ef\\App.Infra.Db.SqlServer.Ef.csproj|solutionrelative:app.infra.db.sqlserver.ef\\dbcontext\\homeservicedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\account\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\account\\pages\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\account\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\account\\pages\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,44 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "HomeServiceDbContext.cs",
               "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
               "RelativeDocumentMoniker": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
               "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
               "RelativeToolTip": "App.Infra.Db.SqlServer.Ef\\DbContext\\HomeServiceDbContext.cs",
-              "ViewState": "AQIAAAcAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAA5wAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-11T11:23:57.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Index.cshtml",
-              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Index.cshtml",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Index.cshtml",
-              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAOAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T11:18:54.881Z",
+              "WhenOpened": "2024-05-21T20:04:14.079Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_AdminLayout.cshtml",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Shared\\_AdminLayout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAASAAAA",
+              "DocumentIndex": 1,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Login.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Login.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Login.cshtml.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAwwCcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:26:23.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Register.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Register.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Account\\Pages\\Register.cshtml.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T19:13:24.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAIcAAAAAAAAAAAAAAJYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-11T11:18:45.036Z",
+              "WhenOpened": "2024-05-21T19:10:38.918Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-21T19:09:29.352Z",
               "EditorCaption": ""
             }
           ]

@@ -17,7 +17,7 @@ namespace App.Domain.Core.Expert.DTOs
         public string PhoneNumber { get; set; }
         public string ProfileImage { get; set; }
         //public DateTime SignUpDate { get; set; }
-        public int Age { get; set; }
+        public int? Age { get; set; }
         //public bool IsDeleted { get; set; } = false;
         //public bool IsConfirmed { get; set; } = false;
         //public int AdminId { get; set; }

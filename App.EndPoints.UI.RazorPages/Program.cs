@@ -3,6 +3,7 @@ using App.Domain.AppServices.Customer;
 using App.Domain.AppServices.Expert;
 using App.Domain.Core.Admin.AppServices;
 using App.Domain.Core.Admin.Data;
+using App.Domain.Core.Admin.Entities;
 using App.Domain.Core.Admin.Entities.Configs;
 using App.Domain.Core.Admin.Services;
 using App.Domain.Core.Customer.AppServices;
@@ -14,10 +15,13 @@ using App.Domain.Core.Expert.Services;
 using App.Domain.Services.Admin;
 using App.Domain.Services.Customer;
 using App.Domain.Services.Expert;
+using App.EndPoints.UI.RazorPages.Infrastructure;
 using App.Infra.Data.Repos.Ef.Admin;
 using App.Infra.Data.Repos.Ef.Customer;
 using App.Infra.Data.Repos.Ef.Expert;
 using App.Infra.Db.SqlServer.Ef.DbContext;
+using Framework;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 using Serilog.Events;
@@ -98,10 +102,33 @@ builder.Services.AddScoped<ISkillRepository, SkillRepository>();
 builder.Services.AddScoped<ISkillService, SkillService>();
 builder.Services.AddScoped<ISkillAppService, SkillAppService>();
 #endregion
+
+builder.Services.AddScoped<IAccountAppService, AccountAppService>();
+
+#region IdentityConfiguration
+
+builder.Services.AddIdentity<ApplicationUser, IdentityRole<int>>
+    (options =>
+    {
+        options.SignIn.RequireConfirmedAccount = false;
+        options.Password.RequireDigit = false;
+        options.Password.RequiredLength = 6;
+        options.Password.RequireNonAlphanumeric = false;
+        options.Password.RequireUppercase = false;
+        options.Password.RequireLowercase = false;
+    })
+    .AddRoles<IdentityRole<int>>()
+    .AddEntityFrameworkStores<HomeServiceDbContext>()
+    .AddErrorDescriber<PersianIdentityErrorDescriber>();
+
+#endregion
+
 #endregion
 
 
-builder.Services.AddRazorPages();
+builder.Services.AddRazorPages()
+    .AddRazorRuntimeCompilation();
+
 builder.Services.AddMemoryCache();
 
 
@@ -137,11 +164,14 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
+app.CustomExceptionHandlingMiddleware();
+
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapRazorPages();

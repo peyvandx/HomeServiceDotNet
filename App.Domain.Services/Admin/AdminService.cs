@@ -28,7 +28,6 @@ namespace App.Domain.Services.Admin
             var signingUpAdmin = new Core.Admin.Entities.Admin();
             signingUpAdmin.FirstName = adminDto.FirstName;
             signingUpAdmin.LastName = adminDto.LastName;
-            signingUpAdmin.PhoneNumber = adminDto.PhoneNumber;
             signingUpAdmin.SignUpDate = DateTime.Now;
             return await _adminRepository.CreateAdmin(signingUpAdmin, cancellationToken);
         }
@@ -50,7 +49,6 @@ namespace App.Domain.Services.Admin
             var updatingAdmin = new Core.Admin.Entities.Admin();
             updatingAdmin.FirstName = adminDto.FirstName;
             updatingAdmin.LastName = adminDto.LastName;
-            updatingAdmin.PhoneNumber = adminDto.PhoneNumber;
             updatingAdmin.ProfileImage = adminDto.ProfileImage;
             return await _adminRepository.UpdateAdmin(updatingAdmin, cancellationToken);
         }

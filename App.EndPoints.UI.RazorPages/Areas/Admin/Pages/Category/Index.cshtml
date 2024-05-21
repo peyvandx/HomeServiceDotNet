@@ -1,0 +1,60 @@
+﻿@page
+@using App.Domain.AppServices.Expert
+@using App.Domain.Core.Expert.AppServices
+@inject ICategoryAppService CategoryAppService
+@model App.EndPoints.UI.RazorPages.Areas.Admin.Pages.Category.IndexModel
+@{
+    Layout = "Shared/_AdminLayout";
+}
+
+<a href="@Url.Page("Create")" type="button" class="btn rounded-pill btn-primary btn-medium">افزودن دسته بندی جدید</a>
+
+<div class="table-responsive text-nowrap">
+    <table class="table card-table">
+        <thead>
+            <tr>
+                <th>ردیف</th>
+                <th>عنوان</th>
+                <th>عکس</th>
+                <th>وضعیت</th>
+                <th>عمل‌ها</th>
+            </tr>
+        </thead>
+        <tbody class="table-border-bottom-0">
+            @foreach (var category in await CategoryAppService.GetCategories(default))
+            {
+                <tr>
+                    <td><strong>@category.Id</strong></td>
+                    <td>@category.Title</td>
+                    <td>
+                        <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
+                            <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="تونی استارک" data-bs-original-title="تونی استارک">
+                                <img src="/AdminAssets/img/avatars/5.png" alt="آواتار" class="rounded-circle">
+                            </li>
+                        </ul>
+                    </td>
+                    <td>
+                        @if (category.IsDeleted == false)
+                        {
+                            <span class="badge bg-label-primary me-1">فعال</span>
+                        }else
+                        {
+                            <span class="badge bg-label-warning me-1">غیرفعال</span>
+                        }
+                    </td>
+                    <td>
+                        <div class="dropdown">
+                            <button type="button" class="btn p-0 dropdown-toggle hide-arrow" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bx bx-dots-vertical-rounded"></i>
+                            </button>
+                            <div class="dropdown-menu" style="">
+                                <a asp-page="Update" asp-route-id="@category.Id" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
+                                <a asp-page-handler="Delete" asp-route-id="@category.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i> حذف</a>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

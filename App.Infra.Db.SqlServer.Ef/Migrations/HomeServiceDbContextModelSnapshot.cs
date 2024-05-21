@@ -17,7 +17,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.4")
+                .HasAnnotation("ProductVersion", "8.0.5")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -43,22 +43,184 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
                     b.Property<string>("ProfileImage")
-                        .IsRequired()
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
-                    b.Property<DateTime>("SignUpDate")
+                    b.Property<DateTime?>("SignUpDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.ToTable("Admins");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            FirstName = "ادمین",
+                            IsDeleted = false,
+                            LastName = "ادمینیان پور",
+                            ProfileImage = "/UserAssets/img/admin/1.jpg",
+                            SignUpDate = new DateTime(2024, 5, 21, 1, 1, 51, 72, DateTimeKind.Local).AddTicks(8381)
+                        });
+                });
+
+            modelBuilder.Entity("App.Domain.Core.Admin.Entities.ApplicationUser", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("AdminId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<bool>("EmailConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("ExpertId")
+                        .HasColumnType("int");
+
+                    b.Property<bool>("LockoutEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTimeOffset?>("LockoutEnd")
+                        .HasColumnType("datetimeoffset");
+
+                    b.Property<string>("NormalizedEmail")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedUserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("PasswordHash")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PhoneNumber")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("PhoneNumberConfirmed")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("SecurityStamp")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("UserName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdminId");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ExpertId");
+
+                    b.HasIndex("NormalizedEmail")
+                        .HasDatabaseName("EmailIndex");
+
+                    b.HasIndex("NormalizedUserName")
+                        .IsUnique()
+                        .HasDatabaseName("UserNameIndex")
+                        .HasFilter("[NormalizedUserName] IS NOT NULL");
+
+                    b.ToTable("AspNetUsers", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AccessFailedCount = 0,
+                            AdminId = 1,
+                            ConcurrencyStamp = "37f7baad-b223-4cc4-a8cc-cd3b1a7330f7",
+                            Email = "Admin@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ADMIN@GMAIL.COM",
+                            NormalizedUserName = "ADMIN@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMQDHc0Fbq14Z+nd8Gujer2dkwpoI9Xs1DHKZSgOTenBngHDpp7nwQh5p8pYW8vLPA==",
+                            PhoneNumber = "09377507920",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "011aacde-b90a-4b72-94dd-d678336b1bd7",
+                            TwoFactorEnabled = false,
+                            UserName = "Admin@gmail.com"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "929d148a-e105-4da4-8598-f6c5a94f9310",
+                            CustomerId = 2,
+                            Email = "Ali@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "ALI@GMAIL.COM",
+                            NormalizedUserName = "ALI@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAECuXQsAFhHILYbE4ybcm3oBW+EF0NO4wPGFM2HOECH4QUAbtsesFO4h3qXg2gPWrMQ==",
+                            PhoneNumber = "09377507920",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "fb3fe48f-69a6-483a-875e-a0963f8ad59b",
+                            TwoFactorEnabled = false,
+                            UserName = "Ali@gmail.com"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "62751c1d-1c27-413a-b9f7-49e44658857c",
+                            CustomerId = 3,
+                            Email = "Sahar@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "SAHAR@GMAIL.COM",
+                            NormalizedUserName = "SAHAR@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEApjf3JWjFHM2c+vmq3ieko9a4NeX5IWmG7u+NbqfBbFD9gQAOAQJVM6OqJhNapW1A==",
+                            PhoneNumber = "09377507920",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "fc9a8bee-d7cb-409f-965b-a6bce32890a9",
+                            TwoFactorEnabled = false,
+                            UserName = "Sahar@gmail.com"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AccessFailedCount = 0,
+                            ConcurrencyStamp = "b46845fe-4d6d-44c0-aa03-066addab6e97",
+                            CustomerId = 4,
+                            Email = "Maryam@gmail.com",
+                            EmailConfirmed = false,
+                            LockoutEnabled = false,
+                            NormalizedEmail = "MARYAM@GMAIL.COM",
+                            NormalizedUserName = "MARYAM@GMAIL.COM",
+                            PasswordHash = "AQAAAAIAAYagAAAAEK4J41Iv+0/CHU1X7Acdby9AJNOm4/GopCO//3Kx9jbv7fkLEJDfl/HbOBhgGYXJBg==",
+                            PhoneNumber = "09377507920",
+                            PhoneNumberConfirmed = false,
+                            SecurityStamp = "4db24bb6-8001-46de-95e0-dbaec9740cf0",
+                            TwoFactorEnabled = false,
+                            UserName = "Maryam@gmail.com"
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Address", b =>
@@ -133,7 +295,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7297),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(771),
                             IsDeleted = false,
                             Name = "آذربایجان شرقی",
                             ProvinceId = 1
@@ -141,7 +303,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7311),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(788),
                             IsDeleted = false,
                             Name = "آذربایجان غربی",
                             ProvinceId = 2
@@ -149,7 +311,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7314),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(791),
                             IsDeleted = false,
                             Name = "اردبیل",
                             ProvinceId = 3
@@ -157,7 +319,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7316),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(793),
                             IsDeleted = false,
                             Name = "اصفهان",
                             ProvinceId = 4
@@ -165,7 +327,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7318),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(795),
                             IsDeleted = false,
                             Name = "البرز",
                             ProvinceId = 5
@@ -173,7 +335,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7320),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(797),
                             IsDeleted = false,
                             Name = "ایلام",
                             ProvinceId = 6
@@ -181,7 +343,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7322),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(799),
                             IsDeleted = false,
                             Name = "بوشهر",
                             ProvinceId = 7
@@ -189,7 +351,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7324),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(801),
                             IsDeleted = false,
                             Name = "تهران",
                             ProvinceId = 8
@@ -197,7 +359,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7326),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(803),
                             IsDeleted = false,
                             Name = "چهارمحال و بختیاری",
                             ProvinceId = 9
@@ -205,7 +367,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7327),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(805),
                             IsDeleted = false,
                             Name = "خراسان جنوبی",
                             ProvinceId = 10
@@ -213,7 +375,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7329),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(807),
                             IsDeleted = false,
                             Name = "خراسان رضوی",
                             ProvinceId = 11
@@ -221,7 +383,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7331),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(809),
                             IsDeleted = false,
                             Name = "خراسان شمالی",
                             ProvinceId = 12
@@ -229,7 +391,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7333),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(811),
                             IsDeleted = false,
                             Name = "خوزستان",
                             ProvinceId = 13
@@ -237,7 +399,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7335),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(813),
                             IsDeleted = false,
                             Name = "زنجان",
                             ProvinceId = 14
@@ -245,7 +407,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7387),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(815),
                             IsDeleted = false,
                             Name = "سمنان",
                             ProvinceId = 15
@@ -253,7 +415,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7390),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(817),
                             IsDeleted = false,
                             Name = "سیستان و بلوچستان",
                             ProvinceId = 16
@@ -261,7 +423,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7392),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(819),
                             IsDeleted = false,
                             Name = "فارس",
                             ProvinceId = 17
@@ -269,7 +431,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7394),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(821),
                             IsDeleted = false,
                             Name = "قزوین",
                             ProvinceId = 18
@@ -277,7 +439,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7396),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(823),
                             IsDeleted = false,
                             Name = "قم",
                             ProvinceId = 19
@@ -285,7 +447,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7398),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(825),
                             IsDeleted = false,
                             Name = "کردستان",
                             ProvinceId = 20
@@ -293,7 +455,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7400),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(827),
                             IsDeleted = false,
                             Name = "کرمان",
                             ProvinceId = 21
@@ -301,7 +463,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7401),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(829),
                             IsDeleted = false,
                             Name = "کرمانشاه",
                             ProvinceId = 22
@@ -309,7 +471,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7403),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(831),
                             IsDeleted = false,
                             Name = "کهگیلویه و بویراحمد",
                             ProvinceId = 23
@@ -317,7 +479,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7405),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(833),
                             IsDeleted = false,
                             Name = "گلستان",
                             ProvinceId = 24
@@ -325,7 +487,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7408),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(835),
                             IsDeleted = false,
                             Name = "گیلان",
                             ProvinceId = 25
@@ -333,7 +495,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7410),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(837),
                             IsDeleted = false,
                             Name = "لرستان",
                             ProvinceId = 26
@@ -341,7 +503,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7411),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(839),
                             IsDeleted = false,
                             Name = "مازندران",
                             ProvinceId = 27
@@ -349,7 +511,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 28,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7413),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(841),
                             IsDeleted = false,
                             Name = "مرکزی",
                             ProvinceId = 28
@@ -357,7 +519,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 29,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7415),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(843),
                             IsDeleted = false,
                             Name = "هرمزگان",
                             ProvinceId = 29
@@ -365,7 +527,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 30,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7417),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(845),
                             IsDeleted = false,
                             Name = "همدان",
                             ProvinceId = 30
@@ -373,7 +535,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 31,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7419),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(846),
                             IsDeleted = false,
                             Name = "یزد",
                             ProvinceId = 31
@@ -394,7 +556,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<DateTime>("CreateDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int?>("CustomerId")
+                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<string>("Description")
@@ -402,7 +564,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
-                    b.Property<int?>("ExpertId")
+                    b.Property<int>("ExpertId")
                         .HasColumnType("int");
 
                     b.Property<bool>("IsConfirmed")
@@ -433,35 +595,25 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AdminId")
+                    b.Property<int?>("AdminId")
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<bool>("IsConfirmed")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
 
                     b.Property<string>("ProfileImage")
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
-                    b.Property<DateTime>("SignUpDate")
+                    b.Property<DateTime?>("SignUpDate")
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
@@ -469,6 +621,35 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasIndex("AdminId");
 
                     b.ToTable("Customers");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2,
+                            FirstName = "علی",
+                            IsDeleted = false,
+                            LastName = "محمدی",
+                            ProfileImage = "/UserAssets/img/customer/1.jpg",
+                            SignUpDate = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(6582)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            FirstName = "سحر",
+                            IsDeleted = false,
+                            LastName = "رمضانی",
+                            ProfileImage = "/UserAssets/img/customer/2.jpg",
+                            SignUpDate = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(6613)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            FirstName = "مریم",
+                            IsDeleted = false,
+                            LastName = "اکبری",
+                            ProfileImage = "/UserAssets/img/customer/3.jpg",
+                            SignUpDate = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(6616)
+                        });
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Province", b =>
@@ -498,217 +679,217 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7976),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1696),
                             IsDeleted = false,
                             Name = "آذربایجان شرقی"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7988),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1707),
                             IsDeleted = false,
                             Name = "آذربایجان غربی"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7990),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1710),
                             IsDeleted = false,
                             Name = "اردبیل"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7992),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1712),
                             IsDeleted = false,
                             Name = "اصفهان"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7994),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1714),
                             IsDeleted = false,
                             Name = "البرز"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7996),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1716),
                             IsDeleted = false,
                             Name = "ایلام"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7997),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1717),
                             IsDeleted = false,
                             Name = "بوشهر"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(7999),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1719),
                             IsDeleted = false,
                             Name = "تهران"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8001),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1721),
                             IsDeleted = false,
                             Name = "چهارمحال و بختیاری"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8003),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1723),
                             IsDeleted = false,
                             Name = "خراسان جنوبی"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8005),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1725),
                             IsDeleted = false,
                             Name = "خراسان رضوی"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8007),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1727),
                             IsDeleted = false,
                             Name = "خراسان شمالی"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8009),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1729),
                             IsDeleted = false,
                             Name = "خوزستان"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8010),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1731),
                             IsDeleted = false,
                             Name = "زنجان"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8012),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1732),
                             IsDeleted = false,
                             Name = "سمنان"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8014),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1734),
                             IsDeleted = false,
                             Name = "سیستان و بلوچستان"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8016),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1736),
                             IsDeleted = false,
                             Name = "فارس"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8018),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1738),
                             IsDeleted = false,
                             Name = "قزوین"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8020),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1740),
                             IsDeleted = false,
                             Name = "قم"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8022),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1742),
                             IsDeleted = false,
                             Name = "کردستان"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8024),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1743),
                             IsDeleted = false,
                             Name = "کرمان"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8025),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1745),
                             IsDeleted = false,
                             Name = "کرمانشاه"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8027),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1747),
                             IsDeleted = false,
                             Name = "کهگیلویه و بویراحمد"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8029),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1749),
                             IsDeleted = false,
                             Name = "گلستان"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8031),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1751),
                             IsDeleted = false,
                             Name = "گیلان"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8033),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1753),
                             IsDeleted = false,
                             Name = "لرستان"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8035),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1755),
                             IsDeleted = false,
                             Name = "مازندران"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8037),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1757),
                             IsDeleted = false,
                             Name = "مرکزی"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8106),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1759),
                             IsDeleted = false,
                             Name = "هرمزگان"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8109),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1761),
                             IsDeleted = false,
                             Name = "همدان"
                         },
                         new
                         {
                             Id = 31,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(8111),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 77, DateTimeKind.Local).AddTicks(1763),
                             IsDeleted = false,
                             Name = "یزد"
                         });
@@ -799,7 +980,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8543),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(8992),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -808,7 +989,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8584),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9014),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -817,7 +998,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8587),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9022),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -826,7 +1007,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8589),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9024),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -835,7 +1016,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8591),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9026),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -844,7 +1025,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8594),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9028),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
@@ -853,11 +1034,29 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 837, DateTimeKind.Local).AddTicks(8596),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9033),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
                             Image = "",
                             IsDeleted = false,
                             Title = "دیجیتال و نرم افزار"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9035),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نظافت و بهداشت"
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 75, DateTimeKind.Local).AddTicks(9037),
+                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پزشکی و سلامت"
                         });
                 });
 
@@ -869,22 +1068,20 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("AddressId")
+                    b.Property<int?>("AddressId")
                         .HasColumnType("int");
 
-                    b.Property<int>("AdminId")
+                    b.Property<int?>("AdminId")
                         .HasColumnType("int");
 
-                    b.Property<int>("Age")
+                    b.Property<int?>("Age")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
-
-                    b.Property<bool>("IsConfirmed")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
@@ -894,23 +1091,19 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("PhoneNumber")
-                        .IsRequired()
-                        .HasMaxLength(11)
-                        .HasColumnType("nvarchar(11)");
-
                     b.Property<string>("ProfileImage")
-                        .IsRequired()
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
-                    b.Property<DateTime>("SignUpDate")
+                    b.Property<DateTime?>("SignUpDate")
+                        .IsRequired()
                         .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AddressId")
-                        .IsUnique();
+                        .IsUnique()
+                        .HasFilter("[AddressId] IS NOT NULL");
 
                     b.HasIndex("AdminId");
 
@@ -977,7 +1170,6 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasColumnType("nvarchar(4000)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasMaxLength(4000)
                         .HasColumnType("nvarchar(4000)");
 
@@ -1003,11 +1195,1188 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 4, 30, 7, 52, 23, 838, DateTimeKind.Local).AddTicks(434),
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1391),
                             Description = "",
                             Image = "",
                             IsDeleted = false,
                             Title = "کاشی و سرامیک",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 2,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1407),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "بنایی ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1423),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "گچ کاری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1426),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کارگر ساده",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1428),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "بازسازی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1430),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کانال سازی و دریچه کولر",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1432),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "عایق کاری و ایزوگام",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1435),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سنگ کاری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 9,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1437),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سیمان کاری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1439),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نقاشی ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 11,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1442),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کابینت",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 12,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1444),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کاغذ دیواری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 13,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1446),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نجاری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 14,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1451),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کفسابی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 15,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1504),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کفپوش",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 16,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1507),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پارکت",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 17,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1511),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لمینت",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 18,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1548),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "موکت",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 19,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1551),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "دوخت پرده",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 20,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1553),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "مبلمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 21,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1555),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سرویس خواب",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 22,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1558),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سقف کاذب",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 23,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1560),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نمای ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 24,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1562),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر نمای ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 25,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1564),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "شیشه بری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 26,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1566),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "توری پنجره",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 27,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1569),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نصب درب چوبی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 28,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1571),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "جوشکاری و آهنگری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 29,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1573),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کلید سازی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 30,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1575),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "گل و گیاه آپارتمانی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 31,
+                            CategoryId = 1,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1577),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "باغبانی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 32,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1580),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کولر آبی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 33,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1582),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "کولر گازی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 34,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1584),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پکیج",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 35,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1586),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "آبگرمکن",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 36,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1588),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "فن‌کویل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 37,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1590),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "چیلر و هواساز",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 38,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1592),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "رادیاتور شوفاژ",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 39,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1594),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "موتورخانه",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 40,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1597),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "بخاری گازی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 41,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1599),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "شومینه گازی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 42,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1601),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لوله کشی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 43,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1603),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "شیرآلات ساختمانی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 44,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1606),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لوله بازکنی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 45,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1608),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "توالت فرنگی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 46,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1610),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پمپ آب",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 47,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1612),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لوله‌ کشی گاز",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 48,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1614),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تخلیه چاه",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 49,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1617),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "فلاش تانک",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 50,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1619),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "روشویی و دست‌شور",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 51,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1621),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سینک ظرفشویی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 52,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1623),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "برق کاری ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 53,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1625),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "آیفون تصویری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 54,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1628),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "لوستر",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 55,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1630),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "دوربین مداربسته",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 56,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1632),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "هواکش",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 57,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1634),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "آنتن دیجیتال",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 58,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1636),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نورپردازی ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 59,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1638),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تایمر مشاعات",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 60,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1641),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "جعبه فیوز",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 61,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1643),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "داکت کشی و ترانکینگ",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 62,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1645),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سیم کشی تلفن",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 63,
+                            CategoryId = 2,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1647),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سیم کشی سانترال",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 64,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1649),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "صافکاری و نقاشی خودرو",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 65,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1652),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعویض روغن",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 66,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1654),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر خودرو",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 67,
+                            CategoryId = 3,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1656),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "برق خودرو",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 68,
+                            CategoryId = 4,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1658),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اسباب کشی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 69,
+                            CategoryId = 4,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1660),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "حمل بار",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 70,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1662),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "یخچال",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 71,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1665),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "ماشین ظرفشویی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 72,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1667),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "مایکروفر",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 73,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1669),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اجاق برقی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 74,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1671),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "هود آشپزخانه",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 75,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1673),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اجاق گاز",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 76,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1675),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "ماشین لباسشویی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 77,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1678),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اتو بخار",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 78,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1680),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "اتو پرس",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 79,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1682),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "جاروبرقی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 80,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1685),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "جارو شارژی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 81,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1687),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تلویزیون",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 82,
+                            CategoryId = 5,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1689),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سینما خانگی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 83,
+                            CategoryId = 6,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1691),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "دستگاه کپی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 84,
+                            CategoryId = 6,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1693),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "فکس",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 85,
+                            CategoryId = 6,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1695),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پرینتر",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 86,
+                            CategoryId = 6,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1697),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پارتیشن اداری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 97,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1699),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر موبایل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 98,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1702),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر لپ‌تاپ",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 99,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1704),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر سخت افزار کامپیوتر",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 100,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1706),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نصب نرم افزار",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 101,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1708),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نصب ویندوز در محل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 102,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1710),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "تعمیر مودم اینترنت",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 103,
+                            CategoryId = 7,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1712),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "راه‌ اندازی شبکه کامپیوتری",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 87,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1715),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نظافت دوره ای",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 88,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1717),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نظافت منزل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 89,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1719),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نظافت ساختمان",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 90,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1721),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نظافت شرکت و اداره",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 91,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1724),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "ضدعفونی منزل و محل کار",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 92,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1726),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "خشکشویی آنلاین",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 93,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1728),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "خشکشویی پرده",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 94,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1730),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "قالیشویی آنلاین",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 95,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1732),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "مبل شویی",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 96,
+                            CategoryId = 8,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1734),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "سمپاشی منازل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 104,
+                            CategoryId = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1736),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "آزمایش در محل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 105,
+                            CategoryId = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1738),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "پرستاری در منزل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 106,
+                            CategoryId = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1741),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "ویزیت پزشک در منزل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 107,
+                            CategoryId = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1743),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "نوار قلب در محل",
+                            WorkExperience = 0
+                        },
+                        new
+                        {
+                            Id = 108,
+                            CategoryId = 9,
+                            CreatedAt = new DateTime(2024, 5, 21, 1, 1, 51, 76, DateTimeKind.Local).AddTicks(1774),
+                            Description = "",
+                            Image = "",
+                            IsDeleted = false,
+                            Title = "فیزیوتراپی در منزل",
                             WorkExperience = 0
                         });
                 });
@@ -1064,6 +2433,202 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.ToTable("ExpertService");
                 });
 
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ConcurrencyStamp")
+                        .IsConcurrencyToken()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.Property<string>("NormalizedName")
+                        .HasMaxLength(256)
+                        .HasColumnType("nvarchar(256)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("NormalizedName")
+                        .IsUnique()
+                        .HasDatabaseName("RoleNameIndex")
+                        .HasFilter("[NormalizedName] IS NOT NULL");
+
+                    b.ToTable("AspNetRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Admin",
+                            NormalizedName = "ADMIN"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Expert",
+                            NormalizedName = "EXPERT"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Customer",
+                            NormalizedName = "CUSTOMER"
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetRoleClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ClaimType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ClaimValue")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserClaims", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderKey")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("ProviderDisplayName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("LoginProvider", "ProviderKey");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("AspNetUserLogins", (string)null);
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RoleId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            RoleId = 1
+                        },
+                        new
+                        {
+                            UserId = 2,
+                            RoleId = 3
+                        },
+                        new
+                        {
+                            UserId = 3,
+                            RoleId = 3
+                        },
+                        new
+                        {
+                            UserId = 4,
+                            RoleId = 3
+                        });
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LoginProvider")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Name")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Value")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("UserId", "LoginProvider", "Name");
+
+                    b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("App.Domain.Core.Admin.Entities.ApplicationUser", b =>
+                {
+                    b.HasOne("App.Domain.Core.Admin.Entities.Admin", "Admin")
+                        .WithMany()
+                        .HasForeignKey("AdminId");
+
+                    b.HasOne("App.Domain.Core.Customer.Entities.Customer", "Customer")
+                        .WithMany()
+                        .HasForeignKey("CustomerId");
+
+                    b.HasOne("App.Domain.Core.Expert.Entities.Expert", "Expert")
+                        .WithMany()
+                        .HasForeignKey("ExpertId");
+
+                    b.Navigation("Admin");
+
+                    b.Navigation("Customer");
+
+                    b.Navigation("Expert");
+                });
+
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Address", b =>
                 {
                     b.HasOne("App.Domain.Core.Customer.Entities.City", "City")
@@ -1104,12 +2669,14 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasOne("App.Domain.Core.Customer.Entities.Customer", "Customer")
                         .WithMany("Comments")
                         .HasForeignKey("CustomerId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.HasOne("App.Domain.Core.Expert.Entities.Expert", "Expert")
                         .WithMany("Comments")
                         .HasForeignKey("ExpertId")
-                        .OnDelete(DeleteBehavior.Restrict);
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
 
                     b.Navigation("Admin");
 
@@ -1120,13 +2687,9 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Customer", b =>
                 {
-                    b.HasOne("App.Domain.Core.Admin.Entities.Admin", "Admin")
+                    b.HasOne("App.Domain.Core.Admin.Entities.Admin", null)
                         .WithMany("Customers")
-                        .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
-
-                    b.Navigation("Admin");
+                        .HasForeignKey("AdminId");
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.ServiceRequest", b =>
@@ -1161,18 +2724,13 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasOne("App.Domain.Core.Customer.Entities.Address", "Address")
                         .WithOne("Expert")
                         .HasForeignKey("App.Domain.Core.Expert.Entities.Expert", "AddressId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .OnDelete(DeleteBehavior.Restrict);
 
-                    b.HasOne("App.Domain.Core.Admin.Entities.Admin", "Admin")
+                    b.HasOne("App.Domain.Core.Admin.Entities.Admin", null)
                         .WithMany("Experts")
-                        .HasForeignKey("AdminId")
-                        .OnDelete(DeleteBehavior.Restrict)
-                        .IsRequired();
+                        .HasForeignKey("AdminId");
 
                     b.Navigation("Address");
-
-                    b.Navigation("Admin");
                 });
 
             modelBuilder.Entity("App.Domain.Core.Expert.Entities.Proposal", b =>
@@ -1227,6 +2785,57 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.HasOne("App.Domain.Core.Expert.Entities.Service", null)
                         .WithMany()
                         .HasForeignKey("ServicesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<int>", b =>
+                {
+                    b.HasOne("App.Domain.Core.Admin.Entities.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<int>", b =>
+                {
+                    b.HasOne("App.Domain.Core.Admin.Entities.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserRole<int>", b =>
+                {
+                    b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole<int>", null)
+                        .WithMany()
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("App.Domain.Core.Admin.Entities.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<int>", b =>
+                {
+                    b.HasOne("App.Domain.Core.Admin.Entities.ApplicationUser", null)
+                        .WithMany()
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

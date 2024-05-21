@@ -141,7 +141,6 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var updatingCustomer = await GetCustomerDto(updatedCustomer.Id, cancellationToken);
             updatingCustomer.FirstName = updatedCustomer.FirstName;
             updatingCustomer.LastName = updatingCustomer.LastName;
-            updatingCustomer.PhoneNumber = updatedCustomer.PhoneNumber;
             updatingCustomer.ProfileImage = updatedCustomer.ProfileImage;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             return updatingCustomer;
@@ -160,7 +159,6 @@ namespace App.Infra.Data.Repos.Ef.Customer
                     Id = c.Id,
                     FirstName = c.FirstName,
                     LastName = c.LastName,
-                    PhoneNumber = c.PhoneNumber,
                     ProfileImage = c.ProfileImage,
                 }).FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
 

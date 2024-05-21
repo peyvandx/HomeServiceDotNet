@@ -15,5 +15,6 @@ namespace App.Domain.Core.Customer.Data
         //public Task<Customer.Entities.Comment> HardDeleteComment(int commentId, CancellationToken cancellationToken);
         public Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken);
         public Task<List<CommentDto>> GetComments(CancellationToken cancellationToken);
+        public Task<CommentDto> ConfirmComment(int commentId, CancellationToken cancellationToken);
     }
 }

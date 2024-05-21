@@ -142,7 +142,6 @@ namespace App.Infra.Data.Repos.Ef.Admin
             var updatingAdmin = await GetAdminDto(updatedAdmin.Id, cancellationToken);
             updatingAdmin.FirstName = updatedAdmin.FirstName;
             updatingAdmin.LastName = updatedAdmin.LastName;
-            updatingAdmin.PhoneNumber = updatedAdmin.PhoneNumber;
             updatingAdmin.ProfileImage = updatedAdmin.ProfileImage;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation("Admin updated successfully.");
@@ -162,7 +161,6 @@ namespace App.Infra.Data.Repos.Ef.Admin
                     Id = a.Id,
                     FirstName = a.FirstName,
                     LastName = a.LastName,
-                    PhoneNumber = a.PhoneNumber,
                     ProfileImage = a.ProfileImage,
                 }).FirstOrDefaultAsync(a => a.Id == adminId, cancellationToken);
 

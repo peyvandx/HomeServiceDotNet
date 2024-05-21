@@ -41,6 +41,9 @@ namespace App.Domain.AppServices.Customer
 
         public Task<CommentDto> UpdateComment(CommentDto commentDto, CancellationToken cancellationToken)
             => _commentService.UpdateComment(commentDto, cancellationToken);
+
+        public async Task<CommentDto> ConfirmComment(int commentId, CancellationToken cancellationToken)
+            => await _commentService.ConfirmComment(commentId, cancellationToken);
         #endregion
     }
 }

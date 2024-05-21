@@ -1,0 +1,27 @@
+﻿@page
+@model App.EndPoints.UI.RazorPages.Areas.Admin.Pages.Category.UpdateModel
+@{
+    Layout = "Shared/_AdminLayout";
+}
+
+<div class="card mb-4">
+    <div class="card-header d-flex justify-content-between align-items-center">
+        <h5 class="mb-0">ایجاد دسته‌‌بندی جدید</h5>
+        <small class="text-muted float-end primary-font">برچسب پیش‌فرض</small>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            <div class="mb-3">
+                <label asp-for="@Model.UpdatingCategory.Title" class="form-label" for="basic-default-fullname">نام کامل</label>
+                <input asp-for="@Model.UpdatingCategory.Title" type="text" class="form-control" id="basic-default-fullname" placeholder="جان اسنو">
+            </div>
+            <div class="mb-3">
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.UpdatingCategory.Description" class="form-label" for="basic-default-message">توضیحات</label>
+                <textarea asp-for="@Model.UpdatingCategory.Description" id="basic-default-message" class="form-control" placeholder="متن توضیحات را اینجا بنویسید"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">ارسال</button>
+        </form>
+    </div>
+</div>

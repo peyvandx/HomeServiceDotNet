@@ -3793,6 +3793,1106 @@
       "PackagePath": "staticwebassets\\AdminAssets\\vendor\\libs\\typeahead-js\\typeahead.js"
     },
     {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\admin\\1.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\admin\\1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\customer\\1.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\customer\\1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\customer\\2.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\customer\\2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\customer\\3.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\customer\\3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticond41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticond41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb(FaNum.html",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb(FaNum.html"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\IRANSansWeb\\IRANSansWeb.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\LineIcons.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\LineIcons.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\LineIcons.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\LineIcons.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\LineIcons.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\LineIcons.woff2"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-brands-400d41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-brands-400d41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-regular-400d41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-regular-400d41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\fa-solid-900d41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\fa-solid-900d41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\houses.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\houses.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\houses.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\houses.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\houses.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\housesd41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\housesd41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\icofont.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\icofont.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\icofont.woff2",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\icofont.woff2"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\slick.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\slick.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\slick.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slick.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\slickd41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\slickd41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\themify9f249f24.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f249f24.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\themify9f249f24.svg",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f249f24.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\themify9f249f24.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f249f24.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\themify9f249f24.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\themify9f249f24.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\themifyd41dd41d.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\themifyd41dd41d.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\vazir\\Vazir-Blod.html",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\vazir\\Vazir-Blod.html"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\vazir\\Vazir-Bold-FD.woff",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\vazir\\Vazir-Bold-FD.woff"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\vazir\\Vazir-Bold.eot",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\vazir\\Vazir-Bold.eot"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\vazir\\Vazir-Bold.ttf",
+      "PackagePath": "staticwebassets\\assets\\css\\fonts\\vazir\\Vazir-Bold.ttf"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\ajax-loader.gif"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\animation.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\animation.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\date-picker.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\date-picker.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\dropzone.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\dropzone.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\filepond.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\filepond.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\flaticon.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\flaticon.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\font-awesome.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\font-awesome.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\fonts\\LineIcons.html",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\fonts\\LineIcons.html"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\fonts\\slick.html",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\fonts\\slick.html"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\iconfont.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\iconfont.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\images\\layers-2x.png",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\images\\layers-2x.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\images\\layers.png",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\images\\layers.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\images\\marker-icon.png",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\images\\marker-icon.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\leaflet.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\leaflet.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\line-icons.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\line-icons.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\magnificpopup.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\magnificpopup.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\slick-theme.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\slick-theme.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\slick.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\slick.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\plugins\\themify.css",
+      "PackagePath": "staticwebassets\\assets\\css\\plugins\\themify.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\styles.css",
+      "PackagePath": "staticwebassets\\assets\\css\\styles.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\404.png",
+      "PackagePath": "staticwebassets\\assets\\img\\404.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\about.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\about.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\and.png",
+      "PackagePath": "staticwebassets\\assets\\img\\and.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\app.png",
+      "PackagePath": "staticwebassets\\assets\\img\\app.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\b-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\b-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\banner-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\banner-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\banner-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\banner.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\banner.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\bg.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\bg.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\bn-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bn-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\bn-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\bn-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\burger-king.png",
+      "PackagePath": "staticwebassets\\assets\\img\\burger-king.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\c-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-1.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-10.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-11.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-11.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\c-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-2.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\c-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-3.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\c-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-6.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-7.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-8.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\c-9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\c-9.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\car\\c-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\cover.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\cover.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\debit.png",
+      "PackagePath": "staticwebassets\\assets\\img\\debit.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\doc-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\doc-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\facebook.png",
+      "PackagePath": "staticwebassets\\assets\\img\\facebook.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\favicon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\favicon.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\basket.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\basket.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\booking.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\booking.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\broken-cable.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\broken-cable.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\burger.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\burger.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\car-wash.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\car-wash.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\chinese-food.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\chinese-food.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\cocktail.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\cocktail.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\coconut-tree.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\coconut-tree.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\delivery-truck.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\delivery-truck.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\dish.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\dish.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\fast-delivery.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\fast-delivery.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\hammer.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\hammer.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\home.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\home.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\house.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\house.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\mexican-hat.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\mexican-hat.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\oil.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\oil.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\online-shopping.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\online-shopping.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\padlock.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\padlock.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\parking.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\parking.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\plumbering.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\plumbering.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\poinsettia.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\poinsettia.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\rental-car.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\rental-car.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\salon.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\salon.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\shopping-bag.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\shopping-bag.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\sketch.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\sketch.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\smartphone.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\smartphone.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\spa.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\spa.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\tom-yum.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\tom-yum.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\tow-truck.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\tow-truck.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\towel-hanger.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\towel-hanger.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\weights.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\weights.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\icons\\wrench.png",
+      "PackagePath": "staticwebassets\\assets\\img\\icons\\wrench.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\ios.png",
+      "PackagePath": "staticwebassets\\assets\\img\\ios.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-1.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-10.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-10.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-2.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-3.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-6.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-7.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\l-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-8.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\l-9.png",
+      "PackagePath": "staticwebassets\\assets\\img\\l-9.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\landing-bg.png",
+      "PackagePath": "staticwebassets\\assets\\img\\landing-bg.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-1.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-2.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-3.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-6.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-7.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\lg-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\lg-8.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\list.png",
+      "PackagePath": "staticwebassets\\assets\\img\\list.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-10.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-10.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-11.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-11.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-12.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-12.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\listing\\l-9.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\listing\\l-9.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\loader.gif",
+      "PackagePath": "staticwebassets\\assets\\img\\loader.gif"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\logo-light.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo-light.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\logo.png",
+      "PackagePath": "staticwebassets\\assets\\img\\logo.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-1.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-2.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-3.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\m-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\m-6.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\med\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\med\\8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\paypal.png",
+      "PackagePath": "staticwebassets\\assets\\img\\paypal.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\real\\r-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\real\\r-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\6.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\6.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\7.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\7.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\rooms\\8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\rooms\\8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-1.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-1.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-2.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-2.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-3.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-3.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-4.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-4.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-5.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-5.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-6.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-6.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-7.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-7.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\t-8.png",
+      "PackagePath": "staticwebassets\\assets\\img\\t-8.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\team-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\team-3.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-3.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\team-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\team-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\user-1.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\user-2.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-2.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\user-4.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-4.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\user-5.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-5.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\user-8.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\user-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\verify.svg",
+      "PackagePath": "staticwebassets\\assets\\img\\verify.svg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\veryfy.html",
+      "PackagePath": "staticwebassets\\assets\\img\\veryfy.html"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\counterup.js",
+      "PackagePath": "staticwebassets\\assets\\js\\counterup.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\custom.js",
+      "PackagePath": "staticwebassets\\assets\\js\\custom.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\daterangepicker-fa-ex.js",
+      "PackagePath": "staticwebassets\\assets\\js\\daterangepicker-fa-ex.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\daterangepicker.js",
+      "PackagePath": "staticwebassets\\assets\\js\\daterangepicker.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\dropzone.js",
+      "PackagePath": "staticwebassets\\assets\\js\\dropzone.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\filepond.js",
+      "PackagePath": "staticwebassets\\assets\\js\\filepond.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\jQuery.style.switcher.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jQuery.style.switcher.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\jquery.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\leaflet.js",
+      "PackagePath": "staticwebassets\\assets\\js\\leaflet.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\lightbox.js",
+      "PackagePath": "staticwebassets\\assets\\js\\lightbox.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\moment-jalaali.js",
+      "PackagePath": "staticwebassets\\assets\\js\\moment-jalaali.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\moment.js",
+      "PackagePath": "staticwebassets\\assets\\js\\moment.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\moment.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\plugins\\dashboard-2.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\dashboard-2.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\plugins\\morris.js\\morris.css",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\morris.js\\morris.css"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\plugins\\morris.js\\morris.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\morris.js\\morris.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\plugins\\raphael\\raphael.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\plugins\\raphael\\raphael.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\popper.min.js",
+      "PackagePath": "staticwebassets\\assets\\js\\popper.min.js"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\js\\slick.js",
+      "PackagePath": "staticwebassets\\assets\\js\\slick.js"
+    },
+    {
       "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

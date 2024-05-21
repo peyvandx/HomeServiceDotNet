@@ -40,6 +40,9 @@ namespace App.Infra.Data.Repos.Ef.Expert
         {
             await _homeServiceDbContext.Services.AddAsync(createdService, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+
+            _memoryCache.Remove("serviceDtos");
+
             _logger.LogInformation("ServiceRepository has been successfully added to the database.");
             return createdService;
         }
@@ -88,6 +91,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Id = a.Id,
                     Title = a.Title,
                     Description = a.Description,
+                    IsDeleted = a.IsDeleted,
                 }).ToListAsync(cancellationToken);
 
                 if (services is null)
@@ -143,7 +147,14 @@ namespace App.Infra.Data.Repos.Ef.Expert
             var deletedService = await GetServiceSoftDeleteDto(serviceId, cancellationToken);
             deletedService.IsDeleted = true;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return deletedService;
+
+            _memoryCache.Remove("serviceDtos");
+
+            var deletedServiceDto = new ServiceSoftDeleteDto();
+            deletedServiceDto.Id = deletedService.Id;
+            deletedServiceDto.IsDeleted = deletedService.IsDeleted;
+
+            return deletedServiceDto;
         }
 
         public async Task<ServiceDto> UpdateService(Service updatedService, CancellationToken cancellationToken)
@@ -154,23 +165,24 @@ namespace App.Infra.Data.Repos.Ef.Expert
             updatingService.Image = updatedService.Image;
             updatingService.WorkExperience = updatedService.WorkExperience;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return updatingService;
+
+            var updatingServiceDto = new ServiceDto();
+            updatingServiceDto.Title = updatingService.Title;
+            updatingServiceDto.Description = updatingService.Description;
+            updatingServiceDto.Image = updatingService.Image;
+
+            return updatingServiceDto;
         }
         #endregion
 
         #region PrivateFields
-        private async Task<Domain.Core.Expert.DTOs.ServiceDto> GetServiceDto(int serviceId, CancellationToken cancellationToken)
+        private async Task<Domain.Core.Expert.Entities.Service> GetServiceDto(int serviceId, CancellationToken cancellationToken)
         {
-            var service = _memoryCache.Get<ServiceDto>("serviceDto");
+            var service = _memoryCache.Get<Service>("serviceDto");
             if (service is null)
             {
                 service = await _homeServiceDbContext.Services
-                .Select(a => new ServiceDto()
-                {
-                    Id = a.Id,
-                    Title = a.Title,
-                    Description = a.Description,
-                }).FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
+                .FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
 
                 if (service != null)
                 {
@@ -189,17 +201,13 @@ namespace App.Infra.Data.Repos.Ef.Expert
 
         }
 
-        private async Task<Domain.Core.Expert.DTOs.ServiceSoftDeleteDto> GetServiceSoftDeleteDto(int serviceId, CancellationToken cancellationToken)
+        private async Task<Domain.Core.Expert.Entities.Service> GetServiceSoftDeleteDto(int serviceId, CancellationToken cancellationToken)
         {
-            var service = _memoryCache.Get<ServiceSoftDeleteDto>("serviceSoftDeleteDto");
+            var service = _memoryCache.Get<Service>("serviceSoftDeleteDto");
             if (service is null)
             {
                 service = await _homeServiceDbContext.Services
-                .Select(a => new ServiceSoftDeleteDto()
-                {
-                    Id = a.Id,
-                    IsDeleted = a.IsDeleted
-                }).FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
+                    .FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
 
                 if (service != null)
                 {

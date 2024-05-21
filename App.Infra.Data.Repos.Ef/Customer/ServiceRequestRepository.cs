@@ -43,7 +43,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
         {
             await _homeServiceDbContext.ServiceRequests.AddAsync(submittedServiceRequest, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            _logger.LogInformation("ServiceRequest has been successfully added to the database.");
+            _logger.LogInformation("{ServiceRequest} has been successfully added to the database.", submittedServiceRequest);
             return submittedServiceRequest;
         }
 
@@ -95,6 +95,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                     Status = sr.Status,
                     Price = sr.Price,
                     IsDone = sr.IsDone,
+                    IsDeleted = sr.IsDeleted,
                 }).ToListAsync(cancellationToken);
 
                 if (serviceRequests is null)
@@ -150,7 +151,14 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var deletedServiceRequest = await GetServiceRequestSoftDeleteDto(serviceRequestId, cancellationToken);
             deletedServiceRequest.IsDeleted = true;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return deletedServiceRequest;
+
+            _memoryCache.Remove("serviceRequestDtos");
+
+            var deletedServiceRequestDto = new ServiceRequestSoftDeleteDto();
+            deletedServiceRequestDto.Id = deletedServiceRequest.Id;
+            deletedServiceRequestDto.IsDeleted = deletedServiceRequest.IsDeleted;
+
+            return deletedServiceRequestDto;
         }
 
         public async Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequest updatedServiceRequest, CancellationToken cancellationToken)
@@ -159,7 +167,13 @@ namespace App.Infra.Data.Repos.Ef.Customer
             updatingServiceRequest.CustomerDescription = updatedServiceRequest.CustomerDescription;
             updatingServiceRequest.Price = updatedServiceRequest.Price;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-            return updatingServiceRequest;
+
+            var updatedServiceRequestDto = new ServiceRequestDto();
+            updatedServiceRequestDto.Id = updatingServiceRequest.Id;
+            updatedServiceRequestDto.CustomerDescription = updatingServiceRequest.CustomerDescription;
+            updatedServiceRequestDto.Price = updatingServiceRequest.Price;
+
+            return updatedServiceRequestDto;
         }
 
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
@@ -169,6 +183,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             try
             {
                 await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                _memoryCache.Remove("serviceRequestDtos");
                 return newStatus;
             }
             catch (Exception ex)
@@ -179,48 +194,38 @@ namespace App.Infra.Data.Repos.Ef.Customer
         #endregion
 
         #region PrivateMethods
-        private async Task<ServiceRequestDto> GetServiceRequestDto(int serviceRequestId, CancellationToken cancellationToken)
+        private async Task<ServiceRequest> GetServiceRequestDto(int serviceRequestId, CancellationToken cancellationToken)
         {
-            var serviceRequest = _memoryCache.Get<ServiceRequestDto>("serviceRequestDto");
-            if (serviceRequest is null)
-            {
+            //var serviceRequest = _memoryCache.Get<ServiceRequest>("serviceRequestDto");
+            var serviceRequest = new ServiceRequest();
+            //if (serviceRequest is null)
+            //{
                 serviceRequest = await _homeServiceDbContext.ServiceRequests
-                .Select(sr => new ServiceRequestDto()
-                {
-                    Id = sr.Id,
-                    CustomerDescription = sr.CustomerDescription,
-                    Status = sr.Status,
-                    Price = sr.Price,
-                    IsDone = sr.IsDone,
-                }).FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
+                .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
 
                 if (serviceRequest != null)
                 {
-                    _memoryCache.Set("serviceRequestDto", serviceRequest, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
+                    //_memoryCache.Set("serviceRequestDto", serviceRequest, new MemoryCacheEntryOptions()
+                    //{
+                    //    SlidingExpiration = TimeSpan.FromSeconds(120)
+                    //});
                     _logger.LogInformation("serviceRequestDto has been returned form database and cached in memory successfully.");
                     return serviceRequest;
                 }
                 _logger.LogError($"serviceRequest with id {serviceRequestId} not found in GetServiceRequestDto method.");
                 throw new Exception($"serviceRequest with id {serviceRequestId} not found.");
-            }
-            _logger.LogInformation("serviceRequestDto returned from InMemeoryCache in GetServiceRequestDto method.");
-            return serviceRequest;
+            //}
+            //_logger.LogInformation("serviceRequestDto returned from InMemeoryCache in GetServiceRequestDto method.");
+            //return serviceRequest;
         }
 
-        private async Task<ServiceRequestSoftDeleteDto> GetServiceRequestSoftDeleteDto(int serviceRequestId, CancellationToken cancellationToken)
+        private async Task<ServiceRequest> GetServiceRequestSoftDeleteDto(int serviceRequestId, CancellationToken cancellationToken)
         {
-            var serviceRequest = _memoryCache.Get<ServiceRequestSoftDeleteDto>("serviceRequestSoftDeleteDto");
+            var serviceRequest = _memoryCache.Get<ServiceRequest>("serviceRequestSoftDeleteDto");
             if (serviceRequest is null)
             {
                 serviceRequest = await _homeServiceDbContext.ServiceRequests
-                .Select(sr => new ServiceRequestSoftDeleteDto()
-                {
-                    Id = sr.Id,
-                    IsDeleted = sr.IsDeleted
-                }).FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
+                .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
 
                 if (serviceRequest != null)
                 {

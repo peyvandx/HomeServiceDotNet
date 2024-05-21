@@ -14,12 +14,80 @@ build_property.EnableComHosting =
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = E:\Maktab - 104 - CSharp\Final-Project\App.EndPoints.UI.RazorPages
 build_property._RazorSourceGeneratorDebug = 
 
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Account/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWNjb3VudFxQYWdlc1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Category/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ2F0ZWdvcnlcVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Comment/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcQ29tbWVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Request/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcUmVxdWVzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Service/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2VydmljZVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Service/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2VydmljZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/Service/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcU2VydmljZVxVcGRhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Areas/Admin/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Error.cshtml]
@@ -32,6 +100,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
