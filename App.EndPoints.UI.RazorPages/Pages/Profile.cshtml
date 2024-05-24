@@ -1,0 +1,182 @@
+﻿@page
+@model App.EndPoints.UI.RazorPages.Pages.ProfileModel
+@{
+    Layout = "Shared/_CustomerDashboardLayout";
+    var userId = TempData["UserId"];
+}
+
+<partial name="_HeaderPartial" />
+
+<!-- ======================= dashboard Detail ======================== -->
+
+<div class="goodup-dashboard-content">
+    <div class="dashboard-tlbar d-block mb-5">
+        <div class="row">
+            <div class="colxl-12 col-lg-12 col-md-12">
+                <h1 class="ft-medium fs-lg">تنظیمات</h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="dashboard-widg-bar d-block">
+        <div class="row">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-12 order-xl-last order-lg-last order-md-last">
+                <div class="d-flex bg-white rounded px-3 py-3 mb-3">
+                    <div class="dash-figure">
+                        <div class="dash-figure-thumb"><img src="assets/img/t-4.png" class="img-fluid rounded" alt="" /></div>
+                        <div class="upload-photo-btn">
+                            <div class="Uploadphoto">
+                                <span><i class="fas fa-upload"></i> آپلود تصویر</span>
+                                <input type="file" class="upload">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-9 col-lg-9 col-md-8 col-sm-12">
+                <form class="submit-form method="post" asp-page-handler="OnPostAsync">
+                    <input type="hidden" asp-for="@Model.CustomerProfileDetails.Id" value="@userId" />
+                    <div class="dashboard-list-wraps bg-white rounded mb-4">
+                        <div class="dashboard-list-wraps-head br-bottom py-3 px-3">
+                            <div class="dashboard-list-wraps-flx">
+                                <h4 class="mb-0 ft-medium fs-md"><i class="fa fa-user-check ms-2 theme-cl fs-sm"></i>مشخصات شخصی</h4>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list-wraps-body py-3 px-3">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">نام</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.FirstName" type="text" class="form-control rounded" placeholder="نازنین" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">نام خانوادگی</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.LastName" type="text" class="form-control rounded" placeholder="حقیقت نژاد" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">پست الکترونیک</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.Email" type="text" class="form-control rounded" placeholder="example@gmail.com" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">شماره تماس</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.PhoneNumber" type="text" class="form-control rounded" placeholder="09320000000" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    @* <div class="form-group">
+                                        <label class="mb-1">استان</label>
+                                        <select asp-for="@Model.CustomerProfileDetails.Address.City.ProvinceId" class="form-control">
+                                            @if (Model.CustomerProfileDetails.Address is not null)
+                                            {
+                                                <option selected value="@Model.CustomerProfileDetails.Address.City.Province.Id">@Model.CustomerProfileDetails.Address.City.Province.Name</option>
+                                            }
+                                            @foreach (var province in Model.Provinces)
+                                            {
+                                                <option value="@province.Id">@province.Name</option>
+                                            }
+                                        </select>
+                                    </div> *@
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">شهر</label>
+                                        <select asp-for="@Model.CustomerProfileDetails.Address.CityId" class="form-control">
+                                            @if (Model.CustomerProfileDetails.Address is not null)
+                                            {
+                                                <option selected value="@Model.CustomerProfileDetails.Address.City.Id">@Model.CustomerProfileDetails.Address.City.Name</option>
+                                            }
+                                            @foreach (var city in Model.Cities)
+                                            {
+                                                <option value="@city.Id">@city.Name</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">آدرس</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.Address.Street" type="text" class="form-control rounded" placeholder="نواب، خیابان بریانک، خیابان کمیل" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">کد پستی</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.Address.PostalCode" type="number" class="form-control rounded" placeholder="1355984703" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1">توضیحات</label>
+                                        <textarea asp-for="@Model.CustomerProfileDetails.AboutMe" class="form-control rounded ht-150" placeholder="درباره من..."></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashboard-list-wraps bg-white rounded mb-4">
+                        <div class="dashboard-list-wraps-head br-bottom py-3 px-3">
+                            <div class="dashboard-list-wraps-flx">
+                                <h4 class="mb-0 ft-medium fs-md"><i class="fa fa-user-friends ms-2 theme-cl fs-sm"></i>شبکه های اجتماعی</h4>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list-wraps-body py-3 px-3">
+                            <div class="row">
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1"><i class="ti-facebook theme-cl ms-1"></i>فیسبوک</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.FacebookAddress" type="text" class="form-control rounded" placeholder="https://facebook.com/" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1"><i class="ti-twitter theme-cl ms-1"></i>توییتر</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.TwitterAddress" type="text" class="form-control rounded" placeholder="https://twitter.com/" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1"><i class="ti-instagram theme-cl ms-1"></i>اینستاگرام</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.InstagramAddress" type="text" class="form-control rounded" placeholder="https://instagram.com/" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <label class="mb-1"><i class="ti-linkedin theme-cl ms-1"></i>لینکدین</label>
+                                        <input asp-for="@Model.CustomerProfileDetails.LinkedinAddress" type="text" class="form-control rounded" placeholder="https://linkedin.com/" />
+                                    </div>
+                                </div>
+                                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                                    <div class="form-group">
+                                        <button type="submit" class="btn theme-bg rounded text-light">ذخیره تغییرات</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- footer -->
+    <div class="row">
+        <div class="col-md-12">
+            <div class="py-3">© 2022 Goodup ارائه شده در سایت <a href="https://rtl-theme.com/">راست چین</a></div>
+        </div>
+    </div>
+
+</div>
+
+@* </div> *@
+<!-- ======================= dashboard Detail End ======================== -->
+
+<a id="tops-button" class="top-scroll" title="Back to top" href="#"><i class="ti-arrow-up"></i></a>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "CEQ/Zt11dOzESW33zKGwUkIcGSpzd7gSUENC5y+H9KU=",
+  "Hash": "J1YPiLg2FZzx0tCX7b9SSg9AMWL8ct4wcGKobAsOBPQ=",
   "Source": "App.EndPoints.UI.RazorPages",
   "BasePath": "_content/App.EndPoints.UI.RazorPages",
   "Mode": "Default",
@@ -24411,6 +24411,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\UserAssets\\img\\customer\\3.jpg"
+    },
+    {
+      "Identity": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\expert\\1.jpg",
+      "SourceId": "App.EndPoints.UI.RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\",
+      "BasePath": "_content/App.EndPoints.UI.RazorPages",
+      "RelativePath": "UserAssets/img/expert/1.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserAssets\\img\\expert\\1.jpg"
+    },
+    {
+      "Identity": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\expert\\2.jpg",
+      "SourceId": "App.EndPoints.UI.RazorPages",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\",
+      "BasePath": "_content/App.EndPoints.UI.RazorPages",
+      "RelativePath": "UserAssets/img/expert/2.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\UserAssets\\img\\expert\\2.jpg"
     }
   ]
 }

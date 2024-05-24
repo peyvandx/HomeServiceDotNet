@@ -32,7 +32,6 @@ namespace App.Domain.Services.Customer
             submittedComment.Rate = commentDto.Rate;
             submittedComment.CustomerId = commentDto.CustomerId;
             submittedComment.ExpertId = commentDto.ExpertId;
-            submittedComment.AdminId = commentDto.AdminId; //will fix later
             return await _commentRepository.CreateComment(submittedComment, cancellationToken);
         }
 

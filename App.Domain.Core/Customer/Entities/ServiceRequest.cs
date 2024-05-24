@@ -13,14 +13,14 @@ namespace App.Domain.Core.Customer.Entities
         public int Id { get; set; }
         public string CustomerDescription { get; set; }
         public Status Status { get; set; }
-        public double Price { get; set; } //ghimate pardakht shode
+        public double Price { get; set; } = 0.0; //ghimate pardakht shode
         public bool IsDone { get; set; } = false;
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
         public int CustomerId { get; set; }
         public Customer Customer { get; set; }
-        public int ExpertId { get; set; }
-        public Expert.Entities.Expert Expert { get; set; } // oon experti ke customer ghaboolesh karde ke in service request ro anjam bede
+        public int? ExpertId { get; set; }
+        public Expert.Entities.Expert? Expert { get; set; } // oon experti ke customer ghaboolesh karde ke in service request ro anjam bede
         public int ServiceId { get; set; }
         public Service Service { get; set; }
         public List<Proposal> Proposals { get; set; }

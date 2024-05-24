@@ -29,8 +29,7 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(p => p.IsDeleted)
                 .IsRequired();
             builder
-                .Property(p => p.IsAccepted)
-                .IsRequired();
+                .Property(p => p.IsAccepted);
             builder
                 .Property(p => p.SuggestedPrice)
                 .IsRequired();

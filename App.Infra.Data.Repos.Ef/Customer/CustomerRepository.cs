@@ -36,7 +36,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
         #endregion
 
         #region Implementations
-        public async  Task<Domain.Core.Customer.Entities.Customer> CreateCustomer(Domain.Core.Customer.Entities.Customer signingUpCustomer, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.Entities.Customer> CreateCustomer(Domain.Core.Customer.Entities.Customer signingUpCustomer, CancellationToken cancellationToken)
         {
             await _homeServiceDbContext.Customers.AddAsync(signingUpCustomer, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
@@ -44,25 +44,29 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return signingUpCustomer;
         }
 
-        public async  Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
+        public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
         {
             var customer = _memoryCache.Get<CustomerDto?>("customerDto");
             if (customer is null)
             {
                 customer = await _homeServiceDbContext.Customers
+                 .Include(c => c.Address)
+                 .ThenInclude(a => a.City)
                 .Select(a => new CustomerDto
                 {
                     Id = a.Id,
                     FirstName = a.FirstName,
                     LastName = a.LastName,
                     ProfileImage = a.ProfileImage,
+                    Address = a.Address,
+                    AboutMe = a.AboutMe
                 }).FirstOrDefaultAsync(a => a.Id == customerId, cancellationToken);
 
                 if (customer != null)
                 {
                     _memoryCache.Set("customerDto", customer, new MemoryCacheEntryOptions()
                     {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
+                        SlidingExpiration = TimeSpan.FromSeconds(1)
                     });
                     _logger.LogInformation("customerDto returned from database, and cached in memory successfully.");
                     return customer;
@@ -77,7 +81,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return customer;
         }
 
-        public async  Task<List<Domain.Core.Customer.DTOs.CustomerDto>> GetCustomers(CancellationToken cancellationToken)
+        public Task<int> GetCustomerIdFromUserId(int userId, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
+        public async Task<List<Domain.Core.Customer.DTOs.CustomerDto>> GetCustomers(CancellationToken cancellationToken)
         {
             var customers = _memoryCache.Get<List<CustomerDto>>("customerDtos");
 
@@ -128,7 +137,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
         //    }
         //}
 
-        public async  Task<Domain.Core.Customer.DTOs.CustomerSoftDeleteDto> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.DTOs.CustomerSoftDeleteDto> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
         {
             var deletedCustomer = await GetCustomerSoftDeleteDto(customerId, cancellationToken);
             deletedCustomer.IsDeleted = true;
@@ -136,31 +145,38 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return deletedCustomer;
         }
 
-        public async  Task<Domain.Core.Customer.DTOs.CustomerDto> UpdateCustomer(Domain.Core.Customer.Entities.Customer updatedCustomer, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(Domain.Core.Customer.Entities.Customer updatedCustomer, CancellationToken cancellationToken)
         {
-            var updatingCustomer = await GetCustomerDto(updatedCustomer.Id, cancellationToken);
+            var updatingCustomer = await GetCustomer(updatedCustomer.Id.Value, cancellationToken);
+            updatingCustomer.Address = new Address();
+            //updatingCustomer.Address.City.Province = new Province();
             updatingCustomer.FirstName = updatedCustomer.FirstName;
             updatingCustomer.LastName = updatingCustomer.LastName;
             updatingCustomer.ProfileImage = updatedCustomer.ProfileImage;
+            updatingCustomer.AboutMe = updatedCustomer.AboutMe;
+            updatingCustomer.FacebookAddress = updatedCustomer.FacebookAddress;
+            updatingCustomer.InstagramAddress = updatedCustomer.InstagramAddress;
+            updatingCustomer.TwitterAddress = updatedCustomer.TwitterAddress;
+            updatingCustomer.LinkedinAddress = updatedCustomer.LinkedinAddress;
+            updatingCustomer.Address.Street = updatedCustomer.Address.Street;
+            updatingCustomer.Address.PostalCode = updatedCustomer.Address.PostalCode;
+            updatingCustomer.Address.CityId = updatedCustomer.Address.CityId;
+            //updatingCustomer.Address.City.ProvinceId = updatedCustomer.Address.City.ProvinceId;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             return updatingCustomer;
         }
         #endregion
 
         #region PrivateMethods
-        private async Task<Domain.Core.Customer.DTOs.CustomerDto> GetCustomerDto(int customerId, CancellationToken cancellationToken)
+        private async Task<Domain.Core.Customer.Entities.Customer> GetCustomer(int customerId, CancellationToken cancellationToken)
         {
-            var customer = _memoryCache.Get<CustomerDto>("customerDto");
+            var customer = _memoryCache.Get<Domain.Core.Customer.Entities.Customer>("customerDto");
             if (customer is null)
             {
                 customer = await _homeServiceDbContext.Customers
-                .Select(c => new CustomerDto()
-                {
-                    Id = c.Id,
-                    FirstName = c.FirstName,
-                    LastName = c.LastName,
-                    ProfileImage = c.ProfileImage,
-                }).FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
+                .Include(c => c.Address)
+                .ThenInclude(a => a.City)
+                .FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
 
                 if (customer != null)
                 {
@@ -186,7 +202,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 customer = await _homeServiceDbContext.Customers
                 .Select(c => new CustomerSoftDeleteDto()
                 {
-                    Id = c.Id,
+                    Id = c.Id.Value,
                     IsDeleted = c.IsDeleted
                 }).FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
 

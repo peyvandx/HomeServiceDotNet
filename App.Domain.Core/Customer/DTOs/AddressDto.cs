@@ -9,8 +9,8 @@ namespace App.Domain.Core.Customer.DTOs
     public class AddressDto
     {
         public int Id { get; set; }
-        public string Street { get; set; }
-        public int PostalCode { get; set; }
+        public string? Street { get; set; }
+        public string? PostalCode { get; set; }
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
         public int CityId { get; set; }

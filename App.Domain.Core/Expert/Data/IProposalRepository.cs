@@ -9,11 +9,14 @@ namespace App.Domain.Core.Expert.Data
 {
     public interface IProposalRepository
     {
+        public Task<bool> AcceptProposal(int proposalId, CancellationToken cancellationToken);
+        public Task<bool> RejectProposal(int proposalId, CancellationToken cancellationToken);
         public Task<Expert.Entities.Proposal> CreateProposal(Expert.Entities.Proposal submittedProposal, CancellationToken cancellationToken);
         public Task<ProposalDto> UpdateProposal(Expert.Entities.Proposal updatedProposal, CancellationToken cancellationToken);
         public Task<ProposalSoftDeleteDto> SoftDeleteProposal(int proposalId, CancellationToken cancellationToken);
         //public Task<Expert.Entities.Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken);
         public Task<ProposalDto> GetProposalById(int proposalId, CancellationToken cancellationToken);
+        public Task<List<ProposalDto>> GetProposalsByServiceRequestId(int serviceRequestId, CancellationToken cancellationToken);
         public Task<List<ProposalDto>> GetProposals(CancellationToken cancellationToken);
     }
 }

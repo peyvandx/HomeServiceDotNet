@@ -27,7 +27,6 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 				NormalizedEmail = "ADMIN@GMAIL.COM",
 				LockoutEnabled = false,
 				PhoneNumber = "09377507920",
-				AdminId = 1,
 				SecurityStamp = Guid.NewGuid().ToString()
 			},
 			new ApplicationUser()
@@ -39,7 +38,6 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 				NormalizedEmail = "ALI@GMAIL.COM",
 				LockoutEnabled = false,
 				PhoneNumber = "09377507920",
-				CustomerId = 2,
 				SecurityStamp = Guid.NewGuid().ToString()
 			},
 			new ApplicationUser()
@@ -51,7 +49,6 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 				NormalizedEmail = "SAHAR@GMAIL.COM",
 				LockoutEnabled = false,
 				PhoneNumber = "09377507920",
-				CustomerId = 3,
 				SecurityStamp = Guid.NewGuid().ToString()
 			},
 			new ApplicationUser()
@@ -63,7 +60,39 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 				NormalizedEmail = "MARYAM@GMAIL.COM",
 				LockoutEnabled = false,
 				PhoneNumber = "09377507920",
-				CustomerId = 4,
+				SecurityStamp = Guid.NewGuid().ToString()
+			},
+			new ApplicationUser()
+			{
+				Id = 5,
+				UserName = "Afshin@gmail.com",
+				NormalizedUserName = "AFSHIN@GMAIL.COM",
+				Email = "Afshin@gmail.com",
+				NormalizedEmail = "AFSHIN@GMAIL.COM",
+				LockoutEnabled = false,
+				PhoneNumber = "09377507920",
+				SecurityStamp = Guid.NewGuid().ToString()
+			},
+			new ApplicationUser()
+			{
+				Id = 6,
+				UserName = "Faran@gmail.com",
+				NormalizedUserName = "FARAN@GMAIL.COM",
+				Email = "Faran@gmail.com",
+				NormalizedEmail = "FARAN@GMAIL.COM",
+				LockoutEnabled = false,
+				PhoneNumber = "09377507920",
+				SecurityStamp = Guid.NewGuid().ToString()
+			},
+			new ApplicationUser()
+			{
+				Id = 7,
+				UserName = "Ayda@gmail.com",
+				NormalizedUserName = "AYDA@GMAIL.COM",
+				Email = "Ayda@gmail.com",
+				NormalizedEmail = "AYDA@GMAIL.COM",
+				LockoutEnabled = false,
+				PhoneNumber = "09377507920",
 				SecurityStamp = Guid.NewGuid().ToString()
 			}
 		};
@@ -88,7 +117,10 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 				new IdentityUserRole<int>() { RoleId = 1, UserId = 1 },
 				new IdentityUserRole<int>() { RoleId = 3, UserId = 2 },
 				new IdentityUserRole<int>() { RoleId = 3, UserId = 3 },
-				new IdentityUserRole<int>() { RoleId = 3, UserId = 4 }
+				new IdentityUserRole<int>() { RoleId = 3, UserId = 4 },
+				new IdentityUserRole<int>() { RoleId = 2, UserId = 5 },
+				new IdentityUserRole<int>() { RoleId = 2, UserId = 6 },
+				new IdentityUserRole<int>() { RoleId = 2, UserId = 7 }
 			);
 		}
 	}

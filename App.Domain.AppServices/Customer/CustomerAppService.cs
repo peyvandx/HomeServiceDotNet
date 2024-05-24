@@ -40,7 +40,7 @@ namespace App.Domain.AppServices.Customer
         public async Task<CustomerSoftDeleteDto> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
             => await _customerService.SoftDeleteCustomer(customerId, cancellationToken);
 
-        public async Task<CustomerDto> UpdateCustomer(CustomerDto customerDto, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(CustomerProfileDto customerDto, CancellationToken cancellationToken)
             => await _customerService.UpdateCustomer(customerDto, cancellationToken);
         #endregion
     }

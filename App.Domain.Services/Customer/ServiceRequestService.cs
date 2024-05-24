@@ -34,7 +34,7 @@ namespace App.Domain.Services.Customer
             creatingServiceRequest.CustomerDescription = serviceRequestDto.CustomerDescription;
             creatingServiceRequest.Price = serviceRequestDto.Price;
             creatingServiceRequest.CustomerId = serviceRequestDto.CustomerId;
-            creatingServiceRequest.ExpertId = serviceRequestDto.ExpertId;
+            //creatingServiceRequest.ExpertId = serviceRequestDto.ExpertId;
             creatingServiceRequest.ServiceId = serviceRequestDto.ServiceId;
             return await _serviceRequestRepository.CreateServiceRequest(creatingServiceRequest, cancellationToken);
         }
@@ -62,6 +62,9 @@ namespace App.Domain.Services.Customer
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
             => await _serviceRequestRepository.ChangeServiceRequestStatus(newStatus, cancellationToken);
 
-        #endregion
-    }
+		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken)
+		    => await _serviceRequestRepository.GetCustomerServiceRequests(customerId, cancellationToken);
+
+		#endregion
+	}
 }

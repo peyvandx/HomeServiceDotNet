@@ -90,6 +90,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Comment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ29tbWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -98,16 +106,48 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/MyRequests.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTXlSZXF1ZXN0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJvZmlsZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Request.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Services.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2VydmljZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_CustomerDashboardLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9DdXN0b21lckRhc2hib2FyZExheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_HeaderPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9IZWFkZXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_NewsletterPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9OZXdzbGV0dGVyUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/Suggestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3VnZ2VzdGlvbnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [E:/Maktab - 104 - CSharp/Final-Project/App.EndPoints.UI.RazorPages/Pages/_ViewImports.cshtml]

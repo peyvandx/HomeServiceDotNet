@@ -5,7 +5,511 @@
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!-- ======================= Home Banner ======================== -->
+<div class="home-banner margin-bottom-0" style="background:#f41b3b url(assets/img/banner.jpg) no-repeat;" data-overlay="4">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12">
+				<div class="banner_caption text-center mb-5">
+					<h1 class="banner_title ft-bold">محل کار عالی برای کسب و کار شما</h1>
+					<p class="fs-md ft-medium">مکان فوق العاده ای را برای اقامت، خرید، راه اندازی استارت آپ یا تفریح در مناطق موردنظر خود کشف کنید.</p>
+				</div>
+
+				<form class="main-search-wrap fl-wrap">
+					<div class="main-search-item">
+						<input type="text" class="form-control radius" placeholder="جستجوی سرویس (مثلا برقکاری، کارواش)" />
+					</div>
+					<div class="main-search-item">
+						<input type="text" class="form-control" placeholder="انتخاب موقعیت مکانی" />
+					</div>
+					<div class="main-search-item">
+						<select class="form-control">
+							<option selected>انتخاب دسته بندی</option>
+							@foreach(var category in Model.Categories)
+							{
+								<option value="@category.Id">@category.Title</option>
+							}
+						</select>
+					</div>
+					<div class="main-search-button">
+						<button class="btn full-width theme-bg text-white" type="button">جستجو<i class="fas fa-search"></i></button>
+					</div>
+				</form>
+
+				@* <div class="Goodup-bnr-cats">
+					<ul>
+						<li><a href="half-map-search-1.html">مکانیکی</a>
+						<li>
+						<li><a href="half-map-search-1.html">رستوران</a>
+						<li>
+						<li><a href="half-map-search-1.html">لوله کش</a>
+						<li>
+						<li><a href="half-map-search-1.html">اداره پست</a>
+						<li>
+						<li><a href="half-map-search-1.html">کافی شاپ</a>
+						<li>
+						<li><a href="half-map-search-1.html">آموزش</a>
+						<li>
+					</ul>
+				</div> *@
+
+			</div>
+		</div>
+	</div>
 </div>
+<!-- ======================= Home Banner ======================== -->
+<!-- =========================== Listing Category ======================= -->
+<section class="gray middle min">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+				<div class="sec_title position-relative text-center mb-5">
+					<h6 class="theme-cl">دسته بندی های محبوب</h6>
+					<h4 class="ft-bold ff-second">انتخاب دسته بندی انتخابی شما</h4>
+				</div>
+			</div>
+		</div>
+
+		<div class="row align-items-center">
+
+			@foreach(var category in Model.Categories)
+			{
+				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+					<div class="Goodup-img-catg-wrap">
+						@* <div class="Goodup-catg-city">12 شهر</div> *@
+						<div class="Goodup-img-catg-thumb"><a asp-page="Services" asp-route-categoryId="@category.Id"><img src="assets/img/c-4.jpg" class="img-fluid" alt=""></a></div>
+						<div class="Goodup-img-catg-caption">
+							<h4 class="fs-md mb-0 ft-medium m-catrio">@category.Title</h4>
+							<input type="hidden" value="@category.Id" />
+							<a asp-page="Services" asp-route-categoryId="@category.Id" class="Goodup-cat-arrow"><i class="lni lni-arrow-left-circle"></i></a>
+						</div>
+					</div>
+				</div>
+			}
+
+		</div>
+
+	</div>
+</section>
+<!-- =========================== Listing Category End ===================== -->
+<!-- ===========================  Featured Listing ======================= -->
+<section class="space min">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-xl-12 col-lg-12 col-md-12 col-12">
+				<div class="sec_title position-relative text-center mb-5">
+					<h3 class="ft-bold theme-cl">آگهی های جدید در دایرکتوری ما</h3>
+				</div>
+			</div>
+		</div>
+
+		<!-- row -->
+		<div class="row justify-content-center">
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status open ms-2">باز</div>
+							<div class="Goodup-featured-tag">ویژه</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-1.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-1.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">سالن عقد</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">سالن عقد عمارت<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>لیورپول، لندن انگلستان</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09320000000</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average high">4.3</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">2 دقیقه پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status close ms-2">بسته</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-2.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-2.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">ورزشگاه</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">سالن ورزشی زعفرانیه<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>لس آنجلس، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09320000000</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average mid">3.5</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">10 دقیقه پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status open ms-2">باز</div>
+							<div class="Goodup-featured-tag">ویژه</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-3.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-3.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">هتل</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">هتل پارسیان تهران<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>کالیفرنیا، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09320000000</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average high">4.4</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">3 ساعت پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status open ms-2">باز</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-4.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-4.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">بدنسازی</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">باشگاه بدنسازی باران<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>اوماها، انگلستان</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09320000000</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average mid">4.9</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">1 روز پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status close ms-2">بسته</div>
+							<div class="Goodup-featured-tag">ویژه</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-5.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-5.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">زیبایی و آرایش</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">سالن زیبایی خانه عروس<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>فیلادلفیا، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09390987658</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average mid">3.2</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">2 روز پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status open ms-2">باز</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-6.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-6.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">کلوپ شبانه</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">کلوپ آنجلیکا استانبول<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>سانفرانسیسکو، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09390987658</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average high">4.5</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">3 روز پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status close ms-2">بسته</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-7.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-7.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">رستوران</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">کافه سرای سنتی سیمرغ<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>نیویورک، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09390987658</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average poor">2.8</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">4 روز پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Single -->
+			<div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+				<div class="Goodup-grid-wrap">
+					<div class="Goodup-grid-upper">
+						<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+						<div class="Goodup-pos ab-right">
+							<div class="Goodup-status open ms-2">باز</div>
+							<div class="Goodup-featured-tag">ویژه</div>
+						</div>
+						<div class="Goodup-grid-thumb">
+							<a href="single-listing-detail-1.html" class="d-block text-center m-auto"><img src="assets/img/listing/l-8.jpg" class="img-fluid" alt="" /></a>
+						</div>
+					</div>
+					<div class="Goodup-grid-fl-wrap">
+						<div class="Goodup-caption px-3 py-2">
+							<div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-8.png" class="img-fluid circle" alt="" /></a></div>
+							<div class="Goodup-cates"><a href="half-map-search-1.html">مرکز خرید</a></div>
+							<h4 class="mb-0 ft-medium medium"><a href="single-listing-detail-1.html" class="text-dark fs-md">مرکز خرید ایران مال<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+							<div class="Goodup-middle-caption mt-3">
+								<div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>کالیفرنیا، ایالات متحده آمریکا</div>
+								<div class="Goodup-call"><i class="fas fa-phone-alt"></i>09390987658</div>
+							</div>
+						</div>
+						<div class="Goodup-grid-footer py-3 px-3">
+							<div class="Goodup-ft-first">
+								<div class="Goodup-rating">
+									<div class="Goodup-pr-average mid">3.7</div>
+									<div class="Goodup-rates">
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+										<i class="fas fa-star"></i>
+									</div>
+								</div>
+								<div class="Goodup-price-range">
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span class="active"><i class="fas fa-dollar-sign"></i></span>
+									<span><i class="fas fa-dollar-sign"></i></span>
+								</div>
+							</div>
+							<div class="Goodup-ft-last">
+								<span class="small">3 روز پیش</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+		<!-- /row -->
+
+	</div>
+</section>
+<!-- =========================== Featured Listing End ===================== -->
+
+<partial name="_NewsletterPartial" />
+

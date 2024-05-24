@@ -1,4 +1,5 @@
 ﻿using App.Domain.Core.Customer.Entities;
+using App.Domain.Core.Expert.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using System;
@@ -26,7 +27,22 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .HasMaxLength(50);
             builder
                 .Property(c => c.ProfileImage)
+                .HasMaxLength(500);
+            builder
+                .Property(c => c.AboutMe)
                 .HasMaxLength(4000);
+            builder
+                .Property(c => c.FacebookAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(c => c.TwitterAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(c => c.InstagramAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(c => c.LinkedinAddress)
+                .HasMaxLength(50);
             builder
                 .Property(c => c.SignUpDate);
             builder
@@ -40,15 +56,20 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             //    .HasOne(c => c.Admin)
             //    .WithMany(a => a.Customers)
             //    .OnDelete(DeleteBehavior.Restrict);
-            builder
+            //builder
+            //    .HasOne(c => c.Address)
+            //    .WithOne(a => a.Customer)
+            //    .HasForeignKey(a => a.CustomerId)
+            //    .OnDelete(DeleteBehavior.Restrict);
+			builder
+				.HasOne(c => c.Address)
+				.WithOne(a => a.Customer)
+				.HasForeignKey<Customer>(c => c.AddressId)
+				.OnDelete(DeleteBehavior.Restrict);
+			builder
                 .HasMany(c => c.Comments)
                 .WithOne(c => c.Customer)
                 .HasForeignKey(c => c.CustomerId)
-                .OnDelete(DeleteBehavior.Restrict);
-            builder
-                .HasMany(c => c.Addresses)
-                .WithOne(a => a.Customer)
-                .HasForeignKey(a => a.CustomerId)
                 .OnDelete(DeleteBehavior.Restrict);
             builder
                 .HasMany(c => c.ServiceRequests)
@@ -60,26 +81,29 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             {
                 new Customer ()
                 {
-                    Id = 2,
+                    Id = 1,
                     FirstName = "علی",
                     LastName = "محمدی",
                     ProfileImage = "/UserAssets/img/customer/1.jpg",
+                    ApplicationUserId = 2
                 },
 
 				new Customer ()
 				{
-					Id = 3,
+					Id = 2,
 					FirstName = "سحر",
 					LastName = "رمضانی",
 					ProfileImage = "/UserAssets/img/customer/2.jpg",
+                    ApplicationUserId = 3
 				},
 
 				new Customer ()
 				{
-					Id = 4,
+					Id = 3,
 					FirstName = "مریم",
 					LastName = "اکبری",
 					ProfileImage = "/UserAssets/img/customer/3.jpg",
+                    ApplicationUserId = 4
 				}
 			});
         }

@@ -13,14 +13,12 @@ namespace App.Domain.Core.Admin.Entities
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public bool IsDeleted { get; set; } = false;
-        //public string Email { get; set; }
-        //public string Password { get; set; }
-        //public string ConfirmPassword { get; set; }
         public DateTime? SignUpDate { get; set; } = DateTime.Now;
-        //public string? PhoneNumber { get; set; }
         public string? ProfileImage { get; set; }
-        public List<Comment>? Comments { get; set; }
-        public List<Expert.Entities.Expert>? Experts { get; set; }
-        public List<Customer.Entities.Customer>? Customers { get; set; }
+        public ApplicationUser ApplicationUser { get; set; }
+        public int ApplicationUserId { get; set; }
+        //public List<Comment>? Comments { get; set; }
+        //public List<Expert.Entities.Expert>? Experts { get; set; }
+        //public List<Customer.Entities.Customer>? Customers { get; set; }
     }
 }

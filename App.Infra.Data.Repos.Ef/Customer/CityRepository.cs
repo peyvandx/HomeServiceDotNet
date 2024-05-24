@@ -49,7 +49,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 {
                     Id = c.Id,
                     Name = c.Name,
-                    ProvinceName = c.Province.Name
+                    //ProvinceName = c.Province.Name
                 }).ToListAsync(cancellationToken);
 
                 if (cities is null)
@@ -81,7 +81,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 {
                     Id = c.Id,
                     Name = c.Name,
-                    ProvinceName = c.Province.Name
+                    //ProvinceName = c.Province.Name
                 }).FirstOrDefaultAsync(c => c.Id == cityId, cancellationToken);
 
                 if (city != null)
@@ -136,7 +136,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             if (updatingCity != null)
             {
                 updatingCity.Name = updatedCity.Name;
-                updatingCity.ProvinceId = updatedCity.ProvinceId;
+                //updatingCity.ProvinceId = updatedCity.ProvinceId;
                 await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
                 return updatingCity;
             }
@@ -158,8 +158,8 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 .Select(a => new CityDto()
                 {
                     Id = a.Id,
-                    ProvinceId = a.ProvinceId,
-                    ProvinceName = a.Province.Name,
+                    //ProvinceId = a.ProvinceId,
+                    //ProvinceName = a.Province.Name,
                 }).FirstOrDefaultAsync(a => a.Id == cityId, cancellationToken);
 
                 if (city != null)

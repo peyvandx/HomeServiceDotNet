@@ -112,37 +112,55 @@ namespace App.Infra.Data.Repos.Ef.Expert
             _logger.LogInformation("serviceDtos returned from InMemoryCache.");
             return services;
         }
-        //{
-        //    var services = await _homeServiceDbContext.Services.ToListAsync(cancellationToken);
-        //    if (services != null)
-        //    {
-        //        return services;
-        //    }
-        //    else
-        //    {
-        //        //throw an exception - will be implement!
-        //        throw new InvalidOperationException();
-        //    }
-        //}
 
-        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-        //{
-        //    var deletedService = await GetService(serviceId, cancellationToken);
-        //    if (deletedService != null)
-        //    {
-        //        deletedService.IsDeleted = true;
-        //        _homeServiceDbContext.Services.Remove(deletedService);
-        //        await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-        //        return deletedService;
-        //    }
-        //    else
-        //    {
-        //        //throw an exception - will be implement!
-        //        throw new InvalidOperationException();
-        //    }
-        //}
+		public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
+		{
+            var services = await _homeServiceDbContext.Services
+                .Where(s => s.CategoryId == categoryId)
+                .Select(s => new ServiceDto()
+                {
+                    Id = s.Id,
+                    CategoryId = categoryId,
+                    Title = s.Title,
+                    Description = s.Description,
+                    IsDeleted = s.IsDeleted,
+                    Image = s.Image,
+                }).ToListAsync(cancellationToken);
 
-        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+            return services;
+		}
+
+		//{
+		//    var services = await _homeServiceDbContext.Services.ToListAsync(cancellationToken);
+		//    if (services != null)
+		//    {
+		//        return services;
+		//    }
+		//    else
+		//    {
+		//        //throw an exception - will be implement!
+		//        throw new InvalidOperationException();
+		//    }
+		//}
+
+		//public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+		//{
+		//    var deletedService = await GetService(serviceId, cancellationToken);
+		//    if (deletedService != null)
+		//    {
+		//        deletedService.IsDeleted = true;
+		//        _homeServiceDbContext.Services.Remove(deletedService);
+		//        await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+		//        return deletedService;
+		//    }
+		//    else
+		//    {
+		//        //throw an exception - will be implement!
+		//        throw new InvalidOperationException();
+		//    }
+		//}
+
+		public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
         {
             var deletedService = await GetServiceSoftDeleteDto(serviceId, cancellationToken);
             deletedService.IsDeleted = true;

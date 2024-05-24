@@ -1,0 +1,119 @@
+﻿@page
+@model App.EndPoints.UI.RazorPages.Pages.CommentModel
+@{
+}
+
+<!-- ============================ Main Section Start ================================== -->
+<section class="gray">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-xl-4 col-lg-4 col-md-12">
+                <div class="author-wrap-ngh">
+                    <div class="online">آنلاین</div>
+                    <div class="author-wrap-head-ngh">
+                        <div class="author-wrap-ngh-thumb">
+                            <img src="assets/img/t-1.png" class="img-fluid circle" alt="" />
+                        </div>
+                        <div class="author-wrap-ngh-info">
+                            <h5>مسعود هاشمی</h5>
+                            <div class="Goodup-location"><i class="fas fa-map-marker-alt"></i>کالیفرنیا، ایالات متحده آمریکا</div>
+                        </div>
+                    </div>
+
+                    <div class="author-wrap-caption-ngh">
+                        <div class="author-wrap-jhyu-ngh">
+                            <ul>
+                                <li>
+                                    <div class="gdup-kvty">
+                                        <div class="gdup-kvty-icon bg-light-sky text-sky"><i class="fas fa-file"></i></div>
+                                        <div class="gdup-kvty-ctr"><h6 class="count">310</h6></div>
+                                        <div class="gdup-kvty-text">آگهی</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gdup-kvty">
+                                        <div class="gdup-kvty-icon bg-light-warning text-warning"><i class="fas fa-thumbs-up"></i></div>
+                                        <div class="gdup-kvty-ctr"><h6 class="count">22</h6><span>نفر</span></div>
+                                        <div class="gdup-kvty-text">فالوورها</div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="gdup-kvty">
+                                        <div class="gdup-kvty-icon bg-light-danger text-danger"><i class="fas fa-heart"></i></div>
+                                        <div class="gdup-kvty-ctr"><h6 class="count">206</h6></div>
+                                        <div class="gdup-kvty-text">دنبال کنندگان</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="author-wrap-yuio-ngh mt-5">
+                            <div class="row g-4">
+                                <div class="col-6">
+                                    <a href="javascript:void(0);" class="adv-btn full-width">دنبال کردن</a>
+                                </div>
+                                <div class="col-6">
+                                    <a href="javascript:void(0);" class="adv-btn full-width">ارسال پیام</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="author-wrap-footer-ngh">
+                        <ul>
+                            <li>
+                                <div class="jhk-list-inf">
+                                    <div class="jhk-list-inf-ico"><i class="fas fa-envelope"></i></div>
+                                    <div class="jhk-list-inf-caption"><h5>پست الکترونیک</h5><p>example@gmail.com</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="jhk-list-inf">
+                                    <div class="jhk-list-inf-ico"><i class="fas fa-phone"></i></div>
+                                    <div class="jhk-list-inf-caption"><h5>شماره تماس</h5><p>02155555555</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="jhk-list-inf">
+                                    <div class="jhk-list-inf-ico"><i class="fas fa-map-marker-alt"></i></div>
+                                    <div class="jhk-list-inf-caption"><h5>آدرس</h5><p>تهران، تهران، ولیعصر، قرنی، طالقانی</p></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="jhk-list-inf">
+                                    <div class="jhk-list-inf-ico"><i class="fas fa-globe"></i></div>
+                                    <div class="jhk-list-inf-caption"><h5>وب سایت</h5><p>https://www.example.com</p></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-xl-8 col-lg-8 col-md-12">
+                <form method="post">
+                    <div class="form-group">
+                        <label class="mb-1">امتیاز</label>
+                        <select asp-for="@Model.Comment.Rate" class="form-control">
+                            <option selected>امتیاز</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+
+                    <div class="message-reply form-group">
+                        <input type="hidden" value="@Model.Expert.Id" asp-for="@Model.Comment.ExpertId" />
+                        <textarea asp-for="@Model.Comment.Description" cols="40" rows="3" class="form-control with-light mb-1" placeholder="متن پیام..."></textarea>
+                        <button type="submit" class="btn theme-bg text-white">ارسال پیام</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- ============================ Main Section End ================================== -->

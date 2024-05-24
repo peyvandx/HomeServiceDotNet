@@ -49,11 +49,11 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             builder
                 .Property(a => a.SignUpDate);
 
-            builder
-                .HasMany(a => a.Comments)
-                .WithOne(c => c.Admin)
-                .HasForeignKey(c => c.AdminId)
-                .OnDelete(DeleteBehavior.Restrict);
+            //builder
+            //    .HasMany(a => a.Comments)
+            //    .WithOne(c => c.Admin)
+            //    .HasForeignKey(c => c.AdminId)
+            //    .OnDelete(DeleteBehavior.Restrict);
 
             builder.HasData(new List<Admin>
             {
@@ -63,6 +63,7 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                     FirstName = "ادمین",
                     LastName = "ادمینیان پور",
                     ProfileImage = "/UserAssets/img/admin/1.jpg",
+                    ApplicationUserId = 1
 				}
             });
         }

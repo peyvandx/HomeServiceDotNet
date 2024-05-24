@@ -37,7 +37,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
         #region Implementations
         public async Task<Province> CreateProvince(Province submittedProvince, CancellationToken cancellationToken)
         {
-            await _homeServiceDbContext.Provinces.AddAsync(submittedProvince, cancellationToken);
+            //await _homeServiceDbContext.Provinces.AddAsync(submittedProvince, cancellationToken);
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             _logger.LogInformation("Province has been successfully added to the database.");
             return submittedProvince;
@@ -48,12 +48,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var province = _memoryCache.Get<ProvinceDto>("provinceDto");
             if (province is null)
             {
-                province = await _homeServiceDbContext.Provinces
-                .Select(p => new ProvinceDto
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                }).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
+                //province = await _homeServiceDbContext.Provinces
+                //.Select(p => new ProvinceDto
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name,
+                //}).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
 
                 if (province != null)
                 {
@@ -80,12 +80,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
             if (provinces is null)
             {
-                provinces = await _homeServiceDbContext.Provinces
-                .Select(p => new ProvinceDto()
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                }).ToListAsync(cancellationToken);
+                //provinces = await _homeServiceDbContext.Provinces
+                //.Select(p => new ProvinceDto()
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name,
+                //}).ToListAsync(cancellationToken);
 
                 if (provinces is null)
                 {
@@ -145,9 +145,11 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
         public async Task<ProvinceDto> UpdateProvince(Province updatedProvince, CancellationToken cancellationToken)
         {
-            var updatingProvince = await GetProvinceDto(updatedProvince.Id, cancellationToken);
-            updatingProvince.Name = updatedProvince.Name;
-            await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+            //var updatingProvince = await GetProvinceDto(updatedProvince.Id, cancellationToken);
+            //updatingProvince.Name = updatedProvince.Name;
+            //await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+            //return updatingProvince;
+            var updatingProvince = new ProvinceDto();
             return updatingProvince;
         }
         #endregion
@@ -158,12 +160,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var province = _memoryCache.Get<ProvinceDto>("provinceDto");
             if (province is null)
             {
-                province = await _homeServiceDbContext.Provinces
-                .Select(p => new ProvinceDto()
-                {
-                    Id = p.Id,
-                    Name = p.Name,
-                }).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
+                //province = await _homeServiceDbContext.Provinces
+                //.Select(p => new ProvinceDto()
+                //{
+                //    Id = p.Id,
+                //    Name = p.Name,
+                //}).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
 
                 if (province != null)
                 {
@@ -186,12 +188,12 @@ namespace App.Infra.Data.Repos.Ef.Customer
             var province = _memoryCache.Get<ProvinceSoftDeleteDto>("provinceSoftDeleteDto");
             if (province is null)
             {
-                province = await _homeServiceDbContext.Provinces
-                .Select(p => new ProvinceSoftDeleteDto()
-                {
-                    Id = p.Id,
-                    IsDeleted = p.IsDeleted
-                }).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
+                //province = await _homeServiceDbContext.Provinces
+                //.Select(p => new ProvinceSoftDeleteDto()
+                //{
+                //    Id = p.Id,
+                //    IsDeleted = p.IsDeleted
+                //}).FirstOrDefaultAsync(p => p.Id == provinceId, cancellationToken);
 
                 if (province != null)
                 {

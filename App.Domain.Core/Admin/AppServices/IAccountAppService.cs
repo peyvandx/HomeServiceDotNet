@@ -13,5 +13,7 @@ namespace App.Domain.Core.Admin.AppServices
     {
         public Task<List<IdentityError>> Register(RegisterDto registerDto);
         public Task<bool> Login(LoginDto loginDto);
-    }
+        public Task<CustomerProfileDto> GetCustomerProfileDetails(int userId, int applicationUserId, CancellationToken cancellationToken);
+
+	}
 }

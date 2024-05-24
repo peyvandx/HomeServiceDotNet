@@ -12,8 +12,8 @@ namespace App.Domain.Core.Customer.Entities
         public string Name { get; set; }
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
-        public int ProvinceId { get; set; }
-        public Province Province { get; set; }
+        //public int ProvinceId { get; set; }
+        //public Province Province { get; set; }
         public List<Address> Addresses { get; set; }
     }
 }

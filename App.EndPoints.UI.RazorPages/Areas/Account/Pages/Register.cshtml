@@ -15,6 +15,7 @@
                         </div>
 
                         <form class="submit-form" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
@@ -41,6 +42,7 @@
                             <div class="form-group">
                                 <label class="mb-1">رمز عبور</label>
                                 <input asp-for="@Model.Input.Password" type="password" class="form-control rounded" placeholder="رمز عبور*">
+                                <span asp-validation-for="@Model.Input.Password" class="text-danger"></span>
                             </div>
 
                             <div class="sign-controls form-group">

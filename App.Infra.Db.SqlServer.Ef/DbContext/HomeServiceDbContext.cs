@@ -40,7 +40,7 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
             modelBuilder.ApplyConfiguration(new AddressEntityConfig());
             modelBuilder.ApplyConfiguration(new SkillEntityConfig());
             modelBuilder.ApplyConfiguration(new CityEntityConfig());
-            modelBuilder.ApplyConfiguration(new ProvinceEntityConfig());
+            //modelBuilder.ApplyConfiguration(new ProvinceEntityConfig());
 
             UserConfigurations.SeedUsers(modelBuilder);
 
@@ -58,7 +58,7 @@ namespace App.Infra.Db.SqlServer.Ef.DbContext
         public DbSet<Skill> Skills { get; set; }
         public DbSet<Proposal> Proposals { get; set; }
         public DbSet<City> Cities { get; set; }
-        public DbSet<Province> Provinces { get; set; }
+        //public DbSet<Province> Provinces { get; set; }
 
     }
 }

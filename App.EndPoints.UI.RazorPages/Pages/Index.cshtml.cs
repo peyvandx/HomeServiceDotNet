@@ -1,3 +1,5 @@
+using App.Domain.Core.Expert.AppServices;
+using App.Domain.Core.Expert.DTOs;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -5,16 +7,18 @@ namespace App.EndPoints.UI.RazorPages.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+		private readonly ICategoryAppService _categoryAppService;
 
-        public IndexModel(ILogger<IndexModel> logger)
+		public IndexModel(ICategoryAppService categoryAppService)
         {
-            _logger = logger;
-        }
+			_categoryAppService = categoryAppService;
+		}
 
-        public void OnGet()
+        public List<CategoryDto> Categories { get; set; }
+
+        public async Task OnGet(CancellationToken cancellationToken)
         {
-
+            Categories = await _categoryAppService.GetCategories(cancellationToken);
         }
     }
 }

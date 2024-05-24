@@ -33,6 +33,31 @@ namespace App.Infra.Data.Repos.Ef.Expert
             _memoryCache = memoryCache;
             _logger = logger;
         }
+
+        public async Task<bool> AcceptProposal(int proposalId, CancellationToken cancellationToken)
+        {
+            var proposal = await _homeServiceDbContext.Proposals
+                .FirstOrDefaultAsync(p => p.Id == proposalId, cancellationToken);
+
+            if (proposal is not null)
+            {
+                proposal.IsAccepted = true;
+            }
+            else
+            {
+                throw new Exception($"proposal with id {proposalId} not found!");
+            }
+
+            try
+            {
+                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
         #endregion
 
         #region Implementations
@@ -108,6 +133,54 @@ namespace App.Infra.Data.Repos.Ef.Expert
             _logger.LogInformation("proposalDtos returned from InMemoryCache.");
             return proposals;
         }
+
+        public Task<List<ProposalDto>> GetProposalsByServiceRequestId(int serviceRequestId, CancellationToken cancellationToken)
+        {
+            var proposals = _homeServiceDbContext.Proposals
+                .Where(p => p.ServiceRequestId == serviceRequestId)
+                .Include(p => p.Expert)
+                .Select(p => new ProposalDto()
+                {
+                    Id = p.Id,
+                    ExpertDescription = p.ExpertDescription,
+                    SuggestedPrice = p.SuggestedPrice,
+                    CreatedAt = p.CreatedAt,
+                    IsAccepted = p.IsAccepted,
+                    ExpertId = p.ExpertId,
+                    ExpertFirstName = p.Expert.FirstName,
+                    ExpertLastName = p.Expert.LastName,
+                    ExpertSignUpDate = p.Expert.SignUpDate,
+                    ExpertProfileImage = p.Expert.ProfileImage,
+                }).ToListAsync(cancellationToken);
+
+            return proposals;
+        }
+
+        public async Task<bool> RejectProposal(int proposalId, CancellationToken cancellationToken)
+        {
+            var proposal = await _homeServiceDbContext.Proposals
+                .FirstOrDefaultAsync(p => p.Id == proposalId, cancellationToken);
+
+            if (proposal is not null)
+            {
+                proposal.IsAccepted = false;
+            }
+            else
+            {
+                throw new Exception($"proposal with id {proposalId} not found!");
+            }
+
+            try
+            {
+                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
         //{
         //    var proposals = await _homeServiceDbContext.Proposals.ToListAsync(cancellationToken);
         //    if (proposals != null)

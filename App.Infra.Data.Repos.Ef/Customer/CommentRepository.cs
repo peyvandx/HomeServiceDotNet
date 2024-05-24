@@ -59,8 +59,8 @@ namespace App.Infra.Data.Repos.Ef.Customer
                     CustomerName = c.Customer.FirstName + " " + c.Customer.LastName,
                     ExpertId = c.ExpertId,
                     ExpertName = c.Expert.FirstName + " " + c.Expert.LastName,
-                    AdminId = c.AdminId,
-                    AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
+                    //AdminId = c.AdminId,
+                    //AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
                 }).FirstOrDefaultAsync(c => c.Id == commentId, cancellationToken);
 
                 if (comment != null)
@@ -98,8 +98,8 @@ namespace App.Infra.Data.Repos.Ef.Customer
                      CustomerName = c.Customer.FirstName + " " + c.Customer.LastName,
                      ExpertId = c.ExpertId,
                      ExpertName = c.Expert.FirstName + " " + c.Expert.LastName,
-                     AdminId = c.AdminId,
-                     AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
+                     //AdminId = c.AdminId,
+                     //AdminName = c.Admin.FirstName + " " + c.Admin.LastName,
                      IsConfirmed = c.IsConfirmed,
                      IsDeleted  = c.IsDeleted,
                  }).ToListAsync(cancellationToken);

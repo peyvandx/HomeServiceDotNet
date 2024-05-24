@@ -3809,6 +3809,14 @@
       "PackagePath": "staticwebassets\\UserAssets\\img\\customer\\3.jpg"
     },
     {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\expert\\1.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\expert\\1.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\UserAssets\\img\\expert\\2.jpg",
+      "PackagePath": "staticwebassets\\UserAssets\\img\\expert\\2.jpg"
+    },
+    {
       "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\css\\fonts\\Flaticon.eot",
       "PackagePath": "staticwebassets\\assets\\css\\fonts\\Flaticon.eot"
     },

@@ -29,7 +29,7 @@ namespace App.Domain.Services.Customer
             var creatingCity = new City();
             creatingCity.CreatedAt = DateTime.Now;
             creatingCity.Name = cityDto.Name;
-            creatingCity.ProvinceId = cityDto.ProvinceId;
+            //creatingCity.ProvinceId = cityDto.ProvinceId;
             return await _cityRepository.CreateCity(creatingCity, cancellationToken);
         }
 
@@ -54,7 +54,7 @@ namespace App.Domain.Services.Customer
         {
             var updatedCity = new City();
             updatedCity.Name = cityDto.Name;
-            updatedCity.ProvinceId = cityDto.ProvinceId;
+            //updatedCity.ProvinceId = cityDto.ProvinceId;
             return await _cityRepository.UpdateCity(updatedCity, cancellationToken);
         }
 

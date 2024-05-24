@@ -4,6 +4,8 @@ using App.Domain.Core.Customer.Data;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Customer.Enums;
+using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
 using App.Infra.Db.SqlServer.Ef.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -243,6 +245,27 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return serviceRequest;
 
         }
-        #endregion
-    }
+
+		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken)
+		{
+			var customerServiceRequests = await _homeServiceDbContext.ServiceRequests
+				.Where(x => x.CustomerId == customerId)
+                .Include(x => x.Service)
+                .Select(x => new ServiceRequestDto()
+				{
+					Id = x.Id,
+                    CustomerDescription = x.CustomerDescription,
+                    Price = x.Price,
+                    IsDone = x.IsDone,
+                    IsDeleted = x.IsDeleted,
+                    Status = x.Status,
+					ServiceId = x.ServiceId,
+                    ServiceName = x.Service.Title,
+                    ServiceImageUrl = x.Service.Image,
+				}).ToListAsync(cancellationToken);
+
+            return customerServiceRequests;
+		}
+		#endregion
+	}
 }

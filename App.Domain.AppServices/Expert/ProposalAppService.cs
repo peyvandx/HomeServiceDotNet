@@ -21,6 +21,9 @@ namespace App.Domain.AppServices.Expert
         {
             _proposalService = proposalService;
         }
+
+        public async Task<bool> AcceptProposal(int proposalId, CancellationToken cancellationToken)
+            => await _proposalService.AcceptProposal(proposalId, cancellationToken);
         #endregion
 
         #region Implementations
@@ -32,6 +35,12 @@ namespace App.Domain.AppServices.Expert
 
         public async Task<List<ProposalDto>> GetProposals(CancellationToken cancellationToken)
             => await _proposalService.GetProposals(cancellationToken);
+
+        public async Task<List<ProposalDto>> GetProposalsByServiceRequestId(int serviceRequestId, CancellationToken cancellationToken)
+            => await _proposalService.GetProposalsByServiceRequestId(serviceRequestId, cancellationToken);
+
+        public async Task<bool> RejectProposal(int proposalId, CancellationToken cancellationToken)
+            => await _proposalService.RejectProposal(proposalId, cancellationToken);
 
         //public async Task<Proposal> HardDeleteProposal(int proposalId, CancellationToken cancellationToken)
         //    => await _proposalService.HardDeleteProposal(proposalId, cancellationToken);

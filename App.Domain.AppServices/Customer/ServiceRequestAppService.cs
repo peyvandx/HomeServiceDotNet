@@ -45,6 +45,9 @@ namespace App.Domain.AppServices.Customer
 
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
             => await _serviceRequestService.ChangeServiceRequestStatus(newStatus, cancellationToken);
-        #endregion
-    }
+
+		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken)
+		    => await _serviceRequestService.GetCustomerServiceRequests(customerId, cancellationToken);
+		#endregion
+	}
 }

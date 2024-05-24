@@ -3,6 +3,7 @@ using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Customer.Enums;
 using App.Domain.Core.Customer.Services;
+using Microsoft.Extensions.Caching.Memory;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,12 +16,15 @@ namespace App.Domain.Services.Customer
     {
         #region Fields
         private readonly ICustomerRepository _customerRepository;
+        private readonly IMemoryCache _memoryCache;
         #endregion
 
         #region Ctors
-        public CustomerService(ICustomerRepository customerRepository)
+        public CustomerService(ICustomerRepository customerRepository
+            ,IMemoryCache memoryCache)
         {
             _customerRepository = customerRepository;
+            _memoryCache = memoryCache;
         }
         #endregion
 
@@ -39,6 +43,11 @@ namespace App.Domain.Services.Customer
         public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
             => await _customerRepository.GetCustomerById(customerId, cancellationToken);
 
+        public Task<int> GetCustomerIdFromUserId(int userId, CancellationToken cancellationToken)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task<List<CustomerDto>> GetCustomers(CancellationToken cancellationToken)
             => await _customerRepository.GetCustomers(cancellationToken);
 
@@ -48,12 +57,23 @@ namespace App.Domain.Services.Customer
         public async Task<CustomerSoftDeleteDto> SoftDeleteCustomer(int customerId, CancellationToken cancellationToken)
             => await _customerRepository.SoftDeleteCustomer(customerId, cancellationToken);
                           
-        public async Task<CustomerDto> UpdateCustomer(CustomerDto customerDto, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(CustomerProfileDto customerDto, CancellationToken cancellationToken)
         {
             var updatedCustomer = new Core.Customer.Entities.Customer();
+            updatedCustomer.Address = new Address();
+            updatedCustomer.Id = customerDto.Id;
             updatedCustomer.FirstName = customerDto.FirstName;
             updatedCustomer.LastName = customerDto.LastName;
-            updatedCustomer.ProfileImage = customerDto.ProfileImage;
+            updatedCustomer.ProfileImage = customerDto.ProfileImageUrl;
+            updatedCustomer.AboutMe = customerDto.AboutMe;
+            updatedCustomer.FacebookAddress = customerDto.FacebookAddress;
+            updatedCustomer.InstagramAddress = customerDto.InstagramAddress;
+            updatedCustomer.TwitterAddress = customerDto.TwitterAddress;
+            updatedCustomer.LinkedinAddress = customerDto.LinkedinAddress;
+            updatedCustomer.Address.Street = customerDto.Address.Street;
+            updatedCustomer.Address.PostalCode = customerDto.Address.PostalCode;
+            updatedCustomer.Address.CityId = customerDto.Address.CityId;
+            _memoryCache.Remove("customerDto");
             return await _customerRepository.UpdateCustomer(updatedCustomer, cancellationToken);
         }
 

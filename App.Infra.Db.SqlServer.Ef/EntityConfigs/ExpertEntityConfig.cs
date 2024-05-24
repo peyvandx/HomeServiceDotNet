@@ -28,11 +28,25 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .HasMaxLength(50)
                 .IsRequired();
             builder
-                .Property(e => e.Age)
-                .IsRequired();
+                .Property(e => e.Age);
             builder
                 .Property(e => e.ProfileImage)
+                .HasMaxLength(500);
+            builder
+                .Property(e => e.AboutMe)
                 .HasMaxLength(4000);
+            builder
+                .Property(e => e.FacebookAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(e => e.TwitterAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(e => e.InstagramAddress)
+                .HasMaxLength(50);
+            builder
+                .Property(e => e.LinkedinAddress)
+                .HasMaxLength(50);
             builder
                 .Property(e => e.SignUpDate)
                 .IsRequired();
@@ -76,6 +90,34 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
             builder
                 .HasMany(e => e.Services)
                 .WithMany(s => s.Experts);
+
+            builder.HasData(new List<Expert>
+            {
+                new Expert()
+                {
+                    Id = 1,
+					FirstName = "افشین",
+					LastName = "احمدیان‌پور",
+					ProfileImage = "/UserAssets/img/expert/1.jpg",
+                    ApplicationUserId = 5
+				},
+                new Expert()
+                {
+                    Id = 2,
+                    FirstName = "فاران",
+                    LastName = "علی‌زاده",
+                    ProfileImage = "/UserAssets/img/expert/1.jpg",
+                    ApplicationUserId = 6
+                },
+                new Expert()
+                {
+                    Id = 3,
+                    FirstName = "آیدا",
+                    LastName = "بهرامی",
+                    ProfileImage = "/UserAssets/img/expert/2.jpg",
+                    ApplicationUserId = 7
+                }
+            });
         }
     }
 }

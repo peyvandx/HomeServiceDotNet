@@ -20,17 +20,15 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .IsRequired();
             builder
                 .Property(a => a.Street)
-                .HasMaxLength(100)
-                .IsRequired();
+                .HasMaxLength(100);
             builder
                 .Property(a => a.PostalCode)
-                .IsRequired();
+                .HasMaxLength(20);
             builder
                 .Property(a => a.CreatedAt)
                 .IsRequired();
             builder
-                .Property(a => a.IsDeleted)
-                .IsRequired();
+                .Property(a => a.IsDeleted);
 
             builder
                 .HasOne(a => a.City)

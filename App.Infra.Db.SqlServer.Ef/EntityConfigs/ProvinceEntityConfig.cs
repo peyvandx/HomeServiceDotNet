@@ -20,14 +20,11 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .IsRequired();
             builder
                 .Property(p => p.Name)
-                .HasMaxLength(20)
-                .IsRequired();
+                .HasMaxLength(20);
             builder
-                .Property(p => p.IsDeleted)
-                .IsRequired();
+                .Property(p => p.IsDeleted);
             builder
-                .Property(p => p.CreatedAt)
-                .IsRequired();
+                .Property(p => p.CreatedAt);
 
 
             builder.HasData(
