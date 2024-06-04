@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace App.EndPoints.UI.RazorPages.Pages
 {
-    [Authorize(Roles = "Customer,Expert")]
+    [Authorize(Roles = "Customer")]
     public class RequestModel : PageModel
     {
 		private readonly IServiceAppService _serviceAppService;

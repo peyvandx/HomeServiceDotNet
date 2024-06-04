@@ -75,6 +75,7 @@ namespace App.EndPoints.UI.RazorPages.Pages
                 }
                 TempData["UserId"] = userId;
                 CustomerProfileDetails = await _accountAppService.GetCustomerProfileDetails(userId, applicationUserId, cancellationToken);
+                TempData["UserProfileImage"] = CustomerProfileDetails.ProfileImageUrl;
             }
 
             if (User.IsInRole("Expert"))
@@ -91,6 +92,7 @@ namespace App.EndPoints.UI.RazorPages.Pages
 				}
 				TempData["UserId"] = userId;
                 ExpertProfileDetails = await _accountAppService.GetExpertProfileDetails(userId, applicationUserId, cancellationToken);
+                TempData["UserProfileImage"] = ExpertProfileDetails.ProfileImageUrl;
             }
         }
 
@@ -121,86 +123,3 @@ namespace App.EndPoints.UI.RazorPages.Pages
         }
     }
 }
-
-//------------------------------------------
-//public async Task<string> UploadImage(IFormFile image)
-//{
-//    string filePath;
-
-//    if (image != null && image.Length > 0)
-//    {
-//        filePath = @"E:\Project\HomeService\HomeService.Endpoint.RazorPages.UI\wwwroot\uploads\" + image.FileName;
-//        using (var stream = new FileStream(filePath, FileMode.Create))
-//        {
-//            await image.CopyToAsync(stream);
-//        }
-//        return filePath;
-//    }
-//    return null;
-//}
-
-
-
-
-//اینو توی base service نوشتم
-
-//public async Task<bool> Create(ServiceSubCategoryCreateDto serviceSubCategoryCreateDto, CancellationToken cancellationToken, IFormFile image)
-//{
-//    var imageAddress = await _baseSevices.UploadImage(image);
-//    serviceSubCategoryCreateDto.Image = imageAddress;
-//    return await _serviceSubCategoryServices.Create(serviceSubCategoryCreateDto, cancellationToken);
-//}
-
-//[BindProperty]
-//public IFormFile Image { get; set; }
-
-//public async Task<IActionResult> OnPostAdd(ServiceSubCategoryCreateDto serviceSubCategoryCreate, CancellationToken cancellationToken, IFormFile image)
-//{
-//    await _servicSubCategoryAppServices.Create(serviceSubCategoryCreate, cancellationToken, image);
-//    return RedirectToPage("SubCategory");
-//}
-//}
-
-
-//توی کلاس سی شارپی
-
-//enctype="multipart/form-data"
-//public async Task<string> UploadImage(IFormFile image)
-//{
-//    string filePath;
-
-//    if (image != null && image.Length > 0)
-//    {
-//        filePath = @"E:\Project\HomeService\HomeService.Endpoint.RazorPages.UI\wwwroot\uploads\" + image.FileName;
-//        using (var stream = new FileStream(filePath, FileMode.Create))
-//        {
-//            await image.CopyToAsync(stream);
-//        }
-//        return filePath;
-//    }
-//    return null;
-//}
-
-
-
-
-//اینو توی base service نوشتم
-//public async Task<bool> Create(ServiceSubCategoryCreateDto serviceSubCategoryCreateDto, CancellationToken cancellationToken, IFormFile image)
-//{
-//    var imageAddress = await _baseSevices.UploadImage(image);
-//    serviceSubCategoryCreateDto.Image = imageAddress;
-//    return await _serviceSubCategoryServices.Create(serviceSubCategoryCreateDto, cancellationToken);
-//}
-//[BindProperty]
-//public IFormFile Image { get; set; }
-
-//public async Task<IActionResult> OnPostAdd(ServiceSubCategoryCreateDto serviceSubCategoryCreate, CancellationToken cancellationToken, IFormFile image)
-//{
-//    await _servicSubCategoryAppServices.Create(serviceSubCategoryCreate, cancellationToken, image);
-//    return RedirectToPage("SubCategory");
-//}
-//}
-
-
-//توی کلاس سی شارپی
-//enctype="multipart/form-data"

@@ -1,15 +1,13 @@
 ﻿@page
 @model App.EndPoints.UI.RazorPages.Pages.ProfileModel
 @{
-    Layout = "Shared/_CustomerDashboardLayout";
+    // Layout = "Shared/_CustomerDashboardLayout";
     var userId = TempData["UserId"];
 }
 
 @* <partial name="_HeaderPartial" /> *@
-<!-- Top header  -->
-<!-- ============================================================== -->
-<!-- Start Navigation -->
-<div class="header header-light dark-text">
+
+@* <div class="header header-light dark-text">
     <div class="container">
         <nav id="navigation" class="navigation navigation-landscape">
             <div class="nav-header">
@@ -64,9 +62,8 @@
             </div>
         </nav>
     </div>
-</div>
+</div> *@
 
-<!-- ======================= dashboard Detail ======================== -->
 @* @if (User.IsInRole("Customer"))
 { *@
 

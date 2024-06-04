@@ -61,6 +61,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Title = a.Title,
                     Description = a.Description,
                     IsDeleted = a.IsDeleted,
+                    Image = a.Image
                 }).ToListAsync(cancellationToken);
 
                 if (categories is null)

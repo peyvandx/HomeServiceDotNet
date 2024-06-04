@@ -11,10 +11,11 @@
 using System;
 using System.Reflection;
 
+[assembly: Microsoft.Extensions.Configuration.UserSecrets.UserSecretsIdAttribute("509f94f6-886c-4fd3-b015-c35770192bea")]
 [assembly: System.Reflection.AssemblyCompanyAttribute("App.EndPoints.UI.RazorPages")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+44e9e0093ac5182a347789c61bcd4caa7f66478f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb5de49eb3da7d78259b58205cd4f7067d632c76")]
 [assembly: System.Reflection.AssemblyProductAttribute("App.EndPoints.UI.RazorPages")]
 [assembly: System.Reflection.AssemblyTitleAttribute("App.EndPoints.UI.RazorPages")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

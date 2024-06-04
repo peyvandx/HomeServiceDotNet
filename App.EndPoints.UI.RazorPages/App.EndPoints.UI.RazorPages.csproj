@@ -4,6 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>509f94f6-886c-4fd3-b015-c35770192bea</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
   <ItemGroup>
     <Folder Include="Areas\Customer\" />
     <Folder Include="Areas\Expert\" />
+    <Folder Include="wwwroot\assets\img\service\" />
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 

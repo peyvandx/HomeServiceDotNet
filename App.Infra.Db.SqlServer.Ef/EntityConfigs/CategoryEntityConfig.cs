@@ -35,15 +35,15 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
 
 
             builder.HasData(
-                new Category { Id = 1, Title = "دکوراسیون ساختمان", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 2, Title = "تاسیسات ساختمان", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 3, Title = "وسایل نقلیه", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 4, Title = "اسباب کشی و باربری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 5, Title = "لوازم خانگی", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 6, Title = "خدمات اداری", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 7, Title = "دیجیتال و نرم افزار", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 8, Title = "نظافت و بهداشت", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
-                new Category { Id = 9, Title = "پزشکی و سلامت", Image = "", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " }
+                new Category { Id = 1, Title = "دکوراسیون ساختمان", Image = "/assets/img/category/دکوراسیون-ساختمان.png", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 2, Title = "تاسیسات ساختمان", Image = "/assets/img/category/تاسیسات-ساختمان.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 3, Title = "وسایل نقلیه", Image = "/assets/img/category/وسایل-نقلیه.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 4, Title = "اسباب کشی و باربری", Image = "/assets/img/category/اسباب-کشی-و-باربری.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 5, Title = "لوازم خانگی", Image = "/assets/img/category/لوازم-خانگی.png", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 6, Title = "خدمات اداری", Image = "/assets/img/category/خدمات-اداری.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 7, Title = "دیجیتال و نرم افزار", Image = "/assets/img/category/دیجیتال-و-نرم-افزار.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 8, Title = "نظافت و بهداشت", Image = "/assets/img/category/نظافت-و-بهداشت.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " },
+                new Category { Id = 9, Title = "پزشکی و سلامت", Image = "/assets/img/category/پزشکی-و-سلامت.jpg", CreatedAt = DateTime.Now, IsDeleted = false, Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم " }
                 );
         }
     }

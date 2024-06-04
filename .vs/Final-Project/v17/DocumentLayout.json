@@ -1,12 +1,71 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\proposal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\proposal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Proposal.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAgwDMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T15:02:57.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Profile.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAYwHcAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-04T15:01:16.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
+              "ViewState": "AQIAAOQAAAAAAAAAAAAAAPQAAABXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-04T15:01:03.859Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

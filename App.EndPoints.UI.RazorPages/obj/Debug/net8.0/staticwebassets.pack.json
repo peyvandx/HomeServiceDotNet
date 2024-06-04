@@ -4161,6 +4161,10 @@
       "PackagePath": "staticwebassets\\assets\\img\\banner.jpg"
     },
     {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\banner.png",
+      "PackagePath": "staticwebassets\\assets\\img\\banner.png"
+    },
+    {
       "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\bg.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\bg.jpg"
     },
@@ -4267,6 +4271,42 @@
     {
       "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\car\\c-8.jpg",
       "PackagePath": "staticwebassets\\assets\\img\\car\\c-8.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\اسباب-کشی-و-باربری.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\اسباب-کشی-و-باربری.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\تاسیسات-ساختمان.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\تاسیسات-ساختمان.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\خدمات-اداری.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\خدمات-اداری.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\دکوراسیون-ساختمان.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\دکوراسیون-ساختمان.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\دیجیتال-و-نرم-افزار.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\دیجیتال-و-نرم-افزار.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\لوازم-خانگی.png",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\لوازم-خانگی.png"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\نظافت-و-بهداشت.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\نظافت-و-بهداشت.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\وسایل-نقلیه.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\وسایل-نقلیه.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\category\\پزشکی-و-سلامت.jpg",
+      "PackagePath": "staticwebassets\\assets\\img\\category\\پزشکی-و-سلامت.jpg"
     },
     {
       "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\assets\\img\\cover.jpg",

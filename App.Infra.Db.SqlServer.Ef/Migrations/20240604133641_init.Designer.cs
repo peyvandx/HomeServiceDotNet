@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace App.Infra.Db.SqlServer.Ef.Migrations
 {
     [DbContext(typeof(HomeServiceDbContext))]
-    [Migration("20240603144600_init")]
+    [Migration("20240604133641_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -72,7 +72,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "ادمینیان پور",
                             ProfileImage = "/UserAssets/img/admin/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 533, DateTimeKind.Local).AddTicks(5435)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 354, DateTimeKind.Local).AddTicks(8061)
                         });
                 });
 
@@ -148,16 +148,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "de20715c-cafa-46de-a493-848d116112b2",
+                            ConcurrencyStamp = "18444120-fe88-43b3-8bb1-7c39aec1ff0b",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPEclQLmR002WY22uo4Xc9uvQCwI8L90K/oRzRfEtrZ5Z0VF2tWeqjDNHURtKO+PLA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEHIflU5Y7+lzrxcCkqOMG30WZnOBZ/MmIPbusRopFzSHTHoGBJN9ydyu3t59TZCA4A==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "adba6c7e-fddb-4be8-9736-76c8ca7d1884",
+                            SecurityStamp = "d8c9585a-916a-4252-ad6e-134508bb5b2c",
                             TwoFactorEnabled = false,
                             UserName = "Admin@gmail.com"
                         },
@@ -165,16 +165,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bb2a4a17-a3fa-4025-ad91-49a0b65313a9",
+                            ConcurrencyStamp = "aa105ace-dcdf-413e-9ca7-3c303e345c16",
                             Email = "Ali@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ALI@GMAIL.COM",
                             NormalizedUserName = "ALI@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHpKpM5yqS0ZG3FSTgrJVc6B1xpWBFceRS23uJexaM+lFJYl62SAn2MuAKdqKQwOKA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAECbAw/YCq/60UvjwVlIv3YAcA8IcQp9XUzlS3G0zRwn5Y3qUXvOsiaBQGElG4Pn/qg==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "3b4a9d9c-665f-4eb2-a815-b002ee783ee2",
+                            SecurityStamp = "708bcf8a-f648-44e5-899a-36490bc6ec50",
                             TwoFactorEnabled = false,
                             UserName = "Ali@gmail.com"
                         },
@@ -182,16 +182,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "27793cb2-7f3b-4ffa-9b90-669ae5e36a98",
+                            ConcurrencyStamp = "0eccbf6f-c483-4047-b7cf-b5b251844728",
                             Email = "Sahar@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "SAHAR@GMAIL.COM",
                             NormalizedUserName = "SAHAR@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELQ8T/mg7vZKzG0GK22IdmmvS8CwXZnheg/KXVHsN323ZIJCiZw9FRLkWWbkDRHcXA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELXCdkyHnqXvaq8MzRUmGaFGVeaXE1/ViukLzdGJvfNb0fU4IkBVSu5BvNdBkXOGSw==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "e34ba2e0-8694-45ce-97e0-ae1ca282ce2b",
+                            SecurityStamp = "b95aad5e-d02f-4a06-bc39-b4bc045c5e3c",
                             TwoFactorEnabled = false,
                             UserName = "Sahar@gmail.com"
                         },
@@ -199,16 +199,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "bf267860-fcd4-4358-a378-db89fd64992d",
+                            ConcurrencyStamp = "4025fe4c-ef25-410a-9f25-f62937b77d6c",
                             Email = "Maryam@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "MARYAM@GMAIL.COM",
                             NormalizedUserName = "MARYAM@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEGWXzLznoPM0F9jD3rbKOH30VhMc+5bd4k8zdCG7MGkS+roPaQFFsi3nQTKnMaQn9w==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDPmJa24/GEwq7oihEPubW/Xsci3esgBNs1JN/OGymzX9H/pBIfo6ic8CU+ueobpYw==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "bad05efd-81a2-4928-b88c-62822a50b5fb",
+                            SecurityStamp = "fc48ab65-318e-4ebe-b0d5-d4e85a31753e",
                             TwoFactorEnabled = false,
                             UserName = "Maryam@gmail.com"
                         },
@@ -216,16 +216,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "82697797-d9a1-46ef-b9ed-b14b30636cce",
+                            ConcurrencyStamp = "341c8d1d-bc39-4c65-97e2-9710060ec9b9",
                             Email = "Afshin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "AFSHIN@GMAIL.COM",
                             NormalizedUserName = "AFSHIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFLXAG6udXPJ1xwTKSPTFon3JI2pUY5Cj5nxGzB9UmGtFfGBXRd279QJQ19XBeytHw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEPqfezKs4/7d3md82Eeeqkq6BKy97EYNADJ0QkPNlHTeBExFWuofrJvRPX1GWQoZbA==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b1d112be-a57b-46d8-bde1-50f99d15e7a0",
+                            SecurityStamp = "7f92d686-9422-44d7-8033-d39a9f09327d",
                             TwoFactorEnabled = false,
                             UserName = "Afshin@gmail.com"
                         },
@@ -233,16 +233,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "d931cd94-3747-4131-8330-27eba0ccb393",
+                            ConcurrencyStamp = "4e42752a-c01f-4f3d-bfe9-2eee4ca94b16",
                             Email = "Faran@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "FARAN@GMAIL.COM",
                             NormalizedUserName = "FARAN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEFwP4B6UEB3P4OuA7cxaQxZ3CEbCSgcfmLDzmfie4iWKp0s2YM4j2uiwYHixHkaP8Q==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEP3f2dpZrC+h9O94COXSNLBT/UCPV8K7oMzNLRSXVBHFXgDPf/UjcO7y2B/X2ifXJQ==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "cb402fa9-12f2-4a56-9c0d-12412dbf7c12",
+                            SecurityStamp = "671b81fd-8526-4de8-97f9-bbbd25a1142d",
                             TwoFactorEnabled = false,
                             UserName = "Faran@gmail.com"
                         },
@@ -250,16 +250,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 7,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "abb771f3-e3ad-48a3-9909-9fb70b684f90",
+                            ConcurrencyStamp = "ed6fedc4-9905-44fe-ba2d-61e30d1ca68e",
                             Email = "Ayda@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "AYDA@GMAIL.COM",
                             NormalizedUserName = "AYDA@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEAL6qkOSKquxVxeI3Jqwz4S2DZSpuqO/PBB1Zja1alCEqCJ/ja96ojvNu9v/S7wYFA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEBUpcZe/vY0i49ai0xOjvaOL0Q4qL3LhoQrxgZl0iSniuG43S7eliWpDkjgjRo/DqA==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "ef049bc2-c3a5-4d12-ad66-eb08f08d3a0b",
+                            SecurityStamp = "4e8dd1d0-dffb-4f26-8846-8f8f8f1097a5",
                             TwoFactorEnabled = false,
                             UserName = "Ayda@gmail.com"
                         });
@@ -330,217 +330,217 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3165),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1415),
                             IsDeleted = false,
                             Name = "آذربایجان شرقی"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3181),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1432),
                             IsDeleted = false,
                             Name = "آذربایجان غربی"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3184),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1434),
                             IsDeleted = false,
                             Name = "اردبیل"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3186),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1436),
                             IsDeleted = false,
                             Name = "اصفهان"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3188),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1438),
                             IsDeleted = false,
                             Name = "البرز"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3190),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1441),
                             IsDeleted = false,
                             Name = "ایلام"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3192),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1442),
                             IsDeleted = false,
                             Name = "بوشهر"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3193),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1444),
                             IsDeleted = false,
                             Name = "تهران"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3195),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1446),
                             IsDeleted = false,
                             Name = "چهارمحال و بختیاری"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3197),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1448),
                             IsDeleted = false,
                             Name = "خراسان جنوبی"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3199),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1450),
                             IsDeleted = false,
                             Name = "خراسان رضوی"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3201),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1452),
                             IsDeleted = false,
                             Name = "خراسان شمالی"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3203),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1454),
                             IsDeleted = false,
                             Name = "خوزستان"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3205),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1456),
                             IsDeleted = false,
                             Name = "زنجان"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3207),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1458),
                             IsDeleted = false,
                             Name = "سمنان"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3209),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1460),
                             IsDeleted = false,
                             Name = "سیستان و بلوچستان"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3211),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1462),
                             IsDeleted = false,
                             Name = "فارس"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3212),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1464),
                             IsDeleted = false,
                             Name = "قزوین"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3214),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1466),
                             IsDeleted = false,
                             Name = "قم"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3216),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1468),
                             IsDeleted = false,
                             Name = "کردستان"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3255),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1470),
                             IsDeleted = false,
                             Name = "کرمان"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3257),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1471),
                             IsDeleted = false,
                             Name = "کرمانشاه"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3259),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1473),
                             IsDeleted = false,
                             Name = "کهگیلویه و بویراحمد"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3261),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1475),
                             IsDeleted = false,
                             Name = "گلستان"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3263),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1477),
                             IsDeleted = false,
                             Name = "گیلان"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3265),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1479),
                             IsDeleted = false,
                             Name = "لرستان"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3267),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1481),
                             IsDeleted = false,
                             Name = "مازندران"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3269),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1483),
                             IsDeleted = false,
                             Name = "مرکزی"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3271),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1485),
                             IsDeleted = false,
                             Name = "هرمزگان"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3273),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1487),
                             IsDeleted = false,
                             Name = "همدان"
                         },
                         new
                         {
                             Id = 31,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 540, DateTimeKind.Local).AddTicks(3275),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1489),
                             IsDeleted = false,
                             Name = "یزد"
                         });
@@ -658,7 +658,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "محمدی",
                             ProfileImage = "/UserAssets/img/customer/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 538, DateTimeKind.Local).AddTicks(8149)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6235)
                         },
                         new
                         {
@@ -668,7 +668,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "رمضانی",
                             ProfileImage = "/UserAssets/img/customer/2.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 538, DateTimeKind.Local).AddTicks(8202)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6300)
                         },
                         new
                         {
@@ -678,7 +678,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "اکبری",
                             ProfileImage = "/UserAssets/img/customer/3.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 538, DateTimeKind.Local).AddTicks(8209)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6308)
                         });
                 });
 
@@ -767,81 +767,81 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1356),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9417),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/دکوراسیون-ساختمان.png",
                             IsDeleted = false,
                             Title = "دکوراسیون ساختمان"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1371),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9433),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/تاسیسات-ساختمان.jpg",
                             IsDeleted = false,
                             Title = "تاسیسات ساختمان"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1374),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9435),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/وسایل-نقلیه.jpg",
                             IsDeleted = false,
                             Title = "وسایل نقلیه"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1380),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9445),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/اسباب-کشی-و-باربری.jpg",
                             IsDeleted = false,
                             Title = "اسباب کشی و باربری"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1382),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9447),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/لوازم-خانگی.png",
                             IsDeleted = false,
                             Title = "لوازم خانگی"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1385),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9449),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/خدمات-اداری.jpg",
                             IsDeleted = false,
                             Title = "خدمات اداری"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1420),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9452),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/دیجیتال-و-نرم-افزار.jpg",
                             IsDeleted = false,
                             Title = "دیجیتال و نرم افزار"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1423),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9454),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/نظافت-و-بهداشت.jpg",
                             IsDeleted = false,
                             Title = "نظافت و بهداشت"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(1443),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9470),
                             Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
-                            Image = "",
+                            Image = "/assets/img/category/پزشکی-و-سلامت.jpg",
                             IsDeleted = false,
                             Title = "پزشکی و سلامت"
                         });
@@ -924,7 +924,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "احمدیان‌پور",
                             ProfileImage = "/UserAssets/img/expert/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 536, DateTimeKind.Local).AddTicks(6518)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4860)
                         },
                         new
                         {
@@ -934,7 +934,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "علی‌زاده",
                             ProfileImage = "/UserAssets/img/expert/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 536, DateTimeKind.Local).AddTicks(6579)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4910)
                         },
                         new
                         {
@@ -944,7 +944,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "بهرامی",
                             ProfileImage = "/UserAssets/img/expert/2.jpg",
-                            SignUpDate = new DateTime(2024, 6, 3, 7, 45, 59, 536, DateTimeKind.Local).AddTicks(6583)
+                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4914)
                         });
                 });
 
@@ -1025,9 +1025,6 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("WorkExperience")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -1039,7 +1036,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(3989),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1974),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1049,7 +1046,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 2,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4005),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1990),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1059,7 +1056,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 3,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4008),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1993),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1069,7 +1066,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 4,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4011),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1995),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1079,7 +1076,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 5,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4068),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1997),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1089,7 +1086,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 6,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4071),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2000),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1099,7 +1096,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 7,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4074),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2002),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1109,7 +1106,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 8,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4077),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2005),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1119,7 +1116,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 9,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4079),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2007),
                             Description = "",
                             Image = "",
                             IsDeleted = false,
@@ -1129,7 +1126,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 10,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4082),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2009),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1139,7 +1136,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 11,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4090),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2019),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1149,7 +1146,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 12,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4093),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2025),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1159,7 +1156,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 13,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4096),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2028),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1169,7 +1166,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 14,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4101),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2033),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1179,7 +1176,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 15,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4128),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2064),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1189,7 +1186,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 16,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4131),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2067),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1199,7 +1196,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 17,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4135),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2069),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1209,7 +1206,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 18,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4137),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2072),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1219,7 +1216,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 19,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4140),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2074),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1229,7 +1226,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 20,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4143),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2076),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1239,7 +1236,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 21,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4146),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2079),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1249,7 +1246,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 22,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4148),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2081),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1259,7 +1256,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 23,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4151),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2083),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1269,7 +1266,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 24,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4153),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2086),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1279,7 +1276,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 25,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4156),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2088),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1289,7 +1286,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 26,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4158),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2090),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1299,7 +1296,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 27,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4161),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2093),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1309,7 +1306,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 28,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4164),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2096),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1319,7 +1316,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 29,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4166),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2098),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1329,7 +1326,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 30,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4169),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2100),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1339,7 +1336,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 31,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4171),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2103),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1349,7 +1346,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 32,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4174),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2105),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1359,7 +1356,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 33,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4177),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2107),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1369,7 +1366,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 34,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4179),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2110),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1379,7 +1376,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 35,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4183),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2112),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1389,7 +1386,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 36,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4185),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2114),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1399,7 +1396,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 37,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4188),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2117),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1409,7 +1406,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 38,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4191),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2119),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1419,7 +1416,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 39,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4194),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2121),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1429,7 +1426,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 40,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4196),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2124),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1439,7 +1436,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 41,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4199),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2127),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1449,7 +1446,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 42,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4202),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2129),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1459,7 +1456,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 43,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4204),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2132),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1469,7 +1466,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 44,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4207),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2134),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1479,7 +1476,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 45,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4209),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2136),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1489,7 +1486,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 46,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4212),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2138),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1499,7 +1496,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 47,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4215),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2141),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1509,7 +1506,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 48,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4217),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2143),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1519,7 +1516,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 49,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4220),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2145),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1529,7 +1526,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 50,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4223),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2208),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1539,7 +1536,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 51,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4225),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2211),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1549,7 +1546,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 52,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4228),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2213),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1559,7 +1556,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 53,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4231),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2216),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1569,7 +1566,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 54,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4233),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2218),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1579,7 +1576,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 55,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4236),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2221),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1589,7 +1586,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 56,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4239),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2224),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1599,7 +1596,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 57,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4241),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2226),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1609,7 +1606,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 58,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4244),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2229),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1619,7 +1616,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 59,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4246),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2231),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1629,7 +1626,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 60,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4249),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2233),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1639,7 +1636,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 61,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4251),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2236),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1649,7 +1646,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 62,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4253),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2238),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1659,7 +1656,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 63,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4256),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2240),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1669,7 +1666,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 64,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4258),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2243),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1679,7 +1676,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 65,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4261),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2245),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1689,7 +1686,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 66,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4264),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2247),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1699,7 +1696,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 67,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4266),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2250),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1709,7 +1706,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 68,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4268),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2252),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1719,7 +1716,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 69,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4271),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2254),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1729,7 +1726,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 70,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4273),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2257),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1739,7 +1736,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 71,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4275),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2259),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1749,7 +1746,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 72,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4278),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2262),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1759,7 +1756,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 73,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4280),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2264),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1769,7 +1766,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 74,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4283),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2267),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1779,7 +1776,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 75,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4285),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2269),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1789,7 +1786,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 76,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4287),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2271),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1799,7 +1796,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 77,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4290),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2274),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1809,7 +1806,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 78,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4292),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2276),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1819,7 +1816,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 79,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4295),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2279),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1829,7 +1826,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 80,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4298),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2281),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1839,7 +1836,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 81,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4300),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2283),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1849,7 +1846,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 82,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4302),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2286),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1859,7 +1856,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 83,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4305),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2288),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1869,7 +1866,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 84,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4307),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2290),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1879,7 +1876,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 85,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4310),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2293),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1889,7 +1886,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 86,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4312),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2296),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1899,7 +1896,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 97,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4314),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2298),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1909,7 +1906,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 98,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4317),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2301),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1919,7 +1916,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 99,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4319),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2303),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1929,7 +1926,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 100,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4322),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2306),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1939,7 +1936,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 101,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4367),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2308),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1949,7 +1946,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 102,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4370),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2311),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1959,7 +1956,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 103,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4372),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2313),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1969,7 +1966,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 87,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4375),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2316),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1979,7 +1976,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 88,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4378),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2318),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1989,7 +1986,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 89,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4381),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2320),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -1999,7 +1996,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 90,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4383),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2323),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2009,7 +2006,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 91,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4385),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2325),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2019,7 +2016,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 92,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4388),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2327),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2029,7 +2026,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 93,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4390),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2330),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2039,7 +2036,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 94,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4393),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2332),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2049,7 +2046,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 95,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4395),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2334),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2059,7 +2056,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 96,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4398),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2337),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2069,7 +2066,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 104,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4400),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2340),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2079,7 +2076,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 105,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4402),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2342),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2089,7 +2086,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 106,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4405),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2344),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2099,7 +2096,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 107,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4407),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2346),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
@@ -2109,7 +2106,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 108,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 3, 7, 45, 59, 539, DateTimeKind.Local).AddTicks(4410),
+                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2349),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
                             Image = "",
                             IsDeleted = false,
