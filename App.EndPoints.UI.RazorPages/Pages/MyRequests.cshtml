@@ -81,8 +81,13 @@
                                                     </div>
                                                 </div>
                                             </div>
+
                                             <div class="dsd-single-lst-footer">
                                                 <a asp-page="Suggestions" asp-route-serviceRequestId="@request.Id" class="btn btn-view mr-1"><i class="fas fa-eye ms-1"></i>نمایش پیشنهادات</a>
+                                                <form asp-page-handler="Delete" method="post">
+                                                    <input type="hidden" name="requestId" value="@request.Id" />
+                                                    <button class="btn btn-delete mr-1"><i class="fas fa-trash ms-1"></i>حذف کردن</button>
+                                                </form>
                                             </div>
                                         </div>
                                     </div>

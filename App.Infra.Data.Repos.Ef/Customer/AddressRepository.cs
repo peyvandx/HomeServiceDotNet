@@ -152,7 +152,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             
             updatingAddress.Street = updatedAddress.Street;
             updatingAddress.PostalCode = updatedAddress.PostalCode;
-            updatingAddress.CityId = updatedAddress.CityId;
+            updatingAddress.CityId = (int)updatedAddress.CityId;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
             return updatingAddress;
         }
@@ -169,7 +169,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 {
                     Street = a.Street,
                     PostalCode = a.PostalCode,
-                    CityId = a.CityId,
+                    CityId = (int)a.CityId,
                 }).FirstOrDefaultAsync(a => a.Id == addressId, cancellationToken);
 
                 if (address != null)

@@ -14,9 +14,12 @@ namespace App.Domain.Core.Customer.AppServices
         public Task<ServiceRequestSoftDeleteDto> SoftDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
         //public Task<Customer.Entities.ServiceRequest> HardDeleteServiceRequest(int serviceId, CancellationToken cancellationToken);
         public Task<ServiceRequestDto> GetServiceRequestById(int serviceId, CancellationToken cancellationToken);
+        public Task<List<ServiceRequestDto>> GetExpertRelatedServiceRequests(int expertId, CancellationToken cancellationToken);
         public Task<List<ServiceRequestDto>> GetServiceRequests(CancellationToken cancellationToken);
-		public Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken);
+		public Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int? customerId, CancellationToken cancellationToken);
 		public Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken);
+        public Task<bool> ServiceRequestDoneSuccessfully(RequestProposalIdsDto serviceRequestProposalIds, CancellationToken cancellationToken);
+        public Task<bool> ServiceRequestDoneUnSuccessfully(RequestProposalIdsDto serviceRequestProposalIds, CancellationToken cancellationToken);
 
     }
 }

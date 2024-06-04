@@ -1,12 +1,11 @@
-﻿
-using App.Domain.Core.Admin.Entities;
+﻿using App.Domain.Core.Admin.Entities;
 using App.Domain.Core.Customer.Entities;
 
 namespace App.Domain.Core.Expert.Entities
 {
     public class Expert
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public string? FirstName { get; set; }
         public string? LastName { get; set; }
         public string? ProfileImage { get; set; }

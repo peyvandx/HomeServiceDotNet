@@ -30,7 +30,7 @@ namespace App.Domain.Services.Customer
         {
             var creatingServiceRequest = new ServiceRequest();
             creatingServiceRequest.CreatedAt = DateTime.Now;
-            creatingServiceRequest.Status = Status.WaitingForExpertsProposals;
+            creatingServiceRequest.Status = ServiceRequestStatus.WaitingForExpertsProposals;
             creatingServiceRequest.CustomerDescription = serviceRequestDto.CustomerDescription;
             creatingServiceRequest.Price = serviceRequestDto.Price;
             creatingServiceRequest.CustomerId = serviceRequestDto.CustomerId;
@@ -49,7 +49,16 @@ namespace App.Domain.Services.Customer
         //    => await _serviceRequestRepository.HardDeleteServiceRequest(serviceRequestId, cancellationToken);
 
         public async Task<ServiceRequestSoftDeleteDto> SoftDeleteServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
-            => await _serviceRequestRepository.SoftDeleteServiceRequest(serviceRequestId, cancellationToken);
+        {
+            var result = await _serviceRequestRepository.SoftDeleteServiceRequest(serviceRequestId, cancellationToken);
+            var serviceRequestNewStatus = new ServiceRequestChangeStatusDto()
+            {
+                ServiceRequestId = serviceRequestId,
+                NewStatus = ServiceRequestStatus.Cancelled,
+            };
+            await ChangeServiceRequestStatus(serviceRequestNewStatus, cancellationToken);
+            return result;
+        }
 
         public async Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequestDto serviceRequestDto, CancellationToken cancellationToken)
         {
@@ -62,8 +71,11 @@ namespace App.Domain.Services.Customer
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
             => await _serviceRequestRepository.ChangeServiceRequestStatus(newStatus, cancellationToken);
 
-		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken)
+		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int? customerId, CancellationToken cancellationToken)
 		    => await _serviceRequestRepository.GetCustomerServiceRequests(customerId, cancellationToken);
+
+		public async Task<List<ServiceRequestDto>> GetExpertRelatedServiceRequests(int expertId, CancellationToken cancellationToken)
+		    => await _serviceRequestRepository.GetExpertRelatedServiceRequests(expertId, cancellationToken);
 
 		#endregion
 	}

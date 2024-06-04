@@ -3,7 +3,7 @@
 @using Framework
 @model App.EndPoints.UI.RazorPages.Pages.SuggestionsModel
 @{
-    var serviceRequestId = ViewData["serviceRequestId"];
+    // var serviceRequestId = ViewData["serviceRequestId"];
 }
 
 <!-- ======================= dashboard Detail ======================== -->
@@ -67,47 +67,79 @@
                                     <div class="dsd-single-bookings-wraps">
                                         <div class="dsd-single-book-thumb"><a asp-page="Comment" asp-route-expertId="@suggestion.ExpertId"><img src="@suggestion.ExpertProfileImage" class="img-fluid circle" alt="" /></a></div>
                                         <div class="dsd-single-book-caption">
-                                            <div class="dsd-single-book-title"><h5>@suggestion.ExpertFirstName @suggestion.ExpertLastName <span class="bko-dates">@suggestion.ExpertSignUpDate.ToPersianString("dddd, dd MMMM,yyyy")</span></h5></div>
+                                            <div class="dsd-single-book-title"><h5>@suggestion.ExpertFirstName @suggestion.ExpertLastName <span class="bko-dates">@suggestion.ExpertSignUpDate.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></h5></div>
                                             <div class="ico-content">
                                                 <ul>
                                                     @if (suggestion.IsAccepted is true)
                                                     {
-                                                        <li><div class="px-2 py-1 medium bg-light-info rounded text-info">تایید شده</div></li>
+                                                        <li><div class="px-2 py-1 medium bg-light-info rounded text-info">@suggestion.ProposalStatus.GetEnumDisplayName()</div></li>
                                                     }
                                                     else if (suggestion.IsAccepted is false)
                                                     {
                                                         <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">رد شده</div></li>
                                                     }
+                                                    else if (suggestion.IsDeleted is true)
+                                                    {
+                                                        <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">این پیشنهاد توسط کارشناس کنسل شد</div></li>
+                                                    }
                                                     else
                                                     {
-                                                        <li><div class="px-2 py-1 medium bg-light-warning rounded text-warning">در انتظار</div></li>
+                                                        <li><div class="px-2 py-1 medium bg-light-warning rounded text-warning">@suggestion.ProposalStatus.GetEnumDisplayName()</div></li>
                                                     }
                                                 </ul>
                                             </div>
                                             <div class="dsd-single-descr">
                                                 <div class="dsd-single-item"><span class="dsd-item-title">توضیحات کارشناس:</span><span class="dsd-item-info">@suggestion.ExpertDescription</span></div>
-                                                <div class="dsd-single-item"><span class="dsd-item-title">تاریخ ارسال پیشنهاد:</span><span class="dsd-item-info">@suggestion.CreatedAt.ToPersianString("dddd, dd MMMM,yyyy")</span></div>
-                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ:</span><span class="dsd-item-info">@suggestion.SuggestedPrice تومان</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">تاریخ ارسال پیشنهاد:</span><span class="dsd-item-info">@suggestion.ProposalCreatedAt.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ:</span><span class="dsd-item-info">@suggestion.ExpertSuggestedPrice تومان</span></div>
                                             </div>
                                             <div class="dsd-single-book-footer">
                                                 @if (suggestion.IsAccepted is true)
                                                 {
                                                     <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>تایید شده</a>
+                                                    @if (suggestion.ServiceRequestStatus == ServiceRequestStatus.Success)
+                                                    {
+                                                        <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>با موفقیت انجام‌شد</a>
+                                                    }
+                                                    else if (suggestion.ServiceRequestStatus == ServiceRequestStatus.Failed)
+                                                    {
+                                                        <a class="btn btn-reject mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌نشد</a>
+                                                    }
+                                                    else
+                                                    {
+                                                        <form asp-page-handler="Successful" method="post">
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ServiceRequestId" value="@suggestion.ServiceRequestId" />
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalId" value="@suggestion.Id" />
+                                                            <button type="submit" class="btn btn-aprd mr-1"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌شد</button>
+                                                        </form>
+                                                        <form asp-page-handler="Unsuccessful" method="post">
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ServiceRequestId" value="@suggestion.ServiceRequestId" />
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalId" value="@suggestion.Id" />
+                                                            <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌نشد</button>
+                                                        </form>
+                                                    }
                                                 }
                                                 else if (suggestion.IsAccepted is false)
                                                 {
                                                     <a class="btn btn-reject mr-1 disabled"><i class="fas fa-trash ms-1"></i>رد شده</a>
                                                 }
+                                                else if (suggestion.IsDeleted is true)
+                                                {
+                                                    <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>تایید</a>
+                                                    <a class="btn btn-reject mr-1 disabled"><i class="fas fa-trash ms-1"></i>رد کردن</a>
+                                                }
                                                 else
                                                 {
                                                     <form method="post" asp-page-handler="Accept">
-                                                        <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.NewStatus" value="@Status.WaitingForExpert" />
-                                                        <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.ServiceRequestId" value="@serviceRequestId" />
+                                                        <input asp-for="@Model.ConfirmedProposal.ProposalId" type="hidden" value="@suggestion.Id" />
+                                                        <input asp-for="@Model.ConfirmedProposal.ServiceRequestId" type="hidden" value="@suggestion.ServiceRequestId" />
+                                                        @* <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.NewStatus" value="@ServiceRequestStatus.WaitingForExpert" />
+                                                <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.ServiceRequestId" value="@suggestion.ServiceRequestId" /> *@
                                                         <input type="hidden" value="@suggestion.Id" name="proposalId" />
                                                         <button type="submit" class="btn btn-aprd mr-1"><i class="fas fa-check-circle ms-1"></i>تایید</button>
                                                     </form>
                                                     <form asp-page-handler="Reject">
-                                                        <input type="hidden" value="@suggestion.Id" name="proposalId" />
+                                                        <input name="proposalId" type="hidden" value="@suggestion.Id" />
                                                         <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>رد کردن</button>
                                                     </form>
                                                 }

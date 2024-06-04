@@ -1,3 +1,4 @@
+using App.Domain.AppServices.Customer;
 using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Expert.AppServices;
@@ -13,13 +14,16 @@ namespace App.EndPoints.UI.RazorPages.Pages
     {
 		private readonly IServiceAppService _serviceAppService;
 		private readonly IServiceRequestAppService _serviceRequestAppService;
+        private readonly ICustomerAppService _customerAppService;
 
-		public RequestModel(IServiceAppService serviceAppService,
-            IServiceRequestAppService serviceRequestAppService)
+        public RequestModel(IServiceAppService serviceAppService,
+            IServiceRequestAppService serviceRequestAppService,
+            ICustomerAppService customerAppService)
         {
 			_serviceAppService = serviceAppService;
 			_serviceRequestAppService = serviceRequestAppService;
-		}
+            _customerAppService = customerAppService;
+        }
 
         [BindProperty]
         public ServiceRequestDto ServiceRequest { get; set; }
@@ -32,8 +36,20 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
         public async Task<IActionResult> OnPostAsync(CancellationToken cancellationToken)
         {
-            var userId = int.Parse(User.Claims.FirstOrDefault(c => c.Type == "userCustomerId").Value);
-            ServiceRequest.CustomerId = userId;
+            var applicationUserId = int.Parse(User.Claims.First().Value);
+            int? userId;
+
+            var user = User.Claims.FirstOrDefault(c => c.Type == "userCustomerId");
+            if (user is not null)
+            {
+                userId = int.Parse(user.Value);
+            }
+            else
+            {
+                userId = await _customerAppService.GetCustomerIdByApplicationUserId(applicationUserId, cancellationToken);
+            }
+
+            ServiceRequest.CustomerId = userId.Value;
 			await _serviceRequestAppService.CreateServiceRequest(ServiceRequest, cancellationToken);
             return LocalRedirect("~/Index");
         }

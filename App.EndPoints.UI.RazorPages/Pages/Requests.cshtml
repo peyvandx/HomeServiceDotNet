@@ -1,0 +1,290 @@
+﻿@page
+@model App.EndPoints.UI.RazorPages.Pages.RequestsModel
+@{
+}
+
+<!-- ============================ Main Section Start ================================== -->
+<section class="gray py-5">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xl-3 col-lg-3 col-md-12 col-sm-12">
+				<div class="bg-white rounded mb-4">
+
+					<div class="sidebar_header d-flex align-items-center justify-content-between px-4 py-3 br-bottom">
+						<h4 class="ft-medium fs-6 mb-0">فیلتر جستجو</h4>
+						<div class="ssh-header">
+							<a href="javascript:void(0);" class="clear_all ft-medium text-muted">حذف همه</a>
+							<a href="#search_open" data-bs-toggle="collapse" aria-expanded="false" role="button" class="collapsed _filter-ico ml-2"><i class="lni lni-text-align-right"></i></a>
+						</div>
+					</div>
+
+					<!-- Find New Property -->
+					<div class="sidebar-widgets collapse miz_show" id="search_open" data-bs-parent="#search_open">
+						<div class="search-inner">
+
+							<div class="side-filter-box">
+								<div class="side-filter-box-body">
+
+									<!-- Price Range -->
+									<div class="inner_widget_link">
+										<div class="btn-group d-flex justify-content-around price-btn-457">
+											<button type="button" class="btn">همه</button>
+											<button type="button" class="btn">
+												اقتصادی
+											</button>
+											<button type="button" class="btn active d14ixh">متوسط</button>
+											<button type="button" class="btn">گران</button>
+										</div>
+									</div>
+
+									<!-- Suggested -->
+									<div class="inner_widget_link">
+										<h6 class="ft-medium">دسته بندی ها</h6>
+										<ul class="no-ul-list filter-list">
+											<li>
+												<input id="a1" class="checkbox-custom" name="open" type="checkbox">
+												<label for="a1" class="checkbox-custom-label">فست فود</label>
+											</li>
+											<li>
+												<input id="a2" class="checkbox-custom" name="reservations" type="checkbox">
+												<label for="a2" class="checkbox-custom-label">ارسال اکسپرس</label>
+											</li>
+											<li>
+												<input id="a3" class="checkbox-custom" name="Mexican" type="checkbox">
+												<label for="a3" class="checkbox-custom-label">مکزیکی</label>
+											</li>
+											<li>
+												<input id="a4" class="checkbox-custom" name="Seafood" type="checkbox">
+												<label for="a4" class="checkbox-custom-label">دریایی</label>
+											</li>
+											<li>
+												<input id="a5" class="checkbox-custom" name="Takeout" type="checkbox">
+												<label for="a5" class="checkbox-custom-label">دارای تخفیف</label>
+											</li>
+
+										</ul>
+									</div>
+
+									<!-- Features -->
+									<div class="inner_widget_link">
+										<h6 class="ft-medium">ویژگی ها</h6>
+										<ul class="no-ul-list filter-list">
+											<li>
+												<input id="a6" class="checkbox-custom" name="Kids" type="checkbox" checked="">
+												<label for="a6" class="checkbox-custom-label">مناسب برای کودکان</label>
+											</li>
+											<li>
+												<input id="a7" class="checkbox-custom" name="Service" type="checkbox">
+												<label for="a7" class="checkbox-custom-label">وای فای</label>
+											</li>
+											<li>
+												<input id="a8" class="checkbox-custom" name="Open" type="checkbox">
+												<label for="a8" class="checkbox-custom-label">شبانه روزی</label>
+											</li>
+											<li>
+												<input id="a9" class="checkbox-custom" name="Dogs" type="checkbox">
+												<label for="a9" class="checkbox-custom-label">اجازه ورود سگ</label>
+											</li>
+											<li>
+												<input id="a10" class="checkbox-custom" name="Outdoor" type="checkbox">
+												<label for="a10" class="checkbox-custom-label">نشستن در فضای باز</label>
+											</li>
+											<li>
+												<input id="a11" class="checkbox-custom" name="Hot" type="checkbox">
+												<label for="a11" class="checkbox-custom-label">دارای کوپن</label>
+											</li>
+											<li>
+												<input id="a12" class="checkbox-custom" name="Breakfast" type="checkbox">
+												<label for="a12" class="checkbox-custom-label">صبحانه</label>
+											</li>
+											<li>
+												<a class="ft-bold d14ixh" href="javascript:void(0);">بیشتر</a>
+											</li>
+										</ul>
+									</div>
+
+									<!-- Neighborhoods -->
+									<div class="inner_widget_link">
+										<h6 class="ft-medium">محله</h6>
+										<ul class="no-ul-list filter-list">
+											<li>
+												<input id="b1" class="checkbox-custom" name="Alta" type="checkbox" checked="">
+												<label for="b1" class="checkbox-custom-label">اشرفی اصفهانی</label>
+											</li>
+											<li>
+												<input id="b2" class="checkbox-custom" name="Monticello" type="checkbox">
+												<label for="b2" class="checkbox-custom-label">پاسداران</label>
+											</li>
+											<li>
+												<input id="b3" class="checkbox-custom" name="Beacon" type="checkbox">
+												<label for="b3" class="checkbox-custom-label">احمد آباد</label>
+											</li>
+											<li>
+												<input id="b4" class="checkbox-custom" name="Near" type="checkbox">
+												<label for="b4" class="checkbox-custom-label">تهران پارس</label>
+											</li>
+											<li>
+												<input id="b5" class="checkbox-custom" name="North" type="checkbox">
+												<label for="b5" class="checkbox-custom-label">سجادیه</label>
+											</li>
+											<li>
+												<input id="b6" class="checkbox-custom" name="Northwest1" type="checkbox">
+												<label for="b6" class="checkbox-custom-label">شهرک غرب</label>
+											</li>
+											<li>
+												<input id="b7" class="checkbox-custom" name="Pecan" type="checkbox">
+												<label for="b7" class="checkbox-custom-label">شریعتی</label>
+											</li>
+											<li>
+												<input id="b8" class="checkbox-custom" name="Prospect" type="checkbox">
+												<label for="b8" class="checkbox-custom-label">نواب صفوی</label>
+											</li>
+											<li>
+												<input id="b9" class="checkbox-custom" name="South" type="checkbox">
+												<label for="b9" class="checkbox-custom-label">سعادت آباد</label>
+											</li>
+											<li>
+												<a class="ft-bold d14ixh" href="javascript:void(0);">بیشتر</a>
+											</li>
+										</ul>
+									</div>
+
+									<!-- Bird's-eye View -->
+									<div class="inner_widget_link">
+										<h6 class="ft-medium">مسافت</h6>
+										<ul class="no-ul-list filter-list">
+											<li>
+												<input id="c1" class="checkbox-custom" name="blc" type="checkbox" checked="">
+												<label for="c1" class="checkbox-custom-label">در 4 بلوک</label>
+											</li>
+											<li>
+												<input id="c2" class="checkbox-custom" name="1km" type="checkbox">
+												<label for="c2" class="checkbox-custom-label">پیاده روی (1 مایل)</label>
+											</li>
+											<li>
+												<input id="c3" class="checkbox-custom" name="2km" type="checkbox">
+												<label for="c3" class="checkbox-custom-label">دوچرخه سواری (2 مایل)</label>
+											</li>
+											<li>
+												<input id="c4" class="checkbox-custom" name="5km" type="checkbox">
+												<label for="c4" class="checkbox-custom-label">رانندگی (5 مایل)</label>
+											</li>
+											<li>
+												<input id="c5" class="checkbox-custom" name="10km" type="checkbox">
+												<label for="c5" class="checkbox-custom-label">رانندگی (10 مایل)</label>
+											</li>
+										</ul>
+									</div>
+
+									<div class="form-group filter_button">
+										<button type="submit" class="btn theme-bg text-light rounded full-width">22 نتیجه یافت شد</button>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Sidebar End -->
+
+			</div>
+
+			<!-- Item Wrap Start -->
+			<div class="col-xl-9 col-lg-8 col-md-12 col-sm-12" id="hotels">
+
+				<!-- row -->
+				<div class="row justify-content-center gx-3">
+					@if (Model.Requests.Count is 0)
+					{
+						<p class="center ql-color-orange">در حال حاضر هیچ درخواستی متناسب با مهارت های شما وجود ندارد</p>
+					}
+					@foreach (var request in Model.Requests)
+					{
+						<!-- Single -->
+						<div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+							<div class="Goodup-grid-wrap">
+								<div class="Goodup-grid-upper">
+									<div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+									<div class="Goodup-pos ab-right">
+										<div class="Goodup-status offer ms-2"><span class="d-inline-block ms-1" dir="ltr">-20% </span>تخفیف</div>
+									</div>
+									<div class="Goodup-grid-thumb">
+										<a asp-page="Proposal" asp-route-serviceRequestId="@request.Id" class="d-block text-center m-auto"><img src="assets/img/rooms/8.jpg" class="img-fluid" alt=""></a>
+									</div>
+									<div class="Goodup-rating overlay">
+										<div class="Goodup-pr-average high">4.8</div>
+										<div class="Goodup-aldeio">
+											<div class="Goodup-rates">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+											</div>
+											<div class="Goodup-all-review"><span>19 نظر</span></div>
+										</div>
+									</div>
+								</div>
+								<div class="Goodup-grid-fl-wrap">
+									<div class="Goodup-caption px-3 py-2">
+										<div class="Goodup-room-price"><span>198 تومان</span>/شب</div>
+										<h4 class="mb-0 ft-medium medium mb-0"><a href="single-listing-detail-8.html" class="text-dark fs-md">@request.ServiceName<span class="verified-badge"><i class="fas fa-check-circle"></i></span></a></h4>
+										<div class="Goodup-distance">1.5 کیلومتر تا مرکز شهر</div>
+										<div class="Goodup-middle-caption mt-3">
+											<div class="Goodup-facilities-wrap Goodup-flx mb-0">
+												<div class="Goodup-facility-list">
+													<ul class="no-list-style">
+														<li><i class="fas fa-wifi"></i></li>
+														<li><i class="fas fa-swimming-pool"></i></li>
+														<li><i class="fas fa-parking"></i></li>
+														<li><i class="fas fa-dog"></i></li>
+														<li><i class="fas fa-fan"></i></li>
+														<li><i class="fas fa-wine-glass-alt"></i></li>
+													</ul>
+												</div>
+											</div>
+											<div class="Goodup-booking-button">
+												<a asp-page="Proposal" asp-route-serviceRequestId="@request.Id" class="Goodup-btn-book">مشاهده توضیحات</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					}
+
+				</div>
+				<!-- row -->
+
+				@* <div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<ul class="pagination">
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Previous">
+									<span class="fas fa-arrow-circle-right"></span>
+									<span class="sr-only">قبل</span>
+								</a>
+							</li>
+							<li class="page-item"><a class="page-link" href="#">1</a></li>
+							<li class="page-item"><a class="page-link" href="#">2</a></li>
+							<li class="page-item active"><a class="page-link" href="#">3</a></li>
+							<li class="page-item"><a class="page-link" href="#">...</a></li>
+							<li class="page-item"><a class="page-link" href="#">18</a></li>
+							<li class="page-item">
+								<a class="page-link" href="#" aria-label="Next">
+									<span class="fas fa-arrow-circle-left"></span>
+									<span class="sr-only">بعد</span>
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div> *@
+
+			</div>
+
+		</div>
+	</div>
+</section>
+<!-- ============================ Main Section End ================================== -->

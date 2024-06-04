@@ -15,5 +15,6 @@ namespace App.Domain.Core.Expert.Data
         //public Task<Expert.Entities.Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken);
         public Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken);
         public Task<List<CategoryDto>> GetCategories(CancellationToken cancellationToken);
+        public Task<List<CategoryDto>> GetCategoriesWithServices(CancellationToken cancellationToken);
     }
 }

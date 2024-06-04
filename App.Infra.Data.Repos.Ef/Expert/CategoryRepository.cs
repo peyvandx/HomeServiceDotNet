@@ -81,6 +81,33 @@ namespace App.Infra.Data.Repos.Ef.Expert
             _logger.LogInformation("categoryDtos returned from InMemoryCache.");
             return categories;
         }
+
+        public async Task<List<CategoryDto>> GetCategoriesWithServices(CancellationToken cancellationToken)
+        {
+            var categoriesWithServices = await _homeServiceDbContext.Categories
+                .Include(c => c.Services)
+                .Select(c =>  new CategoryDto()
+                {
+                    Id = c.Id,
+                    Title = c.Title,
+                    Description = c.Description,
+                    IsDeleted = c.IsDeleted,
+                    Services = c.Services.Select(s => new ServiceDto()
+                    {
+                        Id = s.Id,
+                        CreatedAt = s.CreatedAt,
+                        Title = s.Title,
+                        Description = s.Description,
+                        IsDeleted = s.IsDeleted,
+                        Image = s.Image,
+                    })
+                    .ToList(),
+                })
+                .ToListAsync(cancellationToken);
+
+            return categoriesWithServices;
+        }
+
         //{
         //    var categories = await _homeServiceDbContext.Categories.ToListAsync(cancellationToken);
         //    if (categories != null)

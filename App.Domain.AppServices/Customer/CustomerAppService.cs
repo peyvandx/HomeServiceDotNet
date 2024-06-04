@@ -28,8 +28,11 @@ namespace App.Domain.AppServices.Customer
         public async Task<Core.Customer.Entities.Customer> CreateCustomer(CustomerDto customerDto, CancellationToken cancellationToken)
             => await _customerService.CreateCustomer(customerDto, cancellationToken);
 
-        public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
+        public async Task<CustomerDto> GetCustomerById(int? customerId, CancellationToken cancellationToken)
             => await _customerService.GetCustomerById(customerId, cancellationToken);
+
+        public async Task<int?> GetCustomerIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
+            => await _customerService.GetCustomerIdByApplicationUserId(applicationUserId, cancellationToken);
 
         public async Task<List<CustomerDto>> GetCustomers(CancellationToken cancellationToken)
             => await _customerService.GetCustomers(cancellationToken);

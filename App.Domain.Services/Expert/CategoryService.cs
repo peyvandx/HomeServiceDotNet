@@ -37,6 +37,9 @@ namespace App.Domain.Services.Expert
         public async Task<List<CategoryDto>> GetCategories(CancellationToken cancellationToken)
             => await _categoryRepository.GetCategories(cancellationToken);
 
+        public async Task<List<CategoryDto>> GetCategoriesWithServices(CancellationToken cancellationToken)
+            => await _categoryRepository.GetCategoriesWithServices(cancellationToken);
+
         public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
             => await _categoryRepository.GetCategoryById(categoryId, cancellationToken);
 

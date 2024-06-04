@@ -30,8 +30,6 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(s => s.Image)
                 .HasMaxLength(4000);
             builder
-                .Property(s => s.WorkExperience);
-            builder
                 .Property(s => s.CreatedAt)
                 .IsRequired();
             builder

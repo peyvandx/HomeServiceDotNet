@@ -40,8 +40,11 @@ namespace App.Domain.Services.Customer
             return await _customerRepository.CreateCustomer(signingUpCustomer, cancellationToken);
         }
 
-        public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
+        public async Task<CustomerDto> GetCustomerById(int? customerId, CancellationToken cancellationToken)
             => await _customerRepository.GetCustomerById(customerId, cancellationToken);
+
+        public async Task<int?> GetCustomerIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
+            => await _customerRepository.GetCustomerIdByApplicationUserId(applicationUserId, cancellationToken);
 
         public Task<int> GetCustomerIdFromUserId(int userId, CancellationToken cancellationToken)
         {

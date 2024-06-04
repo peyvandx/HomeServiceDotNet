@@ -30,6 +30,9 @@ namespace App.Domain.AppServices.Expert
         public async Task<List<CategoryDto>> GetCategories(CancellationToken cancellationToken)
             => await _categoryService.GetCategories(cancellationToken);
 
+        public async Task<List<CategoryDto>> GetCategoriesWithServices(CancellationToken cancellationToken)
+            => await _categoryService.GetCategoriesWithServices(cancellationToken);
+
         public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
             => await _categoryService.GetCategoryById(categoryId, cancellationToken);
 

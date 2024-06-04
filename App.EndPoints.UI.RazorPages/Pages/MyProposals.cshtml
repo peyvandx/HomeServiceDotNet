@@ -1,0 +1,179 @@
+﻿@page
+@using App.Domain.Core.Customer.Enums
+@using Framework
+@model App.EndPoints.UI.RazorPages.Pages.MyProposalsModel
+@{
+}
+
+<!-- ======================= dashboard Detail ======================== -->
+<div class="goodup-dashboard-wrap gray px-4 py-5">
+    <a class="mobNavigation" data-bs-toggle="collapse" href="#MobNav" role="button" aria-expanded="false" aria-controls="MobNav">
+        <i class="fas fa-bars ms-2"></i>منو
+    </a>
+    <div class="collapse" id="MobNav">
+        <div class="goodup-dashboard-nav sticky-top">
+            <div class="goodup-dashboard-inner">
+                <ul data-submenu-title="منو">
+                    @* <li><a href="dashboard.html"><i class="lni lni-dashboard ms-2"></i>داشبورد</a></li> *@
+                    <li><a asp-page="MyRequests"><i class="lni lni-files ms-2"></i>آگهی های من</a></li>
+                    <li><a asp-page="Index"><i class="lni lni-add-files ms-2"></i>افزودن آگهی</a></li>
+                    @* <li><a href="dashboard-saved-listings.html"><i class="lni lni-bookmark ms-2"></i>آگهی های موردعلاقه</a></li> *@
+                    @* <li><a href="dashboard-my-bookings.html"><i class="lni lni-briefcase ms-2"></i>لیست رزروها<span class="count-tag bg-warning">4</span></a></li> *@
+                    @* <li><a href="dashboard-wallet.html"><i class="lni lni-mastercard ms-2"></i>کیف پول</a></li> *@
+                    @* <li><a href="dashboard-messages.html"><i class="lni lni-envelope ms-2"></i>پیام ها<span class="count-tag">4</span></a></li> *@
+                </ul>
+                <ul data-submenu-title="حساب کاربری">
+                    <li class="active"><a asp-page="Profile"><i class="lni lni-user ms-2"></i>تنظیمات</a></li>
+                    <li><a asp-page="ChangePassword"><i class="lni lni-lock-alt ms-2"></i>تغییر رمز عبور</a></li>
+                    <li><a href="javascript:void(0);"><i class="lni lni-trash-can ms-2"></i>حذف اکانت</a></li>
+                    <li class="nav-item">
+                        <form class="form-inline" asp-area="Account" asp-page="Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
+                            @* <button type="submit" class="nav-link btn btn-link text-dark">خروج</button> *@
+                            <button type="submit" class="btn theme-cl rounded theme-bg-light ft-medium">خروج</button>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="goodup-dashboard-content">
+        <div class="dashboard-tlbar d-block mb-5">
+            <div class="row">
+                <div class="colxl-12 col-lg-12 col-md-12">
+                    <h1 class="ft-medium fs-lg">لیست پیشنهادات</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="dashboard-widg-bar d-block">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12">
+                    <div class="dashboard-list-wraps bg-white rounded mb-4">
+                        <div class="dashboard-list-wraps-head br-bottom py-3 px-3">
+                            <div class="dashboard-list-wraps-flx">
+                                <h4 class="mb-0 ft-medium fs-md"><i class="fas fa-shopping-basket ms-2 theme-cl fs-sm"></i>لیست رزروها</h4>
+                            </div>
+                        </div>
+
+                        <div class="dashboard-list-wraps-body py-3 px-3">
+                            <div class="dashboard-bookings-wraps">
+
+                                @foreach (var proposal in Model.MyProposals)
+                                {
+                                    <!-- Single booking List -->
+                                    @* <form method="post"> *@
+                                    <div class="dsd-single-bookings-wraps">
+                                        <div class="dsd-single-book-thumb"><a asp-page="Comment" asp-route-expertId="@proposal.ExpertId"><img src="@proposal.ExpertProfileImage" class="img-fluid circle" alt="" /></a></div>
+                                        <div class="dsd-single-book-caption">
+                                            <div class="dsd-single-book-title"><h5>@proposal.ExpertFirstName @proposal.ExpertLastName <span class="bko-dates">@proposal.ExpertSignUpDate.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></h5></div>
+                                            <div class="ico-content">
+                                                <ul>
+                                                    @if (proposal.IsAccepted is true)
+                                                    {
+                                                        @if (proposal.ServiceRequestIsDeleted is true)
+                                                        {
+                                                            <ul>
+                                                                <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">تایید شده و مشتری در انتظار تماس شماست</div></li>
+                                                                <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">این درخواست حذف شده. برای اطلاعات بیشتر با مشتری یا پشتیبان تماس یگیرید</div></li>
+                                                            </ul>
+                                                        }
+                                                        else
+                                                        {
+                                                            <li><div class="px-2 py-1 medium bg-light-info rounded text-info">@proposal.ProposalStatus.GetEnumDisplayName()</div></li>
+
+                                                        }
+
+                                                    }
+                                                    else if (proposal.IsAccepted is false)
+                                                    {
+                                                        <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">رد شده</div></li>
+                                                    }
+                                                    else if (proposal.ServiceRequestIsDeleted is true)
+                                                    {
+                                                        <li><div class="px-2 py-1 medium bg-light-danger rounded text-danger">این درخواست حذف شده</div></li>
+                                                    }
+                                                    else
+                                                    {
+                                                        <li><div class="px-2 py-1 medium bg-light-warning rounded text-warning">در انتظار</div></li>
+                                                    }
+                                                </ul>
+                                            </div>
+                                            <div class="dsd-single-descr">
+                                                <div class="dsd-single-item"><span class="dsd-item-title">توضیحات کارشناس:</span><span class="dsd-item-info">@proposal.ExpertDescription</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">تاریخ ارسال پیشنهاد:</span><span class="dsd-item-info">@proposal.ProposalCreatedAt.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ:</span><span class="dsd-item-info">@proposal.ExpertSuggestedPrice تومان</span></div>
+                                            </div>
+                                            <div class="dsd-single-book-footer">
+                                                @if (proposal.IsAccepted is true)
+                                                {
+                                                    @if (proposal.ServiceRequestIsDeleted is true)
+                                                    {
+                                                        <a href="" class="btn btn-reject mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>تایید و سپس حذف شده</a>
+                                                        <form asp-page-handler="Delete" method="post">
+                                                            <input name="proposalId" type="hidden" value="@proposal.Id" />
+                                                            <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>حذف</button>
+                                                        </form>
+                                                    }
+                                                    else if (proposal.ServiceRequestStatus == ServiceRequestStatus.Success)
+                                                    {
+                                                        <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>درخواست باموفقیت انجام‌شد</a>
+                                                        @* <form asp-page-handler="Delete" method="post">
+                                                            <input name="proposalId" type="hidden" value="@proposal.Id" />
+                                                            <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>حذف</button>
+                                                        </form> *@
+                                                    }
+                                                    else if (proposal.ServiceRequestStatus == ServiceRequestStatus.Failed)
+                                                    {
+                                                        <a href="" class="btn btn-reject mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>درخواست باموفقیت انجام‌نشد</a>
+                                                    }
+                                                    else
+                                                    {
+                                                        <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>تایید شده</a>
+                                                    }
+                                                }
+                                                else if (proposal.IsAccepted is false)
+                                                {
+                                                    <form asp-page-handler="Delete" method="post">
+                                                        <input name="proposalId" type="hidden" value="@proposal.Id" />
+                                                        <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>حذف</button>
+                                                    </form>
+                                                }
+                                                else if (proposal.IsRejected is true || proposal.ServiceRequestIsDeleted is true)
+                                                {
+                                                    <form asp-page-handler="Delete" method="post">
+                                                        <input name="proposalId" type="hidden" value="@proposal.Id" />
+                                                        <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>حذف</button>
+                                                    </form>
+                                                }
+                                                else
+                                                {
+                                                    @* <form method="post" asp-page-handler="Accept">
+                                            <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.NewStatus" value="@Status.WaitingForExpert" />
+                                            <input type="hidden" asp-for="@Model.ServiceRequestNewStatus.ServiceRequestId" value="@serviceRequestId" />
+                                            <input type="hidden" value="@proposal.Id" name="proposalId" />
+                                            <button type="submit" class="btn btn-aprd mr-1"><i class="fas fa-check-circle ms-1"></i>تایید</button>
+                                            </form> *@
+                                                    <form asp-page-handler="Cancell" method="post">
+                                                        <input type="hidden" value="@proposal.Id" name="proposalId" />
+                                                        <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-trash ms-1"></i>کنسل کردن</button>
+                                                    </form>
+                                                }
+                                            </div>
+                                        </div>
+                                    </div>
+                                    @* </form> *@
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ======================= dashboard Detail End ======================== -->

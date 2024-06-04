@@ -13,9 +13,6 @@ namespace App.Domain.Core.Customer.DTOs
         public string Email { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string PhoneNumber { get; set; }
-        public string ProfileImage { get; set; }
-        public int Age { get; set; }
         public bool IsCustomer { get; set; }
         public bool IsExpert { get; set; }
     }

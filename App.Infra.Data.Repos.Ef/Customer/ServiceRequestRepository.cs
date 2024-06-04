@@ -4,8 +4,10 @@ using App.Domain.Core.Customer.Data;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
 using App.Domain.Core.Customer.Enums;
+using App.Domain.Core.Expert.Data;
 using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
+using App.Domain.Core.Expert.Services;
 using App.Infra.Db.SqlServer.Ef.DbContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Caching.Memory;
@@ -26,16 +28,19 @@ namespace App.Infra.Data.Repos.Ef.Customer
         private readonly HomeServiceDbContext _homeServiceDbContext;
         private readonly IMemoryCache _memoryCache;
         private readonly ILogger<ServiceRequestRepository> _logger;
+        private readonly IProposalRepository _proposalRepository;
         #endregion
 
         #region Ctors
         public ServiceRequestRepository(HomeServiceDbContext homeServiceDbContext,
             IMemoryCache memoryCache,
-            ILogger<ServiceRequestRepository> logger)
+            ILogger<ServiceRequestRepository> logger,
+            IProposalRepository proposalRepository)
         {
             _homeServiceDbContext = homeServiceDbContext;
             _memoryCache = memoryCache;
             _logger = logger;
+            _proposalRepository = proposalRepository;
         }
 
         #endregion
@@ -165,7 +170,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
         public async Task<ServiceRequestDto> UpdateServiceRequest(ServiceRequest updatedServiceRequest, CancellationToken cancellationToken)
         {
-            var updatingServiceRequest = await GetServiceRequestDto(updatedServiceRequest.Id, cancellationToken);
+            var updatingServiceRequest = await GetServiceRequest(updatedServiceRequest.Id, cancellationToken);
             updatingServiceRequest.CustomerDescription = updatedServiceRequest.CustomerDescription;
             updatingServiceRequest.Price = updatedServiceRequest.Price;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
@@ -180,7 +185,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
         {
-            var serviceRequest = await GetServiceRequestDto(newStatus.ServiceRequestId, cancellationToken);
+            ServiceRequest serviceRequest = await GetServiceRequest(newStatus.ServiceRequestId, cancellationToken);
             serviceRequest.Status = newStatus.NewStatus;
             try
             {
@@ -193,29 +198,81 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 throw ex.InnerException;
             }
         }
+
+        public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int? customerId, CancellationToken cancellationToken)
+        {
+            var customerServiceRequests = await _homeServiceDbContext.ServiceRequests
+                .Where(x => x.CustomerId == customerId && x.IsDeleted == false)
+                .Include(x => x.Service)
+                .Select(x => new ServiceRequestDto()
+                {
+                    Id = x.Id,
+                    CustomerDescription = x.CustomerDescription,
+                    Price = x.Price,
+                    IsDone = x.IsDone,
+                    IsDeleted = x.IsDeleted,
+                    Status = x.Status,
+                    ServiceId = x.ServiceId,
+                    ServiceName = x.Service.Title,
+                    ServiceImageUrl = x.Service.Image,
+                }).ToListAsync(cancellationToken);
+
+            return customerServiceRequests;
+        }
+
+        public async Task<List<ServiceRequestDto>> GetExpertRelatedServiceRequests(int expertId, CancellationToken cancellationToken)
+        {
+            var expertServiceIds = await GetExpertServiceIds(expertId, cancellationToken);
+            var expertProposalsServiceIds = await _proposalRepository.GetExpetProposalsServiceRequestIds(expertId, cancellationToken);
+            var expertRelatedRequests = new List<ServiceRequestDto>();
+
+            foreach (var expertServiceId in expertServiceIds.ServiceIds)
+            {
+                var serviceRequestDto = await _homeServiceDbContext.ServiceRequests
+                .Where(x => x.ServiceId == expertServiceId && x.IsDeleted == false && !expertProposalsServiceIds.Contains(x.Id))
+                .Include(x => x.Service)
+                .Select(x => new ServiceRequestDto()
+                {
+                    Id = x.Id,
+                    CustomerDescription = x.CustomerDescription,
+                    Price = x.Price,
+                    IsDone = x.IsDone,
+                    IsDeleted = x.IsDeleted,
+                    Status = x.Status,
+                    ServiceId = x.ServiceId,
+                    ServiceName = x.Service.Title,
+                    ServiceImageUrl = x.Service.Image,
+                }).ToListAsync(cancellationToken);
+
+                expertRelatedRequests.AddRange(serviceRequestDto);
+            }
+
+            return expertRelatedRequests;
+        }
+
         #endregion
 
         #region PrivateMethods
-        private async Task<ServiceRequest> GetServiceRequestDto(int serviceRequestId, CancellationToken cancellationToken)
+        private async Task<ServiceRequest> GetServiceRequest(int serviceRequestId, CancellationToken cancellationToken)
         {
             //var serviceRequest = _memoryCache.Get<ServiceRequest>("serviceRequestDto");
             var serviceRequest = new ServiceRequest();
             //if (serviceRequest is null)
             //{
-                serviceRequest = await _homeServiceDbContext.ServiceRequests
-                .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
+            serviceRequest = await _homeServiceDbContext.ServiceRequests
+            .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
 
-                if (serviceRequest != null)
-                {
-                    //_memoryCache.Set("serviceRequestDto", serviceRequest, new MemoryCacheEntryOptions()
-                    //{
-                    //    SlidingExpiration = TimeSpan.FromSeconds(120)
-                    //});
-                    _logger.LogInformation("serviceRequestDto has been returned form database and cached in memory successfully.");
-                    return serviceRequest;
-                }
-                _logger.LogError($"serviceRequest with id {serviceRequestId} not found in GetServiceRequestDto method.");
-                throw new Exception($"serviceRequest with id {serviceRequestId} not found.");
+            if (serviceRequest != null)
+            {
+                //_memoryCache.Set("serviceRequestDto", serviceRequest, new MemoryCacheEntryOptions()
+                //{
+                //    SlidingExpiration = TimeSpan.FromSeconds(120)
+                //});
+                _logger.LogInformation("serviceRequestDto has been returned form database and cached in memory successfully.");
+                return serviceRequest;
+            }
+            _logger.LogError($"serviceRequest with id {serviceRequestId} not found in GetServiceRequestDto method.");
+            throw new Exception($"serviceRequest with id {serviceRequestId} not found.");
             //}
             //_logger.LogInformation("serviceRequestDto returned from InMemeoryCache in GetServiceRequestDto method.");
             //return serviceRequest;
@@ -223,49 +280,30 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
         private async Task<ServiceRequest> GetServiceRequestSoftDeleteDto(int serviceRequestId, CancellationToken cancellationToken)
         {
-            var serviceRequest = _memoryCache.Get<ServiceRequest>("serviceRequestSoftDeleteDto");
-            if (serviceRequest is null)
-            {
-                serviceRequest = await _homeServiceDbContext.ServiceRequests
-                .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
+            var serviceRequest = await _homeServiceDbContext.ServiceRequests
+            .FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
 
-                if (serviceRequest != null)
-                {
-                    _memoryCache.Set("serviceRequestSoftDeleteDto", serviceRequest, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("serviceRequestSoftDeleteDto has been returned form database and cached in memory successfully.");
-                    return serviceRequest;
-                }
-                _logger.LogError($"serviceRequest with id {serviceRequestId} not found in GetServiceRequestSoftDeleteDto method.");
-                throw new Exception($"serviceRequest with id {serviceRequestId} not found.");
-            }
-            _logger.LogInformation("serviceRequestSoftDeleteDto returned from InMemeoryCache in GetServiceRequestSoftDeleteDto method.");
-            return serviceRequest;
-
+            if (serviceRequest != null)
+                return serviceRequest;
+            _logger.LogError($"serviceRequest with id {serviceRequestId} not found in GetServiceRequestSoftDeleteDto method.");
+            throw new Exception($"serviceRequest with id {serviceRequestId} not found.");
         }
 
-		public async Task<List<ServiceRequestDto>> GetCustomerServiceRequests(int customerId, CancellationToken cancellationToken)
-		{
-			var customerServiceRequests = await _homeServiceDbContext.ServiceRequests
-				.Where(x => x.CustomerId == customerId)
-                .Include(x => x.Service)
-                .Select(x => new ServiceRequestDto()
-				{
-					Id = x.Id,
-                    CustomerDescription = x.CustomerDescription,
-                    Price = x.Price,
-                    IsDone = x.IsDone,
-                    IsDeleted = x.IsDeleted,
-                    Status = x.Status,
-					ServiceId = x.ServiceId,
-                    ServiceName = x.Service.Title,
-                    ServiceImageUrl = x.Service.Image,
-				}).ToListAsync(cancellationToken);
+        private async Task<ExpertServiceIdsDto> GetExpertServiceIds(int expertId, CancellationToken cancellationToken)
+        {
+            var expertServiceIds = await _homeServiceDbContext.Experts
+                .Select(e => new ExpertServiceIdsDto
+                {
+                    Id = e.Id,
+                    ServiceIds = e.Services.Select(s => s.Id).ToList()
+                }).FirstOrDefaultAsync(e => e.Id == expertId, cancellationToken);
 
-            return customerServiceRequests;
-		}
-		#endregion
-	}
+            if (expertServiceIds is null)
+                throw new Exception("Expert Does Not Have Any Services");
+            else
+                return expertServiceIds;
+        }
+
+        #endregion
+    }
 }

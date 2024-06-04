@@ -14,7 +14,7 @@ namespace App.Domain.Core.Customer.DTOs
         public string? ServiceName { get; set; }
         public string? ServiceImageUrl { get; set; }
         public string CustomerDescription { get; set; }
-        public Status Status { get; set; }
+        public ServiceRequestStatus Status { get; set; }
         public double Price { get; set; } //ghimate pardakht shode
         public bool IsDone { get; set; } = false;
         public bool IsDeleted { get; set; } = false;

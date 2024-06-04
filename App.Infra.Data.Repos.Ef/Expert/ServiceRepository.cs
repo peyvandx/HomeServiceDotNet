@@ -49,34 +49,23 @@ namespace App.Infra.Data.Repos.Ef.Expert
 
         public async Task<ServiceDto> GetServiceById(int serviceId, CancellationToken cancellationToken)
         {
-            var service = _memoryCache.Get<ServiceDto>("serviceDto");
-            if (service is null)
+            var service = await _homeServiceDbContext.Services
+            .Select(a => new Domain.Core.Expert.DTOs.ServiceDto
             {
-                service = await _homeServiceDbContext.Services
-                .Select(a => new Domain.Core.Expert.DTOs.ServiceDto
-                {
-                    Id = a.Id,
-                    Description = a.Description,
-                    Title = a.Title,
-                }).FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
+                Id = a.Id,
+                Description = a.Description,
+                Title = a.Title,
+            }).FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
 
-                if (service != null)
-                {
-                    _memoryCache.Set("serviceDto", service, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("ServiceDto returned from database, and cached in memory successfully.");
-                    return service;
-                }
-                else
-                {
-                    _logger.LogError("We expected the ServiceDto to return from the database, but it returned null.");
-                    throw new Exception("Something wents wrong!, please try again.");
-                }
+            if (service != null)
+            {
+                return service;
             }
-            _logger.LogInformation("ServiceDto returned from InMemoryCache.");
-            return service;
+            else
+            {
+                _logger.LogError("We expected the ServiceDto to return from the database, but it returned null.");
+                throw new Exception("Something wents wrong!, please try again.");
+            }
         }
 
         public async Task<List<ServiceDto>> GetServices(CancellationToken cancellationToken)
@@ -113,8 +102,8 @@ namespace App.Infra.Data.Repos.Ef.Expert
             return services;
         }
 
-		public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
-		{
+        public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
+        {
             var services = await _homeServiceDbContext.Services
                 .Where(s => s.CategoryId == categoryId)
                 .Select(s => new ServiceDto()
@@ -128,39 +117,39 @@ namespace App.Infra.Data.Repos.Ef.Expert
                 }).ToListAsync(cancellationToken);
 
             return services;
-		}
+        }
 
-		//{
-		//    var services = await _homeServiceDbContext.Services.ToListAsync(cancellationToken);
-		//    if (services != null)
-		//    {
-		//        return services;
-		//    }
-		//    else
-		//    {
-		//        //throw an exception - will be implement!
-		//        throw new InvalidOperationException();
-		//    }
-		//}
+        //{
+        //    var services = await _homeServiceDbContext.Services.ToListAsync(cancellationToken);
+        //    if (services != null)
+        //    {
+        //        return services;
+        //    }
+        //    else
+        //    {
+        //        //throw an exception - will be implement!
+        //        throw new InvalidOperationException();
+        //    }
+        //}
 
-		//public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-		//{
-		//    var deletedService = await GetService(serviceId, cancellationToken);
-		//    if (deletedService != null)
-		//    {
-		//        deletedService.IsDeleted = true;
-		//        _homeServiceDbContext.Services.Remove(deletedService);
-		//        await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
-		//        return deletedService;
-		//    }
-		//    else
-		//    {
-		//        //throw an exception - will be implement!
-		//        throw new InvalidOperationException();
-		//    }
-		//}
+        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+        //{
+        //    var deletedService = await GetService(serviceId, cancellationToken);
+        //    if (deletedService != null)
+        //    {
+        //        deletedService.IsDeleted = true;
+        //        _homeServiceDbContext.Services.Remove(deletedService);
+        //        await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+        //        return deletedService;
+        //    }
+        //    else
+        //    {
+        //        //throw an exception - will be implement!
+        //        throw new InvalidOperationException();
+        //    }
+        //}
 
-		public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
         {
             var deletedService = await GetServiceSoftDeleteDto(serviceId, cancellationToken);
             deletedService.IsDeleted = true;
@@ -181,7 +170,6 @@ namespace App.Infra.Data.Repos.Ef.Expert
             updatingService.Title = updatedService.Title;
             updatingService.Description = updatedService.Description;
             updatingService.Image = updatedService.Image;
-            updatingService.WorkExperience = updatedService.WorkExperience;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
 
             var updatingServiceDto = new ServiceDto();

@@ -12,7 +12,7 @@ namespace App.Domain.Core.Customer.Entities
     {
         public int Id { get; set; }
         public string CustomerDescription { get; set; }
-        public Status Status { get; set; }
+        public ServiceRequestStatus Status { get; set; }
         public double Price { get; set; } = 0.0; //ghimate pardakht shode
         public bool IsDone { get; set; } = false;
         public DateTime CreatedAt { get; set; }

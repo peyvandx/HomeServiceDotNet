@@ -45,7 +45,7 @@
                                                 <div class="modal-body">
                                                     <label asp-for="@Model.ServiceRequestChangeStatus.NewStatus" class="form-label">وضعیت جدید درخواست</label>
                                                     <select asp-for="@Model.ServiceRequestChangeStatus.NewStatus" class="select2 form-select" data-allow-clear="true">
-                                                        @foreach (Status status in Enum.GetValues(typeof(Status)))
+                                                        @foreach (ServiceRequestStatus status in Enum.GetValues(typeof(ServiceRequestStatus)))
                                                         {
                                                             <option value="@status" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>@status.GetEnumDisplayName()</option>
                                                         }

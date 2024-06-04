@@ -5141,6 +5141,26 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\uploads\\56019b5d-006f-4370-823e-1d03a254db2d_1717005420052.jpg",
+      "PackagePath": "staticwebassets\\uploads\\56019b5d-006f-4370-823e-1d03a254db2d_1717005420052.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\uploads\\85479f1e-8881-4038-8f0a-28170fabd218_1717005420052.jpg",
+      "PackagePath": "staticwebassets\\uploads\\85479f1e-8881-4038-8f0a-28170fabd218_1717005420052.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\uploads\\b58cbb60-fd24-4769-aacf-ffa45412fbc3_1717005420076.jpg",
+      "PackagePath": "staticwebassets\\uploads\\b58cbb60-fd24-4769-aacf-ffa45412fbc3_1717005420076.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\uploads\\e77bbe25-8d91-4521-b9e2-0661fa718219_1717005420076.jpg",
+      "PackagePath": "staticwebassets\\uploads\\e77bbe25-8d91-4521-b9e2-0661fa718219_1717005420076.jpg"
+    },
+    {
+      "Id": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\wwwroot\\uploads\\f44a3a49-4b3b-4afd-9b6d-8608a2e81c84_1717005420052.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f44a3a49-4b3b-4afd-9b6d-8608a2e81c84_1717005420052.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.App.EndPoints.UI.RazorPages.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },

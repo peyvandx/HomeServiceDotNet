@@ -8,7 +8,7 @@ namespace App.Domain.Core.Expert.DTOs
 {
     public class ExpertSoftDeleteDto
     {
-        public int Id { get; set; }
+        public int? Id { get; set; }
         public bool IsDeleted { get; set; }
     }
 }

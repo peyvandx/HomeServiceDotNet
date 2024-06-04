@@ -44,7 +44,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return signingUpCustomer;
         }
 
-        public async Task<CustomerDto> GetCustomerById(int customerId, CancellationToken cancellationToken)
+        public async Task<CustomerDto> GetCustomerById(int? customerId, CancellationToken cancellationToken)
         {
             var customer = _memoryCache.Get<CustomerDto?>("customerDto");
             if (customer is null)
@@ -59,7 +59,11 @@ namespace App.Infra.Data.Repos.Ef.Customer
                     LastName = a.LastName,
                     ProfileImage = a.ProfileImage,
                     Address = a.Address,
-                    AboutMe = a.AboutMe
+                    AboutMe = a.AboutMe,
+                    InstagramAddress = a.InstagramAddress,
+                    FacebookAddress = a.FacebookAddress,
+                    TwitterAddress = a.TwitterAddress,
+                    LinkedinAddress = a.LinkedinAddress,
                 }).FirstOrDefaultAsync(a => a.Id == customerId, cancellationToken);
 
                 if (customer != null)
@@ -79,6 +83,16 @@ namespace App.Infra.Data.Repos.Ef.Customer
             }
             _logger.LogInformation("customerDto returned from InMemoryCache.");
             return customer;
+        }
+
+        public Task<int?> GetCustomerIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
+        {
+            var customerId = _homeServiceDbContext.Customers
+                .Where(c => c.ApplicationUserId == applicationUserId)
+                .Select(c => c.Id)
+                .FirstOrDefaultAsync(cancellationToken);
+
+            return customerId;
         }
 
         public Task<int> GetCustomerIdFromUserId(int userId, CancellationToken cancellationToken)
@@ -170,28 +184,46 @@ namespace App.Infra.Data.Repos.Ef.Customer
         #region PrivateMethods
         private async Task<Domain.Core.Customer.Entities.Customer> GetCustomer(int customerId, CancellationToken cancellationToken)
         {
-            var customer = _memoryCache.Get<Domain.Core.Customer.Entities.Customer>("customerDto");
-            if (customer is null)
+            //var customer = _memoryCache.Get<Domain.Core.Customer.Entities.Customer>("customerDto");
+            //if (customer is null)
+            //{
+            //    customer = await _homeServiceDbContext.Customers
+            //    .Include(c => c.Address)
+            //    .ThenInclude(a => a.City)
+            //    .FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
+
+            //    if (customer != null)
+            //    {
+            //        _memoryCache.Set("customerDto", customer, new MemoryCacheEntryOptions()
+            //        {
+            //            SlidingExpiration = TimeSpan.FromSeconds(120)
+            //        });
+            //        _logger.LogInformation("customerDto has been returned form database and cached in memory successfully.");
+            //        return customer;
+            //    }
+            //    _logger.LogError($"admin with id {customerId} not found in GetCustomerDto method.");
+            //    throw new Exception($"admin with id {customerId} not found.");
+            //}
+            //_logger.LogInformation("customerDto returned from InMemeoryCache in GetCustomerDto method.");
+            //return customer;
+
+            try
             {
-                customer = await _homeServiceDbContext.Customers
+                var customer = await _homeServiceDbContext.Customers
                 .Include(c => c.Address)
                 .ThenInclude(a => a.City)
                 .FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);
 
-                if (customer != null)
-                {
-                    _memoryCache.Set("customerDto", customer, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("customerDto has been returned form database and cached in memory successfully.");
+                if (customer is null)
+                    throw new Exception("customer is null");
+                else
                     return customer;
-                }
-                _logger.LogError($"admin with id {customerId} not found in GetCustomerDto method.");
-                throw new Exception($"admin with id {customerId} not found.");
             }
-            _logger.LogInformation("customerDto returned from InMemeoryCache in GetCustomerDto method.");
-            return customer;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
         }
 
         private async Task<CustomerSoftDeleteDto> GetCustomerSoftDeleteDto(int customerId, CancellationToken cancellationToken)

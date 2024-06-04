@@ -4,6 +4,8 @@ using App.Domain.Core.Admin.Entities;
 using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Customer.Entities;
+using App.Domain.Core.Expert.AppServices;
+using App.Domain.Core.Expert.DTOs;
 using App.Domain.Core.Expert.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -23,15 +25,18 @@ namespace App.Domain.AppServices.Admin
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
 		private readonly ICustomerAppService _customerAppService;
+        private readonly IExpertAppService _expertAppService;
 
-		public AccountAppService(SignInManager<ApplicationUser> signInManager,
+        public AccountAppService(SignInManager<ApplicationUser> signInManager,
             UserManager<ApplicationUser> userManager,
-            ICustomerAppService customerAppService)
+            ICustomerAppService customerAppService,
+            IExpertAppService expertAppService)
         {
             _signInManager = signInManager;
             _userManager = userManager;
 			_customerAppService = customerAppService;
-		}
+            _expertAppService = expertAppService;
+        }
 
 
         public async Task<bool> Login(LoginDto loginDto)
@@ -49,6 +54,7 @@ namespace App.Domain.AppServices.Admin
 
             user.UserName = registerDto.UserName;
             user.Email = registerDto.Email;
+            //user.SecurityStamp = Guid.NewGuid().ToString();
 
             if (registerDto.IsCustomer)
             {
@@ -91,7 +97,7 @@ namespace App.Domain.AppServices.Admin
             return (List<IdentityError>)result.Errors;
         }
 
-        public async Task<CustomerProfileDto> GetCustomerProfileDetails(int userId, int applicationUserId, CancellationToken cancellationToken)
+        public async Task<CustomerProfileDto> GetCustomerProfileDetails(int? userId, int applicationUserId, CancellationToken cancellationToken)
         {
             var customerProfileDto = await _userManager.Users
                 .Select(x => new CustomerProfileDto()
@@ -114,6 +120,34 @@ namespace App.Domain.AppServices.Admin
 
         }
 
+        public async Task<ExpertProfileDto> GetExpertProfileDetails(int? userId, int applicationUserId, CancellationToken cancellationToken)
+        {
+            var expertProfileDto = await _userManager.Users
+                .Select(x => new ExpertProfileDto()
+                {
+                    Id = x.Id,
+                    UserName = x.UserName,
+                    Email = x.Email,
+                    PhoneNumber = x.PhoneNumber,
+                }).FirstOrDefaultAsync(x => x.Id == applicationUserId, cancellationToken);
+
+            var expertResult = await _expertAppService.GetExpertById(userId, cancellationToken);
+
+            expertProfileDto.ProfileImageUrl = expertResult.ProfileImage;
+            expertProfileDto.FirstName = expertResult.FirstName;
+            expertProfileDto.LastName = expertResult.LastName;
+            expertProfileDto.Address = expertResult.Address;
+            expertProfileDto.Age = expertResult.Age;
+            expertProfileDto.AboutMe = expertResult.AboutMe;
+            expertProfileDto.ServiceIds = expertResult.ServiceIds;
+            expertProfileDto.InstagramAddress = expertResult.InstagramAddress;
+            expertProfileDto.TwitterAddress = expertResult.TwitterAddress;
+            expertProfileDto.FacebookAddress = expertResult.FacebookAddress;
+            expertProfileDto.LinkedinAddress = expertResult.LinkedinAddress;
+
+            return expertProfileDto;
+        }
+
         private ApplicationUser CreateUser()
         {
             try
@@ -128,5 +162,18 @@ namespace App.Domain.AppServices.Admin
             }
         }
 
+        public async Task<UserDetailsDto> GetUserDetailsFromUsersTable(int? applicationUserId, CancellationToken cancellationToken)
+        {
+            var userDetails = await _userManager.Users
+                .Select(x => new UserDetailsDto()
+                {
+                    Id = x.Id,
+                    UserName = x.UserName,
+                    Email = x.Email,
+                    PhoneNumber = x.PhoneNumber,
+                }).FirstOrDefaultAsync(x => x.Id == applicationUserId, cancellationToken);
+
+            return userDetails;
+        }
     }
 }

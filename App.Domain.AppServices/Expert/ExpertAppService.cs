@@ -27,10 +27,13 @@ namespace App.Domain.AppServices.Expert
         public async Task<Core.Expert.Entities.Expert> CreateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
             => await _expertService.CreateExpert(expertDto, cancellationToken);
 
-        public async Task<ExpertDto> GetExpertById(int expertId, CancellationToken cancellationToken)
+        public async Task<ExpertDto> GetExpertById(int? expertId, CancellationToken cancellationToken)
             => await _expertService.GetExpertById(expertId, cancellationToken);
 
-        public async Task<List<ExpertDto>> GetExperts(CancellationToken cancellationToken)
+		public async Task<int?> GetExpertIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
+		    => await _expertService.GetExpertIdByApplicationUserId(applicationUserId, cancellationToken);
+
+		public async Task<List<ExpertDto>> GetExperts(CancellationToken cancellationToken)
             => await _expertService.GetExperts(cancellationToken);
 
         //public async Task<Core.Expert.Entities.Expert> HardDeleteExpert(int expertId, CancellationToken cancellationToken)
@@ -39,8 +42,8 @@ namespace App.Domain.AppServices.Expert
         public async Task<ExpertSoftDeleteDto> SoftDeleteExpert(int expertId, CancellationToken cancellationToken)
             => await _expertService.SoftDeleteExpert(expertId, cancellationToken);
 
-        public async Task<ExpertDto> UpdateExpert(ExpertDto expertDto, CancellationToken cancellationToken)
-            => await _expertService.UpdateExpert(expertDto, cancellationToken);
+        public async Task<ExpertDto> UpdateExpert(ExpertProfileDto expertProfileDto, CancellationToken cancellationToken)
+            => await _expertService.UpdateExpert(expertProfileDto, cancellationToken);
 
         #endregion
     }

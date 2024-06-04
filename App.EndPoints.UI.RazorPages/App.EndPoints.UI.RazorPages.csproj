@@ -25,4 +25,10 @@
     <ProjectReference Include="..\Framework\Framework.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Areas\Customer\" />
+    <Folder Include="Areas\Expert\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+
 </Project>

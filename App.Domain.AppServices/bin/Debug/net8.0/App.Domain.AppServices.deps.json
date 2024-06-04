@@ -515,6 +515,7 @@
       "System.Text.Encodings.Web/4.5.0": {},
       "App.Domain.Core/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.2.0",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.5",
           "Microsoft.Extensions.Identity.Core": "8.0.5"
         },

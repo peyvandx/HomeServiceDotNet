@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "eH7jWR/dA+aTbYXIoz1hTePqJdfTO/cj6tHxBMXQih64NL6zG4eeZIRbY5aXKFG/adQaghxupVR/M2S1dyF0dQ==",
+  "dgSpecHash": "mqm5DClSHVKc0RkIJD9OM/XXxKeBXYMQ0PtUd7L9qpa3smigjL7CQVIA1Rx+StoAE2mz4mkJezPNt/njAyAu0Q==",
   "success": true,
   "projectFilePath": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Reza\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\8.0.5\\microsoft.aspnetcore.cryptography.internal.8.0.5.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\8.0.5\\microsoft.aspnetcore.cryptography.keyderivation.8.0.5.nupkg.sha512",
+    "C:\\Users\\Reza\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\8.0.5\\microsoft.aspnetcore.identity.entityframeworkcore.8.0.5.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Reza\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

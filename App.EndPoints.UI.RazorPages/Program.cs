@@ -35,6 +35,9 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddScoped<IAdminRepository, AdminRepository>();
 builder.Services.AddScoped<IAdminService, AdminService>();
 builder.Services.AddScoped<IAdminAppService, AdminAppService>();
+
+builder.Services.AddScoped<IBaseAppService, BaseAppService>();
+builder.Services.AddScoped<IBaseService, BaseService>();
 #endregion
 
 #region AddressDI
