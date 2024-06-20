@@ -12,7 +12,7 @@
             <tr>
                 <th>ردیف</th>
                 <th>وضعیت‌فعلی‌درخواست</th>
-                <th>تغییر‌وضعیت‌درخواست</th>
+                @* <th>تغییر‌وضعیت‌درخواست</th> *@
                 <th>توضیحات</th>
                 <th>وضعیت‌کلی</th>
                 <th>عمل‌ها</th>
@@ -24,15 +24,22 @@
                 <tr>
                     <td><strong>@serviceRequest.Id</strong></td>
                     <td><span class="badge bg-label-primary me-1">@serviceRequest.Status.GetEnumDisplayName()</span></td>
-                    <td>
+                    @* <td>
                         <div class="col-lg-4 col-md-6">
                             <div class="">
-                                <!-- Button trigger modal -->
-                                <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalCenter">
-                                    تغییر‌وضعیت‌به
-                                </button>
+                                @if (serviceRequest.Status == ServiceRequestStatus.Cancelled)
+                                {
+                                    <button type="button" class="btn btn-secondary disabled" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                                        تغییر‌وضعیت‌به
+                                    </button>
+                                }
+                                else
+                                {
+                                    <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#modalCenter">
+                                        تغییر‌وضعیت‌به
+                                    </button>
+                                }
 
-                                <!-- Modal -->
                                 <form method="post">
                                     <input asp-for="@Model.ServiceRequestChangeStatus.ServiceRequestId" type="hidden" value="@serviceRequest.Id" />
                                     <div class="modal fade" id="modalCenter" tabindex="-1" style="display: none;" aria-hidden="true">
@@ -63,7 +70,8 @@
                                 </form>
                             </div>
                         </div>
-                    </td>
+                    </td> *@
+
                     <td>
                         <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-offset="0,8" data-bs-placement="top" data-bs-custom-class="tooltip-secondary" data-bs-original-title="@serviceRequest.CustomerDescription">
                             مشاهده متن درخواست
@@ -86,7 +94,7 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu" style="">
-                                <a asp-page-handler="Delete" asp-route-id="@serviceRequest.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i>حذف</a>
+                                <a asp-page-handler="Delete" asp-route-id="@serviceRequest.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i>غیرفعال کردن</a>
                             </div>
                         </div>
                     </td>

@@ -19,5 +19,7 @@ namespace App.Domain.Core.Customer.Entities
         public Customer Customer { get; set; }
         public int ExpertId { get; set; }
         public Expert.Entities.Expert Expert { get; set; }
+        public int? ServiceRequestId { get; set; }
+        public ServiceRequest? ServiceRequest { get; set; }
     }
 }

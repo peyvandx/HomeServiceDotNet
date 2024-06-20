@@ -168,6 +168,9 @@ namespace App.Infra.Data.Repos.Ef.Expert
                 .Include(p => p.ServiceRequest)
                 .ThenInclude(sr => sr.Customer)
                 .ThenInclude(c => c.ApplicationUser)
+                .Include(p => p.ServiceRequest)
+                .ThenInclude(sr => sr.Service)
+                .ThenInclude(s => s.Category)
                 .Select(p => new ProposalDto()
                 {
                     Id = p.Id,
@@ -186,7 +189,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     CustomerDescription = p.ServiceRequest.CustomerDescription,
                     CustomerSignUpDate = p.ServiceRequest.Customer.SignUpDate,
                     CustomerProfileImage = p.ServiceRequest.Customer.ProfileImage,
-                    CustomerSuggestedPrice = p.ServiceRequest.Price,
+                    CustomerSuggestedPrice = p.ServiceRequest.CustomerSuggestedPrice,
                     ProposalCreatedAt = p.CreatedAt,
                     ServiceRequestCreatedAt = p.ServiceRequest.CreatedAt,
                     CustomerEmail = p.ServiceRequest.Customer.ApplicationUser.Email,
@@ -196,6 +199,8 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     IsAccepted = p.IsAccepted,
                     ServiceRequestId = p.ServiceRequestId,
                     ServiceRequestIsDeleted = p.ServiceRequest.IsDeleted,
+                    ServiceName = p.ServiceRequest.Service.Title,
+                    CategoryName = p.ServiceRequest.Service.Category.Title
                 }).ToListAsync(cancellationToken);
 
             return proposals;
@@ -213,26 +218,66 @@ namespace App.Infra.Data.Repos.Ef.Expert
         {
             var proposals = _homeServiceDbContext.Proposals
                 .Where(p => p.ServiceRequestId == serviceRequestId && p.IsRejected == false)
-                .Include(p => p.Expert)
-                .Include(p => p.ServiceRequest)
-                .Select(p => new ProposalDto()
+				.Include(p => p.Expert)
+				.ThenInclude(e => e.ApplicationUser)
+				.Include(p => p.ServiceRequest)
+				.ThenInclude(sr => sr.Customer)
+				.ThenInclude(c => c.ApplicationUser)
+				.Include(p => p.ServiceRequest)
+				.ThenInclude(sr => sr.Service)
+				.ThenInclude(s => s.Category)
+				.Select(p => new ProposalDto()
                 {
-                    Id = p.Id,
-                    ExpertDescription = p.ExpertDescription,
-                    ExpertSuggestedPrice = p.SuggestedPrice,
-                    ProposalCreatedAt = p.CreatedAt,
-                    IsAccepted = p.IsAccepted,
-                    IsDeleted = p.IsDeleted,
-                    IsRejected = p.IsRejected,
-                    ExpertId = p.ExpertId,
-                    ExpertFirstName = p.Expert.FirstName,
-                    ExpertLastName = p.Expert.LastName,
-                    ExpertSignUpDate = p.Expert.SignUpDate,
-                    ExpertProfileImage = p.Expert.ProfileImage,
-                    ServiceRequestId = p.ServiceRequestId,
-                    ProposalStatus = p.Status,
-                    ServiceRequestStatus = p.ServiceRequest.Status,
-                }).ToListAsync(cancellationToken);
+					//Id = p.Id,
+					//ExpertDescription = p.ExpertDescription,
+					//ExpertSuggestedPrice = p.SuggestedPrice,
+					//ProposalCreatedAt = p.CreatedAt,
+					//IsAccepted = p.IsAccepted,
+					//IsDeleted = p.IsDeleted,
+					//IsRejected = p.IsRejected,
+					//ExpertId = p.ExpertId,
+					//ExpertFirstName = p.Expert.FirstName,
+					//ExpertLastName = p.Expert.LastName,
+					//ExpertSignUpDate = p.Expert.SignUpDate,
+					//ExpertEmail = p.Expert.ApplicationUser.Email,
+					//ExpertPhoneNumber = p.Expert.ApplicationUser.PhoneNumber,
+					//ExpertProfileImage = p.Expert.ProfileImage,
+					//CustomerDescription = p.ServiceRequest.CustomerDescription,
+					//CustomerSuggestedPrice = p.ServiceRequest.CustomerSuggestedPrice,
+					//CategoryName = p.ServiceRequest.Service.Category.Title,
+					//ServiceName = p.ServiceRequest.Service.Title,
+					//ServiceRequestId = p.ServiceRequestId,
+					//ProposalStatus = p.Status,
+					//ServiceRequestStatus = p.ServiceRequest.Status,
+					Id = p.Id,
+					ExpertId = p.ExpertId,
+					ExpertFirstName = p.Expert.FirstName,
+					ExpertLastName = p.Expert.LastName,
+					ExpertDescription = p.ExpertDescription,
+					ExpertSignUpDate = p.Expert.SignUpDate,
+					ExpertProfileImage = p.Expert.ProfileImage,
+					ExpertSuggestedPrice = p.SuggestedPrice,
+					ExpertEmail = p.Expert.ApplicationUser.Email,
+					ExpertPhoneNumber = p.Expert.ApplicationUser.PhoneNumber,
+					CustomerId = p.ServiceRequest.CustomerId,
+					CustomerFirstName = p.ServiceRequest.Customer.FirstName,
+					CustomerLastName = p.ServiceRequest.Customer.LastName,
+					CustomerDescription = p.ServiceRequest.CustomerDescription,
+					CustomerSignUpDate = p.ServiceRequest.Customer.SignUpDate,
+					CustomerProfileImage = p.ServiceRequest.Customer.ProfileImage,
+					CustomerSuggestedPrice = p.ServiceRequest.CustomerSuggestedPrice,
+					ProposalCreatedAt = p.CreatedAt,
+					ServiceRequestCreatedAt = p.ServiceRequest.CreatedAt,
+					CustomerEmail = p.ServiceRequest.Customer.ApplicationUser.Email,
+					CustomerPhoneNumber = p.ServiceRequest.Customer.ApplicationUser.PhoneNumber,
+					ProposalStatus = p.Status,
+					ServiceRequestStatus = p.ServiceRequest.Status,
+					IsAccepted = p.IsAccepted,
+					ServiceRequestId = p.ServiceRequestId,
+					ServiceRequestIsDeleted = p.ServiceRequest.IsDeleted,
+					ServiceName = p.ServiceRequest.Service.Title,
+					CategoryName = p.ServiceRequest.Service.Category.Title
+				}).ToListAsync(cancellationToken);
 
             return proposals;
         }

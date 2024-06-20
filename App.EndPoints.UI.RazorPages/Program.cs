@@ -16,6 +16,7 @@ using App.Domain.Services.Admin;
 using App.Domain.Services.Customer;
 using App.Domain.Services.Expert;
 using App.EndPoints.UI.RazorPages.Infrastructure;
+using App.Infra.Data.Repos.Dapper.Customer;
 using App.Infra.Data.Repos.Ef.Admin;
 using App.Infra.Data.Repos.Ef.Customer;
 using App.Infra.Data.Repos.Ef.Expert;
@@ -47,7 +48,8 @@ builder.Services.AddScoped<IAddressAppService, AddressAppService>();
 #endregion
 
 #region CityDI
-builder.Services.AddScoped<ICityRepository, CityRepository>();
+//builder.Services.AddScoped<ICityRepository, CityRepository>();
+builder.Services.AddScoped<ICityRepository, CityRepoDapper>();
 builder.Services.AddScoped<ICityService, CityService>();
 builder.Services.AddScoped<ICityAppService, CityAppService>();
 #endregion

@@ -39,6 +39,8 @@ namespace App.EndPoints.UI.RazorPages.Areas.Account.Pages
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
+            if (!ModelState.IsValid) return Page();
+
             if (Input.IsCustomer && Input.IsExpert)
             {
                 ModelState.AddModelError(string.Empty, "همزمان نمیتوانید هم مشتری باشید هم متخصص");

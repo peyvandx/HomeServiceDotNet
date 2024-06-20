@@ -64,6 +64,7 @@ namespace App.Domain.AppServices.Customer
             var serviceRequestNewStatus = new ServiceRequestChangeStatusDto()
             {
                 ServiceRequestId = serviceRequestProposalIds.ServiceRequestId,
+                ExpertId = serviceRequestProposalIds.ProposalExpertId,
                 NewStatus = ServiceRequestStatus.Success,
             };
             await _serviceRequestService.ChangeServiceRequestStatus(serviceRequestNewStatus, cancellationToken);

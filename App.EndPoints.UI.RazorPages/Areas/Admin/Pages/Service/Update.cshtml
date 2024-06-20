@@ -10,16 +10,25 @@
         <small class="text-muted float-end primary-font">برچسب پیش‌فرض</small>
     </div>
     <div class="card-body">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
+            <input type="hidden" asp-for="@Model.UpdatingService.Id" value="@Model.UpdatingService.Id" />
+            <div class="mt-n2 mx-sm-0 mx-auto">
+                <input type="hidden" value="@Model.UpdatingService.Image" asp-for="@Model.UpdatingService.Image" />
+                <img src="@Model.UpdatingService.Image" alt="user image" style="width:200px; height:200px" class="d-block h-auto ms-0 ms-sm-4 rounded-3 user-profile-img">
+            </div>
+            <div class="mb-3">
+                <label asp-for="@Model.UpdatingService.Image" class="form-label">عکس دسته‌بندی را انتخاب کنید</label>
+                <input asp-for="@Model.ServiceImage" class="form-control" type="file">
+            </div>
             <div class="mb-3">
                 <label asp-for="@Model.UpdatingService.Title" class="form-label" for="basic-default-fullname">نام کامل</label>
                 <input asp-for="@Model.UpdatingService.Title" type="text" class="form-control" id="basic-default-fullname" placeholder="کاغذ دیواری">
+                <span asp-validation-for="@Model.UpdatingService.Title" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
                 <label asp-for="@Model.UpdatingService.CategoryId" class="form-label" for="multicol-country">دسته بندی</label>
                 <select asp-for="@Model.UpdatingService.CategoryId" id="multicol-country" class="select2 form-select" data-allow-clear="true">
-                    <option value="">انتخاب</option>
                     @foreach (var category in Model.Categories)
                     {
                         <option value="@category.Id">@category.Title</option>
@@ -28,10 +37,22 @@
             </div>
 
             <div class="mb-3">
-                <label asp-for="@Model.UpdatingService.Description" class="form-label" for="basic-default-message">توضیحات</label>
+                <label asp-for="@Model.UpdatingService.ShortDescription" class="form-label" for="basic-default-message">توضیحات مختصر</label>
+                <textarea asp-for="@Model.UpdatingService.ShortDescription" id="basic-default-message" class="form-control" placeholder="متن توضیحات را اینجا بنویسید"></textarea>
+                <span asp-validation-for="@Model.UpdatingService.ShortDescription" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="@Model.UpdatingService.Description" class="form-label" for="basic-default-message">توضیحات کامل</label>
                 <textarea asp-for="@Model.UpdatingService.Description" id="basic-default-message" class="form-control" placeholder="متن توضیحات را اینجا بنویسید"></textarea>
+                <span asp-validation-for="@Model.UpdatingService.Description" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">ارسال</button>
         </form>
     </div>
 </div>
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+}

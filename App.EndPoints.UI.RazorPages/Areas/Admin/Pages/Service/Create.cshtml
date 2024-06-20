@@ -9,19 +9,24 @@
 <div class="card mb-4">
     <div class="card-header d-flex justify-content-between align-items-center">
         <h5 class="mb-0">ایجاد‌ سرویس جدید</h5>
-        <small class="text-muted float-end primary-font">برچسب پیش‌فرض</small>
+        <small class="text-muted float-end primary-font"></small>
     </div>
     <div class="card-body">
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
+            <div class="mb-3">
+                <label asp-for="@Model.CreatingService.Image" class="form-label">عکس دسته‌بندی را انتخاب کنید</label>
+                <input asp-for="@Model.ServiceImage" class="form-control" type="file">
+                <span asp-validation-for="@Model.ServiceImage" class="text-danger"></span>
+            </div>
             <div class="mb-3">
                 <label asp-for="@Model.CreatingService.Title" class="form-label" for="basic-default-fullname">نام کامل</label>
-                <input asp-for="@Model.CreatingService.Title" type="text" class="form-control" id="basic-default-fullname" placeholder="کاغذ دیواری">
+                <input asp-for="@Model.CreatingService.Title" type="text" class="form-control" id="basic-default-fullname" placeholder="">
+                <span asp-validation-for="@Model.CreatingService.Title" class="text-danger"></span>
             </div>
 
             <div class="mb-3">
                 <label asp-for="@Model.CreatingService.CategoryId" class="form-label" for="multicol-country">دسته بندی</label>
                 <select asp-for="@Model.CreatingService.CategoryId" id="multicol-country" class="select2 form-select" data-allow-clear="true">
-                    <option value="">انتخاب</option>
                     @foreach (var category in await CategoryAppService.GetCategories(default))
                     {
                         <option value="@category.Id">@category.Title</option>
@@ -30,10 +35,22 @@
             </div>
 
             <div class="mb-3">
-                <label asp-for="@Model.CreatingService.Description" class="form-label" for="basic-default-message">توضیحات</label>
-                <textarea asp-for="@Model.CreatingService.Description" id="basic-default-message" class="form-control" placeholder="متن توضیحات را اینجا بنویسید"></textarea>
+                <label asp-for="@Model.CreatingService.ShortDescription" class="form-label" for="basic-default-message">توضیحات مختصر</label>
+                <textarea asp-for="@Model.CreatingService.ShortDescription" id="basic-default-message" class="form-control" placeholder="متن توضیحات مختصر را اینجا بنویسید"></textarea>
+                <span asp-validation-for="@Model.CreatingService.ShortDescription" class="text-danger"></span>
+            </div>
+
+            <div class="mb-3">
+                <label asp-for="@Model.CreatingService.Description" class="form-label" for="basic-default-message">توضیحات کامل</label>
+                <textarea asp-for="@Model.CreatingService.Description" id="basic-default-message" class="form-control" placeholder="متن توضیحات کامل را اینجا بنویسید"></textarea>
+                <span asp-validation-for="@Model.CreatingService.Description" class="text-danger"></span>
             </div>
             <button type="submit" class="btn btn-primary">ارسال</button>
         </form>
     </div>
 </div>
+
+@section Scripts {
+
+    <partial name="_ValidationScriptsPartial" />
+}

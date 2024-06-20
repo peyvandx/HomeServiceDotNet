@@ -62,22 +62,22 @@ namespace App.Domain.Services.Customer
                           
         public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(CustomerProfileDto customerDto, CancellationToken cancellationToken)
         {
-            var updatedCustomer = new Core.Customer.Entities.Customer();
-            updatedCustomer.Address = new Address();
-            updatedCustomer.Id = customerDto.Id;
-            updatedCustomer.FirstName = customerDto.FirstName;
-            updatedCustomer.LastName = customerDto.LastName;
-            updatedCustomer.ProfileImage = customerDto.ProfileImageUrl;
-            updatedCustomer.AboutMe = customerDto.AboutMe;
-            updatedCustomer.FacebookAddress = customerDto.FacebookAddress;
-            updatedCustomer.InstagramAddress = customerDto.InstagramAddress;
-            updatedCustomer.TwitterAddress = customerDto.TwitterAddress;
-            updatedCustomer.LinkedinAddress = customerDto.LinkedinAddress;
-            updatedCustomer.Address.Street = customerDto.Address.Street;
-            updatedCustomer.Address.PostalCode = customerDto.Address.PostalCode;
-            updatedCustomer.Address.CityId = customerDto.Address.CityId;
+            //var updatedCustomer = new Core.Customer.Entities.Customer();
+            //updatedCustomer.Address = new Address();
+            //updatedCustomer.Id = customerDto.Id;
+            //updatedCustomer.FirstName = customerDto.FirstName;
+            //updatedCustomer.LastName = customerDto.LastName;
+            //updatedCustomer.ProfileImage = customerDto.ProfileImageUrl;
+            //updatedCustomer.AboutMe = customerDto.AboutMe;
+            //updatedCustomer.FacebookAddress = customerDto.FacebookAddress;
+            //updatedCustomer.InstagramAddress = customerDto.InstagramAddress;
+            //updatedCustomer.TwitterAddress = customerDto.TwitterAddress;
+            //updatedCustomer.LinkedinAddress = customerDto.LinkedinAddress;
+            //updatedCustomer.Address.Street = customerDto.Address.Street;
+            //updatedCustomer.Address.PostalCode = customerDto.Address.PostalCode;
+            //updatedCustomer.Address.CityId = customerDto.Address.CityId;
             _memoryCache.Remove("customerDto");
-            return await _customerRepository.UpdateCustomer(updatedCustomer, cancellationToken);
+            return await _customerRepository.UpdateCustomer(customerDto, cancellationToken);
         }
 
         #endregion

@@ -49,11 +49,9 @@ namespace App.Infra.Data.Repos.Ef.Expert
         {
             try
             {
-                var expert = _memoryCache.Get<ExpertDto>("expertDto");
-                if (expert is null)
-                {
-                    expert = await _homeServiceDbContext.Experts
+                var expert = await _homeServiceDbContext.Experts
                     //.Include(e => e.Services)
+                    .Include(e => e.ApplicationUser)
                     .Include(e => e.Address)
                     .ThenInclude(a => a.City)
                     .Select(a => new Domain.Core.Expert.DTOs.ExpertDto
@@ -64,6 +62,8 @@ namespace App.Infra.Data.Repos.Ef.Expert
                         ProfileImage = a.ProfileImage,
                         Age = a.Age,
                         AboutMe = a.AboutMe,
+                        Email = a.ApplicationUser.Email,
+                        PhoneNumber = a.ApplicationUser.PhoneNumber,
                         //Services = a.Services,
                         ServiceIds = a.Services.Select(a => a.Id).ToList(),
                         Address = a.Address,
@@ -73,23 +73,16 @@ namespace App.Infra.Data.Repos.Ef.Expert
                         LinkedinAddress = a.LinkedinAddress,
                     }).FirstOrDefaultAsync(a => a.Id == expertId, cancellationToken);
 
-                    if (expert != null)
-                    {
-                        _memoryCache.Set("expertDto", expert, new MemoryCacheEntryOptions()
-                        {
-                            SlidingExpiration = TimeSpan.FromSeconds(120)
-                        });
-                        _logger.LogInformation("expertDto returned from database, and cached in memory successfully.");
-                        return expert;
-                    }
-                    else
-                    {
-                        _logger.LogError("We expected the expertDto to return from the database, but it returned null.");
-                        throw new Exception("Something wents wrong!, please try again.");
-                    }
+                if (expert != null)
+                {
+                    _logger.LogInformation("expertDto returned from database successfully.");
+                    return expert;
                 }
-                _logger.LogInformation("expertDto returned from InMemoryCache.");
-                return expert;
+                else
+                {
+                    _logger.LogError("We expected the expertDto to return from the database, but it returned null.");
+                    throw new Exception("Something wents wrong!, please try again.");
+                }
             }
             catch (Exception ex)
             {
@@ -98,17 +91,17 @@ namespace App.Infra.Data.Repos.Ef.Expert
             return new ExpertDto();
         }
 
-		public Task<int?> GetExpertIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
-		{
-			var expertId = _homeServiceDbContext.Experts
-				.Where(c => c.ApplicationUserId == applicationUserId)
-				.Select(c => c.Id)
-				.FirstOrDefaultAsync(cancellationToken);
+        public Task<int?> GetExpertIdByApplicationUserId(int? applicationUserId, CancellationToken cancellationToken)
+        {
+            var expertId = _homeServiceDbContext.Experts
+                .Where(c => c.ApplicationUserId == applicationUserId)
+                .Select(c => c.Id)
+                .FirstOrDefaultAsync(cancellationToken);
 
-			return expertId;
-		}
+            return expertId;
+        }
 
-		public async Task<List<Domain.Core.Expert.DTOs.ExpertDto>> GetExperts(CancellationToken cancellationToken)
+        public async Task<List<Domain.Core.Expert.DTOs.ExpertDto>> GetExperts(CancellationToken cancellationToken)
         {
             var experts = _memoryCache.Get<List<ExpertDto>>("expertDtos");
 
@@ -204,6 +197,9 @@ namespace App.Infra.Data.Repos.Ef.Expert
             updatingExpert.ProfileImage = updatedExpert.ProfileImageUrl;
             updatingExpert.Age = updatedExpert.Age;
             updatingExpert.AboutMe = updatedExpert.AboutMe;
+            updatingExpert.ApplicationUser.PhoneNumber = updatedExpert.PhoneNumber;
+            updatingExpert.ApplicationUser.Email = updatedExpert.Email;
+            updatingExpert.ApplicationUser.NormalizedEmail = updatedExpert.Email.ToUpper();
             updatingExpert.FacebookAddress = updatedExpert.FacebookAddress;
             updatingExpert.InstagramAddress = updatedExpert.InstagramAddress;
             updatingExpert.TwitterAddress = updatedExpert.TwitterAddress;
@@ -252,6 +248,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
             try
             {
                 var expert = await _homeServiceDbContext.Experts
+                .Include(e => e.ApplicationUser)
                 .Include(e => e.Services)
                 .Include(c => c.Address)
                 .ThenInclude(a => a.City)

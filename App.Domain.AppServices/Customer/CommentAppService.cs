@@ -44,6 +44,12 @@ namespace App.Domain.AppServices.Customer
 
         public async Task<CommentDto> ConfirmComment(int commentId, CancellationToken cancellationToken)
             => await _commentService.ConfirmComment(commentId, cancellationToken);
+
+        public async Task<List<CommentDto>> GetCommentsByExpertId(int expertId, int onlineCutomerId, CancellationToken cancellationToken)
+            => await _commentService.GetCommentsByExpertId(expertId, onlineCutomerId, cancellationToken);
+
+        public async Task<CommentDto> GetCustomerCommentByServiceRequestId(int customerId, int serviceRequestId, CancellationToken cancellationToken)
+            => await _commentService.GetCustomerCommentByServiceRequestId(customerId, serviceRequestId, cancellationToken);
         #endregion
     }
 }

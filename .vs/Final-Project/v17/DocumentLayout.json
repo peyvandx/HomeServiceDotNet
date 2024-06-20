@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "E:\\Maktab - 104 - CSharp\\Final-Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\profile.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\service\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\service\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|e:\\maktab - 104 - csharp\\final-project\\app.infra.data.repos.ef\\expert\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E48DE44F-77E7-4A57-91D1-D57A1671B3C7}|App.Infra.Data.Repos.Ef\\App.Infra.Data.Repos.Ef.csproj|solutionrelative:app.infra.data.repos.ef\\expert\\servicerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\pages\\proposal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\pages\\proposal.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|e:\\maktab - 104 - csharp\\final-project\\app.domain.services\\expert\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{947F58F6-C2F4-4C4D-9D1F-1FA32C0BD8CB}|App.Domain.Services\\App.Domain.Services.csproj|solutionrelative:app.domain.services\\expert\\serviceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\service\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\category\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|e:\\maktab - 104 - csharp\\final-project\\app.endpoints.ui.razorpages\\areas\\admin\\pages\\category\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B670CED7-CC09-4310-B855-7778E5D70E92}|App.EndPoints.UI.RazorPages\\App.EndPoints.UI.RazorPages.csproj|solutionrelative:app.endpoints.ui.razorpages\\areas\\admin\\pages\\category\\update.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +34,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Proposal.cshtml.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
-              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
-              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Proposal.cshtml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAgwDMAAAAjAAAA",
+              "Title": "ServiceService.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Expert\\ServiceService.cs",
+              "RelativeDocumentMoniker": "App.Domain.Services\\Expert\\ServiceService.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Domain.Services\\Expert\\ServiceService.cs",
+              "RelativeToolTip": "App.Domain.Services\\Expert\\ServiceService.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAvwEMAAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:02:57.729Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Profile.cshtml.cs",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
-              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
-              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAAAYwHcAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-04T15:01:16.463Z",
+              "WhenOpened": "2024-06-20T10:52:14.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
-              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
-              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
-              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Pages\\Profile.cshtml",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAAAPQAAABXAAAA",
+              "Title": "ServiceRepository.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Expert\\ServiceRepository.cs",
+              "RelativeDocumentMoniker": "App.Infra.Data.Repos.Ef\\Expert\\ServiceRepository.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.Infra.Data.Repos.Ef\\Expert\\ServiceRepository.cs",
+              "RelativeToolTip": "App.Infra.Data.Repos.Ef\\Expert\\ServiceRepository.cs",
+              "ViewState": "AQIAAMIAAAAAAAAAAAAvwMcAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T10:49:09.325Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-06-04T15:01:03.859Z",
+              "WhenOpened": "2024-06-20T10:46:13.387Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Category\\Update.cshtml.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAgwCUAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T10:46:15.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Update.cshtml.cs",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml.cs",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml.cs",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml.cs",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA1wCYAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-20T10:46:11.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml",
+              "RelativeDocumentMoniker": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml",
+              "ToolTip": "E:\\Maktab - 104 - CSharp\\Final-Project\\App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml",
+              "RelativeToolTip": "App.EndPoints.UI.RazorPages\\Areas\\Admin\\Pages\\Service\\Update.cshtml",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAAADkAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-20T10:46:10.452Z",
               "EditorCaption": ""
             }
           ]

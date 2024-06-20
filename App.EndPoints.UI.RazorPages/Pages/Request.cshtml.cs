@@ -3,13 +3,14 @@ using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
 using App.Domain.Core.Expert.AppServices;
 using App.Domain.Core.Expert.DTOs;
+using App.Domain.Core.Expert.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace App.EndPoints.UI.RazorPages.Pages
 {
-    [Authorize(Roles = "Customer")]
+    //[Authorize(Roles = "Customer")]
     public class RequestModel : PageModel
     {
 		private readonly IServiceAppService _serviceAppService;
@@ -36,6 +37,11 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
         public async Task<IActionResult> OnPostAsync(CancellationToken cancellationToken)
         {
+            if (!ModelState.IsValid)
+            {
+                return RedirectToAction("OnGet", new { serviceId = ServiceRequest.ServiceId });
+                //return RedirectToAction("OnGet", new { expertId = (int)TempData["ExpertId"] });
+            }
             var applicationUserId = int.Parse(User.Claims.First().Value);
             int? userId;
 
@@ -51,7 +57,7 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
             ServiceRequest.CustomerId = userId.Value;
 			await _serviceRequestAppService.CreateServiceRequest(ServiceRequest, cancellationToken);
-            return LocalRedirect("~/Index");
+            return LocalRedirect("~/MyRequests");
         }
     }
 }

@@ -36,10 +36,13 @@ namespace App.Domain.AppServices.Expert
 		public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
 		    => await _serviceService.GetServicesByCategoryId(categoryId, cancellationToken);
 
-		//public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-		//    => await _serviceService.HardDeleteService(serviceId, cancellationToken);
+        public async Task<bool> RestoreDeletedService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceService.RestoreDeletedService(serviceId, cancellationToken);
 
-		public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+        //    => await _serviceService.HardDeleteService(serviceId, cancellationToken);
+
+        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
             => await _serviceService.SoftDeleteService(serviceId, cancellationToken);
 
         public async Task<ServiceDto> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)

@@ -29,9 +29,9 @@
 
                     <li class="active">
                         <a asp-page="Index">صفحه اصلی</a>
-                        <ul class="nav-dropdown nav-submenu">
+                        @* <ul class="nav-dropdown nav-submenu">
                             <li><a asp-page="Index">مجددا صفحه اصلی</a></li>
-                        </ul>
+                        </ul> *@
                     </li>
                     @if (User.IsInRole("Customer"))
                     {
@@ -39,6 +39,7 @@
                             <a href="javascript:void(0);">پنل کاربری</a>
                             <ul class="nav-dropdown nav-submenu">
                                 <li><a asp-page="MyRequests"><i class="lni lni-files ms-2"></i>آگهی های من</a></li>
+                                <li><a asp-page="Index"><i class="lni lni-add-files ms-2"></i>افزودن آگهی</a></li>
                                 <li><a asp-page="Profile"><i class="lni lni-user ms-2"></i>حساب من </a></li>
                                 @* <li><a asp-page="ChangePassword"><i class="lni lni-lock-alt ms-2"></i>تغییر رمز عبور</a></li> *@
                             </ul>

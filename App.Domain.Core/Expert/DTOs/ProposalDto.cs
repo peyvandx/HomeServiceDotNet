@@ -2,6 +2,7 @@
 using App.Domain.Core.Expert.Enums;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,8 +12,10 @@ namespace App.Domain.Core.Expert.DTOs
     public class ProposalDto
     {
         public int? Id { get; set; }
-        public string? ExpertDescription { get; set; }
-        public double? ExpertSuggestedPrice { get; set; }
+		[Required(ErrorMessage = "توضیحات شما الزامی است")]
+		public string? ExpertDescription { get; set; }
+		[Required(ErrorMessage = "وارد کردن قیمت الزامی است")]
+		public double? ExpertSuggestedPrice { get; set; }
         public DateTime? ProposalCreatedAt { get; set; }
         public string? ExpertEmail { get; set; }
         public string? ExpertPhoneNumber { get; set; }
@@ -39,5 +42,7 @@ namespace App.Domain.Core.Expert.DTOs
         public bool ServiceRequestIsDeleted { get; set; }
         public ProposalStatus ProposalStatus { get; set; }
         public ServiceRequestStatus ServiceRequestStatus { get; set; }
+        public string? ServiceName { get; set; }
+        public string? CategoryName { get; set; }
     }
 }

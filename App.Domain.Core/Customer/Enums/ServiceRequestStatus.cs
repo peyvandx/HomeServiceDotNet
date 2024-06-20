@@ -17,7 +17,7 @@ namespace App.Domain.Core.Customer.Enums
         WaitingForExpert = 2,
         [Display(Name = "با‌موفقیت انجام‌شد")]
         Success = 3,
-        [Display(Name = "با‌موفقیت انجام‌نشد")]
+        [Display(Name = "با‌موفقیت انجام‌نشد")]//عدم مراجعه متخصص
         Failed = 4,
         [Display(Name = "کنسل‌شد")]
         Cancelled = 5,

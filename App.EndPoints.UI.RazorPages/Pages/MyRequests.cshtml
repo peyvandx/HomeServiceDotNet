@@ -6,35 +6,7 @@
 }
 
 <div class="goodup-dashboard-wrap gray px-4 py-5">
-    <a class="mobNavigation" data-bs-toggle="collapse" href="#MobNav" role="button" aria-expanded="false" aria-controls="MobNav">
-        <i class="fas fa-bars ms-2"></i>منو
-    </a>
-    <div class="collapse" id="MobNav">
-        <div class="goodup-dashboard-nav sticky-top">
-            <div class="goodup-dashboard-inner">
-                <ul data-submenu-title="منو">
-                    @* <li><a href="dashboard.html"><i class="lni lni-dashboard ms-2"></i>داشبورد</a></li> *@
-                    <li><a asp-page="MyRequests"><i class="lni lni-files ms-2"></i>آگهی های من</a></li>
-                    <li><a asp-page="Index"><i class="lni lni-add-files ms-2"></i>افزودن آگهی</a></li>
-                    @* <li><a href="dashboard-saved-listings.html"><i class="lni lni-bookmark ms-2"></i>آگهی های موردعلاقه</a></li> *@
-                    @* <li><a href="dashboard-my-bookings.html"><i class="lni lni-briefcase ms-2"></i>لیست رزروها<span class="count-tag bg-warning">4</span></a></li> *@
-                    @* <li><a href="dashboard-wallet.html"><i class="lni lni-mastercard ms-2"></i>کیف پول</a></li> *@
-                    @* <li><a href="dashboard-messages.html"><i class="lni lni-envelope ms-2"></i>پیام ها<span class="count-tag">4</span></a></li> *@
-                </ul>
-                <ul data-submenu-title="حساب کاربری">
-                    <li class="active"><a asp-page="Profile"><i class="lni lni-user ms-2"></i>تنظیمات</a></li>
-                    <li><a asp-page="ChangePassword"><i class="lni lni-lock-alt ms-2"></i>تغییر رمز عبور</a></li>
-                    <li><a href="javascript:void(0);"><i class="lni lni-trash-can ms-2"></i>حذف اکانت</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline" asp-area="Account" asp-page="Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-                            @* <button type="submit" class="nav-link btn btn-link text-dark">خروج</button> *@
-                            <button type="submit" class="btn theme-cl rounded theme-bg-light ft-medium">خروج</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
+    
 
     <div class="goodup-dashboard-content">
         <div class="dashboard-tlbar d-block mb-5">
@@ -61,33 +33,36 @@
                                 @foreach (var request in @Model.MyRequests)
                                 {
                                     <div class="dsd-single-listing-wraps">
-                                        <div class="dsd-single-lst-thumb"><img src="assets/img/listing/l-1.jpg" class="img-fluid" alt="" /></div>
+                                        <div class="dsd-single-lst-thumb"><img src="@request.ServiceImageUrl" class="img-fluid" alt="" /></div>
                                         <div class="dsd-single-lst-caption">
                                             <div class="dsd-single-lst-title"><h5>@request.ServiceName</h5></div>
-                                            <span class="agd-location"><i class="lni lni-map-marker ms-1"></i>@request.Status.GetEnumDisplayName()</span>
+                                            <span class="agd-location">وضعیت: @request.Status.GetEnumDisplayName()</span>
+                                            <br />
+                                            <span class="agd-location">توضیحات: @request.CustomerDescription</span>
                                             <div class="ico-content">
-                                                <div class="Goodup-ft-first">
-                                                    <div class="Goodup-rating">
-                                                        <div class="Goodup-rates">
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                            <i class="fas fa-star"></i>
-                                                        </div>
-                                                    </div>
+                                                @* <div class="Goodup-ft-first">
                                                     <div class="Goodup-price-range">
-                                                        <span class="ft-medium">34 نظر ثبت شده</span>
+                                                        <span class="ft-medium">34 پیشنهاد دریافت کرده‌اید</span>
                                                     </div>
-                                                </div>
+                                                </div> *@
                                             </div>
 
                                             <div class="dsd-single-lst-footer">
-                                                <a asp-page="Suggestions" asp-route-serviceRequestId="@request.Id" class="btn btn-view mr-1"><i class="fas fa-eye ms-1"></i>نمایش پیشنهادات</a>
-                                                <form asp-page-handler="Delete" method="post">
-                                                    <input type="hidden" name="requestId" value="@request.Id" />
-                                                    <button class="btn btn-delete mr-1"><i class="fas fa-trash ms-1"></i>حذف کردن</button>
-                                                </form>
+                                                @if (request.Status == App.Domain.Core.Customer.Enums.ServiceRequestStatus.Failed)
+                                                {
+                                                    <a asp-page="Suggestions" asp-route-serviceRequestId="@request.Id" class="btn btn-view mr-1 disabled"><i class="fas fa-eye ms-1"></i>نمایش پیشنهادات</a>
+                                                }
+                                                else
+                                                {
+                                                    <a asp-page="Suggestions" asp-route-serviceRequestId="@request.Id" class="btn btn-view mr-1"><i class="fas fa-eye ms-1"></i>نمایش پیشنهادات</a>
+                                                }
+                                                @if (request.Status != App.Domain.Core.Customer.Enums.ServiceRequestStatus.Success)
+                                                {
+                                                    <form asp-page-handler="Delete" method="post">
+                                                        <input type="hidden" name="requestId" value="@request.Id" />
+                                                        <button class="btn btn-delete mr-1"><i class="fas fa-trash ms-1"></i>حذف کردن</button>
+                                                    </form>
+                                                }
                                             </div>
                                         </div>
                                     </div>

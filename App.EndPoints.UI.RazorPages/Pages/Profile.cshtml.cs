@@ -53,7 +53,6 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
         public async Task OnGet(CancellationToken cancellationToken)
         {
-            //Provinces = await _provinceAppService.GetProvinces(cancellationToken);
             Cities = await _cityAppService.GetCities(cancellationToken);
             Services = await _serviceAppService.GetServices(cancellationToken);
 
@@ -61,7 +60,6 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
             if (User.IsInRole("Customer"))
             {
-                //var userAli = _customerAppService.Get
                 int? userId;
 
                 var user = User.Claims.FirstOrDefault(c => c.Type == "userCustomerId");
@@ -75,7 +73,6 @@ namespace App.EndPoints.UI.RazorPages.Pages
                 }
                 TempData["UserId"] = userId;
                 CustomerProfileDetails = await _accountAppService.GetCustomerProfileDetails(userId, applicationUserId, cancellationToken);
-                TempData["UserProfileImage"] = CustomerProfileDetails.ProfileImageUrl;
             }
 
             if (User.IsInRole("Expert"))
@@ -92,7 +89,6 @@ namespace App.EndPoints.UI.RazorPages.Pages
 				}
 				TempData["UserId"] = userId;
                 ExpertProfileDetails = await _accountAppService.GetExpertProfileDetails(userId, applicationUserId, cancellationToken);
-                TempData["UserProfileImage"] = ExpertProfileDetails.ProfileImageUrl;
             }
         }
 

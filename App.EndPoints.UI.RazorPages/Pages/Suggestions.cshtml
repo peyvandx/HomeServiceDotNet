@@ -8,35 +8,6 @@
 
 <!-- ======================= dashboard Detail ======================== -->
 <div class="goodup-dashboard-wrap gray px-4 py-5">
-    <a class="mobNavigation" data-bs-toggle="collapse" href="#MobNav" role="button" aria-expanded="false" aria-controls="MobNav">
-        <i class="fas fa-bars ms-2"></i>منو
-    </a>
-    <div class="collapse" id="MobNav">
-        <div class="goodup-dashboard-nav sticky-top">
-            <div class="goodup-dashboard-inner">
-                <ul data-submenu-title="منو">
-                    @* <li><a href="dashboard.html"><i class="lni lni-dashboard ms-2"></i>داشبورد</a></li> *@
-                    <li><a asp-page="MyRequests"><i class="lni lni-files ms-2"></i>آگهی های من</a></li>
-                    <li><a asp-page="Index"><i class="lni lni-add-files ms-2"></i>افزودن آگهی</a></li>
-                    @* <li><a href="dashboard-saved-listings.html"><i class="lni lni-bookmark ms-2"></i>آگهی های موردعلاقه</a></li> *@
-                    @* <li><a href="dashboard-my-bookings.html"><i class="lni lni-briefcase ms-2"></i>لیست رزروها<span class="count-tag bg-warning">4</span></a></li> *@
-                    @* <li><a href="dashboard-wallet.html"><i class="lni lni-mastercard ms-2"></i>کیف پول</a></li> *@
-                    @* <li><a href="dashboard-messages.html"><i class="lni lni-envelope ms-2"></i>پیام ها<span class="count-tag">4</span></a></li> *@
-                </ul>
-                <ul data-submenu-title="حساب کاربری">
-                    <li class="active"><a asp-page="Profile"><i class="lni lni-user ms-2"></i>تنظیمات</a></li>
-                    <li><a asp-page="ChangePassword"><i class="lni lni-lock-alt ms-2"></i>تغییر رمز عبور</a></li>
-                    <li><a href="javascript:void(0);"><i class="lni lni-trash-can ms-2"></i>حذف اکانت</a></li>
-                    <li class="nav-item">
-                        <form class="form-inline" asp-area="Account" asp-page="Logout" asp-route-returnUrl="@Url.Page("/Index", new { area = "" })">
-                            @* <button type="submit" class="nav-link btn btn-link text-dark">خروج</button> *@
-                            <button type="submit" class="btn theme-cl rounded theme-bg-light ft-medium">خروج</button>
-                        </form>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
 
     <div class="goodup-dashboard-content">
         <div class="dashboard-tlbar d-block mb-5">
@@ -53,7 +24,7 @@
                     <div class="dashboard-list-wraps bg-white rounded mb-4">
                         <div class="dashboard-list-wraps-head br-bottom py-3 px-3">
                             <div class="dashboard-list-wraps-flx">
-                                <h4 class="mb-0 ft-medium fs-md"><i class="fas fa-shopping-basket ms-2 theme-cl fs-sm"></i>لیست رزروها</h4>
+                                <h4 class="mb-0 ft-medium fs-md"><i class="fas fa-shopping-basket ms-2 theme-cl fs-sm"></i>لیست پیشنهادات</h4>
                             </div>
                         </div>
 
@@ -65,9 +36,9 @@
                                     <!-- Single booking List -->
                                     @* <form method="post"> *@
                                     <div class="dsd-single-bookings-wraps">
-                                        <div class="dsd-single-book-thumb"><a asp-page="Comment" asp-route-expertId="@suggestion.ExpertId"><img src="assets/img/t-3.png" class="img-fluid circle" alt="" /></a></div>
+                                        <div class="dsd-single-book-thumb"><a asp-page="Comment" asp-route-expertId="@suggestion.ExpertId" asp-route-requestStatus="@suggestion.ServiceRequestStatus" asp-route-serviceRequestId="@suggestion.ServiceRequestId"><img src="@suggestion.ExpertProfileImage" class="img-fluid circle" alt="" /></a></div>
                                         <div class="dsd-single-book-caption">
-                                            <div class="dsd-single-book-title"><h5>@suggestion.ExpertFirstName @suggestion.ExpertLastName <span class="bko-dates">@suggestion.ExpertSignUpDate.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></h5></div>
+                                            <div class="dsd-single-book-title"><h5>@suggestion.ExpertFirstName @suggestion.ExpertLastName <span class="bko-dates">@suggestion.ProposalCreatedAt.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></h5></div>
                                             <div class="ico-content">
                                                 <ul>
                                                     @if (suggestion.IsAccepted is true)
@@ -89,9 +60,18 @@
                                                 </ul>
                                             </div>
                                             <div class="dsd-single-descr">
-                                                <div class="dsd-single-item"><span class="dsd-item-title">توضیحات کارشناس:</span><span class="dsd-item-info">@suggestion.ExpertDescription</span></div>
-                                                <div class="dsd-single-item"><span class="dsd-item-title">تاریخ ارسال پیشنهاد:</span><span class="dsd-item-info">@suggestion.ProposalCreatedAt.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></div>
-                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ:</span><span class="dsd-item-info">@suggestion.ExpertSuggestedPrice تومان</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">نام مشتری:</span><span class="dsd-item-info">@suggestion.CustomerFirstName @suggestion.CustomerLastName</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">شماره موبایل مشتری:</span><span class="dsd-item-info">@suggestion.CustomerPhoneNumber</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">ایمیل مشتری:</span><span class="dsd-item-info">@suggestion.CustomerEmail</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">دسته‌بندی:</span><span class="dsd-item-info">@suggestion.CategoryName</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">سرویس:</span><span class="dsd-item-info">@suggestion.ServiceName</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">توضیحات مشتری:</span><span class="dsd-item-info">@suggestion.CustomerDescription</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ‌پیشنهادی‌مشتری:</span><span class="dsd-item-info">@suggestion.CustomerSuggestedPrice</span> تومان</div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">تاریخ ایجاد درخواست:</span><span class="dsd-item-info">@suggestion.ServiceRequestCreatedAt.Value.ToPersianString("dddd, dd MMMM,yyyy")</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">شماره موبایل کارشناس:</span><span class="dsd-item-info">@suggestion.ExpertPhoneNumber</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">ایمیل کارشناس:</span><span class="dsd-item-info">@suggestion.ExpertEmail</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">توضیحات کارشناس: </span><span class="dsd-item-info">@suggestion.ExpertDescription</span></div>
+                                                <div class="dsd-single-item"><span class="dsd-item-title">مبلغ‌پیشنهادی‌کارشناس:</span><span class="dsd-item-info">@suggestion.ExpertSuggestedPrice</span> تومان</div>
                                             </div>
                                             <div class="dsd-single-book-footer">
                                                 @if (suggestion.IsAccepted is true)
@@ -100,21 +80,29 @@
                                                     @if (suggestion.ServiceRequestStatus == ServiceRequestStatus.Success)
                                                     {
                                                         <a href="" class="btn btn-aprd mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>با موفقیت انجام‌شد</a>
+                                                        <ul>
+                                                            <li><div class="px-2 py-1 medium bg-light-info rounded text-info">شما اکنون می‌توانید برای این کارشناس کامنت ارسال کنید</div></li>
+                                                        </ul>
                                                     }
                                                     else if (suggestion.ServiceRequestStatus == ServiceRequestStatus.Failed)
                                                     {
                                                         <a class="btn btn-reject mr-1 disabled"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌نشد</a>
+                                                        <ul>
+                                                            <li><div class="px-2 py-1 medium bg-light-warning rounded text-warning">شما اکنون می‌توانید برای این کارشناس کامنت ارسال کنید</div></li>
+                                                        </ul>
                                                     }
                                                     else
                                                     {
                                                         <form asp-page-handler="Successful" method="post">
                                                             <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ServiceRequestId" value="@suggestion.ServiceRequestId" />
                                                             <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalId" value="@suggestion.Id" />
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalExpertId" value="@suggestion.ExpertId" />
                                                             <button type="submit" class="btn btn-aprd mr-1"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌شد</button>
                                                         </form>
                                                         <form asp-page-handler="Unsuccessful" method="post">
                                                             <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ServiceRequestId" value="@suggestion.ServiceRequestId" />
                                                             <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalId" value="@suggestion.Id" />
+                                                            <input type="hidden" asp-for="@Model.ServiceRequestProposalIds.ProposalExpertId" value="@suggestion.ExpertId" />
                                                             <button type="submit" class="btn btn-reject mr-1"><i class="fas fa-check-circle ms-1"></i>درخواست با موفقیت انجام‌نشد</button>
                                                         </form>
                                                     }

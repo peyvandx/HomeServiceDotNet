@@ -36,6 +36,11 @@ namespace App.EndPoints.UI.RazorPages.Pages
 
         public async Task<IActionResult> OnPostSendProposal(CancellationToken cancellationToken)
         {
+			if (!ModelState.IsValid)
+			{
+				return RedirectToAction("OnGet", new { serviceRequestId = Proposal.ServiceRequestId });
+				//return RedirectToAction("OnGet", new { expertId = (int)TempData["ExpertId"] });
+			}
 			var applicationUserId = int.Parse(User.Claims.First().Value);
 			//check profile page line 75
 			int? userId;

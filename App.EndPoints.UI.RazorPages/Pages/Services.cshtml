@@ -11,26 +11,30 @@
         <div class="row">
 
             <!-- Item Wrap Start -->
-            <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12">
+            @* <div class="col-xl-9 col-lg-8 col-md-12 col-sm-12"> *@
 
                 <!-- row -->
                 <div class="row justify-content-center gx-3">
+                @if (Model.Services.Count == 0)
+                {
+                    <p class="center ql-color-orange">در حال حاضر هیچ سرویسی متناسب با این دسته‌بندی وجود ندارد</p>
+                }
 
                     @foreach (var service in Model.Services)
                     {
                         <!-- Single -->
-                        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="Goodup-grid-wrap">
                                 <div class="Goodup-grid-upper">
                                     <div class="Goodup-grid-thumb">
-                                        <a asp-page="Request" asp-route-serviceId="@service.Id" class="d-block text-center m-auto"><img src="assets/img/listing/l-5.jpg" class="img-fluid" alt=""></a>
+                                        <a asp-page="Request" asp-route-serviceId="@service.Id" class="d-block text-center m-auto"><img src="@service.Image" class="img-fluid" alt=""></a>
                                     </div>
                                 </div>
                                 <div class="Goodup-grid-fl-wrap">
                                     <div class="Goodup-caption px-3 py-2">
                                         @* <div class="Goodup-author"><a href="author-detail.html"><img src="assets/img/t-1.png" class="img-fluid circle" alt=""></a></div> *@
                                         <h4 class="mb-0 ft-medium medium text-dark fs-md">@service.Title</h4>
-                                        @* <div class="Goodup-location"><i class="fas fa-map-marker-alt ms-1 theme-cl"></i>کالیفرنیا، ایالات متحده آمریکا</div> *@
+                                        <div class="Goodup-location">@service.ShortDescription</div>
                                         @* <div class="Goodup-middle-caption mt-3">
                                     <p>شرایط فعلی تکنولوژی مورد نیاز</p>
                                     </div> *@
@@ -41,8 +45,11 @@
                                         </div>
                                         <div class="Goodup-ft-last">
                                             <div class="Goodup-inline">
-                                                <div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-envelope position-absolute"></i></button></div>
-                                                <div class="Goodup-bookmark-btn"><button type="button"><i class="lni lni-heart-filled position-absolute"></i></button></div>
+                                            <div class="Goodup-single-drp small">
+                                                <div class="btn-group">
+                                                    <a type="button" asp-page="Request" asp-route-serviceId="@service.Id" class="btn bg-dark text-light">مشاهده</a>
+                                                </div>
+                                            </div>
                                             </div>
                                         </div>
                                     </div>
@@ -54,7 +61,7 @@
                     <!-- row -->
 
                 </div>
-            </div>
+            @* </div> *@
         </div>
     </div>
 </section>

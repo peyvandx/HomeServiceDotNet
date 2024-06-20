@@ -10,5 +10,7 @@ namespace App.Domain.Core.Admin.AppServices
     public interface IBaseAppService
     {
         public Task<string> UploadImage(IFormFile image);
+        //public Task<int?> GetCustomerUserId(int applicationUserId, CancellationToken cancellationToken);
+        //public Task<int?> GetExpertUserId(int applicationUserId, CancellationToken cancellationToken);
     }
 }

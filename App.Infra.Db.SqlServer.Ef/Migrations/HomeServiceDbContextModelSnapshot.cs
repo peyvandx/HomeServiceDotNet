@@ -69,7 +69,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "ادمینیان پور",
                             ProfileImage = "/UserAssets/img/admin/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 354, DateTimeKind.Local).AddTicks(8061)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 536, DateTimeKind.Local).AddTicks(3187)
                         });
                 });
 
@@ -145,16 +145,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 1,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "18444120-fe88-43b3-8bb1-7c39aec1ff0b",
+                            ConcurrencyStamp = "7d6ebbac-3bde-4516-bf16-4fffcba16692",
                             Email = "Admin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ADMIN@GMAIL.COM",
                             NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEHIflU5Y7+lzrxcCkqOMG30WZnOBZ/MmIPbusRopFzSHTHoGBJN9ydyu3t59TZCA4A==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEO8rRAA71zO5KzD5tsRYGsLEJ8y6QrEEIHgrGPGj3+rE1WSNPfUbxG+9mMP5SWesZg==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "d8c9585a-916a-4252-ad6e-134508bb5b2c",
+                            SecurityStamp = "cd8cc528-53c2-497d-9724-3f48b238abd3",
                             TwoFactorEnabled = false,
                             UserName = "Admin@gmail.com"
                         },
@@ -162,16 +162,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 2,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "aa105ace-dcdf-413e-9ca7-3c303e345c16",
+                            ConcurrencyStamp = "3127af10-7012-44ca-a0b0-da8b97efdc60",
                             Email = "Ali@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "ALI@GMAIL.COM",
                             NormalizedUserName = "ALI@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAECbAw/YCq/60UvjwVlIv3YAcA8IcQp9XUzlS3G0zRwn5Y3qUXvOsiaBQGElG4Pn/qg==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEDJfJRf0VJEvLCvbwhJthXeLdlHZTpztHo42CxUgAzL5ygGvqieF/3Zw0NXbYz66zw==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "708bcf8a-f648-44e5-899a-36490bc6ec50",
+                            SecurityStamp = "954058b6-d53f-4fc0-a354-21bae319a7bd",
                             TwoFactorEnabled = false,
                             UserName = "Ali@gmail.com"
                         },
@@ -179,16 +179,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 3,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "0eccbf6f-c483-4047-b7cf-b5b251844728",
+                            ConcurrencyStamp = "c954e7f1-07a9-47a6-a6ca-329711a16f65",
                             Email = "Sahar@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "SAHAR@GMAIL.COM",
                             NormalizedUserName = "SAHAR@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAELXCdkyHnqXvaq8MzRUmGaFGVeaXE1/ViukLzdGJvfNb0fU4IkBVSu5BvNdBkXOGSw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMUHu8CoC/dCOBKdM2qY87A67zP4IWHwGsGtVC5+4Emc2ZRpP/hPK7pXzPNAiOYUbg==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "b95aad5e-d02f-4a06-bc39-b4bc045c5e3c",
+                            SecurityStamp = "0cfe967f-6d6d-4ede-b27f-c1f101aa6b16",
                             TwoFactorEnabled = false,
                             UserName = "Sahar@gmail.com"
                         },
@@ -196,16 +196,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 4,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4025fe4c-ef25-410a-9f25-f62937b77d6c",
+                            ConcurrencyStamp = "e1be9f38-19ee-4e56-99e7-89632351fe95",
                             Email = "Maryam@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "MARYAM@GMAIL.COM",
                             NormalizedUserName = "MARYAM@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEDPmJa24/GEwq7oihEPubW/Xsci3esgBNs1JN/OGymzX9H/pBIfo6ic8CU+ueobpYw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEFzpTpA382XxVEK1It/bKgCfuadF9lzBPT8pKWUvNRGns/U1fu80MyO/RUyFvoG9eA==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "fc48ab65-318e-4ebe-b0d5-d4e85a31753e",
+                            SecurityStamp = "93d0bd77-afc7-42b5-adf4-eff26ea60202",
                             TwoFactorEnabled = false,
                             UserName = "Maryam@gmail.com"
                         },
@@ -213,16 +213,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 5,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "341c8d1d-bc39-4c65-97e2-9710060ec9b9",
+                            ConcurrencyStamp = "88bcbb36-27ba-4266-a31e-009adeaa52fe",
                             Email = "Afshin@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "AFSHIN@GMAIL.COM",
                             NormalizedUserName = "AFSHIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPqfezKs4/7d3md82Eeeqkq6BKy97EYNADJ0QkPNlHTeBExFWuofrJvRPX1GWQoZbA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEH3nXntQzXyQav4CbbeWO7FATskepz5jwfnOo+SG6Kj3EeGcxyOBvXJvkHe/JDE2Dw==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "7f92d686-9422-44d7-8033-d39a9f09327d",
+                            SecurityStamp = "8970bd3f-5c57-4a11-8756-537e055d15f1",
                             TwoFactorEnabled = false,
                             UserName = "Afshin@gmail.com"
                         },
@@ -230,16 +230,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 6,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "4e42752a-c01f-4f3d-bfe9-2eee4ca94b16",
+                            ConcurrencyStamp = "96af1be6-d49c-46d4-aa6c-2358b3f45759",
                             Email = "Faran@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "FARAN@GMAIL.COM",
                             NormalizedUserName = "FARAN@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEP3f2dpZrC+h9O94COXSNLBT/UCPV8K7oMzNLRSXVBHFXgDPf/UjcO7y2B/X2ifXJQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAENT6t3pYG6OfGUOEAyNu++3LYWGTnoqxiIS/KcEDA7R4wFIEia1+aTQoNCJiUMSCDw==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "671b81fd-8526-4de8-97f9-bbbd25a1142d",
+                            SecurityStamp = "dcfc8d4d-3f39-48c5-a4ba-8fcec470488c",
                             TwoFactorEnabled = false,
                             UserName = "Faran@gmail.com"
                         },
@@ -247,16 +247,16 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 7,
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "ed6fedc4-9905-44fe-ba2d-61e30d1ca68e",
+                            ConcurrencyStamp = "470d70e6-c96c-44c4-a596-c00fd5eb136f",
                             Email = "Ayda@gmail.com",
                             EmailConfirmed = false,
                             LockoutEnabled = false,
                             NormalizedEmail = "AYDA@GMAIL.COM",
                             NormalizedUserName = "AYDA@GMAIL.COM",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBUpcZe/vY0i49ai0xOjvaOL0Q4qL3LhoQrxgZl0iSniuG43S7eliWpDkjgjRo/DqA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEB23p+2+Dh14/VDIATSu6tPTwLKbLZ91Zp3fsvBuVCIE6nRg6HmqSvANtx6hDoGuog==",
                             PhoneNumber = "09377507920",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4e8dd1d0-dffb-4f26-8846-8f8f8f1097a5",
+                            SecurityStamp = "b92c4239-b809-40c6-be1c-8a3b22f825ba",
                             TwoFactorEnabled = false,
                             UserName = "Ayda@gmail.com"
                         });
@@ -327,217 +327,217 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1415),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8070),
                             IsDeleted = false,
                             Name = "آذربایجان شرقی"
                         },
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1432),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8085),
                             IsDeleted = false,
                             Name = "آذربایجان غربی"
                         },
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1434),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8087),
                             IsDeleted = false,
                             Name = "اردبیل"
                         },
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1436),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8089),
                             IsDeleted = false,
                             Name = "اصفهان"
                         },
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1438),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8091),
                             IsDeleted = false,
                             Name = "البرز"
                         },
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1441),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8094),
                             IsDeleted = false,
                             Name = "ایلام"
                         },
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1442),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8096),
                             IsDeleted = false,
                             Name = "بوشهر"
                         },
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1444),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8098),
                             IsDeleted = false,
                             Name = "تهران"
                         },
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1446),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8100),
                             IsDeleted = false,
                             Name = "چهارمحال و بختیاری"
                         },
                         new
                         {
                             Id = 10,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1448),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8101),
                             IsDeleted = false,
                             Name = "خراسان جنوبی"
                         },
                         new
                         {
                             Id = 11,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1450),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8103),
                             IsDeleted = false,
                             Name = "خراسان رضوی"
                         },
                         new
                         {
                             Id = 12,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1452),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8105),
                             IsDeleted = false,
                             Name = "خراسان شمالی"
                         },
                         new
                         {
                             Id = 13,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1454),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8107),
                             IsDeleted = false,
                             Name = "خوزستان"
                         },
                         new
                         {
                             Id = 14,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1456),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8109),
                             IsDeleted = false,
                             Name = "زنجان"
                         },
                         new
                         {
                             Id = 15,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1458),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8111),
                             IsDeleted = false,
                             Name = "سمنان"
                         },
                         new
                         {
                             Id = 16,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1460),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8113),
                             IsDeleted = false,
                             Name = "سیستان و بلوچستان"
                         },
                         new
                         {
                             Id = 17,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1462),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8115),
                             IsDeleted = false,
                             Name = "فارس"
                         },
                         new
                         {
                             Id = 18,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1464),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8117),
                             IsDeleted = false,
                             Name = "قزوین"
                         },
                         new
                         {
                             Id = 19,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1466),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8119),
                             IsDeleted = false,
                             Name = "قم"
                         },
                         new
                         {
                             Id = 20,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1468),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8120),
                             IsDeleted = false,
                             Name = "کردستان"
                         },
                         new
                         {
                             Id = 21,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1470),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8122),
                             IsDeleted = false,
                             Name = "کرمان"
                         },
                         new
                         {
                             Id = 22,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1471),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8124),
                             IsDeleted = false,
                             Name = "کرمانشاه"
                         },
                         new
                         {
                             Id = 23,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1473),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8126),
                             IsDeleted = false,
                             Name = "کهگیلویه و بویراحمد"
                         },
                         new
                         {
                             Id = 24,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1475),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8128),
                             IsDeleted = false,
                             Name = "گلستان"
                         },
                         new
                         {
                             Id = 25,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1477),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8130),
                             IsDeleted = false,
                             Name = "گیلان"
                         },
                         new
                         {
                             Id = 26,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1479),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8132),
                             IsDeleted = false,
                             Name = "لرستان"
                         },
                         new
                         {
                             Id = 27,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1481),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8133),
                             IsDeleted = false,
                             Name = "مازندران"
                         },
                         new
                         {
                             Id = 28,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1483),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8135),
                             IsDeleted = false,
                             Name = "مرکزی"
                         },
                         new
                         {
                             Id = 29,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1485),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8137),
                             IsDeleted = false,
                             Name = "هرمزگان"
                         },
                         new
                         {
                             Id = 30,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1487),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8139),
                             IsDeleted = false,
                             Name = "همدان"
                         },
                         new
                         {
                             Id = 31,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 361, DateTimeKind.Local).AddTicks(1489),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 542, DateTimeKind.Local).AddTicks(8141),
                             IsDeleted = false,
                             Name = "یزد"
                         });
@@ -574,11 +574,18 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<int>("Rate")
                         .HasColumnType("int");
 
+                    b.Property<int?>("ServiceRequestId")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CustomerId");
 
                     b.HasIndex("ExpertId");
+
+                    b.HasIndex("ServiceRequestId")
+                        .IsUnique()
+                        .HasFilter("[ServiceRequestId] IS NOT NULL");
 
                     b.ToTable("Comments");
                 });
@@ -655,7 +662,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "محمدی",
                             ProfileImage = "/UserAssets/img/customer/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6235)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 540, DateTimeKind.Local).AddTicks(8011)
                         },
                         new
                         {
@@ -665,7 +672,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "رمضانی",
                             ProfileImage = "/UserAssets/img/customer/2.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6300)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 540, DateTimeKind.Local).AddTicks(8039)
                         },
                         new
                         {
@@ -675,7 +682,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "اکبری",
                             ProfileImage = "/UserAssets/img/customer/3.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(6308)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 540, DateTimeKind.Local).AddTicks(8046)
                         });
                 });
 
@@ -686,6 +693,9 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("CommentId")
+                        .HasColumnType("int");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
@@ -698,6 +708,10 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
+                    b.Property<double?>("CustomerSuggestedPrice")
+                        .IsRequired()
+                        .HasColumnType("float");
+
                     b.Property<int?>("ExpertId")
                         .HasColumnType("int");
 
@@ -706,9 +720,6 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
                     b.Property<bool>("IsDone")
                         .HasColumnType("bit");
-
-                    b.Property<double>("Price")
-                        .HasColumnType("float");
 
                     b.Property<int>("ServiceId")
                         .HasColumnType("int");
@@ -764,8 +775,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9417),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(861),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/دکوراسیون-ساختمان.png",
                             IsDeleted = false,
                             Title = "دکوراسیون ساختمان"
@@ -773,8 +784,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9433),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(875),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/تاسیسات-ساختمان.jpg",
                             IsDeleted = false,
                             Title = "تاسیسات ساختمان"
@@ -782,8 +793,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9435),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(877),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/وسایل-نقلیه.jpg",
                             IsDeleted = false,
                             Title = "وسایل نقلیه"
@@ -791,8 +802,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 4,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9445),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(882),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/اسباب-کشی-و-باربری.jpg",
                             IsDeleted = false,
                             Title = "اسباب کشی و باربری"
@@ -800,8 +811,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9447),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(885),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/لوازم-خانگی.png",
                             IsDeleted = false,
                             Title = "لوازم خانگی"
@@ -809,8 +820,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9449),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(887),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/خدمات-اداری.jpg",
                             IsDeleted = false,
                             Title = "خدمات اداری"
@@ -818,8 +829,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9452),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(889),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/دیجیتال-و-نرم-افزار.jpg",
                             IsDeleted = false,
                             Title = "دیجیتال و نرم افزار"
@@ -827,8 +838,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9454),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(891),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/نظافت-و-بهداشت.jpg",
                             IsDeleted = false,
                             Title = "نظافت و بهداشت"
@@ -836,8 +847,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         new
                         {
                             Id = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 359, DateTimeKind.Local).AddTicks(9470),
-                            Description = "لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم لورم ایپسوم ",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(909),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Image = "/assets/img/category/پزشکی-و-سلامت.jpg",
                             IsDeleted = false,
                             Title = "پزشکی و سلامت"
@@ -921,7 +932,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "احمدیان‌پور",
                             ProfileImage = "/UserAssets/img/expert/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4860)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 538, DateTimeKind.Local).AddTicks(8183)
                         },
                         new
                         {
@@ -931,7 +942,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "علی‌زاده",
                             ProfileImage = "/UserAssets/img/expert/1.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4910)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 538, DateTimeKind.Local).AddTicks(8210)
                         },
                         new
                         {
@@ -941,7 +952,7 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                             IsDeleted = false,
                             LastName = "بهرامی",
                             ProfileImage = "/UserAssets/img/expert/2.jpg",
-                            SignUpDate = new DateTime(2024, 6, 4, 6, 36, 40, 357, DateTimeKind.Local).AddTicks(4914)
+                            SignUpDate = new DateTime(2024, 6, 19, 9, 41, 27, 538, DateTimeKind.Local).AddTicks(8213)
                         });
                 });
 
@@ -1017,6 +1028,11 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("bit");
 
+                    b.Property<string>("ShortDescription")
+                        .IsRequired()
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
                     b.Property<string>("Title")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -1033,1080 +1049,1188 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         {
                             Id = 1,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1974),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3425),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کاشی-و-سرامیک.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کاشی و سرامیک"
                         },
                         new
                         {
                             Id = 2,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1990),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3440),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/بنایی-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "بنایی ساختمان"
                         },
                         new
                         {
                             Id = 3,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1993),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3442),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/گچ-کاری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "گچ کاری"
                         },
                         new
                         {
                             Id = 4,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1995),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3445),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کارگر-ساده.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کارگر ساده"
                         },
                         new
                         {
                             Id = 5,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(1997),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3447),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/بازسازی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "بازسازی"
                         },
                         new
                         {
                             Id = 6,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2000),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3449),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کانال-سازی-و-دریچه-کولر.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کانال سازی و دریچه کولر"
                         },
                         new
                         {
                             Id = 7,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2002),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3453),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/عایق-کاری-و-ایزوگام.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "عایق کاری و ایزوگام"
                         },
                         new
                         {
                             Id = 8,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2005),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3493),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سنگ-کاری.jpeg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سنگ کاری"
                         },
                         new
                         {
                             Id = 9,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2007),
-                            Description = "",
-                            Image = "",
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3496),
+                            Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
+                            Image = "/assets/img/service/سیمان-کاری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سیمان کاری"
                         },
                         new
                         {
                             Id = 10,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2009),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3499),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نقاشی ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نقاشی ساختمان"
                         },
                         new
                         {
                             Id = 11,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2019),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3506),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/خدمات-کابینت.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کابینت"
                         },
                         new
                         {
                             Id = 12,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2025),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3509),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کاغذ-دیواری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کاغذ دیواری"
                         },
                         new
                         {
                             Id = 13,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2028),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3511),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نجاری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نجاری"
                         },
                         new
                         {
                             Id = 14,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2033),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3519),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کفسابی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کفسابی"
                         },
                         new
                         {
                             Id = 15,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2064),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3542),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کفپوش.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کفپوش"
                         },
                         new
                         {
                             Id = 16,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2067),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3545),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پارکت.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پارکت"
                         },
                         new
                         {
                             Id = 17,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2069),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3548),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/لمینت.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "لمینت"
                         },
                         new
                         {
                             Id = 18,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2072),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3550),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/موکت.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "موکت"
                         },
                         new
                         {
                             Id = 19,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2074),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3553),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/دوخت-پرده.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "دوخت پرده"
                         },
                         new
                         {
                             Id = 20,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2076),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3555),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/مبلمان.jpeg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "مبلمان"
                         },
                         new
                         {
                             Id = 21,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2079),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3557),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سرویس-خواب.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سرویس خواب"
                         },
                         new
                         {
                             Id = 22,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2081),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3560),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سقف-کاذب.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سقف کاذب"
                         },
                         new
                         {
                             Id = 23,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2083),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3563),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نمای-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نمای ساختمان"
                         },
                         new
                         {
                             Id = 24,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2086),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3565),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر-نمای-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر نمای ساختمان"
                         },
                         new
                         {
                             Id = 25,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2088),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3567),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/شیشه-بری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "شیشه بری"
                         },
                         new
                         {
                             Id = 26,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2090),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3570),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/توری-پنجره.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "توری پنجره"
                         },
                         new
                         {
                             Id = 27,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2093),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3572),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نصب-درب-چوبی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نصب درب چوبی"
                         },
                         new
                         {
                             Id = 28,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2096),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3574),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/جوشکاری-و-آهنگری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "جوشکاری و آهنگری"
                         },
                         new
                         {
                             Id = 29,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2098),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3577),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کلید-سازی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کلید سازی"
                         },
                         new
                         {
                             Id = 30,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2100),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3579),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/گل-و-گیاه-آپارتمانی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "گل و گیاه آپارتمانی"
                         },
                         new
                         {
                             Id = 31,
                             CategoryId = 1,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2103),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3581),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/باغبانی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "باغبانی"
                         },
                         new
                         {
                             Id = 32,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2105),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3583),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کولر-آبی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کولر آبی"
                         },
                         new
                         {
                             Id = 33,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2107),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3586),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/کولر-گازی.jpeg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "کولر گازی"
                         },
                         new
                         {
                             Id = 34,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2110),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3590),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پکیج.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پکیج"
                         },
                         new
                         {
                             Id = 35,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2112),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3592),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/آبگرمکن.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "آبگرمکن"
                         },
                         new
                         {
                             Id = 36,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2114),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3594),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/فن-کویل.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "فن‌کویل"
                         },
                         new
                         {
                             Id = 37,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2117),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3597),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/چیلر-و-هواساز.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "چیلر و هواساز"
                         },
                         new
                         {
                             Id = 38,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2119),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3600),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/رادیاتور-شوفاژ.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "رادیاتور شوفاژ"
                         },
                         new
                         {
                             Id = 39,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2121),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3602),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/موتورخانه.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "موتورخانه"
                         },
                         new
                         {
                             Id = 40,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2124),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3605),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/بخاری-گازی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "بخاری گازی"
                         },
                         new
                         {
                             Id = 41,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2127),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3607),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/شومینه-گازی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "شومینه گازی"
                         },
                         new
                         {
                             Id = 42,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2129),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3609),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/لوله-کشی-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "لوله کشی"
                         },
                         new
                         {
                             Id = 43,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2132),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3611),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/شیرآلات-ساختمانی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "شیرآلات ساختمانی"
                         },
                         new
                         {
                             Id = 44,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2134),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3614),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/لوله-بازکنی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "لوله بازکنی"
                         },
                         new
                         {
                             Id = 45,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2136),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3616),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/توالت-فرنگی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "توالت فرنگی"
                         },
                         new
                         {
                             Id = 46,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2138),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3618),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پمپ-آب.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پمپ آب"
                         },
                         new
                         {
                             Id = 47,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2141),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3621),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/لوله‌-کشی-گاز.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "لوله‌ کشی گاز"
                         },
                         new
                         {
                             Id = 48,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2143),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3623),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تخلیه-چاه.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تخلیه چاه"
                         },
                         new
                         {
                             Id = 49,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2145),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3625),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/فلاش-تانک.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "فلاش تانک"
                         },
                         new
                         {
                             Id = 50,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2208),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3629),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/روشویی-و-دست‌شور.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "روشویی و دست‌شور"
                         },
                         new
                         {
                             Id = 51,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2211),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3631),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سینک-ظرفشویی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سینک ظرفشویی"
                         },
                         new
                         {
                             Id = 52,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2213),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3633),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/برق-کاری-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "برق کاری ساختمان"
                         },
                         new
                         {
                             Id = 53,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2216),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3636),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/آیفون-تصویری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "آیفون تصویری"
                         },
                         new
                         {
                             Id = 54,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2218),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3638),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/لوستر.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "لوستر"
                         },
                         new
                         {
                             Id = 55,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2221),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3640),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/دوربین-مداربسته.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "دوربین مداربسته"
                         },
                         new
                         {
                             Id = 56,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2224),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3643),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/هواکش.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "هواکش"
                         },
                         new
                         {
                             Id = 57,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2226),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3645),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/آنتن-دیجیتال.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "آنتن دیجیتال"
                         },
                         new
                         {
                             Id = 58,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2229),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3647),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نورپردازی-ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نورپردازی ساختمان"
                         },
                         new
                         {
                             Id = 59,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2231),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3650),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تایمر-مشاعات.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تایمر مشاعات"
                         },
                         new
                         {
                             Id = 60,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2233),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3652),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/جعبه_فیوز.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "جعبه فیوز"
                         },
                         new
                         {
                             Id = 61,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2236),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3654),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/خدمات-داکت-کشی-شبکه.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "داکت کشی و ترانکینگ"
                         },
                         new
                         {
                             Id = 62,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2238),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3657),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سیم-کشی-تلفن.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سیم کشی تلفن"
                         },
                         new
                         {
                             Id = 63,
                             CategoryId = 2,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2240),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3659),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سیم کشی سانترال.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سیم کشی سانترال"
                         },
                         new
                         {
                             Id = 64,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2243),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3662),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/صافکاری و نقاشی خودرو.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "صافکاری و نقاشی خودرو"
                         },
                         new
                         {
                             Id = 65,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2245),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3664),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعویض روغن.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعویض روغن"
                         },
                         new
                         {
                             Id = 66,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2247),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3667),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر خودرو.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر خودرو"
                         },
                         new
                         {
                             Id = 67,
                             CategoryId = 3,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2250),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3669),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/برق خودرو.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "برق خودرو"
                         },
                         new
                         {
                             Id = 68,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2252),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3672),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/اسباب کشی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "اسباب کشی"
                         },
                         new
                         {
                             Id = 69,
                             CategoryId = 4,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2254),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3674),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/حمل بار.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "حمل بار"
                         },
                         new
                         {
                             Id = 70,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2257),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3676),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/یخچال.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "یخچال"
                         },
                         new
                         {
                             Id = 71,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2259),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3679),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/ماشین ظرفشویی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "ماشین ظرفشویی"
                         },
                         new
                         {
                             Id = 72,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2262),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3681),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سرویس-تعمیر-ماکروویو.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "مایکروفر"
                         },
                         new
                         {
                             Id = 73,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2264),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3683),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/اجاق برقی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "اجاق برقی"
                         },
                         new
                         {
                             Id = 74,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2267),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3686),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/هود آشپزخانه.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "هود آشپزخانه"
                         },
                         new
                         {
                             Id = 75,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2269),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3688),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/اجاق-گاز.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "اجاق گاز"
                         },
                         new
                         {
                             Id = 76,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2271),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3690),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/ماشین لباسشویی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "ماشین لباسشویی"
                         },
                         new
                         {
                             Id = 77,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2274),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3693),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/اتو بخار.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "اتو بخار"
                         },
                         new
                         {
                             Id = 78,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2276),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3695),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/اتو پرس.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "اتو پرس"
                         },
                         new
                         {
                             Id = 79,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2279),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3697),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/جاروبرقی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "جاروبرقی"
                         },
                         new
                         {
                             Id = 80,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2281),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3700),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/جارو شارژی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "جارو شارژی"
                         },
                         new
                         {
                             Id = 81,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2283),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3702),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تلویزیون.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تلویزیون"
                         },
                         new
                         {
                             Id = 82,
                             CategoryId = 5,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2286),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3705),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/سینما خانگی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سینما خانگی"
                         },
                         new
                         {
                             Id = 83,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2288),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3707),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/دستگاه کپی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "دستگاه کپی"
                         },
                         new
                         {
                             Id = 84,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2290),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3709),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/فکس.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "فکس"
                         },
                         new
                         {
                             Id = 85,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2293),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3712),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پرینتر.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پرینتر"
                         },
                         new
                         {
                             Id = 86,
                             CategoryId = 6,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2296),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3714),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پارتیشن اداری.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پارتیشن اداری"
                         },
                         new
                         {
                             Id = 97,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2298),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3716),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر موبایل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر موبایل"
                         },
                         new
                         {
                             Id = 98,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2301),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3719),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر لپ‌تاپ.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر لپ‌تاپ"
                         },
                         new
                         {
                             Id = 99,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2303),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3721),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر سخت افزار کامپیوتر.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر سخت افزار کامپیوتر"
                         },
                         new
                         {
                             Id = 100,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2306),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3723),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نصب نرم افزار.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نصب نرم افزار"
                         },
                         new
                         {
                             Id = 101,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2308),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3727),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نصب ویندوز در محل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نصب ویندوز در محل"
                         },
                         new
                         {
                             Id = 102,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2311),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3729),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/تعمیر مودم اینترنت.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "تعمیر مودم اینترنت"
                         },
                         new
                         {
                             Id = 103,
                             CategoryId = 7,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2313),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3731),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/راه‌ اندازی شبکه کامپیوتری.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "راه‌ اندازی شبکه کامپیوتری"
                         },
                         new
                         {
                             Id = 87,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2316),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3766),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نظافت دوره ای.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نظافت دوره ای"
                         },
                         new
                         {
                             Id = 88,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2318),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3768),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نظافت منزل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نظافت منزل"
                         },
                         new
                         {
                             Id = 89,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2320),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3770),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نظافت ساختمان.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نظافت ساختمان"
                         },
                         new
                         {
                             Id = 90,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2323),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3773),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نظافت شرکت و اداره.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نظافت شرکت و اداره"
                         },
                         new
                         {
                             Id = 91,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2325),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3775),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/ضدعفونی منزل و محل کار.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "ضدعفونی منزل و محل کار"
                         },
                         new
                         {
                             Id = 92,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2327),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3777),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/خشکشویی آنلاین.png",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "خشکشویی آنلاین"
                         },
                         new
                         {
                             Id = 93,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2330),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3780),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/خشکشویی پرده.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "خشکشویی پرده"
                         },
                         new
                         {
                             Id = 94,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2332),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3782),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/قالیشویی آنلاین.webp",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "قالیشویی آنلاین"
                         },
                         new
                         {
                             Id = 95,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2334),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3785),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/مبل شویی.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "مبل شویی"
                         },
                         new
                         {
                             Id = 96,
                             CategoryId = 8,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2337),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3787),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/خدمات-سمپاشی-منازل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "سمپاشی منازل"
                         },
                         new
                         {
                             Id = 104,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2340),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3789),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/آزمایش در محل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "آزمایش در محل"
                         },
                         new
                         {
                             Id = 105,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2342),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3792),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/پرستاری در منزل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "پرستاری در منزل"
                         },
                         new
                         {
                             Id = 106,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2344),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3794),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/ویزیت پزشک در منزل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "ویزیت پزشک در منزل"
                         },
                         new
                         {
                             Id = 107,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2346),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3796),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/نوار قلب در محل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "نوار قلب در محل"
                         },
                         new
                         {
                             Id = 108,
                             CategoryId = 9,
-                            CreatedAt = new DateTime(2024, 6, 4, 6, 36, 40, 360, DateTimeKind.Local).AddTicks(2349),
+                            CreatedAt = new DateTime(2024, 6, 19, 9, 41, 27, 541, DateTimeKind.Local).AddTicks(3799),
                             Description = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد، کتابهای زیادی در شصت و سه درصد گذشته حال و آینده، شناخت فراوان جامعه و متخصصان را می طلبد، تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی، و فرهنگ پیشرو در زبان فارسی ایجاد کرد، در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها، و شرایط سخت تایپ به پایان رسد و زمان مورد نیاز شامل حروفچینی دستاوردهای اصلی، و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.",
-                            Image = "",
+                            Image = "/assets/img/service/فیزیوتراپی در منزل.jpg",
                             IsDeleted = false,
+                            ShortDescription = "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است",
                             Title = "فیزیوتراپی در منزل"
                         });
                 });
@@ -2388,9 +2512,15 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
 
+                    b.HasOne("App.Domain.Core.Customer.Entities.ServiceRequest", "ServiceRequest")
+                        .WithOne("Comment")
+                        .HasForeignKey("App.Domain.Core.Customer.Entities.Comment", "ServiceRequestId");
+
                     b.Navigation("Customer");
 
                     b.Navigation("Expert");
+
+                    b.Navigation("ServiceRequest");
                 });
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.Customer", b =>
@@ -2589,6 +2719,8 @@ namespace App.Infra.Db.SqlServer.Ef.Migrations
 
             modelBuilder.Entity("App.Domain.Core.Customer.Entities.ServiceRequest", b =>
                 {
+                    b.Navigation("Comment");
+
                     b.Navigation("Proposals");
                 });
 

@@ -20,15 +20,15 @@ namespace App.EndPoints.UI.RazorPages.Areas.Account.Pages
         public LoginDto Input { get; set; }
 
 
-        public class InputModel
-        {
-            [Required]
-            public string Email { get; set; }
+        //public class InputModel
+        //{
+        //    [Required]
+        //    public string Email { get; set; }
 
-            [Required]
-            public string Password { get; set; }
+        //    [Required]
+        //    public string Password { get; set; }
 
-        }
+        //}
 
 
 
@@ -38,7 +38,6 @@ namespace App.EndPoints.UI.RazorPages.Areas.Account.Pages
 
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
-
             returnUrl ??= Url.Content("~/");
 
             if (!ModelState.IsValid) return Page();

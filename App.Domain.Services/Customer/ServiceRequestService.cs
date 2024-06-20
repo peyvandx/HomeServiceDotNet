@@ -32,7 +32,7 @@ namespace App.Domain.Services.Customer
             creatingServiceRequest.CreatedAt = DateTime.Now;
             creatingServiceRequest.Status = ServiceRequestStatus.WaitingForExpertsProposals;
             creatingServiceRequest.CustomerDescription = serviceRequestDto.CustomerDescription;
-            creatingServiceRequest.Price = serviceRequestDto.Price;
+            creatingServiceRequest.CustomerSuggestedPrice = serviceRequestDto.Price;
             creatingServiceRequest.CustomerId = serviceRequestDto.CustomerId;
             //creatingServiceRequest.ExpertId = serviceRequestDto.ExpertId;
             creatingServiceRequest.ServiceId = serviceRequestDto.ServiceId;
@@ -64,7 +64,7 @@ namespace App.Domain.Services.Customer
         {
             var updatedServiceRequest = new ServiceRequest();
             updatedServiceRequest.CustomerDescription = serviceRequestDto.CustomerDescription;
-            updatedServiceRequest.Price = serviceRequestDto.Price;
+            updatedServiceRequest.CustomerSuggestedPrice = serviceRequestDto.Price;
             return await _serviceRequestRepository.UpdateServiceRequest(updatedServiceRequest, cancellationToken);
         }
 

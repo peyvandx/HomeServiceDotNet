@@ -32,6 +32,7 @@ namespace App.Domain.Services.Customer
             submittedComment.Rate = commentDto.Rate;
             submittedComment.CustomerId = commentDto.CustomerId;
             submittedComment.ExpertId = commentDto.ExpertId;
+            submittedComment.ServiceRequestId = commentDto.ServiceRequestId;
             return await _commentRepository.CreateComment(submittedComment, cancellationToken);
         }
 
@@ -57,6 +58,12 @@ namespace App.Domain.Services.Customer
 
         public async Task<CommentDto> ConfirmComment(int commentId, CancellationToken cancellationToken)
             => await _commentRepository.ConfirmComment(commentId, cancellationToken);
+
+        public async Task<List<CommentDto>> GetCommentsByExpertId(int expertId, int onlineCutomerId, CancellationToken cancellationToken)
+            => await _commentRepository.GetCommentsByExpertId(expertId, onlineCutomerId, cancellationToken);
+
+        public async Task<CommentDto> GetCustomerCommentByServiceRequestId(int customerId, int serviceRequestId, CancellationToken cancellationToken)
+            => await _commentRepository.GetCustomerCommentByServiceRequestId(customerId, serviceRequestId, cancellationToken);
         #endregion
     }
 }

@@ -44,6 +44,50 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return submittedComment;
         }
 
+        public async Task<List<CommentDto>> GetCommentsByExpertId(int expertId, int onlineCutomerId, CancellationToken cancellationToken)
+        {
+            return await _homeServiceDbContext.Comments
+                .Where(c => c.ExpertId == expertId && c.IsDeleted == false && c.IsConfirmed == true && c.CustomerId != onlineCutomerId)
+                .Include(c => c.Customer)
+                .Include(c => c.ServiceRequest)
+                .ThenInclude(sr => sr.Service)
+                .Select(c => new CommentDto
+                {
+                    Id = c.Id,
+                    CustomerName = c.Customer.FirstName + " " + c.Customer.LastName,
+                    Description = c.Description,
+                    Rate = c.Rate,
+                    CreationDate = c.CreateDate,
+                    CustomerImageUrl = c.Customer.ProfileImage,
+                    ServiceName = c.ServiceRequest.Service.Title
+                }).ToListAsync(cancellationToken);
+        }
+
+        public async Task<CommentDto> GetCustomerCommentByServiceRequestId(int customerId, int serviceRequestId, CancellationToken cancellationToken)
+        {
+            var customerComment = await _homeServiceDbContext.Comments
+                .Where(c => c.CustomerId == customerId && c.ServiceRequestId == serviceRequestId)
+                .Include(c => c.Customer)
+                .Select(c => new CommentDto
+                {
+                    Id= c.Id,
+                    Description = c.Description,
+                    Rate = c.Rate,
+                    CreationDate = c.CreateDate,
+                    IsConfirmed = c.IsConfirmed,
+                    CustomerImageUrl = c.Customer.ProfileImage,
+                    IsDeleted = c.IsDeleted
+                }).FirstOrDefaultAsync(cancellationToken);
+
+            if (customerComment == null)
+            {
+                _logger.LogError($"Customer Comment Returned Null From Data Base!. CustomerId{customerId}, ExpertId{serviceRequestId}.");
+                //we can throw error?!
+            }
+
+            return customerComment;
+        }
+
         public async Task<CommentDto> GetCommentById(int commentId, CancellationToken cancellationToken)
         {
             var comment = _memoryCache.Get<CommentDto>("commentDto");
@@ -162,6 +206,8 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 updatingComment.Rate = updatedComment.Rate;
                 await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
 
+                _memoryCache.Remove("commentDtos");
+
                 var updatingCommentDto = new CommentDto();
                 updatingCommentDto.Description = updatingComment.Description;
                 updatingCommentDto.Rate = updatedComment.Rate;
@@ -240,6 +286,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return comment;
 
         }
+
         #endregion
     }
 }

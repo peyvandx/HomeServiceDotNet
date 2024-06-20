@@ -6,73 +6,86 @@
 }
 
 <div class="home-banner margin-bottom-0" style="background:#f41b3b url(assets/img/banner.png) no-repeat;" data-overlay="4">
-	<div class="container">
-		<div class="row justify-content-center">
-			<div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12">
-				<div class="banner_caption text-center mb-5">
-					<h1 class="banner_title ft-bold">محل کار عالی برای کسب و کار شما</h1>
-					<p class="fs-md ft-medium">مکان فوق العاده ای را برای اقامت، خرید، راه اندازی استارت آپ یا تفریح در مناطق موردنظر خود کشف کنید.</p>
-				</div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-xl-11 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="banner_caption text-center mb-5">
+                    <h1 class="banner_title ft-bold">محل کار عالی برای کسب و کار شما</h1>
+                    <p class="fs-md ft-medium">مکان فوق العاده ای را برای اقامت، خرید، راه اندازی استارت آپ یا تفریح در مناطق موردنظر خود کشف کنید.</p>
+                </div>
 
-				@* <form class="main-search-wrap fl-wrap">
-					<div class="main-search-item">
-						<input type="text" class="form-control radius" placeholder="جستجوی سرویس (مثلا برقکاری، کارواش)" />
-					</div>
-					<div class="main-search-item">
-						<input type="text" class="form-control" placeholder="انتخاب موقعیت مکانی" />
-					</div>
-					<div class="main-search-item">
-						<select class="form-control">
-							<option selected>انتخاب دسته بندی</option>
-							@foreach(var category in Model.Categories)
-							{
-								<option value="@category.Id">@category.Title</option>
-							}
-						</select>
-					</div>
-					<div class="main-search-button">
-						<button class="btn full-width theme-bg text-white" type="button">جستجو<i class="fas fa-search"></i></button>
-					</div>
-				</form> *@
+                @* <form class="main-search-wrap fl-wrap">
+                <div class="main-search-item">
+                <input type="text" class="form-control radius" placeholder="جستجوی سرویس (مثلا برقکاری، کارواش)" />
+                </div>
+                <div class="main-search-item">
+                <input type="text" class="form-control" placeholder="انتخاب موقعیت مکانی" />
+                </div>
+                <div class="main-search-item">
+                <select class="form-control">
+                <option selected>انتخاب دسته بندی</option>
+                @foreach(var category in Model.Categories)
+                {
+                <option value="@category.Id">@category.Title</option>
+                }
+                </select>
+                </div>
+                <div class="main-search-button">
+                <button class="btn full-width theme-bg text-white" type="button">جستجو<i class="fas fa-search"></i></button>
+                </div>
+                </form> *@
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </div>
 
 <section class="gray middle min">
-	<div class="container">
+    <div class="container">
 
-		<div class="row">
-			<div class="col-xl-12 col-lg-12 col-md-12 col-12">
-				<div class="sec_title position-relative text-center mb-5">
-					<h6 class="theme-cl">دسته بندی های محبوب</h6>
-					<h4 class="ft-bold ff-second">انتخاب دسته بندی انتخابی شما</h4>
-				</div>
-			</div>
-		</div>
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-12">
+                <div class="sec_title position-relative text-center mb-5">
+                    <h6 class="theme-cl">دسته بندی های محبوب</h6>
+                    <h4 class="ft-bold ff-second">انتخاب دسته بندی انتخابی شما</h4>
+                </div>
+            </div>
+        </div>
 
-		<div class="row align-items-center">
+        <div class="row align-items-center">
 
-			@foreach(var category in Model.Categories)
-			{
-				<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
-					<div class="Goodup-img-catg-wrap">
-						@* <div class="Goodup-catg-city">12 شهر</div> *@
-						<div class="Goodup-img-catg-thumb"><a asp-page="Services" asp-route-categoryId="@category.Id"><img src="@category.Image" class="img-fluid" alt=""></a></div>
-						<div class="Goodup-img-catg-caption">
-							<h4 class="fs-md mb-0 ft-medium m-catrio">@category.Title</h4>
-							<input type="hidden" value="@category.Id" />
-							<a asp-page="Services" asp-route-categoryId="@category.Id" class="Goodup-cat-arrow"><i class="lni lni-arrow-left-circle"></i></a>
-						</div>
-					</div>
-				</div>
-			}
+            @foreach (var category in Model.Categories)
+            {
+                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-6">
+                    <div class="Goodup-img-catg-wrap">
+                        <div class="Goodup-img-catg-thumb"><a asp-page="Services" asp-route-categoryId="@category.Id"><img src="@category.Image" class="img-fluid" alt=""></a></div>
+                        <div class="Goodup-grid-fl-wrap">
+                            <div class="Goodup-caption px-3 py-2">
+                                <h4 class="fs-md mb-0 ft-medium m-catrio">@category.Title</h4>
+                                <div class="Goodup-location">@category.Description</div>
+                            </div>
+                        </div>
+                        <div class="Goodup-grid-footer py-2 px-3">
+                            <div class="Goodup-ft-last">
+                                <div class="Goodup-inline">
+                                    <div class="Goodup-single-drp small">
+                                        <div class="btn-group">
+                                            <input type="hidden" value="@category.Id" />
+                                            <a asp-page="Services" asp-route-categoryId="@category.Id" class="btn bg-danger text-light">مشاهده سرویس ها <i class="lni lni-arrow-left-circle"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-		</div>
+                </div>
+            }
 
-	</div>
+        </div>
+
+    </div>
 </section>
 
-<partial name="_NewsletterPartial" />
+@* <partial name="_NewsletterPartial" /> *@
 

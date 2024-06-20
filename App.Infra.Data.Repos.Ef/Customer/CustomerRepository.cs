@@ -159,15 +159,18 @@ namespace App.Infra.Data.Repos.Ef.Customer
             return deletedCustomer;
         }
 
-        public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(Domain.Core.Customer.Entities.Customer updatedCustomer, CancellationToken cancellationToken)
+        public async Task<Domain.Core.Customer.Entities.Customer> UpdateCustomer(Domain.Core.Customer.DTOs.CustomerProfileDto updatedCustomer, CancellationToken cancellationToken)
         {
             var updatingCustomer = await GetCustomer(updatedCustomer.Id.Value, cancellationToken);
             updatingCustomer.Address = new Address();
             //updatingCustomer.Address.City.Province = new Province();
             updatingCustomer.FirstName = updatedCustomer.FirstName;
             updatingCustomer.LastName = updatingCustomer.LastName;
-            updatingCustomer.ProfileImage = updatedCustomer.ProfileImage;
+            updatingCustomer.ProfileImage = updatedCustomer.ProfileImageUrl;
             updatingCustomer.AboutMe = updatedCustomer.AboutMe;
+            updatingCustomer.ApplicationUser.Email = updatedCustomer.Email;
+            updatingCustomer.ApplicationUser.NormalizedEmail = updatedCustomer.Email.ToUpper();
+            updatingCustomer.ApplicationUser.PhoneNumber = updatedCustomer.PhoneNumber;
             updatingCustomer.FacebookAddress = updatedCustomer.FacebookAddress;
             updatingCustomer.InstagramAddress = updatedCustomer.InstagramAddress;
             updatingCustomer.TwitterAddress = updatedCustomer.TwitterAddress;
@@ -210,6 +213,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
             try
             {
                 var customer = await _homeServiceDbContext.Customers
+                .Include(c => c.ApplicationUser)
                 .Include(c => c.Address)
                 .ThenInclude(a => a.City)
                 .FirstOrDefaultAsync(c => c.Id == customerId, cancellationToken);

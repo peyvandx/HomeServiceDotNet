@@ -21,6 +21,7 @@
   <ItemGroup>
     <ProjectReference Include="..\App.Domain.AppServices\App.Domain.AppServices.csproj" />
     <ProjectReference Include="..\App.Domain.Services\App.Domain.Services.csproj" />
+    <ProjectReference Include="..\App.Infra.Data.Repos.Dapper\App.Infra.Data.Repos.Dapper.csproj" />
     <ProjectReference Include="..\App.Infra.Data.Repos.Ef\App.Infra.Data.Repos.Ef.csproj" />
     <ProjectReference Include="..\App.Infra.Db.SqlServer.Ef\App.Infra.Db.SqlServer.Ef.csproj" />
     <ProjectReference Include="..\Framework\Framework.csproj" />
@@ -29,7 +30,6 @@
   <ItemGroup>
     <Folder Include="Areas\Customer\" />
     <Folder Include="Areas\Expert\" />
-    <Folder Include="wwwroot\assets\img\service\" />
     <Folder Include="wwwroot\uploads\" />
   </ItemGroup>
 

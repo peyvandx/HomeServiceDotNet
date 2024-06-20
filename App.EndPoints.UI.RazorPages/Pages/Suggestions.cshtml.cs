@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace App.EndPoints.UI.RazorPages.Pages
 {
-    [Authorize(Roles = "Customer,Expert")]
+    [Authorize(Roles = "Customer")]
     public class SuggestionsModel : PageModel
     {
         private readonly IProposalAppService _proposalAppService;

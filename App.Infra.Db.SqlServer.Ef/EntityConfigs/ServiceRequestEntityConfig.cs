@@ -35,7 +35,7 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .Property(sr => sr.IsDone)
                 .IsRequired();
             builder
-                .Property(sr => sr.Price)
+                .Property(sr => sr.CustomerSuggestedPrice)
                 .IsRequired();
 
             builder
@@ -48,6 +48,11 @@ namespace App.Infra.Db.SqlServer.Ef.EntityConfigs
                 .WithOne(p => p.ServiceRequest)
                 .HasForeignKey(p => p.ServiceRequestId)
                 .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .HasOne(sr => sr.Comment)
+                .WithOne(c => c.ServiceRequest)
+                .HasForeignKey<Comment>(c => c.ServiceRequestId);
         }
     }
 }

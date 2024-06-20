@@ -15,34 +15,44 @@
                         </div>
 
                         <form class="submit-form" method="post">
-                            <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div>
+                            @* <div asp-validation-summary="ModelOnly" class="text-danger" role="alert"></div> *@
                             <div class="row">
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label class="mb-1">نام</label>
-                                        <input asp-for="@Model.Input.FirstName" type="text" class="form-control rounded" placeholder="مسعود">
+                                        <input asp-for="@Model.Input.FirstName" type="text" class="form-control rounded" placeholder="">
+                                        <span asp-validation-for="@Model.Input.FirstName" class="text-danger"></span>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <div class="form-group">
                                         <label class="mb-1">نام خانوادگی</label>
-                                        <input asp-for="@Model.Input.LastName" type="text" class="form-control rounded" placeholder="هاشمی">
+                                        <input asp-for="@Model.Input.LastName" type="text" class="form-control rounded" placeholder="">
+                                        <span asp-validation-for="@Model.Input.LastName" class="text-danger"></span>
                                     </div>
                                 </div>
                             </div>
                             <div class="form-group">
                                 <label class="mb-1">پست الکترونیک</label>
                                 <input asp-for="@Model.Input.Email" type="text" class="form-control rounded" placeholder="example@gmail.com">
+                                <span asp-validation-for="@Model.Input.Email" class="text-danger"></span>
                             </div>
-                            <div class="form-group">
+                            @* <div class="form-group">
                                 <label class="mb-1">نام کاربری</label>
                                 <input asp-for="@Model.Input.UserName" type="text" class="form-control rounded" placeholder="نام کاربری*">
-                            </div>
+                                <span asp-validation-for="@Model.Input.UserName" class="text-danger"></span>
+                            </div> *@
 
                             <div class="form-group">
                                 <label class="mb-1">رمز عبور</label>
                                 <input asp-for="@Model.Input.Password" type="password" class="form-control rounded" placeholder="رمز عبور*">
                                 <span asp-validation-for="@Model.Input.Password" class="text-danger"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label class="mb-1">تکرار رمز عبور</label>
+                                <input asp-for="@Model.Input.ConfirmPassword" type="password" class="form-control rounded" placeholder="تکرار رمز عبور*">
+                                <span asp-validation-for="@Model.Input.ConfirmPassword" class="text-danger"></span>
                             </div>
 
                             <div class="sign-controls form-group">
@@ -60,13 +70,13 @@
                                 <button type="submit" class="btn btn-md full-width bg-sky text-light rounded ft-medium">ثبت نام</button>
                             </div>
 
-                            <div class="form-group text-center mb-0">
+                            @* <div class="form-group text-center mb-0">
                                 <p class="extra">یا ثبت نام با</p>
                                 <div class="option-log">
                                     <div class="single-log-opt"><a href="javascript:void(0);" class="log-btn"><img src="assets/img/c-1.png" class="img-fluid" alt="" />ورود با Google</a></div>
                                     <div class="single-log-opt"><a href="javascript:void(0);" class="log-btn"><img src="assets/img/facebook.png" class="img-fluid" alt="" />ورود با Facebook</a></div>
                                 </div>
-                            </div>
+                            </div> *@
 
                             <div class="form-group text-center mt-4 mb-0">
                                 <p class="mb-0">آیا قبلا ثبت نام کرده اید؟ <a asp-page="Login" class="ft-medium text-success">ورود به حساب کاربری</a></p>
@@ -89,5 +99,7 @@
             });
         });
     </script>
-}
 
+    <partial name="_ValidationScriptsPartial" />
+
+}

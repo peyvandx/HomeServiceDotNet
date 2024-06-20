@@ -21,36 +21,35 @@
 							<div class="form-group">
 								<label class="mb-1">نام کاربری</label>
 								<input asp-for="@Model.Input.UserName" type="text" class="form-control rounded" placeholder="نام کاربری*">
+								<span asp-validation-for="@Model.Input.UserName" class="text-danger"></span>
 							</div>
 
 							<div class="form-group">
 								<label class="mb-1">رمز عبور</label>
 								<input asp-for="@Model.Input.Password" type="password" class="form-control rounded" placeholder="رمز عبور*">
+								<span asp-validation-for="@Model.Input.Password" class="text-danger"></span>
 							</div>
 
-							<div class="form-group">
+							@* <div class="form-group">
 								<div class="d-flex align-items-center justify-content-between">
 									<div class="flex-1">
 										<input id="dd" class="checkbox-custom" name="dd" type="checkbox" checked>
 										<label for="dd" class="checkbox-custom-label">مرا به خاطر بسپار</label>
 									</div>
-									<div class="eltio_k2">
-										<a href="#" class="theme-cl">فراموشی رمز عبور</a>
-									</div>
 								</div>
-							</div>
+							</div> *@
 
 							<div class="form-group">
 								<button type="submit" class="btn btn-md full-width theme-bg text-light rounded ft-medium">ورود</button>
 							</div>
 
-							<div class="form-group text-center mb-0">
+							@* <div class="form-group text-center mb-0">
 								<p class="extra">یـا ورود با</p>
 								<div class="option-log">
 									<div class="single-log-opt"><a href="javascript:void(0);" class="log-btn"><img src="assets/img/c-1.png" class="img-fluid" alt="" />ورود با Google</a></div>
 									<div class="single-log-opt"><a href="javascript:void(0);" class="log-btn"><img src="assets/img/facebook.png" class="img-fluid" alt="" />ورود با Facebook</a></div>
 								</div>
-							</div>
+							</div> *@
 
 							<div class="form-group text-center mt-4 mb-0">
 								<p class="mb-0">آیا تا به حال ثبت نام نکرده اید؟ <a asp-page="Register" class="ft-medium text-success">ثبت نام</a></p>
@@ -65,3 +64,7 @@
 	</div>
 </section>
 <!-- ======================= Login End ======================== -->
+@section Scripts {
+
+	<partial name="_ValidationScriptsPartial" />
+}

@@ -55,6 +55,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
             if (categories is null)
             {
                 categories = await _homeServiceDbContext.Categories
+                    .Where(c => c.IsDeleted == false)
                 .Select(a => new CategoryDto()
                 {
                     Id = a.Id,
@@ -133,6 +134,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Id = a.Id,
                     Title = a.Title,
                     Description = a.Description,
+                    Image = a.Image,
                     IsDeleted = a.IsDeleted
                 }).FirstOrDefaultAsync(a => a.Id == categoryId, cancellationToken);
 
@@ -154,6 +156,22 @@ namespace App.Infra.Data.Repos.Ef.Expert
             //}
             //_logger.LogInformation("categoryDto returned from InMemoryCache.");
             //return category;
+        }
+
+        public async Task<bool> RestoreDeletedCategory(int categoryId, CancellationToken cancellationToken)
+        {
+            var restoringCategory = await GetCategoryDto(categoryId, cancellationToken);
+            restoringCategory.IsDeleted = false;
+            try
+            {
+                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                _memoryCache.Remove("categoryDtos");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         //public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
@@ -210,25 +228,13 @@ namespace App.Infra.Data.Repos.Ef.Expert
         #region PrivateMethods
         private async Task<Category> GetCategoryDto(int categoryId, CancellationToken cancellationToken)
         {
-            var category = _memoryCache.Get<Category>("categoryDto");
-            if (category is null)
-            {
-                category = await _homeServiceDbContext.Categories
+             var category = await _homeServiceDbContext.Categories
                     .FirstOrDefaultAsync(c => c.Id == categoryId, cancellationToken);
-
-                if (category != null)
-                {
-                    _memoryCache.Set("categoryDto", category, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("categoryDto has been returned form database and cached in memory successfully.");
-                    return category;
-                }
-                _logger.LogError($"category with id {categoryId} not found in GetCategoryDto method.");
-                throw new Exception($"category with id {categoryId} not found.");
+            if (category == null)
+            {
+                _logger.LogError($"Category with id {categoryId} returned null");
+                throw new Exception($"Category with id {categoryId} returned null");
             }
-            _logger.LogInformation("categoryDto returned from InMemeoryCache in GetCategoryDto method.");
             return category;
         }
 

@@ -43,6 +43,9 @@ namespace App.Domain.Services.Expert
         public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
             => await _categoryRepository.GetCategoryById(categoryId, cancellationToken);
 
+        public async Task<bool> RestoreDeletedCategory(int categoryId, CancellationToken cancellationToken)
+            => await _categoryRepository.RestoreDeletedCategory(categoryId, cancellationToken);
+
         //public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
         //    => await _categoryRepository.HardDeleteCategory(categoryId, cancellationToken);
 
@@ -52,6 +55,7 @@ namespace App.Domain.Services.Expert
         public async Task<CategoryDto> UpdateCategory(CategoryDto categoryDto, CancellationToken cancellationToken)
         {
             var updatedCategory = new Category();
+            updatedCategory.Id = categoryDto.Id;
             updatedCategory.Title = categoryDto.Title;
             updatedCategory.Description = categoryDto.Description;
             updatedCategory.Image = categoryDto.Image;

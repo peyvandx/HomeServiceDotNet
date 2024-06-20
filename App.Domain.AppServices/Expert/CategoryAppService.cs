@@ -36,6 +36,9 @@ namespace App.Domain.AppServices.Expert
         public async Task<CategoryDto> GetCategoryById(int categoryId, CancellationToken cancellationToken)
             => await _categoryService.GetCategoryById(categoryId, cancellationToken);
 
+        public async Task<bool> RestoreDeletedCategory(int categoryId, CancellationToken cancellationToken)
+            => await _categoryService.RestoreDeletedCategory(categoryId, cancellationToken);
+
         //public async Task<Category> HardDeleteCategory(int categoryId, CancellationToken cancellationToken)
         //    => await _categoryService.HardDeleteCategory(categoryId, cancellationToken);
 

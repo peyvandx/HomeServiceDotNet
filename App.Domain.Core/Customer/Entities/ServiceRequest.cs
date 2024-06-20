@@ -13,7 +13,7 @@ namespace App.Domain.Core.Customer.Entities
         public int Id { get; set; }
         public string CustomerDescription { get; set; }
         public ServiceRequestStatus Status { get; set; }
-        public double Price { get; set; } = 0.0; //ghimate pardakht shode
+        public double? CustomerSuggestedPrice { get; set; }
         public bool IsDone { get; set; } = false;
         public DateTime CreatedAt { get; set; }
         public bool IsDeleted { get; set; } = false;
@@ -21,6 +21,8 @@ namespace App.Domain.Core.Customer.Entities
         public Customer Customer { get; set; }
         public int? ExpertId { get; set; }
         public Expert.Entities.Expert? Expert { get; set; } // oon experti ke customer ghaboolesh karde ke in service request ro anjam bede
+        public int? CommentId { get; set; }
+        public Comment? Comment { get; set; }
         public int ServiceId { get; set; }
         public Service Service { get; set; }
         public List<Proposal> Proposals { get; set; }

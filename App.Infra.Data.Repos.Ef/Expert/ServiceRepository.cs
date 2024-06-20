@@ -50,11 +50,15 @@ namespace App.Infra.Data.Repos.Ef.Expert
         public async Task<ServiceDto> GetServiceById(int serviceId, CancellationToken cancellationToken)
         {
             var service = await _homeServiceDbContext.Services
+                .Include(s => s.Category)
             .Select(a => new Domain.Core.Expert.DTOs.ServiceDto
             {
                 Id = a.Id,
                 Description = a.Description,
+                ShortDescription = a.ShortDescription,
                 Title = a.Title,
+                Image = a.Image,
+                CategoryId = a.Category.Id
             }).FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
 
             if (service != null)
@@ -81,6 +85,7 @@ namespace App.Infra.Data.Repos.Ef.Expert
                     Title = a.Title,
                     Description = a.Description,
                     IsDeleted = a.IsDeleted,
+                    Image = a.Image
                 }).ToListAsync(cancellationToken);
 
                 if (services is null)
@@ -105,18 +110,35 @@ namespace App.Infra.Data.Repos.Ef.Expert
         public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
         {
             var services = await _homeServiceDbContext.Services
-                .Where(s => s.CategoryId == categoryId)
+                .Where(s => s.CategoryId == categoryId && s.IsDeleted == false)
                 .Select(s => new ServiceDto()
                 {
                     Id = s.Id,
                     CategoryId = categoryId,
                     Title = s.Title,
+                    ShortDescription = s.ShortDescription,
                     Description = s.Description,
                     IsDeleted = s.IsDeleted,
                     Image = s.Image,
                 }).ToListAsync(cancellationToken);
 
             return services;
+        }
+
+        public async Task<bool> RestoreDeletedService(int serviceId, CancellationToken cancellationToken)
+        {
+            var restoringService = await GetServiceSoftDeleteDto(serviceId, cancellationToken);
+            restoringService.IsDeleted = false;
+            try
+            {
+                await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
+                _memoryCache.Remove("serviceDtos");
+                return true;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
 
         //{
@@ -169,13 +191,17 @@ namespace App.Infra.Data.Repos.Ef.Expert
             var updatingService = await GetServiceDto(updatedService.Id, cancellationToken);
             updatingService.Title = updatedService.Title;
             updatingService.Description = updatedService.Description;
+            updatingService.ShortDescription = updatedService.ShortDescription;
             updatingService.Image = updatedService.Image;
+            updatingService.CategoryId = updatedService.CategoryId;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
 
             var updatingServiceDto = new ServiceDto();
             updatingServiceDto.Title = updatingService.Title;
             updatingServiceDto.Description = updatingService.Description;
             updatingServiceDto.Image = updatingService.Image;
+
+            _memoryCache.Remove("serviceDtos");
 
             return updatingServiceDto;
         }
@@ -184,50 +210,28 @@ namespace App.Infra.Data.Repos.Ef.Expert
         #region PrivateFields
         private async Task<Domain.Core.Expert.Entities.Service> GetServiceDto(int serviceId, CancellationToken cancellationToken)
         {
-            var service = _memoryCache.Get<Service>("serviceDto");
-            if (service is null)
-            {
-                service = await _homeServiceDbContext.Services
+            var service = await _homeServiceDbContext.Services
                 .FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
 
-                if (service != null)
-                {
-                    _memoryCache.Set("serviceDto", service, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("serviceDto has been returned form database and cached in memory successfully.");
-                    return service;
-                }
-                _logger.LogError($"service with id {serviceId} not found in GetServiceDto method.");
-                throw new Exception($"service with id {serviceId} not found.");
+            if (service == null)
+            {
+                _logger.LogError($"Service with id {serviceId} returned null");
+                throw new Exception("$Service with id {serviceId} returned null");
             }
-            _logger.LogInformation("serviceDto returned from InMemeoryCache in GetServiceDto method.");
+
             return service;
 
         }
 
         private async Task<Domain.Core.Expert.Entities.Service> GetServiceSoftDeleteDto(int serviceId, CancellationToken cancellationToken)
         {
-            var service = _memoryCache.Get<Service>("serviceSoftDeleteDto");
-            if (service is null)
-            {
-                service = await _homeServiceDbContext.Services
+            var service = await _homeServiceDbContext.Services
                     .FirstOrDefaultAsync(a => a.Id == serviceId, cancellationToken);
-
-                if (service != null)
-                {
-                    _memoryCache.Set("serviceSoftDeleteDto", service, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("serviceSoftDeleteDto has been returned form database and cached in memory successfully.");
-                    return service;
-                }
-                _logger.LogError($"service with id {serviceId} not found in GetServiceSoftDeleteDto method.");
-                throw new Exception($"service with id {serviceId} not found.");
+            if (service == null )
+            {
+                throw new Exception($"Service with id {serviceId} returned null");
             }
-            _logger.LogInformation("serviceSoftDeleteDto returned from InMemeoryCache in GetServiceSoftDeleteDto method.");
+
             return service;
 
         }

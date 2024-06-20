@@ -1,10 +1,12 @@
 using App.Domain.Core.Customer.AppServices;
 using App.Domain.Core.Customer.DTOs;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace App.EndPoints.UI.RazorPages.Areas.Admin.Pages.Comment
 {
+    [Authorize(Roles = "Admin")]
     public class IndexModel : PageModel
     {
         private readonly ICommentAppService _commentAppService;

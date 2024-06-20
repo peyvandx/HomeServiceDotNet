@@ -30,6 +30,7 @@ namespace App.Domain.Services.Expert
             creatingSevice.CreatedAt = DateTime.Now;
             creatingSevice.Title = serviceDto.Title;
             creatingSevice.Description = serviceDto.Description;
+            creatingSevice.ShortDescription = serviceDto.ShortDescription;
             creatingSevice.Image = serviceDto.Image;
             //creatingSevice.WorkExperience = serviceDto.WorkExperience;
             creatingSevice.CategoryId = serviceDto.CategoryId;
@@ -45,18 +46,24 @@ namespace App.Domain.Services.Expert
 		public async Task<List<ServiceDto>> GetServicesByCategoryId(int categoryId, CancellationToken cancellationToken)
 		    => await _serviceRepository.GetServicesByCategoryId(categoryId, cancellationToken);
 
-		//public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
-		//    => await _serviceRepository.HardDeleteService(serviceId, cancellationToken);
+        public async Task<bool> RestoreDeletedService(int serviceId, CancellationToken cancellationToken)
+            => await _serviceRepository.RestoreDeletedService(serviceId, cancellationToken);
 
-		public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
+        //public async Task<Service> HardDeleteService(int serviceId, CancellationToken cancellationToken)
+        //    => await _serviceRepository.HardDeleteService(serviceId, cancellationToken);
+
+        public async Task<ServiceSoftDeleteDto> SoftDeleteService(int serviceId, CancellationToken cancellationToken)
             => await _serviceRepository.SoftDeleteService(serviceId, cancellationToken);
 
         public async Task<ServiceDto> UpdateService(ServiceDto serviceDto, CancellationToken cancellationToken)
         {
             var updatedService = new Service();
+            updatedService.Id = serviceDto.Id;
             updatedService.Title = serviceDto.Title;
             updatedService.Description = serviceDto.Description;
+            updatedService.ShortDescription = serviceDto.ShortDescription;
             updatedService.Image = serviceDto.Image;
+            updatedService.CategoryId = serviceDto.CategoryId;
             //updatedService.WorkExperience = serviceDto.WorkExperience;
             return await _serviceRepository.UpdateService(updatedService, cancellationToken);
         }

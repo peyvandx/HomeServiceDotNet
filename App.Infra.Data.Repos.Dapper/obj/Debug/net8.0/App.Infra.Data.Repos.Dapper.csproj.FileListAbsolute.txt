@@ -1,0 +1,16 @@
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\bin\Debug\net8.0\App.Infra.Data.Repos.Dapper.deps.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\bin\Debug\net8.0\App.Infra.Data.Repos.Dapper.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\bin\Debug\net8.0\App.Infra.Data.Repos.Dapper.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\bin\Debug\net8.0\App.Domain.Core.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\bin\Debug\net8.0\App.Domain.Core.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.csproj.AssemblyReference.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.GeneratedMSBuildEditorConfig.editorconfig
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.AssemblyInfoInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.AssemblyInfo.cs
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.csproj.CoreCompileInputs.cache
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.sourcelink.json
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infr.5FC6ED6B.Up2Date
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\refint\App.Infra.Data.Repos.Dapper.dll
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\App.Infra.Data.Repos.Dapper.pdb
+E:\Maktab - 104 - CSharp\Final-Project\App.Infra.Data.Repos.Dapper\obj\Debug\net8.0\ref\App.Infra.Data.Repos.Dapper.dll

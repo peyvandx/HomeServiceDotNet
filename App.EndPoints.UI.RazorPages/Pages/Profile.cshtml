@@ -5,68 +5,6 @@
     var userId = TempData["UserId"];
 }
 
-@* <partial name="_HeaderPartial" /> *@
-
-@* <div class="header header-light dark-text">
-    <div class="container">
-        <nav id="navigation" class="navigation navigation-landscape">
-            <div class="nav-header">
-                <a class="nav-brand" href="#">
-                    <img src="/assets/img/logo.png" class="logo" alt="" />
-                </a>
-                <div class="nav-toggle"></div>
-                <div class="mobile_nav">
-                    <ul>
-                        <li>
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#login" class="theme-cl fs-lg">
-                                <i class="lni lni-user"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="add-listing.html" class="crs_yuo12 w-auto text-white theme-bg">
-                                <span class="embos_45"><i class="fas fa-plus ms-2"></i>افزودن آگهی</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="nav-menus-wrapper" style="transition-property: none;">
-                <ul class="nav-menu">
-
-                    <li class="active">
-                        <a asp-page="Index">صفحه اصلی</a>
-                        <ul class="nav-dropdown nav-submenu">
-                            <li><a asp-page="Index">مجددا صفحه اصلی</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="javascript:void(0);">پنل کاربری</a>
-                        <ul class="nav-dropdown nav-submenu">
-                            <li><a asp-page="MyRequests"><i class="lni lni-files ms-2"></i>آگهی های من</a></li>
-                            <li><a asp-page="Profile"><i class="lni lni-user ms-2"></i>حساب من </a></li>
-                            <li><a asp-page="ChangePassword"><i class="lni lni-lock-alt ms-2"></i>تغییر رمز عبور</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <ul class="nav-menu nav-menu-social align-to-left">
-
-                    <partial name="_LoginPartial" />
-
-                    <li class="add-listing">
-                        <a href="add-listing.html">
-                            <i class="fas fa-plus ms-2"></i>افزودن آگهی
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </div>
-</div> *@
-
-@* @if (User.IsInRole("Customer"))
-{ *@
-
 <div class="goodup-dashboard-content">
     <form class="submit-form" enctype="multipart/form-data" method="post" asp-page-handler="OnPostAsync">
         <div class="dashboard-tlbar d-block mb-5">
@@ -109,25 +47,25 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">نام</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.FirstName" type="text" class="form-control rounded" placeholder="نازنین" />
+                                            <input asp-for="@Model.CustomerProfileDetails.FirstName" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">نام خانوادگی</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.LastName" type="text" class="form-control rounded" placeholder="حقیقت نژاد" />
+                                            <input asp-for="@Model.CustomerProfileDetails.LastName" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">پست الکترونیک</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.Email" type="text" class="form-control rounded" placeholder="example@gmail.com" />
+                                            <input asp-for="@Model.CustomerProfileDetails.Email" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">شماره تماس</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.PhoneNumber" type="text" class="form-control rounded" placeholder="09320000000" />
+                                            <input asp-for="@Model.CustomerProfileDetails.PhoneNumber" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -148,13 +86,13 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">آدرس</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.Address.Street" type="text" class="form-control rounded" placeholder="نواب، خیابان بریانک، خیابان کمیل" />
+                                            <input asp-for="@Model.CustomerProfileDetails.Address.Street" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">کد پستی</label>
-                                            <input asp-for="@Model.CustomerProfileDetails.Address.PostalCode" type="number" class="form-control rounded" placeholder="1355984703" />
+                                            <input asp-for="@Model.CustomerProfileDetails.Address.PostalCode" type="number" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                 </div>
@@ -233,25 +171,25 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">نام</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.FirstName" type="text" class="form-control rounded" placeholder="نازنین" />
+                                            <input asp-for="@Model.ExpertProfileDetails.FirstName" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">نام خانوادگی</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.LastName" type="text" class="form-control rounded" placeholder="حقیقت نژاد" />
+                                            <input asp-for="@Model.ExpertProfileDetails.LastName" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">پست الکترونیک</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.Email" type="text" class="form-control rounded" placeholder="example@gmail.com" />
+                                            <input asp-for="@Model.ExpertProfileDetails.Email" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">شماره تماس</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.PhoneNumber" type="text" class="form-control rounded" placeholder="09320000000" />
+                                            <input asp-for="@Model.ExpertProfileDetails.PhoneNumber" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
@@ -278,13 +216,13 @@
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">آدرس</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.Address.Street" type="text" class="form-control rounded" placeholder="نواب، خیابان بریانک، خیابان کمیل" />
+                                            <input asp-for="@Model.ExpertProfileDetails.Address.Street" type="text" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12">
                                         <div class="form-group">
                                             <label class="mb-1">کد پستی</label>
-                                            <input asp-for="@Model.ExpertProfileDetails.Address.PostalCode" type="number" class="form-control rounded" placeholder="1355984703" />
+                                            <input asp-for="@Model.ExpertProfileDetails.Address.PostalCode" type="number" class="form-control rounded" placeholder="" />
                                         </div>
                                     </div>
                                     <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 mb-3">
@@ -351,13 +289,6 @@
             </div>
 
     </form>
-</div>
-
-<!-- footer -->
-<div class="row">
-    <div class="col-md-12">
-        <div class="py-3">© 2022 Goodup ارائه شده در سایت <a href="https://rtl-theme.com/">راست چین</a></div>
-    </div>
 </div>
 
 </div>

@@ -56,36 +56,24 @@ namespace App.Infra.Data.Repos.Ef.Customer
 
         public async Task<ServiceRequestDto> GetServiceRequestById(int serviceRequestId, CancellationToken cancellationToken)
         {
-            var serviceRequest = _memoryCache.Get<ServiceRequestDto?>("serviceRequestDto");
-            if (serviceRequest is null)
-            {
-                serviceRequest = await _homeServiceDbContext.ServiceRequests
+            
+                var serviceRequest = await _homeServiceDbContext.ServiceRequests
                 .Select(sr => new ServiceRequestDto
                 {
                     Id = sr.Id,
                     CustomerDescription = sr.CustomerDescription,
                     Status = sr.Status,
-                    Price = sr.Price,
+                    Price = sr.CustomerSuggestedPrice,
                     IsDone = sr.IsDone,
                 }).FirstOrDefaultAsync(sr => sr.Id == serviceRequestId, cancellationToken);
 
                 if (serviceRequest != null)
-                {
-                    _memoryCache.Set("serviceRequestDto", serviceRequest, new MemoryCacheEntryOptions()
-                    {
-                        SlidingExpiration = TimeSpan.FromSeconds(120)
-                    });
-                    _logger.LogInformation("serviceRequestDto returned from database, and cached in memory successfully.");
                     return serviceRequest;
-                }
                 else
                 {
                     _logger.LogError("We expected the serviceRequestDto to return from the database, but it returned null.");
                     throw new Exception("Something wents wrong!, please try again.");
                 }
-            }
-            _logger.LogInformation("serviceRequestDto returned from InMemoryCache.");
-            return serviceRequest;
         }
 
         public async Task<List<ServiceRequestDto>> GetServiceRequests(CancellationToken cancellationToken)
@@ -100,7 +88,7 @@ namespace App.Infra.Data.Repos.Ef.Customer
                     Id = sr.Id,
                     CustomerDescription = sr.CustomerDescription,
                     Status = sr.Status,
-                    Price = sr.Price,
+                    Price = sr.CustomerSuggestedPrice,
                     IsDone = sr.IsDone,
                     IsDeleted = sr.IsDeleted,
                 }).ToListAsync(cancellationToken);
@@ -172,23 +160,28 @@ namespace App.Infra.Data.Repos.Ef.Customer
         {
             var updatingServiceRequest = await GetServiceRequest(updatedServiceRequest.Id, cancellationToken);
             updatingServiceRequest.CustomerDescription = updatedServiceRequest.CustomerDescription;
-            updatingServiceRequest.Price = updatedServiceRequest.Price;
+            updatingServiceRequest.CustomerSuggestedPrice = updatedServiceRequest.CustomerSuggestedPrice;
             await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
 
             var updatedServiceRequestDto = new ServiceRequestDto();
             updatedServiceRequestDto.Id = updatingServiceRequest.Id;
             updatedServiceRequestDto.CustomerDescription = updatingServiceRequest.CustomerDescription;
-            updatedServiceRequestDto.Price = updatingServiceRequest.Price;
+            updatedServiceRequestDto.Price = updatingServiceRequest.CustomerSuggestedPrice;
+
+            _memoryCache.Remove("serviceRequestDtos");
 
             return updatedServiceRequestDto;
         }
 
         public async Task<ServiceRequestChangeStatusDto> ChangeServiceRequestStatus(ServiceRequestChangeStatusDto newStatus, CancellationToken cancellationToken)
         {
-            ServiceRequest serviceRequest = await GetServiceRequest(newStatus.ServiceRequestId, cancellationToken);
-            serviceRequest.Status = newStatus.NewStatus;
             try
             {
+                ServiceRequest serviceRequest = await GetServiceRequest(newStatus.ServiceRequestId, cancellationToken);
+                serviceRequest.Status = newStatus.NewStatus;
+                if (newStatus.NewStatus == ServiceRequestStatus.Success)
+                    serviceRequest.ExpertId = newStatus.ExpertId;
+
                 await _homeServiceDbContext.SaveChangesAsync(cancellationToken);
                 _memoryCache.Remove("serviceRequestDtos");
                 return newStatus;
@@ -208,13 +201,13 @@ namespace App.Infra.Data.Repos.Ef.Customer
                 {
                     Id = x.Id,
                     CustomerDescription = x.CustomerDescription,
-                    Price = x.Price,
+                    Price = x.CustomerSuggestedPrice,
                     IsDone = x.IsDone,
                     IsDeleted = x.IsDeleted,
                     Status = x.Status,
                     ServiceId = x.ServiceId,
                     ServiceName = x.Service.Title,
-                    ServiceImageUrl = x.Service.Image,
+                    ServiceImageUrl = x.Service.Image
                 }).ToListAsync(cancellationToken);
 
             return customerServiceRequests;
@@ -229,13 +222,13 @@ namespace App.Infra.Data.Repos.Ef.Customer
             foreach (var expertServiceId in expertServiceIds.ServiceIds)
             {
                 var serviceRequestDto = await _homeServiceDbContext.ServiceRequests
-                .Where(x => x.ServiceId == expertServiceId && x.IsDeleted == false && !expertProposalsServiceIds.Contains(x.Id))
+                .Where(x => (x.Status == ServiceRequestStatus.WaitingForAcceptAProposal || x.Status == ServiceRequestStatus.WaitingForExpertsProposals) && x.ServiceId == expertServiceId && x.IsDeleted == false && !expertProposalsServiceIds.Contains(x.Id))
                 .Include(x => x.Service)
                 .Select(x => new ServiceRequestDto()
                 {
                     Id = x.Id,
                     CustomerDescription = x.CustomerDescription,
-                    Price = x.Price,
+                    Price = x.CustomerSuggestedPrice,
                     IsDone = x.IsDone,
                     IsDeleted = x.IsDeleted,
                     Status = x.Status,

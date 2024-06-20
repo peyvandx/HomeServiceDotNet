@@ -52,7 +52,7 @@ namespace App.Domain.AppServices.Admin
 
             var user = CreateUser();
 
-            user.UserName = registerDto.UserName;
+            user.UserName = registerDto.Email;
             user.Email = registerDto.Email;
             //user.SecurityStamp = Guid.NewGuid().ToString();
 
@@ -115,6 +115,10 @@ namespace App.Domain.AppServices.Admin
             customerProfileDto.LastName = customerResult.LastName;
             customerProfileDto.Address = customerResult.Address;
             customerProfileDto.AboutMe = customerResult.AboutMe;
+            customerProfileDto.InstagramAddress = customerResult.InstagramAddress;
+            customerProfileDto.FacebookAddress = customerResult.FacebookAddress;
+            customerProfileDto.LinkedinAddress = customerResult.LinkedinAddress;
+            customerProfileDto.TwitterAddress = customerResult.TwitterAddress;
 
             return customerProfileDto;
 

@@ -51,8 +51,11 @@
                                 <i class="bx bx-dots-vertical-rounded"></i>
                             </button>
                             <div class="dropdown-menu" style="">
-                                <a asp-route-commentId="@comment.Id" asp-page-handler="Active" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>تایید</a>
-                                <a asp-route-commentId="@comment.Id" asp-page-handler="Delete" class="dropdown-item"> <i class="bx bx-trash me-1"></i>حذف</a>
+                                @if (@comment.IsDeleted == false)
+                                {
+                                    <a asp-route-commentId="@comment.Id" asp-page-handler="Active" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i>تایید</a>
+                                }
+                                <a asp-route-commentId="@comment.Id" asp-page-handler="Delete" class="dropdown-item"> <i class="bx bx-trash me-1"></i>رد کردن</a>
                             </div>
                         </div>
                     </td>

@@ -29,7 +29,7 @@
                     <td>
                         <ul class="list-unstyled users-list m-0 avatar-group d-flex align-items-center">
                             <li data-bs-toggle="tooltip" data-popup="tooltip-custom" data-bs-placement="top" class="avatar avatar-xs pull-up" aria-label="تونی استارک" data-bs-original-title="تونی استارک">
-                                <img src="/AdminAssets/img/avatars/5.png" alt="آواتار" class="rounded-circle">
+                                <img src="@category.Image" alt="آواتار" class="rounded-circle">
                             </li>
                         </ul>
                     </td>
@@ -49,7 +49,8 @@
                             </button>
                             <div class="dropdown-menu" style="">
                                 <a asp-page="Update" asp-route-id="@category.Id" class="dropdown-item"><i class="bx bx-edit-alt me-1"></i> ویرایش</a>
-                                <a asp-page-handler="Delete" asp-route-id="@category.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i> حذف</a>
+                                <a asp-page-handler="Delete" asp-route-id="@category.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i> غیرفعال کردن</a>
+                                <a asp-page-handler="Restore" asp-route-id="@category.Id" class="dropdown-item"> <i class="bx bx-trash me-1"></i> فعال کردن</a>
                             </div>
                         </div>
                     </td>

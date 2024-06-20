@@ -35,7 +35,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-Framework", "00-Framewor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Framework", "Framework\Framework.csproj", "{42145100-11EA-45D5-A9C6-FC7649DB45AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.EndPoints.WebAPI", "App.EndPoints.WebAPI\App.EndPoints.WebAPI.csproj", "{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "App.EndPoints.WebAPI", "App.EndPoints.WebAPI\App.EndPoints.WebAPI.csproj", "{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "App.Infra.Data.Repos.Dapper", "App.Infra.Data.Repos.Dapper\App.Infra.Data.Repos.Dapper.csproj", "{524D9BD0-53D0-4A89-B0DB-256FAA00461A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{524D9BD0-53D0-4A89-B0DB-256FAA00461A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{524D9BD0-53D0-4A89-B0DB-256FAA00461A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{524D9BD0-53D0-4A89-B0DB-256FAA00461A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{524D9BD0-53D0-4A89-B0DB-256FAA00461A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -96,6 +102,7 @@ Global
 		{79721675-E274-4EA7-B470-7E04C3FB2629} = {9C47EA7D-7FF1-4A60-83AA-6B75B5113FF7}
 		{42145100-11EA-45D5-A9C6-FC7649DB45AC} = {79721675-E274-4EA7-B470-7E04C3FB2629}
 		{4EB63B9F-6AB5-424B-B579-5BFDBDCADCBB} = {33D4179C-157E-4FEC-8019-36E49148103F}
+		{524D9BD0-53D0-4A89-B0DB-256FAA00461A} = {3F8B8B59-804F-44C0-9EFB-E34729D5774C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {07D1A138-9CFA-4B4A-B0E6-0B1C89126081}
